@@ -1,0 +1,68 @@
+# ============================================================================
+# m1a_top.adc — M1a 主应用工程引脚约束 (EG4S20BG256 / HX4S20C)
+#
+# 说明:
+#   * HDMI 侧引脚与 IO 标准照抄 Task 019(上板稳定版本, 端口名一致直接复用)。
+#   * SD/TF 四线取自官方 lab_ex4_tf 权威约束(活跃行):
+#       sd_dclk=A14 / sd_miso=B14 / sd_mosi=A13 / sd_ncs=A12
+#   * HDMI TMDS 差分对负端由 TD 依 LVDS33 自动配对, 本文件只约束正端。
+#   * 片上 SDRAM(EG_PHY_SDRAM_2M_32)为芯片内硬核, 无外部引脚, 不含约束。
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# 板载 50MHz 参考晶振 (R7)
+# ----------------------------------------------------------------------------
+set_pin_assignment {clk_50m} { LOCATION = R7; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+
+# ----------------------------------------------------------------------------
+# 按键复位 (A2, 低有效)
+# ----------------------------------------------------------------------------
+set_pin_assignment {rst_n} { LOCATION = A2; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+
+# ----------------------------------------------------------------------------
+# 027 用户按键 (低有效, 板上按键电路共享 PULLUP; 官方 lab_ex4_tf/lab_ex5_i2s
+# 同款引脚: key1=B2 / key2=C1; 020/021/022 未占用)
+# ----------------------------------------------------------------------------
+set_pin_assignment {key_next} { LOCATION = B2; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment {key_auto} { LOCATION = C1; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment {key_wav}  { LOCATION = B1; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+
+# ----------------------------------------------------------------------------
+# [task_040] 拨码开关 SW1~SW4 (电平输入, 拨上=1; PARAM_SPEC §6: SW1~SW4 = C8/C7/C6/C5)
+#   sw[0]=SW1=C8 / sw[1]=SW2=C7 / sw[2]=SW3=C6 / sw[3]=SW4=C5
+#   [task_043 步① 返工] 首颗 bit(50ACDB4C)曾误写 sw[0]=C5 起正序, 上板实测物理
+#   SW3/SW4 调亮度、SW1/SW2 调对比度(与 SPEC 相反), 本版按 SPEC 原文改回 C8 起。
+# ----------------------------------------------------------------------------
+set_pin_assignment {sw[0]} { LOCATION = C8; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment {sw[1]} { LOCATION = C7; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment {sw[2]} { LOCATION = C6; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment {sw[3]} { LOCATION = C5; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+
+# ----------------------------------------------------------------------------
+# LED 状态灯 (高电平点亮)
+# ----------------------------------------------------------------------------
+set_pin_assignment {led[0]} { LOCATION = A4; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment {led[1]} { LOCATION = A3; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment {led[2]} { LOCATION = C10; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment {led[3]} { LOCATION = B12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+
+# ----------------------------------------------------------------------------
+# TF 卡 SPI 四线 (官方 lab_ex4_tf 引脚)
+# ----------------------------------------------------------------------------
+set_pin_assignment {sd_dclk} { LOCATION = A14; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment {sd_miso} { LOCATION = B14; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment {sd_mosi} { LOCATION = A13; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment {sd_ncs}  { LOCATION = A12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+# ----------------------------------------------------------------------------
+# HDMI TMDS 差分输出 (LVDS33, 负端自动配对)
+# ----------------------------------------------------------------------------
+set_pin_assignment {HDMI_CLK_P} { LOCATION = C3; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+set_pin_assignment {HDMI_D0_P}  { LOCATION = G5; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+set_pin_assignment {HDMI_D1_P}  { LOCATION = F1; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+set_pin_assignment {HDMI_D2_P}  { LOCATION = E1; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+
+# ----------------------------------------------------------------------------
+# HDMI DDC 通道 (EDID, 上拉)
+# ----------------------------------------------------------------------------
+set_pin_assignment {HDMI_DDC_SCL} { LOCATION = P2; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment {HDMI_DDC_SDA} { LOCATION = R2; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }

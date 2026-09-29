@@ -1,0 +1,12 @@
+# Prevent generated artifacts from entering this curated archive
+obj_dir/
+build/
+work/
+*.vvp
+*.vcd
+*.wlf
+*.o
+*.obj
+*.gch
+transcript
+*.tmp
