@@ -1,0 +1,27 @@
+{
+  "provenance":"固定8段能量、分段加权高度、点阵锚和RGB565色表；独立于浏览器逐像素实现",
+  "size":[640,480],
+  "backgrounds":[34,40,2113],
+  "horizons":[2213,4266,8486],
+  "themes":[
+    {"core":[11961,18168,28408,40695,56979,62894,62539,60136],"bright":[16383,32767,32767,49143,65527,65007,65007,64495],"near":[4940,9068,13164,19307,27465,31431,31269,29028],"far":[2470,4518,6566,8613,12708,14691,14594,14498]},
+    {"core":[13055,15327,17599,23998,30394,36629,50961,63119],"bright":[15359,15359,32255,32255,32767,49143,65527,65519],"near":[6511,6639,8783,10959,15181,17290,25480,31559],"far":[2215,2279,4391,4455,6566,8645,12740,14755]},
+    {"core":[29714,33972,40279,44505,50810,55035,59161,63158],"bright":[32247,48631,48631,48639,65535,65535,65535,65527],"near":[14857,16970,19115,21228,25389,27501,29580,31563],"far":[6404,8485,8517,10598,12678,12710,14790,14757]}
+  ],
+  "cases":[
+    {"id":"silent","energy":[0,0,0,0,0,0,0,0],"theme":0,"mode":2,"shift":0,"phase":0},
+    {"id":"rising_line","energy":[0,32,64,96,128,160,192,224],"theme":0,"mode":0,"shift":0,"phase":0},
+    {"id":"zigzag_topography","energy":[255,32,220,64,190,96,160,128],"theme":1,"mode":3,"shift":0,"phase":13},
+    {"id":"dot_cloud","energy":[64,128,192,255,192,128,64,32],"theme":2,"mode":2,"shift":0,"phase":7}
+  ],
+  "height_samples":[
+    {"case":"rising_line","x":64,"expected":0},{"case":"rising_line","x":96,"expected":16},{"case":"rising_line","x":127,"expected":31},{"case":"rising_line","x":128,"expected":32},{"case":"rising_line","x":575,"expected":224},
+    {"case":"zigzag_topography","x":64,"expected":255},{"case":"zigzag_topography","x":96,"expected":143},{"case":"zigzag_topography","x":127,"expected":35},{"case":"zigzag_topography","x":192,"expected":220}
+  ],
+  "pixel_samples":[
+    {"case":"silent","x":47,"y":420,"expected":34},{"case":"silent","x":48,"y":420,"expected":2213},
+    {"case":"rising_line","x":96,"y":384,"expected":16383},{"case":"rising_line","x":96,"y":387,"expected":34},{"case":"rising_line","x":128,"y":368,"expected":32767},{"case":"rising_line","x":575,"y":176,"expected":64495},
+    {"case":"zigzag_topography","x":64,"y":145,"expected":15359},{"case":"zigzag_topography","x":64,"y":148,"expected":13055},{"case":"zigzag_topography","x":64,"y":161,"expected":6511},{"case":"zigzag_topography","x":64,"y":177,"expected":2215},
+    {"case":"dot_cloud","x":256,"y":145,"expected":48639},{"case":"dot_cloud","x":265,"y":128,"expected":21228},{"case":"dot_cloud","x":264,"y":224,"expected":10598}
+  ]
+}

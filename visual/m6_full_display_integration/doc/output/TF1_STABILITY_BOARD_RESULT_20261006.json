@@ -1,0 +1,20 @@
+{
+  "date_local": "2026-10-06",
+  "bit_sha256": "9345f2b77237f0a42ac1676bae3822f739455795afae94e847c3e057c8c46203",
+  "raw_question": "请保持 TF1 本次运行累计≥10分钟，确认彩条正常、P1仍增加、d1=127/d2=0、P4=16639/P5=127/P6=0；随后按复位键约1秒，放开等12秒，确认d0～d7恢复本次正常值且P1重新增加。请反馈长稳和复位复现结果。",
+  "raw_user_message": "≥10分钟正常，复位后正常复现",
+  "status": "USER_CONFIRMED_TF1_TEN_MINUTE_AND_RESET_PASS",
+  "minimum_duration_seconds": 600,
+  "color_bars_normal": true,
+  "repeat_reads_increasing": true,
+  "d1": 127,
+  "d2": 0,
+  "p4": 16639,
+  "p5": 127,
+  "p6": 0,
+  "reset_repeatability_confirmed": true,
+  "scope": "TF_INITIALIZATION_AND_LBA64_SECTOR_REPEAT_READ",
+  "full_file_crc_verified": false,
+  "full_FDI_acceptance": false,
+  "next_stage": "FULL_CONTROLLED_LABEL_LOAD_AND_FILE_SDRAM_DOUBLE_CRC"
+}

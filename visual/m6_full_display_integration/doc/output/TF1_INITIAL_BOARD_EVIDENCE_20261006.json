@@ -1,0 +1,18 @@
+{
+  "status": "USER_CONFIRMED_INITIAL_TF_SECTOR_REPEAT_READ_PASS",
+  "prior_index_sha256": "71fc296580cb08d44e5be1d4a90701226b4710aea9db9f6c7994f352dc079bb8",
+  "verified_prior_entries": 325,
+  "bit_sha256": "9345f2b77237f0a42ac1676bae3822f739455795afae94e847c3e057c8c46203",
+  "files": [
+    {
+      "path": "doc/output/TF1_INITIAL_BOARD_RESULT_20261006.json",
+      "bytes": 1372,
+      "sha256": "8444bb104fab9c7bfa72e930349f75980d9aeedc892456e9877fc2789dcf73d6"
+    },
+    {
+      "path": "scripts/seal_tf1_initial_board_result.py",
+      "bytes": 2458,
+      "sha256": "a1da1e3418175beedbf04876194d07ef9a543e49c219445c43a7cfc7910c685f"
+    }
+  ]
+}

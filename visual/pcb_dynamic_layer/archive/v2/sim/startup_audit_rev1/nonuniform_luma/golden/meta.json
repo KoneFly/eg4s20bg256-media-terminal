@@ -1,0 +1,10 @@
+{
+  "frame_dir": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\pcb_dynamic_layer\\sim\\startup_audit_rev1\\nonuniform_luma\\input",
+  "pixels": 307200,
+  "hit_pixels": 81,
+  "span_count": 29,
+  "span_pool_depth": 6144,
+  "overflow": false,
+  "fixed_delay": 647,
+  "ov_k": 255
+}

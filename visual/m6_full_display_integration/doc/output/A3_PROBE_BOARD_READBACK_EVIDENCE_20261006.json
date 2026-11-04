@@ -1,0 +1,36 @@
+{
+  "status": "SEALED_USER_BOARD_OBSERVATION",
+  "hardware_status": "FAIL_NO_PCB_IMAGE",
+  "files": [
+    {
+      "path": "doc/output/A3_PROBE_BOARD_READBACK_PARTIAL_20261006.json",
+      "bytes": 2318,
+      "sha256": "03325e3eba5cdedb63d29e67c861d77b892dbfa6218a210551330f98134efdab"
+    },
+    {
+      "path": "doc/output/A3_PROBE_BOARD_ANALYSIS_PARTIAL_20261006.md",
+      "bytes": 2419,
+      "sha256": "33b6171a8529b57a49ccb85b93efc2e092af31b9f2e6fe468d49cdb078deb38a"
+    },
+    {
+      "path": "doc/output/A3_PROBE_BOARD_READBACK_CONFIRMED_20261006.json",
+      "bytes": 2108,
+      "sha256": "2468528cb66168b8010dbfc28a05e20bcc5ba863ac5c03eeeb3b78c56c1e69c9"
+    },
+    {
+      "path": "doc/output/A3_PROBE_BOARD_ANALYSIS_CONFIRMED_20261006.md",
+      "bytes": 2235,
+      "sha256": "eb6941dcdd1762a62d06de210ae50b047c06f759e198752bcc418041e2fe292c"
+    },
+    {
+      "path": "doc/output/A3_PROBE_BOOT_COUNTER_STATIC_20261006.json",
+      "bytes": 74350,
+      "sha256": "ba482bb59602e2d0f5623dd09b00ab7c5b064d945131ae2fc65ae9b15e8d2616"
+    },
+    {
+      "path": "scripts/review_a3_boot_counter.py",
+      "bytes": 12184,
+      "sha256": "ba00730f1ac9e1cfca3730d2ae2810cf4d83f5c26d2d3d36d5059977e1b35864"
+    }
+  ]
+}

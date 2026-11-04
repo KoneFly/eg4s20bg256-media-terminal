@@ -1,0 +1,60 @@
+{
+  "status": "SEALED_CONFIRMED_USER_OBSERVATION_AND_ISOLATION_PLAN",
+  "hardware_status": "FAIL_MONITOR_NO_SIGNAL_AND_NO_PCB_IMAGE",
+  "actual_board_bit_readback": false,
+  "files": [
+    {
+      "path": "doc/output/A4_PROBE_BOARD_READBACK_CONFIRMED_20261006.json",
+      "bytes": 3188,
+      "sha256": "b346066d358e8ab79cdc1335bddb0c1a4fef02d31032909cf5e9ad5e671690ea"
+    },
+    {
+      "path": "doc/output/A4_PROBE_BOARD_ANALYSIS_CONFIRMED_20261006.md",
+      "bytes": 2690,
+      "sha256": "fb34289694cb15414f347a9da7e733d7e9582ec259a0385f658d60abb051fe78"
+    },
+    {
+      "path": "doc/brief/BOARD_DIAGNOSTIC_ISOLATION_PLAN_20261006.md",
+      "bytes": 4734,
+      "sha256": "393aa333627972c88854cdf62f2ad6878abee18b1aaea3ffbc5cf5d659376648"
+    },
+    {
+      "path": "scripts/seal_a4_confirmed_readback.py",
+      "bytes": 2765,
+      "sha256": "011584271b3e25f2a3fb97ae4b8014bc1295237a7b605ff2ef8a9dbba3bfc4b1"
+    }
+  ],
+  "prior_partial_evidence": {
+    "path": "doc/output/A4_PROBE_BOARD_READBACK_EVIDENCE_20261006.json",
+    "sha256": "1481ad8dce7acdd74a4a1645f631775fdfc0b58e9ef8aac3bae7889e282290ec"
+  },
+  "source_chain_evidence": [
+    {
+      "path": "experiments/board_0x46_A4_work/project/src/rtl/v9_m6_scan.v",
+      "sha256": "fe37fadf7d6cfded4b144352d942eccd08a301a4f45082d37ba6ed58d368d1da"
+    },
+    {
+      "path": "experiments/board_0x46_A4_work/project/src/rtl/v9_m6_hdmi.v",
+      "sha256": "7560a6e79b744b49c76c8957ae564c1ee9e387149c11d49db37fe5ec8ad9a1fe"
+    },
+    {
+      "path": "experiments/board_0x46_A4_work/project/src/vendor/display020/axis_pixel_adapter.v",
+      "sha256": "309071d0c1151aa10649ba31eb7ee3d9080988c5b8d7e7ab47a4212f5831b20e"
+    },
+    {
+      "path": "experiments/board_0x46_A4_work/project/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    }
+  ],
+  "reference_bit": {
+    "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/eth_udp_m6_master_top.bit",
+    "bytes": 629642,
+    "sha256": "75959e68b425de7a36ee937949c683b956d90164ea72c68e2bbcd40b6d5d5d1b",
+    "current_run_board_comparison": "PENDING_USER_BOARD_TEST"
+  },
+  "prior_entries_verified": 1389,
+  "prior_gzip_payloads_verified": 68,
+  "protected_entries_verified": 81,
+  "no_rtl_sdc_bit_mutation": true,
+  "new_self_test_bit": "NOT_IMPLEMENTED"
+}

@@ -1,0 +1,2268 @@
+{
+  "status": "PASS_A4_HISTORY_OR_AND_D2_GATE_SELECTION",
+  "gate_sha256": "599cc073b28c196ce09207a023696b7a569d3c38783cc13e06014b8623003b00",
+  "route_sha256": "50ed7e784ecb0a80b413194090894e424b80c13f55d22d1cd07278d3ffb20538",
+  "gate_history": [
+    {
+      "bit": 0,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[0]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [0]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [0]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[0]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [0]",
+          "b": "\\u_display/u_label_store/debug_progress [0]",
+          "o": "\\u_clock_probe/ever_watchdog_b [0]"
+        }
+      }
+    },
+    {
+      "bit": 10,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[10]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [10]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [10]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[10]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [10]",
+          "b": "\\u_display/u_label_store/debug_progress [10]",
+          "o": "\\u_clock_probe/ever_watchdog_b [10]"
+        }
+      }
+    },
+    {
+      "bit": 11,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[11]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [11]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [11]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[11]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [11]",
+          "b": "\\u_display/u_label_store/debug_progress [11]",
+          "o": "\\u_clock_probe/ever_watchdog_b [11]"
+        }
+      }
+    },
+    {
+      "bit": 12,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[12]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [12]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [12]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[12]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [12]",
+          "b": "\\u_display/u_label_store/debug_progress [12]",
+          "o": "\\u_clock_probe/ever_watchdog_b [12]"
+        }
+      }
+    },
+    {
+      "bit": 13,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[13]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [13]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [13]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[13]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [13]",
+          "b": "\\u_display/u_label_store/debug_progress [13]",
+          "o": "\\u_clock_probe/ever_watchdog_b [13]"
+        }
+      }
+    },
+    {
+      "bit": 14,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[14]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [14]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [14]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[14]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [14]",
+          "b": "\\u_display/u_label_store/debug_progress [14]",
+          "o": "\\u_clock_probe/ever_watchdog_b [14]"
+        }
+      }
+    },
+    {
+      "bit": 15,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[15]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [15]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [15]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[15]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [15]",
+          "b": "\\u_display/u_label_store/debug_progress [15]",
+          "o": "\\u_clock_probe/ever_watchdog_b [15]"
+        }
+      }
+    },
+    {
+      "bit": 16,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[16]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [16]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [16]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[16]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [16]",
+          "b": "\\u_display/u_label_store/debug_progress [16]",
+          "o": "\\u_clock_probe/ever_watchdog_b [16]"
+        }
+      }
+    },
+    {
+      "bit": 17,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[17]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [17]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [17]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[17]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [17]",
+          "b": "\\u_display/u_label_store/debug_progress [17]",
+          "o": "\\u_clock_probe/ever_watchdog_b [17]"
+        }
+      }
+    },
+    {
+      "bit": 18,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[18]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [18]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [18]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[18]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [18]",
+          "b": "\\u_display/u_label_store/debug_progress [18]",
+          "o": "\\u_clock_probe/ever_watchdog_b [18]"
+        }
+      }
+    },
+    {
+      "bit": 19,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[19]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [19]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [19]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[19]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [19]",
+          "b": "\\u_display/u_label_store/debug_progress [19]",
+          "o": "\\u_clock_probe/ever_watchdog_b [19]"
+        }
+      }
+    },
+    {
+      "bit": 1,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[1]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [1]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [1]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[1]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [1]",
+          "b": "\\u_display/u_label_store/debug_progress [1]",
+          "o": "\\u_clock_probe/ever_watchdog_b [1]"
+        }
+      }
+    },
+    {
+      "bit": 20,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[20]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [20]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [20]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[20]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [20]",
+          "b": "\\u_display/u_label_store/debug_progress [20]",
+          "o": "\\u_clock_probe/ever_watchdog_b [20]"
+        }
+      }
+    },
+    {
+      "bit": 21,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[21]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [21]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [21]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[21]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [21]",
+          "b": "\\u_display/u_label_store/debug_progress [21]",
+          "o": "\\u_clock_probe/ever_watchdog_b [21]"
+        }
+      }
+    },
+    {
+      "bit": 22,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[22]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [22]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [22]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[22]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [22]",
+          "b": "\\u_display/u_label_store/debug_progress [22]",
+          "o": "\\u_clock_probe/ever_watchdog_b [22]"
+        }
+      }
+    },
+    {
+      "bit": 23,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[23]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [23]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [23]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[23]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [23]",
+          "b": "\\u_display/u_label_store/debug_progress [23]",
+          "o": "\\u_clock_probe/ever_watchdog_b [23]"
+        }
+      }
+    },
+    {
+      "bit": 24,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[24]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [24]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [24]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[24]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [24]",
+          "b": "\\u_display/u_label_store/debug_progress [24]",
+          "o": "\\u_clock_probe/ever_watchdog_b [24]"
+        }
+      }
+    },
+    {
+      "bit": 25,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[25]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [25]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [25]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[25]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [25]",
+          "b": "\\u_display/u_label_store/debug_progress [25]",
+          "o": "\\u_clock_probe/ever_watchdog_b [25]"
+        }
+      }
+    },
+    {
+      "bit": 26,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[26]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [26]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [26]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[26]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [26]",
+          "b": "\\u_display/u_label_store/debug_progress [26]",
+          "o": "\\u_clock_probe/ever_watchdog_b [26]"
+        }
+      }
+    },
+    {
+      "bit": 27,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[27]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [27]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [27]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[27]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [27]",
+          "b": "\\u_display/u_label_store/debug_progress [27]",
+          "o": "\\u_clock_probe/ever_watchdog_b [27]"
+        }
+      }
+    },
+    {
+      "bit": 28,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[28]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [28]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [28]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[28]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [28]",
+          "b": "\\u_display/u_label_store/debug_progress [28]",
+          "o": "\\u_clock_probe/ever_watchdog_b [28]"
+        }
+      }
+    },
+    {
+      "bit": 2,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[2]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [2]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [2]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[2]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [2]",
+          "b": "\\u_display/u_label_store/debug_progress [2]",
+          "o": "\\u_clock_probe/ever_watchdog_b [2]"
+        }
+      }
+    },
+    {
+      "bit": 3,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[3]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [3]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [3]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[3]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [3]",
+          "b": "\\u_display/u_label_store/debug_progress [3]",
+          "o": "\\u_clock_probe/ever_watchdog_b [3]"
+        }
+      }
+    },
+    {
+      "bit": 4,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[4]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [4]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [4]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[4]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [4]",
+          "b": "\\u_display/u_label_store/debug_progress [4]",
+          "o": "\\u_clock_probe/ever_watchdog_b [4]"
+        }
+      }
+    },
+    {
+      "bit": 5,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[5]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [5]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [5]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[5]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [5]",
+          "b": "\\u_display/u_label_store/debug_progress [5]",
+          "o": "\\u_clock_probe/ever_watchdog_b [5]"
+        }
+      }
+    },
+    {
+      "bit": 6,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[6]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [6]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [6]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[6]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [6]",
+          "b": "\\u_display/u_label_store/debug_progress [6]",
+          "o": "\\u_clock_probe/ever_watchdog_b [6]"
+        }
+      }
+    },
+    {
+      "bit": 7,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[7]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [7]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [7]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[7]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [7]",
+          "b": "\\u_display/u_label_store/debug_progress [7]",
+          "o": "\\u_clock_probe/ever_watchdog_b [7]"
+        }
+      }
+    },
+    {
+      "bit": 8,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[8]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [8]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [8]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[8]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [8]",
+          "b": "\\u_display/u_label_store/debug_progress [8]",
+          "o": "\\u_clock_probe/ever_watchdog_b [8]"
+        }
+      }
+    },
+    {
+      "bit": 9,
+      "register": {
+        "kind": "AL_MAP_SEQ",
+        "name": "\\u_clock_probe/ever_watchdog_reg[9]",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "REGSET": "\"RESET\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "\\u_clock_probe/ever_watchdog_b [9]",
+          "sr": "\\u_decimal/rst_n",
+          "q": "\\u_clock_probe/ever_watchdog [9]"
+        }
+      },
+      "or_lut": {
+        "kind": "AL_MAP_LUT2",
+        "name": "\\u_clock_probe/ever_watchdog_b[9]_syn_1",
+        "params": {
+          "INIT": "4'he"
+        },
+        "ports": {
+          "a": "\\u_clock_probe/ever_watchdog [9]",
+          "b": "\\u_display/u_label_store/debug_progress [9]",
+          "o": "\\u_clock_probe/ever_watchdog_b [9]"
+        }
+      }
+    }
+  ],
+  "physical_history": [
+    {
+      "bit": 26,
+      "lane": 0,
+      "truth": 4293984240,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [26]",
+        "\\u_clock_probe/ever_watchdog [26]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[11]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1111111111110000",
+          "INIT_LUTF1": "16'b1111111111110000",
+          "INIT_LUTG0": "16'b1111111111110000",
+          "INIT_LUTG1": "16'b1111111111110000",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [11],\\u_display/u_label_store/debug_progress [26]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [11],\\u_clock_probe/ever_watchdog [26]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [11],\\u_clock_probe/ever_watchdog [26]}"
+        }
+      }
+    },
+    {
+      "bit": 11,
+      "lane": 1,
+      "truth": 4293984240,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [11]",
+        "\\u_clock_probe/ever_watchdog [11]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[11]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1111111111110000",
+          "INIT_LUTF1": "16'b1111111111110000",
+          "INIT_LUTG0": "16'b1111111111110000",
+          "INIT_LUTG1": "16'b1111111111110000",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [11],\\u_display/u_label_store/debug_progress [26]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [11],\\u_clock_probe/ever_watchdog [26]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [11],\\u_clock_probe/ever_watchdog [26]}"
+        }
+      }
+    },
+    {
+      "bit": 10,
+      "lane": 0,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [10]",
+        "\\u_clock_probe/ever_watchdog [10]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[12]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [12],\\u_display/u_label_store/debug_progress [10]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [12],\\u_clock_probe/ever_watchdog [10]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [12],\\u_clock_probe/ever_watchdog [10]}"
+        }
+      }
+    },
+    {
+      "bit": 12,
+      "lane": 1,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [12]",
+        "\\u_clock_probe/ever_watchdog [12]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[12]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [12],\\u_display/u_label_store/debug_progress [10]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [12],\\u_clock_probe/ever_watchdog [10]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [12],\\u_clock_probe/ever_watchdog [10]}"
+        }
+      }
+    },
+    {
+      "bit": 24,
+      "lane": 0,
+      "truth": 4293984240,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [24]",
+        "\\u_clock_probe/ever_watchdog [24]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[13]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1111111111110000",
+          "INIT_LUTF1": "16'b1111111111110000",
+          "INIT_LUTG0": "16'b1111111111110000",
+          "INIT_LUTG1": "16'b1111111111110000",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [13],\\u_display/u_label_store/debug_progress [24]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [13],\\u_clock_probe/ever_watchdog [24]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [13],\\u_clock_probe/ever_watchdog [24]}"
+        }
+      }
+    },
+    {
+      "bit": 13,
+      "lane": 1,
+      "truth": 4293984240,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [13]",
+        "\\u_clock_probe/ever_watchdog [13]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[13]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1111111111110000",
+          "INIT_LUTF1": "16'b1111111111110000",
+          "INIT_LUTG0": "16'b1111111111110000",
+          "INIT_LUTG1": "16'b1111111111110000",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [13],\\u_display/u_label_store/debug_progress [24]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [13],\\u_clock_probe/ever_watchdog [24]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [13],\\u_clock_probe/ever_watchdog [24]}"
+        }
+      }
+    },
+    {
+      "bit": 15,
+      "lane": 1,
+      "truth": 4293984240,
+      "inputs": [
+        "open_n2018",
+        "open_n2019",
+        "\\u_display/u_label_store/debug_progress [15]",
+        "\\u_clock_probe/ever_watchdog [15]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[15]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1100110011101100",
+          "INIT_LUTF1": "16'b1111111111110000",
+          "INIT_LUTG0": "16'b1100110011101100",
+          "INIT_LUTG1": "16'b1111111111110000",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "a": "{open_n2018,\\u_clock_probe/boot_exit_seen_n2_syn_2 }",
+          "b": "{open_n2019,\\u_clock_probe/low_wrap_seen }",
+          "c": "{\\u_display/u_label_store/debug_progress [15],\\u_clock_probe/previous_bit15 }",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [15],\\u_display/u_label_store/debug_progress [15]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [15],\\u_clock_probe/low_wrap_seen }"
+        }
+      }
+    },
+    {
+      "bit": 7,
+      "lane": 0,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [7]",
+        "\\u_clock_probe/ever_watchdog [7]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[19]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [19],\\u_display/u_label_store/debug_progress [7]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [19],\\u_clock_probe/ever_watchdog [7]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [19],\\u_clock_probe/ever_watchdog [7]}"
+        }
+      }
+    },
+    {
+      "bit": 19,
+      "lane": 1,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [19]",
+        "\\u_clock_probe/ever_watchdog [19]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[19]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [19],\\u_display/u_label_store/debug_progress [7]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [19],\\u_clock_probe/ever_watchdog [7]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [19],\\u_clock_probe/ever_watchdog [7]}"
+        }
+      }
+    },
+    {
+      "bit": 17,
+      "lane": 0,
+      "truth": 4293984240,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [17]",
+        "\\u_clock_probe/ever_watchdog [17]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[1]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1111111111110000",
+          "INIT_LUTF1": "16'b1111111111110000",
+          "INIT_LUTG0": "16'b1111111111110000",
+          "INIT_LUTG1": "16'b1111111111110000",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [1],\\u_display/u_label_store/debug_progress [17]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [1],\\u_clock_probe/ever_watchdog [17]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [1],\\u_clock_probe/ever_watchdog [17]}"
+        }
+      }
+    },
+    {
+      "bit": 1,
+      "lane": 1,
+      "truth": 4293984240,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [1]",
+        "\\u_clock_probe/ever_watchdog [1]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[1]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1111111111110000",
+          "INIT_LUTF1": "16'b1111111111110000",
+          "INIT_LUTG0": "16'b1111111111110000",
+          "INIT_LUTG1": "16'b1111111111110000",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [1],\\u_display/u_label_store/debug_progress [17]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [1],\\u_clock_probe/ever_watchdog [17]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [1],\\u_clock_probe/ever_watchdog [17]}"
+        }
+      }
+    },
+    {
+      "bit": 21,
+      "lane": 0,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [21]",
+        "\\u_clock_probe/ever_watchdog [21]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[20]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [20],\\u_display/u_label_store/debug_progress [21]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [20],\\u_clock_probe/ever_watchdog [21]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [20],\\u_clock_probe/ever_watchdog [21]}"
+        }
+      }
+    },
+    {
+      "bit": 20,
+      "lane": 1,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [20]",
+        "\\u_clock_probe/ever_watchdog [20]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[20]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [20],\\u_display/u_label_store/debug_progress [21]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [20],\\u_clock_probe/ever_watchdog [21]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [20],\\u_clock_probe/ever_watchdog [21]}"
+        }
+      }
+    },
+    {
+      "bit": 8,
+      "lane": 0,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [8]",
+        "\\u_clock_probe/ever_watchdog [8]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[22]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [22],\\u_display/u_label_store/debug_progress [8]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [22],\\u_clock_probe/ever_watchdog [8]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [22],\\u_clock_probe/ever_watchdog [8]}"
+        }
+      }
+    },
+    {
+      "bit": 22,
+      "lane": 1,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [22]",
+        "\\u_clock_probe/ever_watchdog [22]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[22]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [22],\\u_display/u_label_store/debug_progress [8]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [22],\\u_clock_probe/ever_watchdog [8]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [22],\\u_clock_probe/ever_watchdog [8]}"
+        }
+      }
+    },
+    {
+      "bit": 28,
+      "lane": 0,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [28]",
+        "\\u_clock_probe/ever_watchdog [28]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[25]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [25],\\u_display/u_label_store/debug_progress [28]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [25],\\u_clock_probe/ever_watchdog [28]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [25],\\u_clock_probe/ever_watchdog [28]}"
+        }
+      }
+    },
+    {
+      "bit": 25,
+      "lane": 1,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [25]",
+        "\\u_clock_probe/ever_watchdog [25]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[25]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [25],\\u_display/u_label_store/debug_progress [28]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [25],\\u_clock_probe/ever_watchdog [28]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [25],\\u_clock_probe/ever_watchdog [28]}"
+        }
+      }
+    },
+    {
+      "bit": 23,
+      "lane": 0,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [23]",
+        "\\u_clock_probe/ever_watchdog [23]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[27]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [27],\\u_display/u_label_store/debug_progress [23]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [27],\\u_clock_probe/ever_watchdog [23]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [27],\\u_clock_probe/ever_watchdog [23]}"
+        }
+      }
+    },
+    {
+      "bit": 27,
+      "lane": 1,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [27]",
+        "\\u_clock_probe/ever_watchdog [27]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[27]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [27],\\u_display/u_label_store/debug_progress [23]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [27],\\u_clock_probe/ever_watchdog [23]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [27],\\u_clock_probe/ever_watchdog [23]}"
+        }
+      }
+    },
+    {
+      "bit": 16,
+      "lane": 0,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [16]",
+        "\\u_clock_probe/ever_watchdog [16]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[2]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [2],\\u_display/u_label_store/debug_progress [16]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [2],\\u_clock_probe/ever_watchdog [16]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [2],\\u_clock_probe/ever_watchdog [16]}"
+        }
+      }
+    },
+    {
+      "bit": 2,
+      "lane": 1,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [2]",
+        "\\u_clock_probe/ever_watchdog [2]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[2]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111110000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [2],\\u_display/u_label_store/debug_progress [16]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [2],\\u_clock_probe/ever_watchdog [16]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [2],\\u_clock_probe/ever_watchdog [16]}"
+        }
+      }
+    },
+    {
+      "bit": 0,
+      "lane": 0,
+      "truth": 4293984240,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [0]",
+        "\\u_clock_probe/ever_watchdog [0]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[3]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1111111111110000",
+          "INIT_LUTF1": "16'b1111111111110000",
+          "INIT_LUTG0": "16'b1111111111110000",
+          "INIT_LUTG1": "16'b1111111111110000",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [3],\\u_display/u_label_store/debug_progress [0]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [3],\\u_clock_probe/ever_watchdog [0]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [3],\\u_clock_probe/ever_watchdog [0]}"
+        }
+      }
+    },
+    {
+      "bit": 3,
+      "lane": 1,
+      "truth": 4293984240,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [3]",
+        "\\u_clock_probe/ever_watchdog [3]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[3]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1111111111110000",
+          "INIT_LUTF1": "16'b1111111111110000",
+          "INIT_LUTG0": "16'b1111111111110000",
+          "INIT_LUTG1": "16'b1111111111110000",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [3],\\u_display/u_label_store/debug_progress [0]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [3],\\u_clock_probe/ever_watchdog [0]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [3],\\u_clock_probe/ever_watchdog [0]}"
+        }
+      }
+    },
+    {
+      "bit": 4,
+      "lane": 1,
+      "truth": 65520,
+      "inputs": [
+        "1'b0",
+        "open_n2228",
+        "\\u_display/u_label_store/debug_progress [4]",
+        "\\u_clock_probe/ever_watchdog [4]"
+      ],
+      "cell": {
+        "kind": "EG_PHY_MSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[4]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUT0": "16'b1111111111000000",
+          "INIT_LUT1": "16'b1111111111110000",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "b": "{open_n2228,\\u_clock_probe/status_word [2]}",
+          "c": "{\\u_display/u_label_store/debug_progress [4],\\u_clock_probe/status_word [3]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [4],\\u_clock_probe/bad_state_seen }",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [4],\\u_clock_probe/bad_state_seen }"
+        }
+      }
+    },
+    {
+      "bit": 6,
+      "lane": 0,
+      "truth": 4293984240,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [6]",
+        "\\u_clock_probe/ever_watchdog [6]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[5]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1111111111110000",
+          "INIT_LUTF1": "16'b1111111111110000",
+          "INIT_LUTG0": "16'b1111111111110000",
+          "INIT_LUTG1": "16'b1111111111110000",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [5],\\u_display/u_label_store/debug_progress [6]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [5],\\u_clock_probe/ever_watchdog [6]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [5],\\u_clock_probe/ever_watchdog [6]}"
+        }
+      }
+    },
+    {
+      "bit": 5,
+      "lane": 1,
+      "truth": 4293984240,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [5]",
+        "\\u_clock_probe/ever_watchdog [5]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[5]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1111111111110000",
+          "INIT_LUTF1": "16'b1111111111110000",
+          "INIT_LUTG0": "16'b1111111111110000",
+          "INIT_LUTG1": "16'b1111111111110000",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [5],\\u_display/u_label_store/debug_progress [6]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [5],\\u_clock_probe/ever_watchdog [6]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [5],\\u_clock_probe/ever_watchdog [6]}"
+        }
+      }
+    },
+    {
+      "bit": 14,
+      "lane": 0,
+      "truth": 4293984240,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [14]",
+        "\\u_clock_probe/ever_watchdog [14]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[9]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1111111111110000",
+          "INIT_LUTF1": "16'b1111111111110000",
+          "INIT_LUTG0": "16'b1111111111110000",
+          "INIT_LUTG1": "16'b1111111111110000",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [9],\\u_display/u_label_store/debug_progress [14]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [9],\\u_clock_probe/ever_watchdog [14]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [9],\\u_clock_probe/ever_watchdog [14]}"
+        }
+      }
+    },
+    {
+      "bit": 9,
+      "lane": 1,
+      "truth": 4293984240,
+      "inputs": [
+        "1'b0",
+        "1'b0",
+        "\\u_display/u_label_store/debug_progress [9]",
+        "\\u_clock_probe/ever_watchdog [9]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_clock_probe/ever_watchdog_reg[9]_syn_4",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1111111111110000",
+          "INIT_LUTF1": "16'b1111111111110000",
+          "INIT_LUTG0": "16'b1111111111110000",
+          "INIT_LUTG1": "16'b1111111111110000",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "REG1_REGSET": "\"RESET\"",
+          "REG1_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "c": "{\\u_display/u_label_store/debug_progress [9],\\u_display/u_label_store/debug_progress [14]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_clock_probe/ever_watchdog [9],\\u_clock_probe/ever_watchdog [14]}",
+          "sr": "\\u_decimal/rst_n",
+          "q": "{\\u_clock_probe/ever_watchdog [9],\\u_clock_probe/ever_watchdog [14]}"
+        }
+      }
+    },
+    {
+      "bit": 18,
+      "lane": 0,
+      "truth": 4293984240,
+      "inputs": [
+        "open_n68082",
+        "open_n68083",
+        "\\u_display/u_label_store/debug_progress [18]",
+        "\\u_clock_probe/ever_watchdog [18]",
+        "1'b0"
+      ],
+      "cell": {
+        "kind": "EG_PHY_LSLICE",
+        "name": "\\u_display/u_scan/u_renderer/fr_b[4]_syn_8",
+        "params": {
+          "CEMUX": "\"1\"",
+          "CLKMUX": "\"CLK\"",
+          "DFFMODE": "\"FF\"",
+          "INIT_LUTF0": "16'b1111111111110000",
+          "INIT_LUTF1": "16'b0000000000000001",
+          "INIT_LUTG0": "16'b1111111111110000",
+          "INIT_LUTG1": "16'b0000000000000001",
+          "LSFMUX0": "\"FUNC5\"",
+          "LSFMUX1": "\"FUNC5\"",
+          "MODE": "\"LOGIC\"",
+          "REG0_REGSET": "\"RESET\"",
+          "REG0_SD": "\"F\"",
+          "SRMODE": "\"ASYNC\"",
+          "SRMUX": "\"INV\""
+        },
+        "ports": {
+          "a": "{\\u_display/u_scan/u_renderer/c1_w [0],open_n68082}",
+          "b": "{\\u_display/u_scan/u_renderer/c1_w [2],open_n68083}",
+          "c": "{\\u_display/u_scan/u_renderer/c1_w [3],\\u_display/u_label_store/debug_progress [18]}",
+          "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+          "d": "{\\u_display/u_scan/u_renderer/c1_w [4],\\u_clock_probe/ever_watchdog [18]}",
+          "sr": "\\u_decimal/rst_n",
+          "f": "{\\u_display/u_scan/u_renderer/fr_b[4]_syn_2 ,open_n68101}",
+          "q": "{open_n68105,\\u_clock_probe/ever_watchdog [18]}"
+        }
+      }
+    }
+  ],
+  "d2_gate_checks": [
+    {
+      "display_bit": 0,
+      "history_bit": 16,
+      "input": 0,
+      "output": 0
+    },
+    {
+      "display_bit": 0,
+      "history_bit": 16,
+      "input": 1,
+      "output": 1
+    },
+    {
+      "display_bit": 1,
+      "history_bit": 17,
+      "input": 0,
+      "output": 0
+    },
+    {
+      "display_bit": 1,
+      "history_bit": 17,
+      "input": 1,
+      "output": 1
+    },
+    {
+      "display_bit": 2,
+      "history_bit": 18,
+      "input": 0,
+      "output": 0
+    },
+    {
+      "display_bit": 2,
+      "history_bit": 18,
+      "input": 1,
+      "output": 1
+    },
+    {
+      "display_bit": 3,
+      "history_bit": 19,
+      "input": 0,
+      "output": 0
+    },
+    {
+      "display_bit": 3,
+      "history_bit": 19,
+      "input": 1,
+      "output": 1
+    },
+    {
+      "display_bit": 4,
+      "history_bit": 20,
+      "input": 0,
+      "output": 0
+    },
+    {
+      "display_bit": 4,
+      "history_bit": 20,
+      "input": 1,
+      "output": 1
+    },
+    {
+      "display_bit": 5,
+      "history_bit": 21,
+      "input": 0,
+      "output": 0
+    },
+    {
+      "display_bit": 5,
+      "history_bit": 21,
+      "input": 1,
+      "output": 1
+    },
+    {
+      "display_bit": 6,
+      "history_bit": 22,
+      "input": 0,
+      "output": 0
+    },
+    {
+      "display_bit": 6,
+      "history_bit": 22,
+      "input": 1,
+      "output": 1
+    },
+    {
+      "display_bit": 7,
+      "history_bit": 23,
+      "input": 0,
+      "output": 0
+    },
+    {
+      "display_bit": 7,
+      "history_bit": 23,
+      "input": 1,
+      "output": 1
+    },
+    {
+      "display_bit": 8,
+      "history_bit": 24,
+      "input": 0,
+      "output": 0
+    },
+    {
+      "display_bit": 8,
+      "history_bit": 24,
+      "input": 1,
+      "output": 1
+    },
+    {
+      "display_bit": 9,
+      "history_bit": 25,
+      "input": 0,
+      "output": 0
+    },
+    {
+      "display_bit": 9,
+      "history_bit": 25,
+      "input": 1,
+      "output": 1
+    },
+    {
+      "display_bit": 10,
+      "history_bit": 26,
+      "input": 0,
+      "output": 0
+    },
+    {
+      "display_bit": 10,
+      "history_bit": 26,
+      "input": 1,
+      "output": 1
+    },
+    {
+      "display_bit": 11,
+      "history_bit": 27,
+      "input": 0,
+      "output": 0
+    },
+    {
+      "display_bit": 11,
+      "history_bit": 27,
+      "input": 1,
+      "output": 1
+    },
+    {
+      "display_bit": 12,
+      "history_bit": 28,
+      "input": 0,
+      "output": 0
+    },
+    {
+      "display_bit": 12,
+      "history_bit": 28,
+      "input": 1,
+      "output": 1
+    }
+  ],
+  "readback_decode": {
+    "d1": 65535,
+    "d2": 59392,
+    "d2_hex": "E800",
+    "high13_history": 2048,
+    "high_history_bits_set": [
+      27
+    ],
+    "bit16_history": 0,
+    "d4": 64,
+    "ctrl_edge_seen": 1,
+    "start_seen": 0,
+    "boot_exit_seen": 0,
+    "low_wrap_seen": 0,
+    "ctrl_reset_seen": 0,
+    "pll_unlock_seen": 0,
+    "bad_state_seen": 0,
+    "d5": 268,
+    "d6": 4096,
+    "eng_init": 0,
+    "init_ready": 0,
+    "observed_store": 0,
+    "observed_init": 0,
+    "observed_reader": 16
+  },
+  "limits": "原生门级与物理OR真值/复位/时钟接线及门级d2选通证据；没有bit读回、板上频率或进位传播实测。上板d0/d7及KEY1起始条件尚待确认；未证明物理全显示链或瞬态复位捕获率。"
+}

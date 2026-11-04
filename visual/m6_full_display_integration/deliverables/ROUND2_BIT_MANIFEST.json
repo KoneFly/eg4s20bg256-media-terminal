@@ -1,0 +1,12 @@
+{
+  "status": "CANDIDATE_GENERATED_NOT_BURNED",
+  "path": "deliverables/M6_FDI_R2_20261005_6B810152.bit",
+  "sha256": "6b810152e09eef36138e0ce8979712609a0828b18bf93de2b623fba79929b030",
+  "bytes": 636626,
+  "native_source": "td_run/bit2_final/eth_udp_m6_master_top.bit",
+  "source_manifest_sha256": "65ba1a34610ada4eb08dcafe6ac5c6ddd0790acd285fdb1d626b36cda808a78b",
+  "route_db_sha256": "5147d5aedf4be0c5b8ca8e69487d75e33bddfae4bfe555a91539b44ba2ad11a5",
+  "active_sdc_sha256": "0ac5cea9407ff9871840e10129fc0162434ff21197a0ed4f034a13f758429357",
+  "hardware_burned": false,
+  "BURN_INDEX_registration": "PENDING_OWNER_SPEC_WORKFLOW"
+}

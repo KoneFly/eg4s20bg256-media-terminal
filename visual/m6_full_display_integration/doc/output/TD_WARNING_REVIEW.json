@@ -1,0 +1,123 @@
+{
+  "status": "OPEN",
+  "count": 94,
+  "physical_failure": "PHY-9009, separate hard failure; not waived",
+  "groups": {
+    "HDL-7225": [
+      "HDL-7225 CRITICAL-WARNING: 'tx_fifo_overflow' is already implicitly declared on line 280 in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/rtl/v7_udp_pcm_top.v(284)"
+    ],
+    "HDL-5373": [
+      "HDL-5373 WARNING: identifier 'flush_active' is used before its declaration in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/m6_s2/pcb_pixel_renderer.v(90)",
+      "HDL-5373 WARNING: identifier 's2_label' is used before its declaration in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/m6_s2/pcb_pixel_renderer.v(266)",
+      "HDL-5373 WARNING: identifier 's2_label' is used before its declaration in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/m6_s2/pcb_pixel_renderer.v(267)",
+      "HDL-5373 WARNING: identifier 's2_label' is used before its declaration in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/m6_s2/pcb_pixel_renderer.v(272)",
+      "HDL-5373 WARNING: identifier 's2_label' is used before its declaration in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/m6_s2/pcb_pixel_renderer.v(282)",
+      "HDL-5373 WARNING: identifier 's2_label' is used before its declaration in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/m6_s2/pcb_pixel_renderer.v(282)",
+      "HDL-5373 WARNING: identifier 's2_label' is used before its declaration in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/m6_s2/pcb_pixel_renderer.v(283)",
+      "HDL-5373 WARNING: identifier 's2_label' is used before its declaration in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/m6_s2/pcb_pixel_renderer.v(325)",
+      "HDL-5373 WARNING: identifier 's2_label' is used before its declaration in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/m6_s2/pcb_pixel_renderer.v(337)",
+      "HDL-5373 WARNING: identifier 's2_label' is used before its declaration in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/m6_s2/pcb_pixel_renderer.v(338)"
+    ],
+    "HDL-5370": [
+      "HDL-5370 WARNING: parameter 'WAIT_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(49)",
+      "HDL-5370 WARNING: parameter 'QUEUE1_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(50)",
+      "HDL-5370 WARNING: parameter 'QUEUE2_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(51)",
+      "HDL-5370 WARNING: parameter 'QUEUE3_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(52)",
+      "HDL-5370 WARNING: parameter 'QUEUE_SOF_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(53)",
+      "HDL-5370 WARNING: parameter 'SOF_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(54)",
+      "HDL-5370 WARNING: parameter 'DATA_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(55)",
+      "HDL-5370 WARNING: parameter 'EOF_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(56)",
+      "HDL-5370 WARNING: parameter 'IDLE_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(62)",
+      "HDL-5370 WARNING: parameter 'FRAME_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(63)",
+      "HDL-5370 WARNING: parameter 'IDLE_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(53)",
+      "HDL-5370 WARNING: parameter 'QUEUE1_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(54)",
+      "HDL-5370 WARNING: parameter 'QUEUE2_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(55)",
+      "HDL-5370 WARNING: parameter 'QUEUE3_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(56)",
+      "HDL-5370 WARNING: parameter 'QUEUE_ACK_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(57)",
+      "HDL-5370 WARNING: parameter 'WAIT_ACK_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(58)",
+      "HDL-5370 WARNING: parameter 'FRAME_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(59)",
+      "HDL-5370 WARNING: parameter 'DROP_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(60)",
+      "HDL-5370 WARNING: parameter 'RETRANSMIT_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(61)",
+      "HDL-5370 WARNING: parameter 'WAIT_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(67)"
+    ],
+    "HDL-5007": [
+      "HDL-5007 WARNING: column 1032 exceeds maximum value 1023 in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/ip/TEMAC_CORE/RTL/TEMAC_CORE_aead6cd6dadd.v(30)",
+      "HDL-5007 WARNING: event expressions must result in a singular type in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/ip/TEMAC_CORE/RTL/TEMAC_CORE_aead6cd6dadd.v(3001)",
+      "HDL-5007 WARNING: column 1035 exceeds maximum value 1023 in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/ip/TEMAC_CORE/RTL/TEMAC_CORE_aead6cd6dadd.v(6001)",
+      "HDL-5007 WARNING: actual bit length ** differs from formal bit length *** for port '**' in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/udp_ip_protocol_stack_merge.enc.v(2666)",
+      "HDL-5007 WARNING: actual bit length ** differs from formal bit length *** for port '**' in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/udp_ip_protocol_stack_merge.enc.v(2671)",
+      "HDL-5007 WARNING: specify block is ignored for synthesis in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/ip/TEMAC_CORE/RTL/TEMAC_CORE_aead6cd6dadd.v(3840)",
+      "HDL-5007 WARNING: actual bit length 20 differs from formal bit length 85 for port 'mac_cfg_vector' in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/temac_block.v(360)",
+      "HDL-5007 WARNING: actual bit length 32 differs from formal bit length 1 for port 'cea' in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(1293)",
+      "HDL-5007 WARNING: actual bit length 32 differs from formal bit length 1 for port 'web' in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(1303)",
+      "HDL-5007 WARNING: actual bit length 32 differs from formal bit length 1 for port 'cea' in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(1315)",
+      "HDL-5007 WARNING: actual bit length 32 differs from formal bit length 1 for port 'web' in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(1325)",
+      "HDL-5007 WARNING: actual bit length 32 differs from formal bit length 1 for port 'cea' in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(873)",
+      "HDL-5007 WARNING: actual bit length 32 differs from formal bit length 1 for port 'web' in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(883)",
+      "HDL-5007 WARNING: actual bit length 32 differs from formal bit length 1 for port 'cea' in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(894)",
+      "HDL-5007 WARNING: actual bit length 32 differs from formal bit length 1 for port 'web' in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(904)",
+      "HDL-5007 WARNING: actual bit length ** differs from formal bit length *** for port '**' in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v(3307)",
+      "HDL-5007 WARNING: actual bit length ** differs from formal bit length *** for port '**' in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v(3318)"
+    ],
+    "HDL-5314": [
+      "HDL-5314 WARNING: net '**' does not have a driver in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/ip/TEMAC_CORE/RTL/TEMAC_CORE_aead6cd6dadd.v(353)",
+      "HDL-5314 WARNING: net '**' does not have a driver in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/ip/TEMAC_CORE/RTL/TEMAC_CORE_aead6cd6dadd.v(9517)",
+      "HDL-5314 WARNING: net '**' does not have a driver in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/ip/TEMAC_CORE/RTL/TEMAC_CORE_aead6cd6dadd.v(9520)",
+      "HDL-5314 WARNING: net '**' does not have a driver in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/ip/TEMAC_CORE/RTL/TEMAC_CORE_aead6cd6dadd.v(9525)",
+      "HDL-5314 WARNING: net '**' does not have a driver in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/ip/TEMAC_CORE/RTL/TEMAC_CORE_aead6cd6dadd.v(9526)",
+      "HDL-5314 WARNING: net '**' does not have a driver in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/ip/TEMAC_CORE/RTL/TEMAC_CORE_aead6cd6dadd.v(9527)",
+      "HDL-5314 WARNING: net '**' does not have a driver in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/ip/TEMAC_CORE/RTL/TEMAC_CORE_aead6cd6dadd.v(9528)"
+    ],
+    "HDL-5323": [
+      "HDL-5323 WARNING: input port 'mac_has_sgmii' remains unconnected for this instance in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/temac_block.v(294)",
+      "HDL-5323 WARNING: input port 'dib[8]' remains unconnected for this instance in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(1291)",
+      "HDL-5323 WARNING: input port 'dib[8]' remains unconnected for this instance in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/tx_client_fifo.v(1312)",
+      "HDL-5323 WARNING: input port 'dib[8]' remains unconnected for this instance in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(871)",
+      "HDL-5323 WARNING: input port 'dib[8]' remains unconnected for this instance in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/rx_client_fifo.v(892)"
+    ],
+    "HDL-5001": [
+      "HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed",
+      "HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed"
+    ],
+    "SYN-5013": [
+      "SYN-5013 WARNING: Undriven net: model \"eth_udp_m6_master_top\" / net \"u_rxf/ramgen_l/dib[8]\" in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/RAMB16_S9_S9.v(16)",
+      "SYN-5013 WARNING: Undriven net: model \"eth_udp_m6_master_top\" / net \"u_rxf/ramgen_l/dib[7]\" in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/RAMB16_S9_S9.v(16)",
+      "SYN-5013 WARNING: Undriven net: model \"eth_udp_m6_master_top\" / net \"u_rxf/ramgen_l/dib[6]\" in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/RAMB16_S9_S9.v(16)",
+      "SYN-5013 WARNING: Undriven net: model \"eth_udp_m6_master_top\" / net \"u_rxf/ramgen_l/dib[5]\" in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/RAMB16_S9_S9.v(16)",
+      "SYN-5013 WARNING: Undriven net: model \"eth_udp_m6_master_top\" / net \"u_rxf/ramgen_l/dib[4]\" in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/RAMB16_S9_S9.v(16)",
+      "SYN-5013 WARNING: Undriven net: model \"eth_udp_m6_master_top\" / net \"u_rxf/ramgen_l/dib[3]\" in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/RAMB16_S9_S9.v(16)",
+      "SYN-5013 WARNING: Undriven net: model \"eth_udp_m6_master_top\" / net \"u_rxf/ramgen_l/dib[2]\" in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/RAMB16_S9_S9.v(16)",
+      "SYN-5013 WARNING: Undriven net: model \"eth_udp_m6_master_top\" / net \"u_rxf/ramgen_l/dib[1]\" in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/RAMB16_S9_S9.v(16)",
+      "SYN-5013 WARNING: Undriven net: model \"eth_udp_m6_master_top\" / net \"u_rxf/ramgen_l/dib[0]\" in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/RAMB16_S9_S9.v(16)",
+      "SYN-5013 WARNING: Undriven net: model \"eth_udp_m6_master_top\" / net \"u_rxf/ramgen_u/dib[8]\" in C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/udp_base/import/RAMB16_S9_S9.v(16)"
+    ],
+    "SYN-5025": [
+      "SYN-5025 WARNING: Using 0 for all undriven pins and nets",
+      "SYN-5025 WARNING: Using 0 for all undriven pins and nets"
+    ],
+    "SYN-5011": [
+      "SYN-5011 WARNING: Undriven pin: model \"eth_udp_m6_master_top\" / inst \"u_display/u_label_stream/mux55_syn_1\" in fdi_row_span_rom.vh(6) / pin \"addrb[8]\"",
+      "SYN-5011 WARNING: Undriven pin: model \"eth_udp_m6_master_top\" / inst \"u_display/u_label_stream/mux55_syn_1\" in fdi_row_span_rom.vh(6) / pin \"addrb[7]\"",
+      "SYN-5011 WARNING: Undriven pin: model \"eth_udp_m6_master_top\" / inst \"u_display/u_label_stream/mux55_syn_1\" in fdi_row_span_rom.vh(6) / pin \"addrb[6]\"",
+      "SYN-5011 WARNING: Undriven pin: model \"eth_udp_m6_master_top\" / inst \"u_display/u_label_stream/mux55_syn_1\" in fdi_row_span_rom.vh(6) / pin \"addrb[5]\"",
+      "SYN-5011 WARNING: Undriven pin: model \"eth_udp_m6_master_top\" / inst \"u_display/u_label_stream/mux55_syn_1\" in fdi_row_span_rom.vh(6) / pin \"addrb[4]\"",
+      "SYN-5011 WARNING: Undriven pin: model \"eth_udp_m6_master_top\" / inst \"u_display/u_label_stream/mux55_syn_1\" in fdi_row_span_rom.vh(6) / pin \"addrb[3]\"",
+      "SYN-5011 WARNING: Undriven pin: model \"eth_udp_m6_master_top\" / inst \"u_display/u_label_stream/mux55_syn_1\" in fdi_row_span_rom.vh(6) / pin \"addrb[2]\"",
+      "SYN-5011 WARNING: Undriven pin: model \"eth_udp_m6_master_top\" / inst \"u_display/u_label_stream/mux55_syn_1\" in fdi_row_span_rom.vh(6) / pin \"addrb[1]\"",
+      "SYN-5011 WARNING: Undriven pin: model \"eth_udp_m6_master_top\" / inst \"u_display/u_label_stream/mux55_syn_1\" in fdi_row_span_rom.vh(6) / pin \"addrb[0]\"",
+      "SYN-5011 WARNING: Undriven pin: model \"eth_udp_m6_master_top\" / inst \"u_display/u_label_stream/mux55_syn_1\" in fdi_row_span_rom.vh(6) / pin \"bea[0]\""
+    ],
+    "SYN-6562": [
+      "SYN-6562 WARNING: The init value of \"u_display/u_hdmi/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo_syn_327(C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v(0))\" will be ignored since gate eram_init is set to off",
+      "SYN-6562 WARNING: The init value of \"u_display/u_hdmi/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/u_w96_d1024_fifo/u_logic_ramfifo_syn_497(C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v(0))\" will be ignored since gate eram_init is set to off",
+      "SYN-6562 WARNING: The init value of \"u_display/u_hdmi/u_hdmi_tx_controller_wrapper/u_video_axi_stream_receiver/u_w24_d1024_fifo/u_logic_ramfifo_syn_353(C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v(0))\" will be ignored since gate eram_init is set to off",
+      "SYN-6562 WARNING: The init value of \"u_display/u_label_stream/ramread0_syn_4(C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/rtl/fdi_label_stream.v(43))\" will be ignored since gate eram_init is set to off",
+      "SYN-6562 WARNING: The init value of \"u_display/u_label_stream/u_fifo/ramread0_syn_4(C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/fdi_stream/fdi_async_pixel_fifo.v(167))\" will be ignored since gate eram_init is set to off",
+      "SYN-6562 WARNING: The init value of \"u_display/u_scan/ramread0_syn_4(C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/rtl/v9_m6_scan.v(89))\" will be ignored since gate eram_init is set to off",
+      "SYN-6562 WARNING: The init value of \"u_display/u_scan/u_renderer/u_barcache/ramread0_syn_4(C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/vendor/m6_s2/pcb_bar_cache.v(29))\" will be ignored since gate eram_init is set to off",
+      "SYN-6562 WARNING: The init value of \"u_display/u_scan/u_state_mem/trace_lane[0]$u_mem/word_half[0]$mem(C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/rtl/fdi_state_lane.v(18))\" will be ignored since gate eram_init is set to off",
+      "SYN-6562 WARNING: The init value of \"u_display/u_scan/u_state_mem/trace_lane[1]$u_mem/word_half[0]$mem(C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/rtl/fdi_state_lane.v(18))\" will be ignored since gate eram_init is set to off",
+      "SYN-6562 WARNING: The init value of \"u_display/u_scan/u_state_mem/trace_lane[2]$u_mem/word_half[0]$mem(C:/Users/KoneFly/AppData/Local/Temp/fdi_synth1g_20261004_222102/src/rtl/fdi_state_lane.v(18))\" will be ignored since gate eram_init is set to off"
+    ]
+  }
+}

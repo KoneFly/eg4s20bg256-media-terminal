@@ -1,0 +1,11 @@
+{
+  "generated_utc": "2026-10-04T08:37:46.187740+00:00",
+  "status": "KILLED",
+  "mutation": "GROW_CAP arithmetic shift 8 to 7",
+  "exit_code": 1,
+  "failure": "FAIL: mutation_grow_shift frame=25 cycle=181892 T1 addr=0 lane=0 expected=3489660932 actual=3489660936",
+  "original_sha256": "f2baa756322e81aa4ffc7877ef88ee45b2aad37397e2c7e74d889e4ff25e1806",
+  "mutant_sha256": "65717b4e06d2094cb7996156c045b22353342bf2ca42fd9854a517d876d38f5a",
+  "tb_sha256": "345372f34e1cdc0eaf9ff9015a9ebd20d053857d4adc9d3560091d4170880adc",
+  "vector_sha256": "36b120956a5e1a17b43c8004e8dbd7913103fdc5238beddb17e4902ce7049b19"
+}

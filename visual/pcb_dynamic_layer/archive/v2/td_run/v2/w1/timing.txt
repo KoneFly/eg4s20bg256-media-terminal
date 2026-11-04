@@ -1,0 +1,1739 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Sun Oct  4 18:50:45 2026
+
+Top Model           : pcb_particle_overlay
+Device              : EG4S20BG256
+Speed               : NA
+STA coverage        : 100.00%
+Constraint File     : D:/Download/Ç¶Èüfpga_°²Â·/eg4s20bg256/topic1_media_terminal/visual_workspace/rtl_handoff/pcb_dynamic_layer/td_run/v2/w1/clock.sdc;
+Confidence          : Synthesized
+Check Corner        : Both (Slow and Fast)
+CRPR Enabled        : Yes
+Report Scheme       : 10 end point(s) per path group, 1 path(s) per end point
+
+
+Check Status
+-------------
+
+Corner   | Max      Min     
+------------------------------------
+Slow     | yes      yes     
+Fast     | yes      yes     
+
+
+Timing Status
+--------------------
+	SWNS: 21.004ns, STNS: 0.000ns
+	HWNS: 0.421ns, HTNS: 0.000ns
+	Period Check WNS: 36.269ns
+
+
+Clock Summary
+--------------------
+
+       Clock-Id:       C-Freq       Fanout   Clock-Name
+--------------------------------------------------------------------------------
+           clk0:       25.200         1344   clk
+--------------------------------------------------------------------------------
+
+       Name            Type         Rise(ns)   Fall(ns)          C-Period(ns)     C-Freq(MHz)          R-Period(ns)     R-Freq(MHz)         SWNS(ns)   STNS(ns)         HWNS(ns)   HTNS(ns)         Skew(ns)           Fanout        Max-Level        CC-From    CC-To
+       clk0           local            0.000     19.841                39.683          25.200                18.679          53.536           21.004      0.000            0.421      0.000            0.000             1344               15             no       no
+
+Notes
+----------
+C-Period  :  constraint period
+C-Freq    :  constraint freq
+R-Period  :  report min period
+R-Freq    :  report fmax
+CC-From   :  has path(s) from cross-domain clock
+CC-To     :  has path(s) to cross-domain clock
+
+
+*   Clock R-Period data only takes intra-clock timing. SWNS/STNS/HWNS/HTNS take both intra-clock and inter-clock timing.
+*   If there is mismatch between R-Period and SWNS, check inter-clock timing of this clock as capture clock.
+*   SWNS/STNS/HWNS/HTNS of timing exception (SMCP/SMD) only counted in global Timing Status, not counted in Clock Summary.
+
+Intra clock domain timing
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     clk -> clk
+Type           :     Self
+From Clock     :     clk
+To Clock       :     clk
+Min Period     :     18.679ns
+Fmax           :     53.536MHz
+
+Statistics:
+Max            : SWNS     21.004ns, STNS      0.000ns,         0 Viol Endpoints,      4044 Total Endpoints,     16287 Paths Analyzed
+Min            : HWNS      0.421ns, HTNS      0.000ns,         0 Viol Endpoints,      4044 Total Endpoints,     16287 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 21.004ns
+Begin Point         : run_lo0_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : insert_lo_reg[0].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : setup
+Process             : slow
+Budget              : 39.683ns { clk rising@39.683ns - clk rising@0.000ns }
+Data Path Delay     : 16.563ns (cell 8.363ns (50%), net 8.200ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 15 ( ADDER=8  LUT2=3  LUT4=2  LUT5=1  LUT3=1 )
+Max Fanout          : 10
+Clock Uncertainty   : 2.000ns (sdc uncertainty: 2.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: run_lo0_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: run_lo0_reg[1].q
+net (fo=4)                              0.697          0.843          net: run_lo0[1],  pcb_particle_overlay.v(75)
+                                                                      pin: lt18_syn_41.b[0]
+ADDER                                   0.627    f     1.470       1  pin: lt18_syn_41.fco
+net (fo=1)                              0.000          1.470          net: lt18_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_44.fci
+ADDER                                   0.073    f     1.543          pin: lt18_syn_44.fco
+net (fo=1)                              0.000          1.543          net: lt18_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_47.fci
+ADDER                                   0.073    f     1.616          pin: lt18_syn_47.fco
+net (fo=1)                              0.000          1.616          net: lt18_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_50.fci
+ADDER                                   0.073    f     1.689          pin: lt18_syn_50.fco
+net (fo=1)                              0.000          1.689          net: lt18_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_53.fci
+ADDER                                   0.355    f     2.044       2  pin: lt18_syn_53.f[1]
+net (fo=1)                              0.562          2.606          net: e_b29_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_1.a
+LUT2                                    0.408    f     3.014       3  pin: insert_lo_b1[0]_syn_1.o
+net (fo=9)                              0.848          3.862          net: insert_lo_b1[0]_syn_2,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_1.a
+LUT2                                    0.408    f     4.270       4  pin: e_b20[1]_syn_1.o
+net (fo=2)                              0.600          4.870          net: e_b24[1],  NOFILE(0)
+                                                                      pin: lt19_syn_41.a[0]
+ADDER                                   0.706    f     5.576       5  pin: lt19_syn_41.fco
+net (fo=1)                              0.000          5.576          net: lt19_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_44.fci
+ADDER                                   0.073    f     5.649          pin: lt19_syn_44.fco
+net (fo=1)                              0.000          5.649          net: lt19_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_47.fci
+ADDER                                   0.073    f     5.722          pin: lt19_syn_47.fco
+net (fo=1)                              0.000          5.722          net: lt19_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_50.fci
+ADDER                                   0.073    f     5.795          pin: lt19_syn_50.fco
+net (fo=1)                              0.000          5.795          net: lt19_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_53.fci
+ADDER                                   0.355    f     6.150       6  pin: lt19_syn_53.f[1]
+net (fo=1)                              0.562          6.712          net: e_b28_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_4.a
+LUT2                                    0.408    f     7.120       7  pin: insert_lo_b1[0]_syn_4.o
+net (fo=10)                             0.869          7.989          net: mux171_syn_12,  pcb_particle_overlay.v(166)
+                                                                      pin: e_b20[1]_syn_2.a
+LUT3                                    0.408    f     8.397       8  pin: e_b20[1]_syn_2.o
+net (fo=2)                              0.600          8.997          net: e_b23[1],  NOFILE(0)
+                                                                      pin: lt21_syn_41.a[0]
+ADDER                                   0.706    f     9.703       9  pin: lt21_syn_41.fco
+net (fo=1)                              0.000          9.703          net: lt21_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_44.fci
+ADDER                                   0.073    f     9.776          pin: lt21_syn_44.fco
+net (fo=1)                              0.000          9.776          net: lt21_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_47.fci
+ADDER                                   0.073    f     9.849          pin: lt21_syn_47.fco
+net (fo=1)                              0.000          9.849          net: lt21_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_50.fci
+ADDER                                   0.073    f     9.922          pin: lt21_syn_50.fco
+net (fo=1)                              0.000          9.922          net: lt21_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_53.fci
+ADDER                                   0.355    f    10.277      10  pin: lt21_syn_53.f[1]
+net (fo=10)                             0.869         11.146          net: e_b26_n,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_3.a
+LUT4                                    0.408    f    11.554      11  pin: e_b20[1]_syn_3.o
+net (fo=1)                              0.562         12.116          net: e_b20[1],  NOFILE(0)
+                                                                      pin: sub7_syn_66.a[1]
+ADDER                                   0.881    r    12.997      12  pin: sub7_syn_66.fco
+net (fo=1)                              0.000         12.997          net: sub7_syn_57,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_67.fci
+ADDER                                   0.132    f    13.129          pin: sub7_syn_67.fco
+net (fo=1)                              0.000         13.129          net: sub7_syn_61,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_68.fci
+ADDER                                   0.453    f    13.582      13  pin: sub7_syn_68.fx[1]
+net (fo=2)                              0.600         14.182          net: e_b17[10],  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_19.a
+LUT4                                    0.408    f    14.590      14  pin: insert_lo_b1[0]_syn_19.o
+net (fo=10)                             0.869         15.459          net: insert_lo_b1[0]_syn_20,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_23.a
+LUT5                                    0.424    f    15.883      15  pin: insert_lo_b1[0]_syn_23.o
+net (fo=1)                              0.562         16.445          net: insert_lo_b1[0],  NOFILE(0)
+                                                                      pin: insert_lo_reg[0].d
+SEQ (reg)                               0.118    f    16.563          net: insert_lo[0],  pcb_particle_overlay.v(77)
+--------------------------------------------------------------------  ---------------
+Arrival                                               16.563               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: insert_lo_reg[0].clk
+capture edge                           39.683    r    39.683               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         39.567               
+clock uncertainty                      -2.000         37.567               
+clock pessimism                         0.000         37.567               
+--------------------------------------------------------------------  ---------------
+Required                                              37.567               
+--------------------------------------------------------------------  ---------------
+Slack                                                 21.004               
+
+Slack               : 21.004ns
+Begin Point         : run_lo0_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : insert_lo_reg[1].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : setup
+Process             : slow
+Budget              : 39.683ns { clk rising@39.683ns - clk rising@0.000ns }
+Data Path Delay     : 16.563ns (cell 8.363ns (50%), net 8.200ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 15 ( ADDER=8  LUT2=3  LUT4=2  LUT5=1  LUT3=1 )
+Max Fanout          : 10
+Clock Uncertainty   : 2.000ns (sdc uncertainty: 2.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: run_lo0_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: run_lo0_reg[1].q
+net (fo=4)                              0.697          0.843          net: run_lo0[1],  pcb_particle_overlay.v(75)
+                                                                      pin: lt18_syn_41.b[0]
+ADDER                                   0.627    f     1.470       1  pin: lt18_syn_41.fco
+net (fo=1)                              0.000          1.470          net: lt18_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_44.fci
+ADDER                                   0.073    f     1.543          pin: lt18_syn_44.fco
+net (fo=1)                              0.000          1.543          net: lt18_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_47.fci
+ADDER                                   0.073    f     1.616          pin: lt18_syn_47.fco
+net (fo=1)                              0.000          1.616          net: lt18_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_50.fci
+ADDER                                   0.073    f     1.689          pin: lt18_syn_50.fco
+net (fo=1)                              0.000          1.689          net: lt18_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_53.fci
+ADDER                                   0.355    f     2.044       2  pin: lt18_syn_53.f[1]
+net (fo=1)                              0.562          2.606          net: e_b29_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_1.a
+LUT2                                    0.408    f     3.014       3  pin: insert_lo_b1[0]_syn_1.o
+net (fo=9)                              0.848          3.862          net: insert_lo_b1[0]_syn_2,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_1.a
+LUT2                                    0.408    f     4.270       4  pin: e_b20[1]_syn_1.o
+net (fo=2)                              0.600          4.870          net: e_b24[1],  NOFILE(0)
+                                                                      pin: lt19_syn_41.a[0]
+ADDER                                   0.706    f     5.576       5  pin: lt19_syn_41.fco
+net (fo=1)                              0.000          5.576          net: lt19_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_44.fci
+ADDER                                   0.073    f     5.649          pin: lt19_syn_44.fco
+net (fo=1)                              0.000          5.649          net: lt19_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_47.fci
+ADDER                                   0.073    f     5.722          pin: lt19_syn_47.fco
+net (fo=1)                              0.000          5.722          net: lt19_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_50.fci
+ADDER                                   0.073    f     5.795          pin: lt19_syn_50.fco
+net (fo=1)                              0.000          5.795          net: lt19_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_53.fci
+ADDER                                   0.355    f     6.150       6  pin: lt19_syn_53.f[1]
+net (fo=1)                              0.562          6.712          net: e_b28_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_4.a
+LUT2                                    0.408    f     7.120       7  pin: insert_lo_b1[0]_syn_4.o
+net (fo=10)                             0.869          7.989          net: mux171_syn_12,  pcb_particle_overlay.v(166)
+                                                                      pin: e_b20[1]_syn_2.a
+LUT3                                    0.408    f     8.397       8  pin: e_b20[1]_syn_2.o
+net (fo=2)                              0.600          8.997          net: e_b23[1],  NOFILE(0)
+                                                                      pin: lt21_syn_41.a[0]
+ADDER                                   0.706    f     9.703       9  pin: lt21_syn_41.fco
+net (fo=1)                              0.000          9.703          net: lt21_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_44.fci
+ADDER                                   0.073    f     9.776          pin: lt21_syn_44.fco
+net (fo=1)                              0.000          9.776          net: lt21_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_47.fci
+ADDER                                   0.073    f     9.849          pin: lt21_syn_47.fco
+net (fo=1)                              0.000          9.849          net: lt21_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_50.fci
+ADDER                                   0.073    f     9.922          pin: lt21_syn_50.fco
+net (fo=1)                              0.000          9.922          net: lt21_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_53.fci
+ADDER                                   0.355    f    10.277      10  pin: lt21_syn_53.f[1]
+net (fo=10)                             0.869         11.146          net: e_b26_n,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_3.a
+LUT4                                    0.408    f    11.554      11  pin: e_b20[1]_syn_3.o
+net (fo=1)                              0.562         12.116          net: e_b20[1],  NOFILE(0)
+                                                                      pin: sub7_syn_66.a[1]
+ADDER                                   0.881    r    12.997      12  pin: sub7_syn_66.fco
+net (fo=1)                              0.000         12.997          net: sub7_syn_57,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_67.fci
+ADDER                                   0.132    f    13.129          pin: sub7_syn_67.fco
+net (fo=1)                              0.000         13.129          net: sub7_syn_61,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_68.fci
+ADDER                                   0.453    f    13.582      13  pin: sub7_syn_68.fx[1]
+net (fo=2)                              0.600         14.182          net: e_b17[10],  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_19.a
+LUT4                                    0.408    f    14.590      14  pin: insert_lo_b1[0]_syn_19.o
+net (fo=10)                             0.869         15.459          net: insert_lo_b1[0]_syn_20,  NOFILE(0)
+                                                                      pin: insert_lo_b1[1]_syn_8.a
+LUT5                                    0.424    f    15.883      15  pin: insert_lo_b1[1]_syn_8.o
+net (fo=1)                              0.562         16.445          net: insert_lo_b1[1],  NOFILE(0)
+                                                                      pin: insert_lo_reg[1].d
+SEQ (reg)                               0.118    f    16.563          net: insert_lo[1],  pcb_particle_overlay.v(77)
+--------------------------------------------------------------------  ---------------
+Arrival                                               16.563               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: insert_lo_reg[1].clk
+capture edge                           39.683    r    39.683               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         39.567               
+clock uncertainty                      -2.000         37.567               
+clock pessimism                         0.000         37.567               
+--------------------------------------------------------------------  ---------------
+Required                                              37.567               
+--------------------------------------------------------------------  ---------------
+Slack                                                 21.004               
+
+Slack               : 21.004ns
+Begin Point         : run_lo0_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : insert_lo_reg[2].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : setup
+Process             : slow
+Budget              : 39.683ns { clk rising@39.683ns - clk rising@0.000ns }
+Data Path Delay     : 16.563ns (cell 8.363ns (50%), net 8.200ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 15 ( ADDER=8  LUT2=3  LUT4=2  LUT5=1  LUT3=1 )
+Max Fanout          : 10
+Clock Uncertainty   : 2.000ns (sdc uncertainty: 2.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: run_lo0_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: run_lo0_reg[1].q
+net (fo=4)                              0.697          0.843          net: run_lo0[1],  pcb_particle_overlay.v(75)
+                                                                      pin: lt18_syn_41.b[0]
+ADDER                                   0.627    f     1.470       1  pin: lt18_syn_41.fco
+net (fo=1)                              0.000          1.470          net: lt18_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_44.fci
+ADDER                                   0.073    f     1.543          pin: lt18_syn_44.fco
+net (fo=1)                              0.000          1.543          net: lt18_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_47.fci
+ADDER                                   0.073    f     1.616          pin: lt18_syn_47.fco
+net (fo=1)                              0.000          1.616          net: lt18_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_50.fci
+ADDER                                   0.073    f     1.689          pin: lt18_syn_50.fco
+net (fo=1)                              0.000          1.689          net: lt18_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_53.fci
+ADDER                                   0.355    f     2.044       2  pin: lt18_syn_53.f[1]
+net (fo=1)                              0.562          2.606          net: e_b29_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_1.a
+LUT2                                    0.408    f     3.014       3  pin: insert_lo_b1[0]_syn_1.o
+net (fo=9)                              0.848          3.862          net: insert_lo_b1[0]_syn_2,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_1.a
+LUT2                                    0.408    f     4.270       4  pin: e_b20[1]_syn_1.o
+net (fo=2)                              0.600          4.870          net: e_b24[1],  NOFILE(0)
+                                                                      pin: lt19_syn_41.a[0]
+ADDER                                   0.706    f     5.576       5  pin: lt19_syn_41.fco
+net (fo=1)                              0.000          5.576          net: lt19_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_44.fci
+ADDER                                   0.073    f     5.649          pin: lt19_syn_44.fco
+net (fo=1)                              0.000          5.649          net: lt19_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_47.fci
+ADDER                                   0.073    f     5.722          pin: lt19_syn_47.fco
+net (fo=1)                              0.000          5.722          net: lt19_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_50.fci
+ADDER                                   0.073    f     5.795          pin: lt19_syn_50.fco
+net (fo=1)                              0.000          5.795          net: lt19_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_53.fci
+ADDER                                   0.355    f     6.150       6  pin: lt19_syn_53.f[1]
+net (fo=1)                              0.562          6.712          net: e_b28_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_4.a
+LUT2                                    0.408    f     7.120       7  pin: insert_lo_b1[0]_syn_4.o
+net (fo=10)                             0.869          7.989          net: mux171_syn_12,  pcb_particle_overlay.v(166)
+                                                                      pin: e_b20[1]_syn_2.a
+LUT3                                    0.408    f     8.397       8  pin: e_b20[1]_syn_2.o
+net (fo=2)                              0.600          8.997          net: e_b23[1],  NOFILE(0)
+                                                                      pin: lt21_syn_41.a[0]
+ADDER                                   0.706    f     9.703       9  pin: lt21_syn_41.fco
+net (fo=1)                              0.000          9.703          net: lt21_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_44.fci
+ADDER                                   0.073    f     9.776          pin: lt21_syn_44.fco
+net (fo=1)                              0.000          9.776          net: lt21_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_47.fci
+ADDER                                   0.073    f     9.849          pin: lt21_syn_47.fco
+net (fo=1)                              0.000          9.849          net: lt21_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_50.fci
+ADDER                                   0.073    f     9.922          pin: lt21_syn_50.fco
+net (fo=1)                              0.000          9.922          net: lt21_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_53.fci
+ADDER                                   0.355    f    10.277      10  pin: lt21_syn_53.f[1]
+net (fo=10)                             0.869         11.146          net: e_b26_n,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_3.a
+LUT4                                    0.408    f    11.554      11  pin: e_b20[1]_syn_3.o
+net (fo=1)                              0.562         12.116          net: e_b20[1],  NOFILE(0)
+                                                                      pin: sub7_syn_66.a[1]
+ADDER                                   0.881    r    12.997      12  pin: sub7_syn_66.fco
+net (fo=1)                              0.000         12.997          net: sub7_syn_57,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_67.fci
+ADDER                                   0.132    f    13.129          pin: sub7_syn_67.fco
+net (fo=1)                              0.000         13.129          net: sub7_syn_61,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_68.fci
+ADDER                                   0.453    f    13.582      13  pin: sub7_syn_68.fx[1]
+net (fo=2)                              0.600         14.182          net: e_b17[10],  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_19.a
+LUT4                                    0.408    f    14.590      14  pin: insert_lo_b1[0]_syn_19.o
+net (fo=10)                             0.869         15.459          net: insert_lo_b1[0]_syn_20,  NOFILE(0)
+                                                                      pin: insert_lo_b1[2]_syn_8.a
+LUT5                                    0.424    f    15.883      15  pin: insert_lo_b1[2]_syn_8.o
+net (fo=1)                              0.562         16.445          net: insert_lo_b1[2],  NOFILE(0)
+                                                                      pin: insert_lo_reg[2].d
+SEQ (reg)                               0.118    f    16.563          net: insert_lo[2],  pcb_particle_overlay.v(77)
+--------------------------------------------------------------------  ---------------
+Arrival                                               16.563               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: insert_lo_reg[2].clk
+capture edge                           39.683    r    39.683               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         39.567               
+clock uncertainty                      -2.000         37.567               
+clock pessimism                         0.000         37.567               
+--------------------------------------------------------------------  ---------------
+Required                                              37.567               
+--------------------------------------------------------------------  ---------------
+Slack                                                 21.004               
+
+Slack               : 21.004ns
+Begin Point         : run_lo0_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : insert_lo_reg[3].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : setup
+Process             : slow
+Budget              : 39.683ns { clk rising@39.683ns - clk rising@0.000ns }
+Data Path Delay     : 16.563ns (cell 8.363ns (50%), net 8.200ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 15 ( ADDER=8  LUT2=3  LUT4=2  LUT5=1  LUT3=1 )
+Max Fanout          : 10
+Clock Uncertainty   : 2.000ns (sdc uncertainty: 2.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: run_lo0_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: run_lo0_reg[1].q
+net (fo=4)                              0.697          0.843          net: run_lo0[1],  pcb_particle_overlay.v(75)
+                                                                      pin: lt18_syn_41.b[0]
+ADDER                                   0.627    f     1.470       1  pin: lt18_syn_41.fco
+net (fo=1)                              0.000          1.470          net: lt18_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_44.fci
+ADDER                                   0.073    f     1.543          pin: lt18_syn_44.fco
+net (fo=1)                              0.000          1.543          net: lt18_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_47.fci
+ADDER                                   0.073    f     1.616          pin: lt18_syn_47.fco
+net (fo=1)                              0.000          1.616          net: lt18_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_50.fci
+ADDER                                   0.073    f     1.689          pin: lt18_syn_50.fco
+net (fo=1)                              0.000          1.689          net: lt18_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_53.fci
+ADDER                                   0.355    f     2.044       2  pin: lt18_syn_53.f[1]
+net (fo=1)                              0.562          2.606          net: e_b29_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_1.a
+LUT2                                    0.408    f     3.014       3  pin: insert_lo_b1[0]_syn_1.o
+net (fo=9)                              0.848          3.862          net: insert_lo_b1[0]_syn_2,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_1.a
+LUT2                                    0.408    f     4.270       4  pin: e_b20[1]_syn_1.o
+net (fo=2)                              0.600          4.870          net: e_b24[1],  NOFILE(0)
+                                                                      pin: lt19_syn_41.a[0]
+ADDER                                   0.706    f     5.576       5  pin: lt19_syn_41.fco
+net (fo=1)                              0.000          5.576          net: lt19_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_44.fci
+ADDER                                   0.073    f     5.649          pin: lt19_syn_44.fco
+net (fo=1)                              0.000          5.649          net: lt19_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_47.fci
+ADDER                                   0.073    f     5.722          pin: lt19_syn_47.fco
+net (fo=1)                              0.000          5.722          net: lt19_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_50.fci
+ADDER                                   0.073    f     5.795          pin: lt19_syn_50.fco
+net (fo=1)                              0.000          5.795          net: lt19_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_53.fci
+ADDER                                   0.355    f     6.150       6  pin: lt19_syn_53.f[1]
+net (fo=1)                              0.562          6.712          net: e_b28_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_4.a
+LUT2                                    0.408    f     7.120       7  pin: insert_lo_b1[0]_syn_4.o
+net (fo=10)                             0.869          7.989          net: mux171_syn_12,  pcb_particle_overlay.v(166)
+                                                                      pin: e_b20[1]_syn_2.a
+LUT3                                    0.408    f     8.397       8  pin: e_b20[1]_syn_2.o
+net (fo=2)                              0.600          8.997          net: e_b23[1],  NOFILE(0)
+                                                                      pin: lt21_syn_41.a[0]
+ADDER                                   0.706    f     9.703       9  pin: lt21_syn_41.fco
+net (fo=1)                              0.000          9.703          net: lt21_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_44.fci
+ADDER                                   0.073    f     9.776          pin: lt21_syn_44.fco
+net (fo=1)                              0.000          9.776          net: lt21_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_47.fci
+ADDER                                   0.073    f     9.849          pin: lt21_syn_47.fco
+net (fo=1)                              0.000          9.849          net: lt21_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_50.fci
+ADDER                                   0.073    f     9.922          pin: lt21_syn_50.fco
+net (fo=1)                              0.000          9.922          net: lt21_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_53.fci
+ADDER                                   0.355    f    10.277      10  pin: lt21_syn_53.f[1]
+net (fo=10)                             0.869         11.146          net: e_b26_n,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_3.a
+LUT4                                    0.408    f    11.554      11  pin: e_b20[1]_syn_3.o
+net (fo=1)                              0.562         12.116          net: e_b20[1],  NOFILE(0)
+                                                                      pin: sub7_syn_66.a[1]
+ADDER                                   0.881    r    12.997      12  pin: sub7_syn_66.fco
+net (fo=1)                              0.000         12.997          net: sub7_syn_57,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_67.fci
+ADDER                                   0.132    f    13.129          pin: sub7_syn_67.fco
+net (fo=1)                              0.000         13.129          net: sub7_syn_61,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_68.fci
+ADDER                                   0.453    f    13.582      13  pin: sub7_syn_68.fx[1]
+net (fo=2)                              0.600         14.182          net: e_b17[10],  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_19.a
+LUT4                                    0.408    f    14.590      14  pin: insert_lo_b1[0]_syn_19.o
+net (fo=10)                             0.869         15.459          net: insert_lo_b1[0]_syn_20,  NOFILE(0)
+                                                                      pin: insert_lo_b1[3]_syn_8.a
+LUT5                                    0.424    f    15.883      15  pin: insert_lo_b1[3]_syn_8.o
+net (fo=1)                              0.562         16.445          net: insert_lo_b1[3],  NOFILE(0)
+                                                                      pin: insert_lo_reg[3].d
+SEQ (reg)                               0.118    f    16.563          net: insert_lo[3],  pcb_particle_overlay.v(77)
+--------------------------------------------------------------------  ---------------
+Arrival                                               16.563               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: insert_lo_reg[3].clk
+capture edge                           39.683    r    39.683               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         39.567               
+clock uncertainty                      -2.000         37.567               
+clock pessimism                         0.000         37.567               
+--------------------------------------------------------------------  ---------------
+Required                                              37.567               
+--------------------------------------------------------------------  ---------------
+Slack                                                 21.004               
+
+Slack               : 21.004ns
+Begin Point         : run_lo0_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : insert_lo_reg[4].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : setup
+Process             : slow
+Budget              : 39.683ns { clk rising@39.683ns - clk rising@0.000ns }
+Data Path Delay     : 16.563ns (cell 8.363ns (50%), net 8.200ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 15 ( ADDER=8  LUT2=3  LUT4=2  LUT5=1  LUT3=1 )
+Max Fanout          : 10
+Clock Uncertainty   : 2.000ns (sdc uncertainty: 2.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: run_lo0_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: run_lo0_reg[1].q
+net (fo=4)                              0.697          0.843          net: run_lo0[1],  pcb_particle_overlay.v(75)
+                                                                      pin: lt18_syn_41.b[0]
+ADDER                                   0.627    f     1.470       1  pin: lt18_syn_41.fco
+net (fo=1)                              0.000          1.470          net: lt18_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_44.fci
+ADDER                                   0.073    f     1.543          pin: lt18_syn_44.fco
+net (fo=1)                              0.000          1.543          net: lt18_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_47.fci
+ADDER                                   0.073    f     1.616          pin: lt18_syn_47.fco
+net (fo=1)                              0.000          1.616          net: lt18_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_50.fci
+ADDER                                   0.073    f     1.689          pin: lt18_syn_50.fco
+net (fo=1)                              0.000          1.689          net: lt18_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_53.fci
+ADDER                                   0.355    f     2.044       2  pin: lt18_syn_53.f[1]
+net (fo=1)                              0.562          2.606          net: e_b29_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_1.a
+LUT2                                    0.408    f     3.014       3  pin: insert_lo_b1[0]_syn_1.o
+net (fo=9)                              0.848          3.862          net: insert_lo_b1[0]_syn_2,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_1.a
+LUT2                                    0.408    f     4.270       4  pin: e_b20[1]_syn_1.o
+net (fo=2)                              0.600          4.870          net: e_b24[1],  NOFILE(0)
+                                                                      pin: lt19_syn_41.a[0]
+ADDER                                   0.706    f     5.576       5  pin: lt19_syn_41.fco
+net (fo=1)                              0.000          5.576          net: lt19_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_44.fci
+ADDER                                   0.073    f     5.649          pin: lt19_syn_44.fco
+net (fo=1)                              0.000          5.649          net: lt19_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_47.fci
+ADDER                                   0.073    f     5.722          pin: lt19_syn_47.fco
+net (fo=1)                              0.000          5.722          net: lt19_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_50.fci
+ADDER                                   0.073    f     5.795          pin: lt19_syn_50.fco
+net (fo=1)                              0.000          5.795          net: lt19_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_53.fci
+ADDER                                   0.355    f     6.150       6  pin: lt19_syn_53.f[1]
+net (fo=1)                              0.562          6.712          net: e_b28_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_4.a
+LUT2                                    0.408    f     7.120       7  pin: insert_lo_b1[0]_syn_4.o
+net (fo=10)                             0.869          7.989          net: mux171_syn_12,  pcb_particle_overlay.v(166)
+                                                                      pin: e_b20[1]_syn_2.a
+LUT3                                    0.408    f     8.397       8  pin: e_b20[1]_syn_2.o
+net (fo=2)                              0.600          8.997          net: e_b23[1],  NOFILE(0)
+                                                                      pin: lt21_syn_41.a[0]
+ADDER                                   0.706    f     9.703       9  pin: lt21_syn_41.fco
+net (fo=1)                              0.000          9.703          net: lt21_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_44.fci
+ADDER                                   0.073    f     9.776          pin: lt21_syn_44.fco
+net (fo=1)                              0.000          9.776          net: lt21_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_47.fci
+ADDER                                   0.073    f     9.849          pin: lt21_syn_47.fco
+net (fo=1)                              0.000          9.849          net: lt21_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_50.fci
+ADDER                                   0.073    f     9.922          pin: lt21_syn_50.fco
+net (fo=1)                              0.000          9.922          net: lt21_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_53.fci
+ADDER                                   0.355    f    10.277      10  pin: lt21_syn_53.f[1]
+net (fo=10)                             0.869         11.146          net: e_b26_n,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_3.a
+LUT4                                    0.408    f    11.554      11  pin: e_b20[1]_syn_3.o
+net (fo=1)                              0.562         12.116          net: e_b20[1],  NOFILE(0)
+                                                                      pin: sub7_syn_66.a[1]
+ADDER                                   0.881    r    12.997      12  pin: sub7_syn_66.fco
+net (fo=1)                              0.000         12.997          net: sub7_syn_57,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_67.fci
+ADDER                                   0.132    f    13.129          pin: sub7_syn_67.fco
+net (fo=1)                              0.000         13.129          net: sub7_syn_61,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_68.fci
+ADDER                                   0.453    f    13.582      13  pin: sub7_syn_68.fx[1]
+net (fo=2)                              0.600         14.182          net: e_b17[10],  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_19.a
+LUT4                                    0.408    f    14.590      14  pin: insert_lo_b1[0]_syn_19.o
+net (fo=10)                             0.869         15.459          net: insert_lo_b1[0]_syn_20,  NOFILE(0)
+                                                                      pin: insert_lo_b1[4]_syn_8.a
+LUT5                                    0.424    f    15.883      15  pin: insert_lo_b1[4]_syn_8.o
+net (fo=1)                              0.562         16.445          net: insert_lo_b1[4],  NOFILE(0)
+                                                                      pin: insert_lo_reg[4].d
+SEQ (reg)                               0.118    f    16.563          net: insert_lo[4],  pcb_particle_overlay.v(77)
+--------------------------------------------------------------------  ---------------
+Arrival                                               16.563               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: insert_lo_reg[4].clk
+capture edge                           39.683    r    39.683               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         39.567               
+clock uncertainty                      -2.000         37.567               
+clock pessimism                         0.000         37.567               
+--------------------------------------------------------------------  ---------------
+Required                                              37.567               
+--------------------------------------------------------------------  ---------------
+Slack                                                 21.004               
+
+Slack               : 21.004ns
+Begin Point         : run_lo0_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : insert_lo_reg[5].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : setup
+Process             : slow
+Budget              : 39.683ns { clk rising@39.683ns - clk rising@0.000ns }
+Data Path Delay     : 16.563ns (cell 8.363ns (50%), net 8.200ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 15 ( ADDER=8  LUT2=3  LUT4=2  LUT5=1  LUT3=1 )
+Max Fanout          : 10
+Clock Uncertainty   : 2.000ns (sdc uncertainty: 2.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: run_lo0_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: run_lo0_reg[1].q
+net (fo=4)                              0.697          0.843          net: run_lo0[1],  pcb_particle_overlay.v(75)
+                                                                      pin: lt18_syn_41.b[0]
+ADDER                                   0.627    f     1.470       1  pin: lt18_syn_41.fco
+net (fo=1)                              0.000          1.470          net: lt18_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_44.fci
+ADDER                                   0.073    f     1.543          pin: lt18_syn_44.fco
+net (fo=1)                              0.000          1.543          net: lt18_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_47.fci
+ADDER                                   0.073    f     1.616          pin: lt18_syn_47.fco
+net (fo=1)                              0.000          1.616          net: lt18_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_50.fci
+ADDER                                   0.073    f     1.689          pin: lt18_syn_50.fco
+net (fo=1)                              0.000          1.689          net: lt18_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_53.fci
+ADDER                                   0.355    f     2.044       2  pin: lt18_syn_53.f[1]
+net (fo=1)                              0.562          2.606          net: e_b29_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_1.a
+LUT2                                    0.408    f     3.014       3  pin: insert_lo_b1[0]_syn_1.o
+net (fo=9)                              0.848          3.862          net: insert_lo_b1[0]_syn_2,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_1.a
+LUT2                                    0.408    f     4.270       4  pin: e_b20[1]_syn_1.o
+net (fo=2)                              0.600          4.870          net: e_b24[1],  NOFILE(0)
+                                                                      pin: lt19_syn_41.a[0]
+ADDER                                   0.706    f     5.576       5  pin: lt19_syn_41.fco
+net (fo=1)                              0.000          5.576          net: lt19_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_44.fci
+ADDER                                   0.073    f     5.649          pin: lt19_syn_44.fco
+net (fo=1)                              0.000          5.649          net: lt19_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_47.fci
+ADDER                                   0.073    f     5.722          pin: lt19_syn_47.fco
+net (fo=1)                              0.000          5.722          net: lt19_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_50.fci
+ADDER                                   0.073    f     5.795          pin: lt19_syn_50.fco
+net (fo=1)                              0.000          5.795          net: lt19_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_53.fci
+ADDER                                   0.355    f     6.150       6  pin: lt19_syn_53.f[1]
+net (fo=1)                              0.562          6.712          net: e_b28_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_4.a
+LUT2                                    0.408    f     7.120       7  pin: insert_lo_b1[0]_syn_4.o
+net (fo=10)                             0.869          7.989          net: mux171_syn_12,  pcb_particle_overlay.v(166)
+                                                                      pin: e_b20[1]_syn_2.a
+LUT3                                    0.408    f     8.397       8  pin: e_b20[1]_syn_2.o
+net (fo=2)                              0.600          8.997          net: e_b23[1],  NOFILE(0)
+                                                                      pin: lt21_syn_41.a[0]
+ADDER                                   0.706    f     9.703       9  pin: lt21_syn_41.fco
+net (fo=1)                              0.000          9.703          net: lt21_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_44.fci
+ADDER                                   0.073    f     9.776          pin: lt21_syn_44.fco
+net (fo=1)                              0.000          9.776          net: lt21_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_47.fci
+ADDER                                   0.073    f     9.849          pin: lt21_syn_47.fco
+net (fo=1)                              0.000          9.849          net: lt21_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_50.fci
+ADDER                                   0.073    f     9.922          pin: lt21_syn_50.fco
+net (fo=1)                              0.000          9.922          net: lt21_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_53.fci
+ADDER                                   0.355    f    10.277      10  pin: lt21_syn_53.f[1]
+net (fo=10)                             0.869         11.146          net: e_b26_n,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_3.a
+LUT4                                    0.408    f    11.554      11  pin: e_b20[1]_syn_3.o
+net (fo=1)                              0.562         12.116          net: e_b20[1],  NOFILE(0)
+                                                                      pin: sub7_syn_66.a[1]
+ADDER                                   0.881    r    12.997      12  pin: sub7_syn_66.fco
+net (fo=1)                              0.000         12.997          net: sub7_syn_57,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_67.fci
+ADDER                                   0.132    f    13.129          pin: sub7_syn_67.fco
+net (fo=1)                              0.000         13.129          net: sub7_syn_61,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_68.fci
+ADDER                                   0.453    f    13.582      13  pin: sub7_syn_68.fx[1]
+net (fo=2)                              0.600         14.182          net: e_b17[10],  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_19.a
+LUT4                                    0.408    f    14.590      14  pin: insert_lo_b1[0]_syn_19.o
+net (fo=10)                             0.869         15.459          net: insert_lo_b1[0]_syn_20,  NOFILE(0)
+                                                                      pin: insert_lo_b1[5]_syn_8.a
+LUT5                                    0.424    f    15.883      15  pin: insert_lo_b1[5]_syn_8.o
+net (fo=1)                              0.562         16.445          net: insert_lo_b1[5],  NOFILE(0)
+                                                                      pin: insert_lo_reg[5].d
+SEQ (reg)                               0.118    f    16.563          net: insert_lo[5],  pcb_particle_overlay.v(77)
+--------------------------------------------------------------------  ---------------
+Arrival                                               16.563               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: insert_lo_reg[5].clk
+capture edge                           39.683    r    39.683               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         39.567               
+clock uncertainty                      -2.000         37.567               
+clock pessimism                         0.000         37.567               
+--------------------------------------------------------------------  ---------------
+Required                                              37.567               
+--------------------------------------------------------------------  ---------------
+Slack                                                 21.004               
+
+Slack               : 21.004ns
+Begin Point         : run_lo0_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : insert_lo_reg[6].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : setup
+Process             : slow
+Budget              : 39.683ns { clk rising@39.683ns - clk rising@0.000ns }
+Data Path Delay     : 16.563ns (cell 8.363ns (50%), net 8.200ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 15 ( ADDER=8  LUT2=3  LUT4=2  LUT5=1  LUT3=1 )
+Max Fanout          : 10
+Clock Uncertainty   : 2.000ns (sdc uncertainty: 2.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: run_lo0_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: run_lo0_reg[1].q
+net (fo=4)                              0.697          0.843          net: run_lo0[1],  pcb_particle_overlay.v(75)
+                                                                      pin: lt18_syn_41.b[0]
+ADDER                                   0.627    f     1.470       1  pin: lt18_syn_41.fco
+net (fo=1)                              0.000          1.470          net: lt18_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_44.fci
+ADDER                                   0.073    f     1.543          pin: lt18_syn_44.fco
+net (fo=1)                              0.000          1.543          net: lt18_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_47.fci
+ADDER                                   0.073    f     1.616          pin: lt18_syn_47.fco
+net (fo=1)                              0.000          1.616          net: lt18_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_50.fci
+ADDER                                   0.073    f     1.689          pin: lt18_syn_50.fco
+net (fo=1)                              0.000          1.689          net: lt18_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_53.fci
+ADDER                                   0.355    f     2.044       2  pin: lt18_syn_53.f[1]
+net (fo=1)                              0.562          2.606          net: e_b29_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_1.a
+LUT2                                    0.408    f     3.014       3  pin: insert_lo_b1[0]_syn_1.o
+net (fo=9)                              0.848          3.862          net: insert_lo_b1[0]_syn_2,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_1.a
+LUT2                                    0.408    f     4.270       4  pin: e_b20[1]_syn_1.o
+net (fo=2)                              0.600          4.870          net: e_b24[1],  NOFILE(0)
+                                                                      pin: lt19_syn_41.a[0]
+ADDER                                   0.706    f     5.576       5  pin: lt19_syn_41.fco
+net (fo=1)                              0.000          5.576          net: lt19_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_44.fci
+ADDER                                   0.073    f     5.649          pin: lt19_syn_44.fco
+net (fo=1)                              0.000          5.649          net: lt19_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_47.fci
+ADDER                                   0.073    f     5.722          pin: lt19_syn_47.fco
+net (fo=1)                              0.000          5.722          net: lt19_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_50.fci
+ADDER                                   0.073    f     5.795          pin: lt19_syn_50.fco
+net (fo=1)                              0.000          5.795          net: lt19_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_53.fci
+ADDER                                   0.355    f     6.150       6  pin: lt19_syn_53.f[1]
+net (fo=1)                              0.562          6.712          net: e_b28_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_4.a
+LUT2                                    0.408    f     7.120       7  pin: insert_lo_b1[0]_syn_4.o
+net (fo=10)                             0.869          7.989          net: mux171_syn_12,  pcb_particle_overlay.v(166)
+                                                                      pin: e_b20[1]_syn_2.a
+LUT3                                    0.408    f     8.397       8  pin: e_b20[1]_syn_2.o
+net (fo=2)                              0.600          8.997          net: e_b23[1],  NOFILE(0)
+                                                                      pin: lt21_syn_41.a[0]
+ADDER                                   0.706    f     9.703       9  pin: lt21_syn_41.fco
+net (fo=1)                              0.000          9.703          net: lt21_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_44.fci
+ADDER                                   0.073    f     9.776          pin: lt21_syn_44.fco
+net (fo=1)                              0.000          9.776          net: lt21_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_47.fci
+ADDER                                   0.073    f     9.849          pin: lt21_syn_47.fco
+net (fo=1)                              0.000          9.849          net: lt21_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_50.fci
+ADDER                                   0.073    f     9.922          pin: lt21_syn_50.fco
+net (fo=1)                              0.000          9.922          net: lt21_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_53.fci
+ADDER                                   0.355    f    10.277      10  pin: lt21_syn_53.f[1]
+net (fo=10)                             0.869         11.146          net: e_b26_n,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_3.a
+LUT4                                    0.408    f    11.554      11  pin: e_b20[1]_syn_3.o
+net (fo=1)                              0.562         12.116          net: e_b20[1],  NOFILE(0)
+                                                                      pin: sub7_syn_66.a[1]
+ADDER                                   0.881    r    12.997      12  pin: sub7_syn_66.fco
+net (fo=1)                              0.000         12.997          net: sub7_syn_57,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_67.fci
+ADDER                                   0.132    f    13.129          pin: sub7_syn_67.fco
+net (fo=1)                              0.000         13.129          net: sub7_syn_61,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_68.fci
+ADDER                                   0.453    f    13.582      13  pin: sub7_syn_68.fx[1]
+net (fo=2)                              0.600         14.182          net: e_b17[10],  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_19.a
+LUT4                                    0.408    f    14.590      14  pin: insert_lo_b1[0]_syn_19.o
+net (fo=10)                             0.869         15.459          net: insert_lo_b1[0]_syn_20,  NOFILE(0)
+                                                                      pin: insert_lo_b1[6]_syn_8.a
+LUT5                                    0.424    f    15.883      15  pin: insert_lo_b1[6]_syn_8.o
+net (fo=1)                              0.562         16.445          net: insert_lo_b1[6],  NOFILE(0)
+                                                                      pin: insert_lo_reg[6].d
+SEQ (reg)                               0.118    f    16.563          net: insert_lo[6],  pcb_particle_overlay.v(77)
+--------------------------------------------------------------------  ---------------
+Arrival                                               16.563               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: insert_lo_reg[6].clk
+capture edge                           39.683    r    39.683               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         39.567               
+clock uncertainty                      -2.000         37.567               
+clock pessimism                         0.000         37.567               
+--------------------------------------------------------------------  ---------------
+Required                                              37.567               
+--------------------------------------------------------------------  ---------------
+Slack                                                 21.004               
+
+Slack               : 21.004ns
+Begin Point         : run_lo0_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : insert_lo_reg[7].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : setup
+Process             : slow
+Budget              : 39.683ns { clk rising@39.683ns - clk rising@0.000ns }
+Data Path Delay     : 16.563ns (cell 8.363ns (50%), net 8.200ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 15 ( ADDER=8  LUT2=3  LUT4=2  LUT5=1  LUT3=1 )
+Max Fanout          : 10
+Clock Uncertainty   : 2.000ns (sdc uncertainty: 2.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: run_lo0_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: run_lo0_reg[1].q
+net (fo=4)                              0.697          0.843          net: run_lo0[1],  pcb_particle_overlay.v(75)
+                                                                      pin: lt18_syn_41.b[0]
+ADDER                                   0.627    f     1.470       1  pin: lt18_syn_41.fco
+net (fo=1)                              0.000          1.470          net: lt18_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_44.fci
+ADDER                                   0.073    f     1.543          pin: lt18_syn_44.fco
+net (fo=1)                              0.000          1.543          net: lt18_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_47.fci
+ADDER                                   0.073    f     1.616          pin: lt18_syn_47.fco
+net (fo=1)                              0.000          1.616          net: lt18_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_50.fci
+ADDER                                   0.073    f     1.689          pin: lt18_syn_50.fco
+net (fo=1)                              0.000          1.689          net: lt18_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_53.fci
+ADDER                                   0.355    f     2.044       2  pin: lt18_syn_53.f[1]
+net (fo=1)                              0.562          2.606          net: e_b29_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_1.a
+LUT2                                    0.408    f     3.014       3  pin: insert_lo_b1[0]_syn_1.o
+net (fo=9)                              0.848          3.862          net: insert_lo_b1[0]_syn_2,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_1.a
+LUT2                                    0.408    f     4.270       4  pin: e_b20[1]_syn_1.o
+net (fo=2)                              0.600          4.870          net: e_b24[1],  NOFILE(0)
+                                                                      pin: lt19_syn_41.a[0]
+ADDER                                   0.706    f     5.576       5  pin: lt19_syn_41.fco
+net (fo=1)                              0.000          5.576          net: lt19_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_44.fci
+ADDER                                   0.073    f     5.649          pin: lt19_syn_44.fco
+net (fo=1)                              0.000          5.649          net: lt19_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_47.fci
+ADDER                                   0.073    f     5.722          pin: lt19_syn_47.fco
+net (fo=1)                              0.000          5.722          net: lt19_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_50.fci
+ADDER                                   0.073    f     5.795          pin: lt19_syn_50.fco
+net (fo=1)                              0.000          5.795          net: lt19_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_53.fci
+ADDER                                   0.355    f     6.150       6  pin: lt19_syn_53.f[1]
+net (fo=1)                              0.562          6.712          net: e_b28_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_4.a
+LUT2                                    0.408    f     7.120       7  pin: insert_lo_b1[0]_syn_4.o
+net (fo=10)                             0.869          7.989          net: mux171_syn_12,  pcb_particle_overlay.v(166)
+                                                                      pin: e_b20[1]_syn_2.a
+LUT3                                    0.408    f     8.397       8  pin: e_b20[1]_syn_2.o
+net (fo=2)                              0.600          8.997          net: e_b23[1],  NOFILE(0)
+                                                                      pin: lt21_syn_41.a[0]
+ADDER                                   0.706    f     9.703       9  pin: lt21_syn_41.fco
+net (fo=1)                              0.000          9.703          net: lt21_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_44.fci
+ADDER                                   0.073    f     9.776          pin: lt21_syn_44.fco
+net (fo=1)                              0.000          9.776          net: lt21_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_47.fci
+ADDER                                   0.073    f     9.849          pin: lt21_syn_47.fco
+net (fo=1)                              0.000          9.849          net: lt21_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_50.fci
+ADDER                                   0.073    f     9.922          pin: lt21_syn_50.fco
+net (fo=1)                              0.000          9.922          net: lt21_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_53.fci
+ADDER                                   0.355    f    10.277      10  pin: lt21_syn_53.f[1]
+net (fo=10)                             0.869         11.146          net: e_b26_n,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_3.a
+LUT4                                    0.408    f    11.554      11  pin: e_b20[1]_syn_3.o
+net (fo=1)                              0.562         12.116          net: e_b20[1],  NOFILE(0)
+                                                                      pin: sub7_syn_66.a[1]
+ADDER                                   0.881    r    12.997      12  pin: sub7_syn_66.fco
+net (fo=1)                              0.000         12.997          net: sub7_syn_57,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_67.fci
+ADDER                                   0.132    f    13.129          pin: sub7_syn_67.fco
+net (fo=1)                              0.000         13.129          net: sub7_syn_61,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_68.fci
+ADDER                                   0.453    f    13.582      13  pin: sub7_syn_68.fx[1]
+net (fo=2)                              0.600         14.182          net: e_b17[10],  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_19.a
+LUT4                                    0.408    f    14.590      14  pin: insert_lo_b1[0]_syn_19.o
+net (fo=10)                             0.869         15.459          net: insert_lo_b1[0]_syn_20,  NOFILE(0)
+                                                                      pin: insert_lo_b1[7]_syn_8.a
+LUT5                                    0.424    f    15.883      15  pin: insert_lo_b1[7]_syn_8.o
+net (fo=1)                              0.562         16.445          net: insert_lo_b1[7],  NOFILE(0)
+                                                                      pin: insert_lo_reg[7].d
+SEQ (reg)                               0.118    f    16.563          net: insert_lo[7],  pcb_particle_overlay.v(77)
+--------------------------------------------------------------------  ---------------
+Arrival                                               16.563               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: insert_lo_reg[7].clk
+capture edge                           39.683    r    39.683               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         39.567               
+clock uncertainty                      -2.000         37.567               
+clock pessimism                         0.000         37.567               
+--------------------------------------------------------------------  ---------------
+Required                                              37.567               
+--------------------------------------------------------------------  ---------------
+Slack                                                 21.004               
+
+Slack               : 21.004ns
+Begin Point         : run_lo0_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : insert_lo_reg[8].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : setup
+Process             : slow
+Budget              : 39.683ns { clk rising@39.683ns - clk rising@0.000ns }
+Data Path Delay     : 16.563ns (cell 8.363ns (50%), net 8.200ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 15 ( ADDER=8  LUT2=3  LUT4=2  LUT5=1  LUT3=1 )
+Max Fanout          : 10
+Clock Uncertainty   : 2.000ns (sdc uncertainty: 2.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: run_lo0_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: run_lo0_reg[1].q
+net (fo=4)                              0.697          0.843          net: run_lo0[1],  pcb_particle_overlay.v(75)
+                                                                      pin: lt18_syn_41.b[0]
+ADDER                                   0.627    f     1.470       1  pin: lt18_syn_41.fco
+net (fo=1)                              0.000          1.470          net: lt18_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_44.fci
+ADDER                                   0.073    f     1.543          pin: lt18_syn_44.fco
+net (fo=1)                              0.000          1.543          net: lt18_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_47.fci
+ADDER                                   0.073    f     1.616          pin: lt18_syn_47.fco
+net (fo=1)                              0.000          1.616          net: lt18_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_50.fci
+ADDER                                   0.073    f     1.689          pin: lt18_syn_50.fco
+net (fo=1)                              0.000          1.689          net: lt18_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_53.fci
+ADDER                                   0.355    f     2.044       2  pin: lt18_syn_53.f[1]
+net (fo=1)                              0.562          2.606          net: e_b29_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_1.a
+LUT2                                    0.408    f     3.014       3  pin: insert_lo_b1[0]_syn_1.o
+net (fo=9)                              0.848          3.862          net: insert_lo_b1[0]_syn_2,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_1.a
+LUT2                                    0.408    f     4.270       4  pin: e_b20[1]_syn_1.o
+net (fo=2)                              0.600          4.870          net: e_b24[1],  NOFILE(0)
+                                                                      pin: lt19_syn_41.a[0]
+ADDER                                   0.706    f     5.576       5  pin: lt19_syn_41.fco
+net (fo=1)                              0.000          5.576          net: lt19_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_44.fci
+ADDER                                   0.073    f     5.649          pin: lt19_syn_44.fco
+net (fo=1)                              0.000          5.649          net: lt19_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_47.fci
+ADDER                                   0.073    f     5.722          pin: lt19_syn_47.fco
+net (fo=1)                              0.000          5.722          net: lt19_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_50.fci
+ADDER                                   0.073    f     5.795          pin: lt19_syn_50.fco
+net (fo=1)                              0.000          5.795          net: lt19_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_53.fci
+ADDER                                   0.355    f     6.150       6  pin: lt19_syn_53.f[1]
+net (fo=1)                              0.562          6.712          net: e_b28_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_4.a
+LUT2                                    0.408    f     7.120       7  pin: insert_lo_b1[0]_syn_4.o
+net (fo=10)                             0.869          7.989          net: mux171_syn_12,  pcb_particle_overlay.v(166)
+                                                                      pin: e_b20[1]_syn_2.a
+LUT3                                    0.408    f     8.397       8  pin: e_b20[1]_syn_2.o
+net (fo=2)                              0.600          8.997          net: e_b23[1],  NOFILE(0)
+                                                                      pin: lt21_syn_41.a[0]
+ADDER                                   0.706    f     9.703       9  pin: lt21_syn_41.fco
+net (fo=1)                              0.000          9.703          net: lt21_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_44.fci
+ADDER                                   0.073    f     9.776          pin: lt21_syn_44.fco
+net (fo=1)                              0.000          9.776          net: lt21_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_47.fci
+ADDER                                   0.073    f     9.849          pin: lt21_syn_47.fco
+net (fo=1)                              0.000          9.849          net: lt21_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_50.fci
+ADDER                                   0.073    f     9.922          pin: lt21_syn_50.fco
+net (fo=1)                              0.000          9.922          net: lt21_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_53.fci
+ADDER                                   0.355    f    10.277      10  pin: lt21_syn_53.f[1]
+net (fo=10)                             0.869         11.146          net: e_b26_n,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_3.a
+LUT4                                    0.408    f    11.554      11  pin: e_b20[1]_syn_3.o
+net (fo=1)                              0.562         12.116          net: e_b20[1],  NOFILE(0)
+                                                                      pin: sub7_syn_66.a[1]
+ADDER                                   0.881    r    12.997      12  pin: sub7_syn_66.fco
+net (fo=1)                              0.000         12.997          net: sub7_syn_57,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_67.fci
+ADDER                                   0.132    f    13.129          pin: sub7_syn_67.fco
+net (fo=1)                              0.000         13.129          net: sub7_syn_61,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_68.fci
+ADDER                                   0.453    f    13.582      13  pin: sub7_syn_68.fx[1]
+net (fo=2)                              0.600         14.182          net: e_b17[10],  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_19.a
+LUT4                                    0.408    f    14.590      14  pin: insert_lo_b1[0]_syn_19.o
+net (fo=10)                             0.869         15.459          net: insert_lo_b1[0]_syn_20,  NOFILE(0)
+                                                                      pin: insert_lo_b1[8]_syn_8.a
+LUT5                                    0.424    f    15.883      15  pin: insert_lo_b1[8]_syn_8.o
+net (fo=1)                              0.562         16.445          net: insert_lo_b1[8],  NOFILE(0)
+                                                                      pin: insert_lo_reg[8].d
+SEQ (reg)                               0.118    f    16.563          net: insert_lo[8],  pcb_particle_overlay.v(77)
+--------------------------------------------------------------------  ---------------
+Arrival                                               16.563               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: insert_lo_reg[8].clk
+capture edge                           39.683    r    39.683               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         39.567               
+clock uncertainty                      -2.000         37.567               
+clock pessimism                         0.000         37.567               
+--------------------------------------------------------------------  ---------------
+Required                                              37.567               
+--------------------------------------------------------------------  ---------------
+Slack                                                 21.004               
+
+Slack               : 21.004ns
+Begin Point         : run_lo0_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : insert_lo_reg[9].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : setup
+Process             : slow
+Budget              : 39.683ns { clk rising@39.683ns - clk rising@0.000ns }
+Data Path Delay     : 16.563ns (cell 8.363ns (50%), net 8.200ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 15 ( ADDER=8  LUT2=3  LUT4=2  LUT5=1  LUT3=1 )
+Max Fanout          : 10
+Clock Uncertainty   : 2.000ns (sdc uncertainty: 2.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: run_lo0_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: run_lo0_reg[1].q
+net (fo=4)                              0.697          0.843          net: run_lo0[1],  pcb_particle_overlay.v(75)
+                                                                      pin: lt18_syn_41.b[0]
+ADDER                                   0.627    f     1.470       1  pin: lt18_syn_41.fco
+net (fo=1)                              0.000          1.470          net: lt18_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_44.fci
+ADDER                                   0.073    f     1.543          pin: lt18_syn_44.fco
+net (fo=1)                              0.000          1.543          net: lt18_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_47.fci
+ADDER                                   0.073    f     1.616          pin: lt18_syn_47.fco
+net (fo=1)                              0.000          1.616          net: lt18_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_50.fci
+ADDER                                   0.073    f     1.689          pin: lt18_syn_50.fco
+net (fo=1)                              0.000          1.689          net: lt18_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt18_syn_53.fci
+ADDER                                   0.355    f     2.044       2  pin: lt18_syn_53.f[1]
+net (fo=1)                              0.562          2.606          net: e_b29_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_1.a
+LUT2                                    0.408    f     3.014       3  pin: insert_lo_b1[0]_syn_1.o
+net (fo=9)                              0.848          3.862          net: insert_lo_b1[0]_syn_2,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_1.a
+LUT2                                    0.408    f     4.270       4  pin: e_b20[1]_syn_1.o
+net (fo=2)                              0.600          4.870          net: e_b24[1],  NOFILE(0)
+                                                                      pin: lt19_syn_41.a[0]
+ADDER                                   0.706    f     5.576       5  pin: lt19_syn_41.fco
+net (fo=1)                              0.000          5.576          net: lt19_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_44.fci
+ADDER                                   0.073    f     5.649          pin: lt19_syn_44.fco
+net (fo=1)                              0.000          5.649          net: lt19_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_47.fci
+ADDER                                   0.073    f     5.722          pin: lt19_syn_47.fco
+net (fo=1)                              0.000          5.722          net: lt19_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_50.fci
+ADDER                                   0.073    f     5.795          pin: lt19_syn_50.fco
+net (fo=1)                              0.000          5.795          net: lt19_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt19_syn_53.fci
+ADDER                                   0.355    f     6.150       6  pin: lt19_syn_53.f[1]
+net (fo=1)                              0.562          6.712          net: e_b28_n,  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_4.a
+LUT2                                    0.408    f     7.120       7  pin: insert_lo_b1[0]_syn_4.o
+net (fo=10)                             0.869          7.989          net: mux171_syn_12,  pcb_particle_overlay.v(166)
+                                                                      pin: e_b20[1]_syn_2.a
+LUT3                                    0.408    f     8.397       8  pin: e_b20[1]_syn_2.o
+net (fo=2)                              0.600          8.997          net: e_b23[1],  NOFILE(0)
+                                                                      pin: lt21_syn_41.a[0]
+ADDER                                   0.706    f     9.703       9  pin: lt21_syn_41.fco
+net (fo=1)                              0.000          9.703          net: lt21_syn_9,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_44.fci
+ADDER                                   0.073    f     9.776          pin: lt21_syn_44.fco
+net (fo=1)                              0.000          9.776          net: lt21_syn_13,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_47.fci
+ADDER                                   0.073    f     9.849          pin: lt21_syn_47.fco
+net (fo=1)                              0.000          9.849          net: lt21_syn_17,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_50.fci
+ADDER                                   0.073    f     9.922          pin: lt21_syn_50.fco
+net (fo=1)                              0.000          9.922          net: lt21_syn_21,  pcb_particle_overlay.v(88)
+                                                                      pin: lt21_syn_53.fci
+ADDER                                   0.355    f    10.277      10  pin: lt21_syn_53.f[1]
+net (fo=10)                             0.869         11.146          net: e_b26_n,  NOFILE(0)
+                                                                      pin: e_b20[1]_syn_3.a
+LUT4                                    0.408    f    11.554      11  pin: e_b20[1]_syn_3.o
+net (fo=1)                              0.562         12.116          net: e_b20[1],  NOFILE(0)
+                                                                      pin: sub7_syn_66.a[1]
+ADDER                                   0.881    r    12.997      12  pin: sub7_syn_66.fco
+net (fo=1)                              0.000         12.997          net: sub7_syn_57,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_67.fci
+ADDER                                   0.132    f    13.129          pin: sub7_syn_67.fco
+net (fo=1)                              0.000         13.129          net: sub7_syn_61,  pcb_particle_overlay.v(168)
+                                                                      pin: sub7_syn_68.fci
+ADDER                                   0.453    f    13.582      13  pin: sub7_syn_68.fx[1]
+net (fo=2)                              0.600         14.182          net: e_b17[10],  NOFILE(0)
+                                                                      pin: insert_lo_b1[0]_syn_19.a
+LUT4                                    0.408    f    14.590      14  pin: insert_lo_b1[0]_syn_19.o
+net (fo=10)                             0.869         15.459          net: insert_lo_b1[0]_syn_20,  NOFILE(0)
+                                                                      pin: insert_lo_b1[9]_syn_8.a
+LUT5                                    0.424    f    15.883      15  pin: insert_lo_b1[9]_syn_8.o
+net (fo=1)                              0.562         16.445          net: insert_lo_b1[9],  NOFILE(0)
+                                                                      pin: insert_lo_reg[9].d
+SEQ (reg)                               0.118    f    16.563          net: insert_lo[9],  pcb_particle_overlay.v(77)
+--------------------------------------------------------------------  ---------------
+Arrival                                               16.563               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: insert_lo_reg[9].clk
+capture edge                           39.683    r    39.683               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         39.567               
+clock uncertainty                      -2.000         37.567               
+clock pessimism                         0.000         37.567               
+--------------------------------------------------------------------  ---------------
+Required                                              37.567               
+--------------------------------------------------------------------  ---------------
+Slack                                                 21.004               
+
+
+Period Check
+----------------------------------------------------------------------------------------------------
+    Type       Setting(ns)      Required(ns)         Slack(ns)   Point
+--------------------------------------------------------------------------------
+    ERAM            39.683             3.414            36.269   mult0_syn_4.clk
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 0.421ns
+Begin Point         : head_waddr_reg[8].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : ramread3_syn_6.addra[12] (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.671ns (cell 0.109ns (16%), net 0.562ns (84%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: head_waddr_reg[8].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: head_waddr_reg[8].q
+net (fo=1)                              0.562          0.671          net: head_waddr[8],  pcb_particle_overlay.v(48)
+                                                                      pin: ramread3_syn_6.addra[12]
+EMB (reg)                               0.000    f     0.671       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.671               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: ramread3_syn_6.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.200          0.200               
+clock uncertainty                       0.050          0.250               
+clock pessimism                         0.000          0.250               
+--------------------------------------------------------------------  ---------------
+Required                                               0.250               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.421               
+
+Slack               : 0.421ns
+Begin Point         : head_raddr_reg[8].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : ramread3_syn_6.addrb[12] (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.671ns (cell 0.109ns (16%), net 0.562ns (84%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: head_raddr_reg[8].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: head_raddr_reg[8].q
+net (fo=1)                              0.562          0.671          net: head_raddr[8],  pcb_particle_overlay.v(48)
+                                                                      pin: ramread3_syn_6.addrb[12]
+EMB (reg)                               0.000    f     0.671       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.671               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: ramread3_syn_6.clkb
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.200          0.200               
+clock uncertainty                       0.050          0.250               
+clock pessimism                         0.000          0.250               
+--------------------------------------------------------------------  ---------------
+Required                                               0.250               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.421               
+
+Slack               : 0.421ns
+Begin Point         : head_wdata_reg[8].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : ramread3_syn_6.dia[8] (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.671ns (cell 0.109ns (16%), net 0.562ns (84%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: head_wdata_reg[8].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: head_wdata_reg[8].q
+net (fo=1)                              0.562          0.671          net: head_wdata[8],  pcb_particle_overlay.v(47)
+                                                                      pin: ramread3_syn_6.dia[8]
+EMB (reg)                               0.000    f     0.671       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.671               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: ramread3_syn_6.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.200          0.200               
+clock uncertainty                       0.050          0.250               
+clock pessimism                         0.000          0.250               
+--------------------------------------------------------------------  ---------------
+Required                                               0.250               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.421               
+
+Slack               : 0.421ns
+Begin Point         : head_wdata_reg[9].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : ramread3_syn_6.dib[0] (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.671ns (cell 0.109ns (16%), net 0.562ns (84%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: head_wdata_reg[9].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: head_wdata_reg[9].q
+net (fo=1)                              0.562          0.671          net: head_wdata[9],  pcb_particle_overlay.v(47)
+                                                                      pin: ramread3_syn_6.dib[0]
+EMB (reg)                               0.000    f     0.671       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.671               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: ramread3_syn_6.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.200          0.200               
+clock uncertainty                       0.050          0.250               
+clock pessimism                         0.000          0.250               
+--------------------------------------------------------------------  ---------------
+Required                                               0.250               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.421               
+
+Slack               : 0.421ns
+Begin Point         : stage_wdata_reg[27].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : ramread4_syn_246.dia[1] (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.671ns (cell 0.109ns (16%), net 0.562ns (84%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: stage_wdata_reg[27].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: stage_wdata_reg[27].q
+net (fo=1)                              0.562          0.671          net: stage_wdata[27],  pcb_particle_overlay.v(50)
+                                                                      pin: ramread4_syn_246.dia[1]
+EMB (reg)                               0.000    f     0.671       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.671               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: ramread4_syn_246.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.200          0.200               
+clock uncertainty                       0.050          0.250               
+clock pessimism                         0.000          0.250               
+--------------------------------------------------------------------  ---------------
+Required                                               0.250               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.421               
+
+Slack               : 0.421ns
+Begin Point         : stage_wdata_reg[28].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : ramread4_syn_248.dia[1] (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.671ns (cell 0.109ns (16%), net 0.562ns (84%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: stage_wdata_reg[28].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: stage_wdata_reg[28].q
+net (fo=1)                              0.562          0.671          net: stage_wdata[28],  pcb_particle_overlay.v(50)
+                                                                      pin: ramread4_syn_248.dia[1]
+EMB (reg)                               0.000    f     0.671       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.671               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: ramread4_syn_248.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.200          0.200               
+clock uncertainty                       0.050          0.250               
+clock pessimism                         0.000          0.250               
+--------------------------------------------------------------------  ---------------
+Required                                               0.250               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.421               
+
+Slack               : 0.421ns
+Begin Point         : stage_wdata_reg[29].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : ramread4_syn_250.dia[1] (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.671ns (cell 0.109ns (16%), net 0.562ns (84%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: stage_wdata_reg[29].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: stage_wdata_reg[29].q
+net (fo=1)                              0.562          0.671          net: stage_wdata[29],  pcb_particle_overlay.v(50)
+                                                                      pin: ramread4_syn_250.dia[1]
+EMB (reg)                               0.000    f     0.671       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.671               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: ramread4_syn_250.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.200          0.200               
+clock uncertainty                       0.050          0.250               
+clock pessimism                         0.000          0.250               
+--------------------------------------------------------------------  ---------------
+Required                                               0.250               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.421               
+
+Slack               : 0.421ns
+Begin Point         : stage_wdata_reg[30].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : ramread4_syn_252.dia[1] (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.671ns (cell 0.109ns (16%), net 0.562ns (84%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: stage_wdata_reg[30].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: stage_wdata_reg[30].q
+net (fo=1)                              0.562          0.671          net: stage_wdata[30],  pcb_particle_overlay.v(50)
+                                                                      pin: ramread4_syn_252.dia[1]
+EMB (reg)                               0.000    f     0.671       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.671               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: ramread4_syn_252.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.200          0.200               
+clock uncertainty                       0.050          0.250               
+clock pessimism                         0.000          0.250               
+--------------------------------------------------------------------  ---------------
+Required                                               0.250               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.421               
+
+Slack               : 0.421ns
+Begin Point         : stage_wdata_reg[31].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : ramread4_syn_254.dia[1] (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.671ns (cell 0.109ns (16%), net 0.562ns (84%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: stage_wdata_reg[31].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: stage_wdata_reg[31].q
+net (fo=1)                              0.562          0.671          net: stage_wdata[31],  pcb_particle_overlay.v(50)
+                                                                      pin: ramread4_syn_254.dia[1]
+EMB (reg)                               0.000    f     0.671       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.671               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: ramread4_syn_254.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.200          0.200               
+clock uncertainty                       0.050          0.250               
+clock pessimism                         0.000          0.250               
+--------------------------------------------------------------------  ---------------
+Required                                               0.250               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.421               
+
+Slack               : 0.421ns
+Begin Point         : stage_wdata_reg[32].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+End Point           : ramread4_syn_256.dia[1] (rising edge triggered by clock clk  { rise@0.000000ns  fall@19.841000ns  period=39.682999 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.671ns (cell 0.109ns (16%), net 0.562ns (84%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: stage_wdata_reg[32].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: stage_wdata_reg[32].q
+net (fo=1)                              0.562          0.671          net: stage_wdata[32],  pcb_particle_overlay.v(50)
+                                                                      pin: ramread4_syn_256.dia[1]
+EMB (reg)                               0.000    f     0.671       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.671               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1344)                           0.000          0.000          net: clk_dup_1,  pcb_particle_overlay.v(3)
+                                                                      pin: ramread4_syn_256.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.200          0.200               
+clock uncertainty                       0.050          0.250               
+clock pessimism                         0.000          0.250               
+--------------------------------------------------------------------  ---------------
+Required                                               0.250               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.421               
+
+
+Inter clock domain timing
+--------------------------------------------------
+
+IP timing
+--------------------------------------------------

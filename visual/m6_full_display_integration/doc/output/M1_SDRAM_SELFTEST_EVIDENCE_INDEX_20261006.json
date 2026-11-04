@@ -1,0 +1,2024 @@
+{
+  "status": "SEALED_DIAGNOSTIC_SOFTWARE_AND_NATIVE_TD",
+  "hardware_status": "PENDING_M1_BOARD_TEST",
+  "bit_sha256": "bddebae74ee1b5ca0abe0b3dc914ab5b73008c0b272dad8b7961b5021f6ccbb6",
+  "previous_s1_evidence_sha256": "e092cd6f01099f1c745f5d3b70ee3441509ea0506ec782d178191d0e88fb34f5",
+  "previous_s1_board_evidence_sha256": "5a562d386002316f13a2592b79f6f058e089639cb47508e6127f1ca0a104442c",
+  "files": [
+    {
+      "path": "deliverables/M1_SDRAM_SELFTEST_MANIFEST.json",
+      "bytes": 1156,
+      "sha256": "6755d46411a4a61b84fd6045d9d0f56d4ddc40fa16193324a72c311e31bbf924"
+    },
+    {
+      "path": "deliverables/M6_FDI_M1_20261006_BDDEBAE7.bit",
+      "bytes": 629643,
+      "sha256": "bddebae74ee1b5ca0abe0b3dc914ab5b73008c0b272dad8b7961b5021f6ccbb6"
+    },
+    {
+      "path": "doc/brief/BOARD_DIAGNOSTIC_PROGRESS_M1_20261006.md",
+      "bytes": 1592,
+      "sha256": "c335fc9125daa4cb24c1ab2358a215f6c694ef9b6e30828281991c5fad1e5e47"
+    },
+    {
+      "path": "doc/output/M1_SDRAM_SELFTEST_REPORT_20261006.md",
+      "bytes": 7962,
+      "sha256": "b2158830865db95d8a6e666f925e1e1f551147b9b8e2448f2970512f4900344a"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/doc/output/M1_CONSTANT_SCOPE_PROOF.json",
+      "bytes": 4980,
+      "sha256": "d75c918e3d2435783304cd587e8a759e5ebda3d0d2c7b64b727d9a408db65fb5"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/doc/output/PROCESS_RECORD.json",
+      "bytes": 236759,
+      "sha256": "b8651525f361b17da59ae693cb63468dad85ff3d0705cca6747a4a599f88f70b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/doc/output/REFERENCE_ASSETS.json",
+      "bytes": 6095,
+      "sha256": "19e05d3f471990136608b93596709d9b23a12a503a4c72fbd9ac8b34b0fed759"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/doc/output/ROUND2_SDC_EXPECTED.json",
+      "bytes": 10974,
+      "sha256": "bd2ed2b351d6bbb4c7e9034754c014bb000edb650a7f0af8231ac8ae4f3c60c5"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/doc/output/SOFTWARE_VALIDATION.json",
+      "bytes": 3865,
+      "sha256": "8cd045b68ba47b7faf92820f54ae00349d86fec5bdf131b8ead9729aba35375c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/constraints/eth_m6_master.adc",
+      "bytes": 3676,
+      "sha256": "757dc3e82cf2a7b336e03afad6dcb2ea219769500b16a0282e66c48d0597c4be"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/constraints/eth_m6_master.sdc",
+      "bytes": 62710,
+      "sha256": "54eec0359d5c3487e3ccaa77c2151b26d004d257f60fe192603cbbebffce3664"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/rtl/fdi_clock_tree.v",
+      "bytes": 629,
+      "sha256": "8cae4180fa5664a1fe6803cbf16381b70d2ace9807515d8b84feffdbb223120b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/rtl/fdi_fixed_video.v",
+      "bytes": 3267,
+      "sha256": "6fa203eaebd6dbd0d5d9cb28163f89da05d1abf2c667103558747bb0185f65f9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/rtl/fdi_sdram_selftest.v",
+      "bytes": 8813,
+      "sha256": "9c01ad2cdc98631f5c0d109516c55d6e62851f7bfdbaa89199beba4c87efca4c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/rtl/fdi_sdram_selftest_top.v",
+      "bytes": 4489,
+      "sha256": "f4d3a23bbcf402b83839f57c5e033eaca1931ca6d70cb4f6328c6e1885be495c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/rtl/fdi_startup_bist.v",
+      "bytes": 4418,
+      "sha256": "d1b13f734bf2d581f8f1356aa03d7ed09f3b26a91c4b0b88087487e6d12d22a9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/rtl/v7_decimal_display.v",
+      "bytes": 3938,
+      "sha256": "b8d8e92229a97cb270af2d66f7609ce48b4d2d455f9e387a8bcd51612f043d1f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/vendor/display020/axis_pixel_adapter.v",
+      "bytes": 5895,
+      "sha256": "309071d0c1151aa10649ba31eb7ee3d9080988c5b8d7e7ab47a4212f5831b20e"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "bytes": 328975,
+      "sha256": "867e0b0bdd874bc383d00918c9e1be3fe01edf41f343b6a0d73e262776596a63"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/vendor/display020/hdmi_phy_wrapper.v",
+      "bytes": 3784,
+      "sha256": "193d60e02fb68cb721c1d0d834fdd7e40ae100d26a2bd1be56dfbed7870165df"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/vendor/display020/hdmi_pll.v",
+      "bytes": 7399,
+      "sha256": "d6efb17508dacef2a74c3098e512829974cac0a5bbc5cb03ed6d845ff78cf784"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/vendor/display020/lane_lvds_10_1.v",
+      "bytes": 2632,
+      "sha256": "305f40ee9561c5bcfdd1409deb152927ffcf0e90e41d79a2b9821a2b8de57c2d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "bytes": 22737,
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/vendor/fdi_loader/fdi_sdram_refresh_timer.v",
+      "bytes": 1675,
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/project/src/vendor/udp_base/ip/pll_gen.v",
+      "bytes": 2966,
+      "sha256": "931f7d72cf0174e090413c631748d6fa27a00501dd04477c24af4f8ee64daec7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/scripts/audit_bist_native.py",
+      "bytes": 10871,
+      "sha256": "adb99788f7e01aafc5fbdc7708ea6660da0ac23b7ec58e6c2abaadcdd6a60e0c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/scripts/audit_round2_cdc.py",
+      "bytes": 5195,
+      "sha256": "2e12deb80ba450c2d32c9790a6265cfe8fc3fe2a90dab092af86a287d2b3865b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/scripts/narrow_constant_scope.py",
+      "bytes": 2358,
+      "sha256": "ba50a0cb865f61b241be24c51af30258756553bc52f82e5660f51d7b3a40e680"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/scripts/prepare_m1.py",
+      "bytes": 6177,
+      "sha256": "4cb8a37a54921f87aa77cb548e88b8999d475b51bb5a1b7a99a04ed6385c9d68"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/scripts/read_m1.py",
+      "bytes": 2834,
+      "sha256": "5af669ca817f77d7368f2ddf32ea52c94ed7d636dbb77558d201e030cd1ca7f7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/scripts/remap_physical_sdc.py",
+      "bytes": 8050,
+      "sha256": "aca1cc2c362994aab772da6b5721f7ccb599cc02227945f0fc37f13a5566d3e5"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/scripts/run_m1.pm1",
+      "bytes": 2345,
+      "sha256": "97ea766a600806084e8fa74cf10b81ca70fec9b653339f1b416e3800ff512445"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/scripts/run_m1.ps1",
+      "bytes": 2345,
+      "sha256": "6bb0345b9b934604a52e89fdb6a54061bdc7638c7b0beec56d619e112191a4f9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/lint/application.log",
+      "bytes": 112130,
+      "sha256": "662bddbfab3b9b15585ea26bcacb2ccf6b0454deaaaffa91e2985199291b4c27"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/lint/fdi_m1_observer.log",
+      "bytes": 295,
+      "sha256": "9e65dd7bc05a9cb98c3040ebae0ba2f6f8cc1dec9163c41120543a604be69389"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/lint/fdi_m1_requestor.log",
+      "bytes": 295,
+      "sha256": "a265ca80c302a316725c340724e732963d6ba8823318994cecb46470b05c90c8"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/build.log",
+      "bytes": 7677,
+      "sha256": "55cc7c841cef525139b1cc2ec0315f6ab7f8ac20de241412ca8ed98ca693d7e9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/result.log",
+      "bytes": 304,
+      "sha256": "578a41ed452c3ef79dbb839d519fc3d8ba6aafe4c0a5fca50449e02a7b70863c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/SOURCE.sha256",
+      "bytes": 1192,
+      "sha256": "369f8882b91ccb1365fc3318cdeb4f65a447db9b531432b66279f9bc845828fe"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/axis_pixel_adapter.v",
+      "bytes": 5895,
+      "sha256": "309071d0c1151aa10649ba31eb7ee3d9080988c5b8d7e7ab47a4212f5831b20e"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/boundary_stubs.sv",
+      "bytes": 7124,
+      "sha256": "5d2b8344fdd6f8276714d03e1f5497d896572524aca1b4cfbf54403c4d3eb4d2"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/fdi_clock_tree.v",
+      "bytes": 629,
+      "sha256": "8cae4180fa5664a1fe6803cbf16381b70d2ace9807515d8b84feffdbb223120b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/fdi_fixed_video.v",
+      "bytes": 3267,
+      "sha256": "6fa203eaebd6dbd0d5d9cb28163f89da05d1abf2c667103558747bb0185f65f9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/fdi_sdram_cmd_engine.v",
+      "bytes": 22737,
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/fdi_sdram_refresh_timer.v",
+      "bytes": 1675,
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/fdi_sdram_selftest.v",
+      "bytes": 8813,
+      "sha256": "9c01ad2cdc98631f5c0d109516c55d6e62851f7bfdbaa89199beba4c87efca4c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/fdi_sdram_selftest_top.v",
+      "bytes": 4489,
+      "sha256": "f4d3a23bbcf402b83839f57c5e033eaca1931ca6d70cb4f6328c6e1885be495c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/fdi_startup_bist.v",
+      "bytes": 4418,
+      "sha256": "d1b13f734bf2d581f8f1356aa03d7ed09f3b26a91c4b0b88087487e6d12d22a9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/hdmi_pll.v",
+      "bytes": 7399,
+      "sha256": "d6efb17508dacef2a74c3098e512829974cac0a5bbc5cb03ed6d845ff78cf784"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/pll_gen.v",
+      "bytes": 2966,
+      "sha256": "931f7d72cf0174e090413c631748d6fa27a00501dd04477c24af4f8ee64daec7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/primitive_interfaces.v",
+      "bytes": 5411,
+      "sha256": "7fac2bff7c20c4939a3dd271d9cc63a72928256769519c2a16b3adff89d652b7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/tb_m1_pages.sv",
+      "bytes": 1677,
+      "sha256": "9a3288facc5753881c7a22e610ae45c2be20672150ce20ee5991924232ddd882"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/pages/src/v7_decimal_display.v",
+      "bytes": 3938,
+      "sha256": "b8d8e92229a97cb270af2d66f7609ce48b4d2d455f9e387a8bcd51612f043d1f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/run_lint.sh",
+      "bytes": 835,
+      "sha256": "e2d726eb6c05bf50aa24469de25d74b4e6fd30d372de6cf9477eb170010e30d2"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/run_pages.sh",
+      "bytes": 770,
+      "sha256": "0a8d20de0cf7d9815eddf5ab5b8261763baff4ff15e2fd020bc4563bd1adbd60"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/run_sdram.sh",
+      "bytes": 718,
+      "sha256": "0044d04d266bbb7aff9a3877519460fa586ef944ca8bb3cb5c539d8fe33929a8"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/build.log",
+      "bytes": 3151,
+      "sha256": "d759d5a3956220b98c97e6b193faa7b2aba65c80ccfae2a1d5ae35cc1d9e3690"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/scenario_0.log",
+      "bytes": 341,
+      "sha256": "78e845d6133c4f3c000400421e46746e1282c3cd054c2282c12173430b41f59c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/scenario_1.log",
+      "bytes": 338,
+      "sha256": "e402808d54fc7e6593a45e9143af5823d17612f66898d5cf184ea3390f79b403"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/scenario_10.log",
+      "bytes": 335,
+      "sha256": "0e8eb835a53b61a26326c0de6863478221df54ced2eeebddb487d4d7979e07bb"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/scenario_2.log",
+      "bytes": 335,
+      "sha256": "29a5aa29cd8bb6654be1f4783bc0957b1535576cf0b832a61055c71bef39fa9b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/scenario_3.log",
+      "bytes": 335,
+      "sha256": "983ae7ec18fd6146f7bd044110239c28e84a4a1bf1ac3d964207b1671dea3868"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/scenario_4.log",
+      "bytes": 335,
+      "sha256": "2579e5e3bc3db6eb16cf1d3403d888745e197c5dc64fc394da18199920c26b97"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/scenario_5.log",
+      "bytes": 335,
+      "sha256": "d22a9e1e7669461722f50de26a442a852b06f1b074b103ba71232d0ceee47c40"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/scenario_6.log",
+      "bytes": 335,
+      "sha256": "77e15c93fb88af1f934f0893c8784f023998ae7e2dd83fa7d02b79f4ad46d095"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/scenario_7.log",
+      "bytes": 341,
+      "sha256": "23a2ead5a299a6b4740cdf48d335b891a8db95d0fbc4cc85fd3a7dfe24f3241a"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/scenario_8.log",
+      "bytes": 341,
+      "sha256": "affcf1851b55ba0337896b3644b807e669ee2c88adee79b44b8000777f657341"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/scenario_9.log",
+      "bytes": 335,
+      "sha256": "f9bd48da0234113cee53a0a6cff561d9634da65373b10ebb9303ab87e9b77a6c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/SOURCE.sha256",
+      "bytes": 443,
+      "sha256": "7b3f0f6b56be9871f74cee0acf852cd7fa6cd841fc239dc17a3a88a4873d9106"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/src/EG_PHY_SDRAM_2M_32.sv",
+      "bytes": 8830,
+      "sha256": "a404ee5b18ef3c676f3ddfc740057faaa79dd3e7d54b791e02d3141094eab13f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/src/fdi_sdram_cmd_engine.v",
+      "bytes": 22737,
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/src/fdi_sdram_refresh_timer.v",
+      "bytes": 1675,
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/src/fdi_sdram_selftest.v",
+      "bytes": 8717,
+      "sha256": "008ce318ea03f9e122d926aeded3d11a61561423d7bf7367c2300d26ed8f14df"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_final/src/tb_sdram_selftest.sv",
+      "bytes": 4202,
+      "sha256": "a0fba27cd7ace99c45859ca1d0fa311c105be71f71f83548c117cbeee05b0fbf"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/build.log",
+      "bytes": 3151,
+      "sha256": "66175b018727a98c6830aa947af1ef64a1d6696ff99578985917865139325996"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/scenario_0.log",
+      "bytes": 341,
+      "sha256": "d3cfb6cd564a269416e8c4d9805a434cca572d7f981cc9e1b6047f279f41301c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/scenario_1.log",
+      "bytes": 338,
+      "sha256": "89e228fe94b17b4d51890925860bb1d11aa7297311ab3bd0dc89266b995be72b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/scenario_2.log",
+      "bytes": 335,
+      "sha256": "e846db38f21607088a07fe98bbb13ee66d13fd2469e485bb8edfc69f7c70b663"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/scenario_3.log",
+      "bytes": 335,
+      "sha256": "12763c7b0e1cdd9596d4a4f7b41879d2f737e1cdf3d8771291bfe71407fb5e8a"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/scenario_4.log",
+      "bytes": 335,
+      "sha256": "818f3572807a20b64dce1de0fc004a01a7badefd6a0062776e5dbec1ffa3b703"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/scenario_5.log",
+      "bytes": 335,
+      "sha256": "bac19f3a01b2da6787ef40976a772143d4188dc6531078ff93257bba3c615f0b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/scenario_6.log",
+      "bytes": 335,
+      "sha256": "a4ca10315c8d9442c7ea2798959da49c25fb0d72f108ddc8b00ecb0f177ba3c7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/scenario_7.log",
+      "bytes": 341,
+      "sha256": "3985f549318124c66c932c0870f5bf16855391604b1bdb2a6bcb129f0184bf1b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/scenario_8.log",
+      "bytes": 341,
+      "sha256": "9c266ba5af30d0ff89a01bbe8f4291fa0307e0f1e7461b82c86cff9f588c2272"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/SOURCE.sha256",
+      "bytes": 443,
+      "sha256": "4a612e79b9cf950a66fa06cb0f962a10697708e992eeae077249f1c77dc9cf88"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/src/EG_PHY_SDRAM_2M_32.sv",
+      "bytes": 8830,
+      "sha256": "a404ee5b18ef3c676f3ddfc740057faaa79dd3e7d54b791e02d3141094eab13f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/src/fdi_sdram_cmd_engine.v",
+      "bytes": 22737,
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/src/fdi_sdram_refresh_timer.v",
+      "bytes": 1675,
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/src/fdi_sdram_selftest.v",
+      "bytes": 8602,
+      "sha256": "37d09e037a029bb45551e100885c8005a0bdc469a19b7244ed7c532003f7ff96"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_initial/src/tb_sdram_selftest.sv",
+      "bytes": 3898,
+      "sha256": "344c936e8197bb8668c2a1e66fd93472e6ccd1e7742cbb389a4be774764b712b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/build.log",
+      "bytes": 3151,
+      "sha256": "79741696e64c4483a94cbd6e334e7b98f54060bd89620286eb7f945c9264fc19"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/scenario_0.log",
+      "bytes": 341,
+      "sha256": "18de9f7e02c62c1f80ea9c9bfd777f2433ff7bcf67c6d3d32d56c712ce5faa87"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/scenario_1.log",
+      "bytes": 338,
+      "sha256": "df9be8821b663dff37524a62918885c924f10f23b3f2a344368f8ecb1273fb5d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/scenario_10.log",
+      "bytes": 335,
+      "sha256": "68f333bad9118d00570e689281a03fc1e7d512bcd02deb82f3b30242a5aaa915"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/scenario_2.log",
+      "bytes": 335,
+      "sha256": "e94539a8d9e91d263d70e35a7e13441c0fe7b889620bd78e389362a98e8787a4"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/scenario_3.log",
+      "bytes": 335,
+      "sha256": "697c9972d6fc2a38632ef5e22a4fd19176330531f1630eb7183153f2b2a3d564"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/scenario_4.log",
+      "bytes": 335,
+      "sha256": "67ae6c610359ad3b54dcecf6fe0661ecb0e4348ab35c4e434ad9cea68862e16d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/scenario_5.log",
+      "bytes": 335,
+      "sha256": "e55773a61b1ed3c51c30c578c72b373ca6ee8ed22ba796f1e94fe0f7565a366c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/scenario_6.log",
+      "bytes": 335,
+      "sha256": "21344d5f584cf0dcc6b8d3289f68fe4901c523f1fc7cbd010c78c252c1af4186"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/scenario_7.log",
+      "bytes": 341,
+      "sha256": "00f781a1dc8371f5a580cade391c1218e3fc62ebc4a747a7d8efe1a80b605209"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/scenario_8.log",
+      "bytes": 341,
+      "sha256": "144e796ff05fcbd3162186f4a28feafed8539b5c50a69926d4feeb23e826a903"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/scenario_9.log",
+      "bytes": 335,
+      "sha256": "5c3e293668f3163963545bfe3d56e2a75ed7a837f5ffcffe697a4233a4852f76"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/SOURCE.sha256",
+      "bytes": 443,
+      "sha256": "2a316b6a105473682a1a6b2fd9ef4fa3a076bcb1f348330c3d99229ed96f53d0"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/src/EG_PHY_SDRAM_2M_32.sv",
+      "bytes": 8830,
+      "sha256": "a404ee5b18ef3c676f3ddfc740057faaa79dd3e7d54b791e02d3141094eab13f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/src/fdi_sdram_cmd_engine.v",
+      "bytes": 22737,
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/src/fdi_sdram_refresh_timer.v",
+      "bytes": 1675,
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/src/fdi_sdram_selftest.v",
+      "bytes": 8813,
+      "sha256": "9c01ad2cdc98631f5c0d109516c55d6e62851f7bfdbaa89199beba4c87efca4c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/sim/sdram_preserved/src/tb_sdram_selftest.sv",
+      "bytes": 4202,
+      "sha256": "a0fba27cd7ace99c45859ca1d0fa311c105be71f71f83548c117cbeee05b0fbf"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/tb/EG_PHY_SDRAM_2M_32.sv",
+      "bytes": 8830,
+      "sha256": "a404ee5b18ef3c676f3ddfc740057faaa79dd3e7d54b791e02d3141094eab13f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/tb/lint/boundary_stubs.sv",
+      "bytes": 7124,
+      "sha256": "5d2b8344fdd6f8276714d03e1f5497d896572524aca1b4cfbf54403c4d3eb4d2"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/tb/lint/primitive_interfaces.v",
+      "bytes": 5411,
+      "sha256": "7fac2bff7c20c4939a3dd271d9cc63a72928256769519c2a16b3adff89d652b7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/tb/pages/tb_m1_pages.sv",
+      "bytes": 1677,
+      "sha256": "9a3288facc5753881c7a22e610ae45c2be20672150ce20ee5991924232ddd882"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/tb/tb_sdram_selftest.sv",
+      "bytes": 4202,
+      "sha256": "a0fba27cd7ace99c45859ca1d0fa311c105be71f71f83548c117cbeee05b0fbf"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_final/PREPARATION_FAILURE.json",
+      "bytes": 144,
+      "sha256": "d372a01a1432b2cafd7c6fd2245e1e7c91a74fefbb541c1ef8ddadbf25dbed02"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/ACTIVE_SDC_EXPECTED.json",
+      "bytes": 94426,
+      "sha256": "5c912303acb3e1fdfdd7beb30a833d74feb0d0f61e9b55bd5569fa88108b9439"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/BIST_NATIVE_AUDIT.json",
+      "bytes": 834473,
+      "sha256": "3f5b610577ad4685a71e0e892ef1c65dc84d681caa7a97573a07a3fc87833d98"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/CDC_AUDIT.json",
+      "bytes": 14369,
+      "sha256": "dc4516b8e08d346ef0f7b516a6448064c362fb6ea2ec52d6c981c1c98f4e3864"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/console.log",
+      "bytes": 54185,
+      "sha256": "f51fafa9c65618a569d564856a85f9e455afdfe88cd404f942819d7ea39f7cd1"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/fdi_sdram_selftest_top.bit",
+      "bytes": 629643,
+      "sha256": "bddebae74ee1b5ca0abe0b3dc914ab5b73008c0b272dad8b7961b5021f6ccbb6"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/fdi_sdram_selftest_top_inst.bid",
+      "bytes": 15094,
+      "sha256": "a7449c13d54d22093d18b6ff6edde1f0d0b3ea3c5206a4c42e0ba35917b5c623"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/input.db",
+      "bytes": 2870000,
+      "sha256": "1a2179ec29822883958ac03d450d76982d949a89347a10dc61e4ecc19a4c1e9f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/production.sdc",
+      "bytes": 66740,
+      "sha256": "1a0fe40e67013e1d161d68c47bc07e90513d4005b11b6c81a5cb96b827786ae5"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/RESULT.json",
+      "bytes": 737,
+      "sha256": "bbfd372380d459c7837b9034751e1cb7715e8ecc53f543c1791e96855655bf4d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/route.area",
+      "bytes": 20492,
+      "sha256": "9ba58ac7cfcab196c9e10e4c8a8b43d9732f7a80812d24bca66395f3535d1072"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/route.db",
+      "bytes": 2870008,
+      "sha256": "807e75b19e7ad953be1c3382796abcfd7a016cdcc87788eb19655ffd3e4a4132"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/route.qor",
+      "bytes": 1313,
+      "sha256": "50c033b8a2f40d84f2777888858165c357684d2fea5e6b5635ba986084a0758a"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/route.timing",
+      "bytes": 4544352,
+      "sha256": "9cc15c9ed49bc0a5218babc2e146566f77c6eb5040d2e800823bb9d5004ae674"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/route.ts",
+      "bytes": 62,
+      "sha256": "476f66dbca307fa66bda5ceb1e5b8e48921a61719819e5faf10d5c17d32ecd22"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/route_exception.timing",
+      "bytes": 2704053,
+      "sha256": "885d3bde374d94982ebd82140131c88c784c658238969f4b56435c84ad04142a"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/route_ignored.timing",
+      "bytes": 1117995,
+      "sha256": "576c87ad4a49f26fb5358c049a935a55451bbd6a2aba94fbd0ffd3a730256471"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/route_netlist.v",
+      "bytes": 2401072,
+      "sha256": "3cd4ccf6c82eb337332a4dfbaf278aaf2722a3e42ade9e96add468b6c8ebe861"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/run.tcl",
+      "bytes": 31366,
+      "sha256": "1925ed284b2178d6cd6a0980c506b6e90476e7820c9b37ec6d3ec0b12e5bd542"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/RUN_IDENTITY.json",
+      "bytes": 199,
+      "sha256": "6a9767e7849bd2cc81a5b2a28ed385909fc3f43bc470849e6a53e2bd9d5e2d38"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/SOURCE_MANIFEST.json",
+      "bytes": 3623,
+      "sha256": "3c614ce90395f2a7bd14072e0bddd9d80dd461be710e41a7d2f7572ca827a385"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/constraints/eth_m6_master.adc",
+      "bytes": 3676,
+      "sha256": "757dc3e82cf2a7b336e03afad6dcb2ea219769500b16a0282e66c48d0597c4be"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/constraints/eth_m6_master.sdc",
+      "bytes": 62710,
+      "sha256": "54eec0359d5c3487e3ccaa77c2151b26d004d257f60fe192603cbbebffce3664"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/rtl/fdi_clock_tree.v",
+      "bytes": 629,
+      "sha256": "8cae4180fa5664a1fe6803cbf16381b70d2ace9807515d8b84feffdbb223120b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/rtl/fdi_fixed_video.v",
+      "bytes": 3267,
+      "sha256": "6fa203eaebd6dbd0d5d9cb28163f89da05d1abf2c667103558747bb0185f65f9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/rtl/fdi_sdram_selftest.v",
+      "bytes": 8813,
+      "sha256": "9c01ad2cdc98631f5c0d109516c55d6e62851f7bfdbaa89199beba4c87efca4c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/rtl/fdi_sdram_selftest_top.v",
+      "bytes": 4489,
+      "sha256": "f4d3a23bbcf402b83839f57c5e033eaca1931ca6d70cb4f6328c6e1885be495c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/rtl/fdi_startup_bist.v",
+      "bytes": 4418,
+      "sha256": "d1b13f734bf2d581f8f1356aa03d7ed09f3b26a91c4b0b88087487e6d12d22a9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/rtl/v7_decimal_display.v",
+      "bytes": 3938,
+      "sha256": "b8d8e92229a97cb270af2d66f7609ce48b4d2d455f9e387a8bcd51612f043d1f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/vendor/display020/axis_pixel_adapter.v",
+      "bytes": 5895,
+      "sha256": "309071d0c1151aa10649ba31eb7ee3d9080988c5b8d7e7ab47a4212f5831b20e"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "bytes": 328975,
+      "sha256": "867e0b0bdd874bc383d00918c9e1be3fe01edf41f343b6a0d73e262776596a63"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/vendor/display020/hdmi_phy_wrapper.v",
+      "bytes": 3784,
+      "sha256": "193d60e02fb68cb721c1d0d834fdd7e40ae100d26a2bd1be56dfbed7870165df"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/vendor/display020/hdmi_pll.v",
+      "bytes": 7399,
+      "sha256": "d6efb17508dacef2a74c3098e512829974cac0a5bbc5cb03ed6d845ff78cf784"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/vendor/display020/lane_lvds_10_1.v",
+      "bytes": 2632,
+      "sha256": "305f40ee9561c5bcfdd1409deb152927ffcf0e90e41d79a2b9821a2b8de57c2d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "bytes": 22737,
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/vendor/fdi_loader/fdi_sdram_refresh_timer.v",
+      "bytes": 1675,
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/src/vendor/udp_base/ip/pll_gen.v",
+      "bytes": 2966,
+      "sha256": "931f7d72cf0174e090413c631748d6fa27a00501dd04477c24af4f8ee64daec7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/td_20261006_210539.log",
+      "bytes": 30484,
+      "sha256": "a9bbae66515f3623c72438bfd0b3150fe5045c0467d6ab11228fb7f718737a62"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/bit_m1_signed/td_20261006_210539.logw",
+      "bytes": 379,
+      "sha256": "84e76e37c27b64e5e31874fb60d61210560499ae6a9f2665da83b5b3364b1cd3"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/CDC_AUDIT.json",
+      "bytes": 13187,
+      "sha256": "4c2da31f87047aff33d4a5f3d0411720e0fe45be66c00277ff9ff0877d1321f5"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/console.log",
+      "bytes": 49839,
+      "sha256": "9ad5c92ff9dda1f2165c40dafcd9be02f90481d7d9eb7c993d6184ae20c6c0b7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/gate.area",
+      "bytes": 13101,
+      "sha256": "68676cf4dbf5622c61d0f68f880c329b1adba1baf7d1119ce40d9be4f840cfcf"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/gate.db",
+      "bytes": 1830856,
+      "sha256": "a45f4e1d072a423555ac24b4919826b95cb4da5940a3b421af202f17f1d3a118"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/gate.qor",
+      "bytes": 5811,
+      "sha256": "63572f13f4eefee16f3cd552983c31741289897f6f5bc632b9a729d74feb1a6a"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/gate.timing",
+      "bytes": 4569014,
+      "sha256": "1c30f9a54540faecff0ab4a88b2309939eb6a9e2c21b78ac64437b7d15e2bd2e"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/gate.ts",
+      "bytes": 62,
+      "sha256": "5cdf7232fa595949fa9112232ae7b41864737e2bf12ea95af415bfe3c58c91d3"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/gate_exception.timing",
+      "bytes": 2949871,
+      "sha256": "bdca8ff7aa2b4f4b8efd2cbb76b2c86c25d01a426d067ee1f7ee8c135b3ad7b9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/gate_ignored.timing",
+      "bytes": 1800653,
+      "sha256": "58e588d505c6bd7716fd30df14163c7a093691954f8516da803826831f405c8f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/gate_netlist.v",
+      "bytes": 3312092,
+      "sha256": "9c81c5473d37931198e1ff6d1f1a1af032ad824adb71f35a406253c0a6e692ec"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/input.db",
+      "bytes": 1833632,
+      "sha256": "26503d7e2c53b834f0c5fb97fa9b4f20026806c98df941f25e1dc7b41c685624"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/production.sdc",
+      "bytes": 65257,
+      "sha256": "3e6d7c1d9a73e3c3b1f516ba5cf073d154bfec0c57ed8913b360b91be713af74"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/RESULT.json",
+      "bytes": 621,
+      "sha256": "4e90b92fc7e56c6f55d204a2274720ad4fbfadfdaf22adb16c17b9d06f347f32"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/run.tcl",
+      "bytes": 27860,
+      "sha256": "795b682562c5e6508523aacd93bcd55e8b921144b4ca4f1ec42ce316b9284809"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/RUN_IDENTITY.json",
+      "bytes": 196,
+      "sha256": "1e2c64468414c909995a1c142bdf8525a2953d112159818eeffbe8bf00a57ea4"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/SOURCE_MANIFEST.json",
+      "bytes": 3431,
+      "sha256": "b3de7b2a817a13288e07e69cbbdf122f4bdc981b7b1ff5135f13c196752dc337"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/constraints/eth_m6_master.adc",
+      "bytes": 3676,
+      "sha256": "757dc3e82cf2a7b336e03afad6dcb2ea219769500b16a0282e66c48d0597c4be"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/constraints/eth_m6_master.sdc",
+      "bytes": 65257,
+      "sha256": "3e6d7c1d9a73e3c3b1f516ba5cf073d154bfec0c57ed8913b360b91be713af74"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/rtl/fdi_clock_tree.v",
+      "bytes": 629,
+      "sha256": "8cae4180fa5664a1fe6803cbf16381b70d2ace9807515d8b84feffdbb223120b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/rtl/fdi_fixed_video.v",
+      "bytes": 3267,
+      "sha256": "6fa203eaebd6dbd0d5d9cb28163f89da05d1abf2c667103558747bb0185f65f9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/rtl/fdi_sdram_selftest.v",
+      "bytes": 8813,
+      "sha256": "9c01ad2cdc98631f5c0d109516c55d6e62851f7bfdbaa89199beba4c87efca4c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/rtl/fdi_sdram_selftest_top.v",
+      "bytes": 4489,
+      "sha256": "f4d3a23bbcf402b83839f57c5e033eaca1931ca6d70cb4f6328c6e1885be495c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/rtl/fdi_startup_bist.v",
+      "bytes": 4418,
+      "sha256": "d1b13f734bf2d581f8f1356aa03d7ed09f3b26a91c4b0b88087487e6d12d22a9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/rtl/v7_decimal_display.v",
+      "bytes": 3938,
+      "sha256": "b8d8e92229a97cb270af2d66f7609ce48b4d2d455f9e387a8bcd51612f043d1f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/vendor/display020/axis_pixel_adapter.v",
+      "bytes": 5895,
+      "sha256": "309071d0c1151aa10649ba31eb7ee3d9080988c5b8d7e7ab47a4212f5831b20e"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "bytes": 328975,
+      "sha256": "867e0b0bdd874bc383d00918c9e1be3fe01edf41f343b6a0d73e262776596a63"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/vendor/display020/hdmi_phy_wrapper.v",
+      "bytes": 3784,
+      "sha256": "193d60e02fb68cb721c1d0d834fdd7e40ae100d26a2bd1be56dfbed7870165df"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/vendor/display020/hdmi_pll.v",
+      "bytes": 7399,
+      "sha256": "d6efb17508dacef2a74c3098e512829974cac0a5bbc5cb03ed6d845ff78cf784"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/vendor/display020/lane_lvds_10_1.v",
+      "bytes": 2632,
+      "sha256": "305f40ee9561c5bcfdd1409deb152927ffcf0e90e41d79a2b9821a2b8de57c2d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "bytes": 22737,
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/vendor/fdi_loader/fdi_sdram_refresh_timer.v",
+      "bytes": 1675,
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/src/vendor/udp_base/ip/pll_gen.v",
+      "bytes": 2966,
+      "sha256": "931f7d72cf0174e090413c631748d6fa27a00501dd04477c24af4f8ee64daec7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/td_20261006_205329.log",
+      "bytes": 29814,
+      "sha256": "cd3766755c80c736401f1892bdc614b2b5a7bfe6cf8591ad73adf7d3aa2cb4bc"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1/td_20261006_205329.logw",
+      "bytes": 379,
+      "sha256": "e78394051fc9894b643024be171c55163e5678d3e1300cb9bed980c6a2dc4160"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/BIST_NATIVE_AUDIT.json",
+      "bytes": 288680,
+      "sha256": "3932b27b507bc646ec29b2af5e1e75134b7c6b3673db3ed9606d5f2f0bac4580"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/CDC_AUDIT.json",
+      "bytes": 12058,
+      "sha256": "73ab74ce4174a0de1a15977df4ae4ff933a6f8b13dedb11b7577be9b45cda494"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/console.log",
+      "bytes": 48456,
+      "sha256": "b2423db6d69c54c73461013f5ef2977f1bd0d3d706428fb63391cc63eb8f4c76"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/gate.area",
+      "bytes": 13101,
+      "sha256": "68676cf4dbf5622c61d0f68f880c329b1adba1baf7d1119ce40d9be4f840cfcf"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/gate.db",
+      "bytes": 1830768,
+      "sha256": "ecf6c605b04246b5f858aed16c728e69b79edb6346f1a1096dbc5017de322bd4"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/gate.qor",
+      "bytes": 5811,
+      "sha256": "63572f13f4eefee16f3cd552983c31741289897f6f5bc632b9a729d74feb1a6a"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/gate.timing",
+      "bytes": 4610411,
+      "sha256": "2d559fcf0edf792aef79d566500eb213f7b4cfe4d8e5ba61007234bae81d8291"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/gate.ts",
+      "bytes": 62,
+      "sha256": "5cdf7232fa595949fa9112232ae7b41864737e2bf12ea95af415bfe3c58c91d3"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/gate_exception.timing",
+      "bytes": 2962867,
+      "sha256": "67412f31c9b0fe2b381e54efdb3228b61a406df59f35b2c780a58b4cef15c64b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/gate_ignored.timing",
+      "bytes": 1823521,
+      "sha256": "19f7856133301ead97e84ea418fa2331c89ff78f3a3aec2793d0e47e0498e7fb"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/gate_netlist.v",
+      "bytes": 3348254,
+      "sha256": "221486665efd5c5a738548364d5a0b872d27b310ba3ef5ea3b89b17ff427bbcc"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/input.db",
+      "bytes": 1833460,
+      "sha256": "3d8791fa612b248077861a513c4c1b72db55739dd425148767dd9a846cbf4b07"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/production.sdc",
+      "bytes": 62710,
+      "sha256": "54eec0359d5c3487e3ccaa77c2151b26d004d257f60fe192603cbbebffce3664"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/RESULT.json",
+      "bytes": 621,
+      "sha256": "9ee746a7c8eeedc27b71520e7af34b7e254064f7850147e0e898865bf286877a"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/run.tcl",
+      "bytes": 26828,
+      "sha256": "ae76e1a054afac7fe940f51e394b48ee31cd44758541d6a1b7ef615b9dacb5ae"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/RUN_IDENTITY.json",
+      "bytes": 201,
+      "sha256": "883c1a7d18c20304b68adf9c40b676b5961ba14eeaff4a8bbae62691d89055ee"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/SOURCE_MANIFEST.json",
+      "bytes": 3431,
+      "sha256": "f6072d022336c2b507c7e3c33258bfdd9f24755975164caeaae0a9fd06d4b844"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/constraints/eth_m6_master.adc",
+      "bytes": 3676,
+      "sha256": "757dc3e82cf2a7b336e03afad6dcb2ea219769500b16a0282e66c48d0597c4be"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/constraints/eth_m6_master.sdc",
+      "bytes": 62710,
+      "sha256": "54eec0359d5c3487e3ccaa77c2151b26d004d257f60fe192603cbbebffce3664"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/rtl/fdi_clock_tree.v",
+      "bytes": 629,
+      "sha256": "8cae4180fa5664a1fe6803cbf16381b70d2ace9807515d8b84feffdbb223120b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/rtl/fdi_fixed_video.v",
+      "bytes": 3267,
+      "sha256": "6fa203eaebd6dbd0d5d9cb28163f89da05d1abf2c667103558747bb0185f65f9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/rtl/fdi_sdram_selftest.v",
+      "bytes": 8813,
+      "sha256": "9c01ad2cdc98631f5c0d109516c55d6e62851f7bfdbaa89199beba4c87efca4c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/rtl/fdi_sdram_selftest_top.v",
+      "bytes": 4489,
+      "sha256": "f4d3a23bbcf402b83839f57c5e033eaca1931ca6d70cb4f6328c6e1885be495c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/rtl/fdi_startup_bist.v",
+      "bytes": 4418,
+      "sha256": "d1b13f734bf2d581f8f1356aa03d7ed09f3b26a91c4b0b88087487e6d12d22a9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/rtl/v7_decimal_display.v",
+      "bytes": 3938,
+      "sha256": "b8d8e92229a97cb270af2d66f7609ce48b4d2d455f9e387a8bcd51612f043d1f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/vendor/display020/axis_pixel_adapter.v",
+      "bytes": 5895,
+      "sha256": "309071d0c1151aa10649ba31eb7ee3d9080988c5b8d7e7ab47a4212f5831b20e"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "bytes": 328975,
+      "sha256": "867e0b0bdd874bc383d00918c9e1be3fe01edf41f343b6a0d73e262776596a63"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/vendor/display020/hdmi_phy_wrapper.v",
+      "bytes": 3784,
+      "sha256": "193d60e02fb68cb721c1d0d834fdd7e40ae100d26a2bd1be56dfbed7870165df"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/vendor/display020/hdmi_pll.v",
+      "bytes": 7399,
+      "sha256": "d6efb17508dacef2a74c3098e512829974cac0a5bbc5cb03ed6d845ff78cf784"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/vendor/display020/lane_lvds_10_1.v",
+      "bytes": 2632,
+      "sha256": "305f40ee9561c5bcfdd1409deb152927ffcf0e90e41d79a2b9821a2b8de57c2d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "bytes": 22737,
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/vendor/fdi_loader/fdi_sdram_refresh_timer.v",
+      "bytes": 1675,
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/src/vendor/udp_base/ip/pll_gen.v",
+      "bytes": 2966,
+      "sha256": "931f7d72cf0174e090413c631748d6fa27a00501dd04477c24af4f8ee64daec7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/td_20261006_205723.log",
+      "bytes": 29205,
+      "sha256": "9c72013352107eec042a1948ef92b6602c246f553ca51c89259477fb0704835a"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/check_m1_final/td_20261006_205723.logw",
+      "bytes": 379,
+      "sha256": "8ea8ff084629fcb9ec3813601affb1f7fa4dd6d66335d3c3d5e8f95f689e82fd"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/BIST_NATIVE_AUDIT.json",
+      "bytes": 363224,
+      "sha256": "a41a6b6b6754dbff2a78311257c4e9e5db1ee1424a0f5c9fcfd3d626bca5968e"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/console.log",
+      "bytes": 290981,
+      "sha256": "182be6fa55092a85e0828e5e54d3ac3980fd49df0ed63507fae47329da4f8b5a"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/input.db",
+      "bytes": 1830768,
+      "sha256": "ecf6c605b04246b5f858aed16c728e69b79edb6346f1a1096dbc5017de322bd4"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/physical.sdc",
+      "bytes": 66740,
+      "sha256": "1a0fe40e67013e1d161d68c47bc07e90513d4005b11b6c81a5cb96b827786ae5"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/PHYSICAL_SDC_EXPECTED.json",
+      "bytes": 94426,
+      "sha256": "1434a71d751140804d7eee4659a72558f0c29e850e3eef840ef417f976705bca"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/place.area",
+      "bytes": 17768,
+      "sha256": "9826760a77cbde0faa90c539fc65a6638e2bb5ebd135a5eac5c7ac2de77ef91d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/place.db",
+      "bytes": 2379950,
+      "sha256": "cc4695c3a0608b9f7ef05dfe98ad527ec776d1499b4dadac61a54d77cc38b7ae"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/place.qor",
+      "bytes": 1741,
+      "sha256": "21ce0f890ab6f9ce140e9a34360076831d84447807e326876ab7cdd3ad5e365b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/place.timing",
+      "bytes": 4938800,
+      "sha256": "4d684c27489712863b8984c2b8b9647e9dc7b70b5feac6cd263fb223b4620e14"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/place.ts",
+      "bytes": 66,
+      "sha256": "a9c56f6770e9efc08f918b79fcce6d3288949c7dd4b6e3ca4696cf5c4d0a18f0"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/place_exception.timing",
+      "bytes": 1214,
+      "sha256": "c1490f2e650948377d72a41a1af23d80a906a6993dbb40f7ed5089a18d0161c1"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/place_ignored.timing",
+      "bytes": 1090330,
+      "sha256": "e2a9f4e8578aaa51dde95698da26ab3819f4e9942963ccf9189b788daf465be4"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/place_netlist.v",
+      "bytes": 2391489,
+      "sha256": "8f94253b07626a393e1b95e68c3b1ce49baf3a2dc993935ef1bbdc5e7936756f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/production.sdc",
+      "bytes": 62710,
+      "sha256": "54eec0359d5c3487e3ccaa77c2151b26d004d257f60fe192603cbbebffce3664"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/RESULT.json",
+      "bytes": 224371,
+      "sha256": "3f8c9e61c1f23d6beef2a4569607a098103a16cf4aac75b1bc6e2ebaa0e06515"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/run.tcl",
+      "bytes": 26863,
+      "sha256": "30d51348b05d75c00f45d501b5b807f7465575258372ef023874985533fea665"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/RUN_IDENTITY.json",
+      "bytes": 196,
+      "sha256": "c9ba36ae59e2284e0b3077a9121bea9dbdd9df229004e8d0a56649935a815a2f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/SOURCE_MANIFEST.json",
+      "bytes": 3431,
+      "sha256": "69708f56a620cd5970447e2b12c797f38de368133fbde0ae2c975709dafcc2b3"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/constraints/eth_m6_master.adc",
+      "bytes": 3676,
+      "sha256": "757dc3e82cf2a7b336e03afad6dcb2ea219769500b16a0282e66c48d0597c4be"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/constraints/eth_m6_master.sdc",
+      "bytes": 62710,
+      "sha256": "54eec0359d5c3487e3ccaa77c2151b26d004d257f60fe192603cbbebffce3664"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/rtl/fdi_clock_tree.v",
+      "bytes": 629,
+      "sha256": "8cae4180fa5664a1fe6803cbf16381b70d2ace9807515d8b84feffdbb223120b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/rtl/fdi_fixed_video.v",
+      "bytes": 3267,
+      "sha256": "6fa203eaebd6dbd0d5d9cb28163f89da05d1abf2c667103558747bb0185f65f9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/rtl/fdi_sdram_selftest.v",
+      "bytes": 8813,
+      "sha256": "9c01ad2cdc98631f5c0d109516c55d6e62851f7bfdbaa89199beba4c87efca4c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/rtl/fdi_sdram_selftest_top.v",
+      "bytes": 4489,
+      "sha256": "f4d3a23bbcf402b83839f57c5e033eaca1931ca6d70cb4f6328c6e1885be495c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/rtl/fdi_startup_bist.v",
+      "bytes": 4418,
+      "sha256": "d1b13f734bf2d581f8f1356aa03d7ed09f3b26a91c4b0b88087487e6d12d22a9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/rtl/v7_decimal_display.v",
+      "bytes": 3938,
+      "sha256": "b8d8e92229a97cb270af2d66f7609ce48b4d2d455f9e387a8bcd51612f043d1f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/vendor/display020/axis_pixel_adapter.v",
+      "bytes": 5895,
+      "sha256": "309071d0c1151aa10649ba31eb7ee3d9080988c5b8d7e7ab47a4212f5831b20e"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "bytes": 328975,
+      "sha256": "867e0b0bdd874bc383d00918c9e1be3fe01edf41f343b6a0d73e262776596a63"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/vendor/display020/hdmi_phy_wrapper.v",
+      "bytes": 3784,
+      "sha256": "193d60e02fb68cb721c1d0d834fdd7e40ae100d26a2bd1be56dfbed7870165df"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/vendor/display020/hdmi_pll.v",
+      "bytes": 7399,
+      "sha256": "d6efb17508dacef2a74c3098e512829974cac0a5bbc5cb03ed6d845ff78cf784"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/vendor/display020/lane_lvds_10_1.v",
+      "bytes": 2632,
+      "sha256": "305f40ee9561c5bcfdd1409deb152927ffcf0e90e41d79a2b9821a2b8de57c2d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "bytes": 22737,
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/vendor/fdi_loader/fdi_sdram_refresh_timer.v",
+      "bytes": 1675,
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/src/vendor/udp_base/ip/pll_gen.v",
+      "bytes": 2966,
+      "sha256": "931f7d72cf0174e090413c631748d6fa27a00501dd04477c24af4f8ee64daec7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/td_20261006_205947.log",
+      "bytes": 280424,
+      "sha256": "174f478f8ace61576a2238ea8b7f0d4c9f6023d6e12247ccee0d96f93455b281"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/place_m1/td_20261006_205947.logw",
+      "bytes": 209858,
+      "sha256": "1f946ea9a1e10fea39cb1582a751e414038fe6fb20607c926a16496c70e3a898"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/ACTIVE_SDC_EXPECTED.json",
+      "bytes": 94426,
+      "sha256": "1434a71d751140804d7eee4659a72558f0c29e850e3eef840ef417f976705bca"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/BIST_NATIVE_AUDIT.json",
+      "bytes": 834473,
+      "sha256": "b723fafd6ed7efea6a3dc0554dff413ed691d61d67a5b9ae8812447c982b6d7d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/CDC_AUDIT.json",
+      "bytes": 14369,
+      "sha256": "fb80249c1246ebbfc55ad574105299850e4a375605bfcd85b70ad7aa720324ef"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/console.log",
+      "bytes": 84397,
+      "sha256": "d125234700f0a5faa2ba60dedd5c586cdd68e2d91cdac6678838faa374d3d193"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/final_timing.rpt",
+      "bytes": 1267986,
+      "sha256": "d7764b46822fbf05ca737d916a4c4ce42f983422ad5f2ebffcc1aeaa24e7e105"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/input.db",
+      "bytes": 2379950,
+      "sha256": "cc4695c3a0608b9f7ef05dfe98ad527ec776d1499b4dadac61a54d77cc38b7ae"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/physical.sdc",
+      "bytes": 66740,
+      "sha256": "1a0fe40e67013e1d161d68c47bc07e90513d4005b11b6c81a5cb96b827786ae5"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/PHYSICAL_SDC_EXPECTED.json",
+      "bytes": 94426,
+      "sha256": "5c912303acb3e1fdfdd7beb30a833d74feb0d0f61e9b55bd5569fa88108b9439"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/place.qor",
+      "bytes": 1741,
+      "sha256": "c8eb2374d5d9e8adcd41cbfd1654caadd956707f2bd7662848ad2b6b43c7e3ba"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/production.sdc",
+      "bytes": 66740,
+      "sha256": "1a0fe40e67013e1d161d68c47bc07e90513d4005b11b6c81a5cb96b827786ae5"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/RESULT.json",
+      "bytes": 615,
+      "sha256": "31efe619b19cf9dcdc542c9d7f2cd16231eb8f7dc1877ce461a1e263abc5aefc"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/route.area",
+      "bytes": 20492,
+      "sha256": "9ba58ac7cfcab196c9e10e4c8a8b43d9732f7a80812d24bca66395f3535d1072"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/route.db",
+      "bytes": 2870000,
+      "sha256": "1a2179ec29822883958ac03d450d76982d949a89347a10dc61e4ecc19a4c1e9f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/route.qor",
+      "bytes": 1313,
+      "sha256": "50c033b8a2f40d84f2777888858165c357684d2fea5e6b5635ba986084a0758a"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/route.timing",
+      "bytes": 4544347,
+      "sha256": "5ed892e2d3e63e6f3a5297bbc9810653d75a20f767541aa89ceb0fc3ebd04e4f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/route.ts",
+      "bytes": 62,
+      "sha256": "476f66dbca307fa66bda5ceb1e5b8e48921a61719819e5faf10d5c17d32ecd22"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/route_exception.timing",
+      "bytes": 2704048,
+      "sha256": "3c596f753cc66a9e804d491283deb5e3427d88d0236dbab2d0485d76bfb450f0"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/route_ignored.timing",
+      "bytes": 1117990,
+      "sha256": "8504aba2deb2896a30c770a33030e0655ec8bb567c921d06b37e4b96a66c2040"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/route_netlist.v",
+      "bytes": 2401072,
+      "sha256": "34320a9c302fc14978712dab9cb4d05ea9921e260afe16d3c585f08ce2240e79"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/run.tcl",
+      "bytes": 31317,
+      "sha256": "fdc16822dba70ab83d9a71752b06b8eb880c940cfe033de46d441b6a3eeb7293"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/RUN_IDENTITY.json",
+      "bytes": 196,
+      "sha256": "377fc5bb44172a8b1b2d8465cb5f5824baacdc1bf55d4a323fdcb4f0bf0ae868"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/SOURCE_MANIFEST.json",
+      "bytes": 3431,
+      "sha256": "e33123bec4bb56ef9c471378b0d903062155793ce82a1efe7603c708ff3c9904"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/constraints/eth_m6_master.adc",
+      "bytes": 3676,
+      "sha256": "757dc3e82cf2a7b336e03afad6dcb2ea219769500b16a0282e66c48d0597c4be"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/constraints/eth_m6_master.sdc",
+      "bytes": 62710,
+      "sha256": "54eec0359d5c3487e3ccaa77c2151b26d004d257f60fe192603cbbebffce3664"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/rtl/fdi_clock_tree.v",
+      "bytes": 629,
+      "sha256": "8cae4180fa5664a1fe6803cbf16381b70d2ace9807515d8b84feffdbb223120b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/rtl/fdi_fixed_video.v",
+      "bytes": 3267,
+      "sha256": "6fa203eaebd6dbd0d5d9cb28163f89da05d1abf2c667103558747bb0185f65f9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/rtl/fdi_sdram_selftest.v",
+      "bytes": 8813,
+      "sha256": "9c01ad2cdc98631f5c0d109516c55d6e62851f7bfdbaa89199beba4c87efca4c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/rtl/fdi_sdram_selftest_top.v",
+      "bytes": 4489,
+      "sha256": "f4d3a23bbcf402b83839f57c5e033eaca1931ca6d70cb4f6328c6e1885be495c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/rtl/fdi_startup_bist.v",
+      "bytes": 4418,
+      "sha256": "d1b13f734bf2d581f8f1356aa03d7ed09f3b26a91c4b0b88087487e6d12d22a9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/rtl/v7_decimal_display.v",
+      "bytes": 3938,
+      "sha256": "b8d8e92229a97cb270af2d66f7609ce48b4d2d455f9e387a8bcd51612f043d1f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/vendor/display020/axis_pixel_adapter.v",
+      "bytes": 5895,
+      "sha256": "309071d0c1151aa10649ba31eb7ee3d9080988c5b8d7e7ab47a4212f5831b20e"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "bytes": 328975,
+      "sha256": "867e0b0bdd874bc383d00918c9e1be3fe01edf41f343b6a0d73e262776596a63"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/vendor/display020/hdmi_phy_wrapper.v",
+      "bytes": 3784,
+      "sha256": "193d60e02fb68cb721c1d0d834fdd7e40ae100d26a2bd1be56dfbed7870165df"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/vendor/display020/hdmi_pll.v",
+      "bytes": 7399,
+      "sha256": "d6efb17508dacef2a74c3098e512829974cac0a5bbc5cb03ed6d845ff78cf784"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/vendor/display020/lane_lvds_10_1.v",
+      "bytes": 2632,
+      "sha256": "305f40ee9561c5bcfdd1409deb152927ffcf0e90e41d79a2b9821a2b8de57c2d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "bytes": 22737,
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/vendor/fdi_loader/fdi_sdram_refresh_timer.v",
+      "bytes": 1675,
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/src/vendor/udp_base/ip/pll_gen.v",
+      "bytes": 2966,
+      "sha256": "931f7d72cf0174e090413c631748d6fa27a00501dd04477c24af4f8ee64daec7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/td_20261006_210245.log",
+      "bytes": 60688,
+      "sha256": "222475cac45c8bb04a041d7c4e2ca79f4edfce61d7f1563f14c5b8951ed2668f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/route_m1/td_20261006_210245.logw",
+      "bytes": 385,
+      "sha256": "fad06f69b2e059ad76e0c14823c76e4aeee4a4a038a63009c824a442445261d0"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/console.log",
+      "bytes": 87547,
+      "sha256": "fc62e256cfab953440aac0e8bd2b8a1916fc812ed694063e7354e3c2446279ff"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/gate.area",
+      "bytes": 13101,
+      "sha256": "68676cf4dbf5622c61d0f68f880c329b1adba1baf7d1119ce40d9be4f840cfcf"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/gate.db",
+      "bytes": 1833632,
+      "sha256": "26503d7e2c53b834f0c5fb97fa9b4f20026806c98df941f25e1dc7b41c685624"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/gate.qor",
+      "bytes": 4644,
+      "sha256": "ac012284ed4d42df94995f599c66004caf0e87111df3c400a10600bbbbfc9d46"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/gate.timing",
+      "bytes": 396011,
+      "sha256": "b6f7853c2bd809cf06d30b6c40ab5f661407f4c10e88477cad3631f75b477f82"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/gate.ts",
+      "bytes": 62,
+      "sha256": "2862c1090a10ddcde62ec8d689b692c5359aa92521ac88383a4d3bb92607974b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/gate_exception.timing",
+      "bytes": 1136,
+      "sha256": "95534898d79ef5303bad26dd83d528615f5d17e9ab4bc177d87d93d555a8c020"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/gate_ignored.timing",
+      "bytes": 1101,
+      "sha256": "755254cc9f83cd5c17c49609b8a7b67b527b75a77931c080db35862a2f7b4c67"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/gate_netlist.v",
+      "bytes": 3312092,
+      "sha256": "66bfe86ab005203c1106fc4a988398368886e88e5ac5fb27924e1f313f3b51f4"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/production.sdc",
+      "bytes": 65257,
+      "sha256": "3e6d7c1d9a73e3c3b1f516ba5cf073d154bfec0c57ed8913b360b91be713af74"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/RESULT.json",
+      "bytes": 2416,
+      "sha256": "b40dcb9d2020a00db7037737d094244a1c11f699ef51fb494181abc82e4865c9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/run.tcl",
+      "bytes": 29677,
+      "sha256": "98cd964716dae670389edd9823f2c0f9513b3c2ea86106b900f21cbbe8154c75"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/RUN_IDENTITY.json",
+      "bytes": 196,
+      "sha256": "0cd0795d2c8668dc43b933d259c63bca9ac6745991c7af6f09cc0ac75f40db35"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/SOURCE_MANIFEST.json",
+      "bytes": 3245,
+      "sha256": "cad30f352dda92436fdf3dade9204873988e2c86da48bc7aafdd8e161ea12bef"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/constraints/eth_m6_master.adc",
+      "bytes": 3676,
+      "sha256": "757dc3e82cf2a7b336e03afad6dcb2ea219769500b16a0282e66c48d0597c4be"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/constraints/eth_m6_master.sdc",
+      "bytes": 65257,
+      "sha256": "3e6d7c1d9a73e3c3b1f516ba5cf073d154bfec0c57ed8913b360b91be713af74"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/rtl/fdi_clock_tree.v",
+      "bytes": 629,
+      "sha256": "8cae4180fa5664a1fe6803cbf16381b70d2ace9807515d8b84feffdbb223120b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/rtl/fdi_fixed_video.v",
+      "bytes": 3267,
+      "sha256": "6fa203eaebd6dbd0d5d9cb28163f89da05d1abf2c667103558747bb0185f65f9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/rtl/fdi_sdram_selftest.v",
+      "bytes": 8813,
+      "sha256": "9c01ad2cdc98631f5c0d109516c55d6e62851f7bfdbaa89199beba4c87efca4c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/rtl/fdi_sdram_selftest_top.v",
+      "bytes": 4489,
+      "sha256": "f4d3a23bbcf402b83839f57c5e033eaca1931ca6d70cb4f6328c6e1885be495c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/rtl/fdi_startup_bist.v",
+      "bytes": 4418,
+      "sha256": "d1b13f734bf2d581f8f1356aa03d7ed09f3b26a91c4b0b88087487e6d12d22a9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/rtl/v7_decimal_display.v",
+      "bytes": 3938,
+      "sha256": "b8d8e92229a97cb270af2d66f7609ce48b4d2d455f9e387a8bcd51612f043d1f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/vendor/display020/axis_pixel_adapter.v",
+      "bytes": 5895,
+      "sha256": "309071d0c1151aa10649ba31eb7ee3d9080988c5b8d7e7ab47a4212f5831b20e"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "bytes": 328975,
+      "sha256": "867e0b0bdd874bc383d00918c9e1be3fe01edf41f343b6a0d73e262776596a63"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/vendor/display020/hdmi_phy_wrapper.v",
+      "bytes": 3784,
+      "sha256": "193d60e02fb68cb721c1d0d834fdd7e40ae100d26a2bd1be56dfbed7870165df"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/vendor/display020/hdmi_pll.v",
+      "bytes": 7399,
+      "sha256": "d6efb17508dacef2a74c3098e512829974cac0a5bbc5cb03ed6d845ff78cf784"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/vendor/display020/lane_lvds_10_1.v",
+      "bytes": 2632,
+      "sha256": "305f40ee9561c5bcfdd1409deb152927ffcf0e90e41d79a2b9821a2b8de57c2d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "bytes": 22737,
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/vendor/fdi_loader/fdi_sdram_refresh_timer.v",
+      "bytes": 1675,
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/src/vendor/udp_base/ip/pll_gen.v",
+      "bytes": 2966,
+      "sha256": "931f7d72cf0174e090413c631748d6fa27a00501dd04477c24af4f8ee64daec7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/td_20261006_205131.log",
+      "bytes": 67522,
+      "sha256": "c0693944c05f86146dbc1cd28f42b8475eaee549e780fe25f9866a9ed3e58dbd"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1/td_20261006_205131.logw",
+      "bytes": 2455,
+      "sha256": "059bf344f3a334fa7a54dcdb910b0e06633f3b71b38274ff9360483e82affcf7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/console.log",
+      "bytes": 89273,
+      "sha256": "083139d9a103d8ef8ec571c8f9c634c0d9422d5b5492f932e0a9befba9dcd7fe"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/gate.area",
+      "bytes": 13101,
+      "sha256": "c786a6bb7ff40f79272c29848f108ba0806de3b1eebd8b115bbde3432a5a9f0c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/gate.db",
+      "bytes": 1787032,
+      "sha256": "9fb316e9ea0c1bb8ddbd9fad33c00bc91a4541f809cf5290541bcfed98b4226f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/gate.qor",
+      "bytes": 4644,
+      "sha256": "b1fda4f0ed6aa8d8f025cd15c3c4ad4764d416e9fb91758384ea21b4bdd274ef"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/gate.timing",
+      "bytes": 393311,
+      "sha256": "b9a8462ae9224c64e5798e54020caa21b496a5570094688390bf0f3ab8b07ca1"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/gate.ts",
+      "bytes": 62,
+      "sha256": "ead32eefd327a1b54fb21c1d3be483f2b81d2020e3f50b48521cf626e273cc17"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/gate_exception.timing",
+      "bytes": 1136,
+      "sha256": "cfee94339989fdc3bab1ede5103214d33ea34a68cd14df45442bbfc891e1c823"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/gate_ignored.timing",
+      "bytes": 1101,
+      "sha256": "66857ac27573d0ef23965b6fd0f5caf2887b3f97e7fc6115dffb629e005b3be6"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/gate_netlist.v",
+      "bytes": 3032946,
+      "sha256": "01f5425af484698c334a71439af6700fde0660aa6220d96c002d3f2b3e7f4dcd"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/production.sdc",
+      "bytes": 65257,
+      "sha256": "3e6d7c1d9a73e3c3b1f516ba5cf073d154bfec0c57ed8913b360b91be713af74"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/RESULT.json",
+      "bytes": 5233,
+      "sha256": "c93c95b6b262c66b6ecfec99f394eb732c2f5fe0c97efcfccc4e0b660cb9f862"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/run.tcl",
+      "bytes": 29785,
+      "sha256": "3286016aea932c92007faef8c162e1a455b1e34d8b9b4b6fb27891e6e615b946"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/RUN_IDENTITY.json",
+      "bytes": 202,
+      "sha256": "dc0aa915c5ab1f16097db3183a0b067b4fc3e66785f11a5dbdedb705b338f255"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/SOURCE_MANIFEST.json",
+      "bytes": 3245,
+      "sha256": "9e67e93849567386aed0d858223be685470d74933381cbf5d654477ea80735b0"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/constraints/eth_m6_master.adc",
+      "bytes": 3676,
+      "sha256": "757dc3e82cf2a7b336e03afad6dcb2ea219769500b16a0282e66c48d0597c4be"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/constraints/eth_m6_master.sdc",
+      "bytes": 65257,
+      "sha256": "3e6d7c1d9a73e3c3b1f516ba5cf073d154bfec0c57ed8913b360b91be713af74"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/rtl/fdi_clock_tree.v",
+      "bytes": 629,
+      "sha256": "8cae4180fa5664a1fe6803cbf16381b70d2ace9807515d8b84feffdbb223120b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/rtl/fdi_fixed_video.v",
+      "bytes": 3267,
+      "sha256": "6fa203eaebd6dbd0d5d9cb28163f89da05d1abf2c667103558747bb0185f65f9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/rtl/fdi_sdram_selftest.v",
+      "bytes": 8717,
+      "sha256": "008ce318ea03f9e122d926aeded3d11a61561423d7bf7367c2300d26ed8f14df"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/rtl/fdi_sdram_selftest_top.v",
+      "bytes": 4489,
+      "sha256": "f4d3a23bbcf402b83839f57c5e033eaca1931ca6d70cb4f6328c6e1885be495c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/rtl/fdi_startup_bist.v",
+      "bytes": 4418,
+      "sha256": "d1b13f734bf2d581f8f1356aa03d7ed09f3b26a91c4b0b88087487e6d12d22a9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/rtl/v7_decimal_display.v",
+      "bytes": 3938,
+      "sha256": "b8d8e92229a97cb270af2d66f7609ce48b4d2d455f9e387a8bcd51612f043d1f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/vendor/display020/axis_pixel_adapter.v",
+      "bytes": 5895,
+      "sha256": "309071d0c1151aa10649ba31eb7ee3d9080988c5b8d7e7ab47a4212f5831b20e"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "bytes": 328975,
+      "sha256": "867e0b0bdd874bc383d00918c9e1be3fe01edf41f343b6a0d73e262776596a63"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/vendor/display020/hdmi_phy_wrapper.v",
+      "bytes": 3784,
+      "sha256": "193d60e02fb68cb721c1d0d834fdd7e40ae100d26a2bd1be56dfbed7870165df"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/vendor/display020/hdmi_pll.v",
+      "bytes": 7399,
+      "sha256": "d6efb17508dacef2a74c3098e512829974cac0a5bbc5cb03ed6d845ff78cf784"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/vendor/display020/lane_lvds_10_1.v",
+      "bytes": 2632,
+      "sha256": "305f40ee9561c5bcfdd1409deb152927ffcf0e90e41d79a2b9821a2b8de57c2d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "bytes": 22737,
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/vendor/fdi_loader/fdi_sdram_refresh_timer.v",
+      "bytes": 1675,
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/src/vendor/udp_base/ip/pll_gen.v",
+      "bytes": 2966,
+      "sha256": "931f7d72cf0174e090413c631748d6fa27a00501dd04477c24af4f8ee64daec7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/td_20261006_204909.log",
+      "bytes": 70415,
+      "sha256": "6831e25a890dd8718efadde78ae54dc921fa07dc40ec888bd0bf35e492579bcb"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_probe/td_20261006_204909.logw",
+      "bytes": 5002,
+      "sha256": "39876e70ea5f765db34e920b9c7cbc0079ae2406e152af0dc81bd10da6d667d7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/console.log",
+      "bytes": 86591,
+      "sha256": "a46b15a369cf32ccc37f81b931766f75106e3f7ad502103db842467637ca44d8"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/gate.area",
+      "bytes": 13101,
+      "sha256": "68676cf4dbf5622c61d0f68f880c329b1adba1baf7d1119ce40d9be4f840cfcf"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/gate.db",
+      "bytes": 1833460,
+      "sha256": "3d8791fa612b248077861a513c4c1b72db55739dd425148767dd9a846cbf4b07"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/gate.qor",
+      "bytes": 4644,
+      "sha256": "ac012284ed4d42df94995f599c66004caf0e87111df3c400a10600bbbbfc9d46"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/gate.timing",
+      "bytes": 399266,
+      "sha256": "145303ae78ae4eb7272d0d3bd32110e66706739108b60916c79a0b6b323cde5a"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/gate.ts",
+      "bytes": 62,
+      "sha256": "2862c1090a10ddcde62ec8d689b692c5359aa92521ac88383a4d3bb92607974b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/gate_exception.timing",
+      "bytes": 1136,
+      "sha256": "34a48fd7acdd9bea9d1f311ace8b3da67ba5335021444fa07b25179e4c3f2b50"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/gate_ignored.timing",
+      "bytes": 1101,
+      "sha256": "6bba289dba686c71fe8dc8c23a49d95facfc6787cca2b3e490f0e6d0d9786624"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/gate_netlist.v",
+      "bytes": 3348254,
+      "sha256": "66252229bce4f5d3e33ad30eb2f267b9f83d6e47384704ba26ca32ddaa10ba47"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/production.sdc",
+      "bytes": 62710,
+      "sha256": "54eec0359d5c3487e3ccaa77c2151b26d004d257f60fe192603cbbebffce3664"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/RESULT.json",
+      "bytes": 2451,
+      "sha256": "0e8e26cddfe7713a5d6b2b86577ac8518f45cb6079bf90ec4451d07f0a2e2524"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/run.tcl",
+      "bytes": 28759,
+      "sha256": "6bace1c750b6016b7849dd45fe82e2b957cf63ed4ed17d46f64d12d758a5aca7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/RUN_IDENTITY.json",
+      "bytes": 203,
+      "sha256": "c596e141dcebbcdb8fd95ead9decf37fe0138091971ae90ee0c47a63eaf76e09"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/SOURCE_MANIFEST.json",
+      "bytes": 3245,
+      "sha256": "64be6f1dcc18c9f72d0ee1b1fad0b14f39abaea733ae88dba187d429e777ac06"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/constraints/eth_m6_master.adc",
+      "bytes": 3676,
+      "sha256": "757dc3e82cf2a7b336e03afad6dcb2ea219769500b16a0282e66c48d0597c4be"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/constraints/eth_m6_master.sdc",
+      "bytes": 62710,
+      "sha256": "54eec0359d5c3487e3ccaa77c2151b26d004d257f60fe192603cbbebffce3664"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/rtl/fdi_clock_tree.v",
+      "bytes": 629,
+      "sha256": "8cae4180fa5664a1fe6803cbf16381b70d2ace9807515d8b84feffdbb223120b"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/rtl/fdi_fixed_video.v",
+      "bytes": 3267,
+      "sha256": "6fa203eaebd6dbd0d5d9cb28163f89da05d1abf2c667103558747bb0185f65f9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/rtl/fdi_sdram_selftest.v",
+      "bytes": 8813,
+      "sha256": "9c01ad2cdc98631f5c0d109516c55d6e62851f7bfdbaa89199beba4c87efca4c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/rtl/fdi_sdram_selftest_top.v",
+      "bytes": 4489,
+      "sha256": "f4d3a23bbcf402b83839f57c5e033eaca1931ca6d70cb4f6328c6e1885be495c"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/rtl/fdi_startup_bist.v",
+      "bytes": 4418,
+      "sha256": "d1b13f734bf2d581f8f1356aa03d7ed09f3b26a91c4b0b88087487e6d12d22a9"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/rtl/v7_decimal_display.v",
+      "bytes": 3938,
+      "sha256": "b8d8e92229a97cb270af2d66f7609ce48b4d2d455f9e387a8bcd51612f043d1f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/vendor/display020/axis_pixel_adapter.v",
+      "bytes": 5895,
+      "sha256": "309071d0c1151aa10649ba31eb7ee3d9080988c5b8d7e7ab47a4212f5831b20e"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "bytes": 328975,
+      "sha256": "867e0b0bdd874bc383d00918c9e1be3fe01edf41f343b6a0d73e262776596a63"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/vendor/display020/hdmi_phy_wrapper.v",
+      "bytes": 3784,
+      "sha256": "193d60e02fb68cb721c1d0d834fdd7e40ae100d26a2bd1be56dfbed7870165df"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/vendor/display020/hdmi_pll.v",
+      "bytes": 7399,
+      "sha256": "d6efb17508dacef2a74c3098e512829974cac0a5bbc5cb03ed6d845ff78cf784"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/vendor/display020/lane_lvds_10_1.v",
+      "bytes": 2632,
+      "sha256": "305f40ee9561c5bcfdd1409deb152927ffcf0e90e41d79a2b9821a2b8de57c2d"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "bytes": 22737,
+      "sha256": "4f395e6a08a81f6c40c4f1b1a80f6b4c4daa9841b8ccecb248aa9377df4ff338"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/vendor/fdi_loader/fdi_sdram_refresh_timer.v",
+      "bytes": 1675,
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/src/vendor/udp_base/ip/pll_gen.v",
+      "bytes": 2966,
+      "sha256": "931f7d72cf0174e090413c631748d6fa27a00501dd04477c24af4f8ee64daec7"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/td_20261006_205613.log",
+      "bytes": 67340,
+      "sha256": "2fa32fc828ac12a1d9f37d2348350bc48e5a76741a62e431ac1a624ce5291bca"
+    },
+    {
+      "path": "experiments/sdram_selftest_M1/td_run/synth_m1_scoped/td_20261006_205613.logw",
+      "bytes": 2490,
+      "sha256": "0d3ae63bd30739e70fe0f79cf506b6ec3261a19b054bf024cdcc3535ca4cd29c"
+    },
+    {
+      "path": "scripts/prepare_sdram_selftest_m1.py",
+      "bytes": 5162,
+      "sha256": "11c03031afce0e7ef8515059b801de6a02c9e8a3cea2f36347c17d0f091e08cc"
+    },
+    {
+      "path": "scripts/publish_sdram_m1.py",
+      "bytes": 7288,
+      "sha256": "ed71d24acf59ea3d4fd270dbadf6983b7fc5b052b940226b6d127544a3d5da5c"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-04",
+  "production_rtl_frozen": true,
+  "td_snapshot": "td_run/synth1g/src",
+  "all_11_sources_equal": true,
+  "source_comparison": [
+    {
+      "path": "project/src/rtl/fdi_label_store.v",
+      "manifest_sha256": "dcb4d4adfea54a1ec9e98fde9a0b46b09372a95ded40138ca9e0f35a09baca8e",
+      "current_sha256": "dcb4d4adfea54a1ec9e98fde9a0b46b09372a95ded40138ca9e0f35a09baca8e",
+      "synth1g_sha256": "dcb4d4adfea54a1ec9e98fde9a0b46b09372a95ded40138ca9e0f35a09baca8e",
+      "equal": true
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_crc7_calc.v",
+      "manifest_sha256": "fedb9b8e532673ba7d9a977acf0887fb80a46e6260f5baf3f77dd60d536b567c",
+      "current_sha256": "fedb9b8e532673ba7d9a977acf0887fb80a46e6260f5baf3f77dd60d536b567c",
+      "synth1g_sha256": "fedb9b8e532673ba7d9a977acf0887fb80a46e6260f5baf3f77dd60d536b567c",
+      "equal": true
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_fat32_file_streamer.v",
+      "manifest_sha256": "b7b33336e1305555372a1139c16341f01ffb7d72e4589f73c242ffcb590b6c11",
+      "current_sha256": "b7b33336e1305555372a1139c16341f01ffb7d72e4589f73c242ffcb590b6c11",
+      "synth1g_sha256": "b7b33336e1305555372a1139c16341f01ffb7d72e4589f73c242ffcb590b6c11",
+      "equal": true
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_fat32_volume_scanner.v",
+      "manifest_sha256": "c799967259c13fc5b4e53e9ba7a2ec77e95be0d2a1b0a479f5eebc1a184c36f8",
+      "current_sha256": "c799967259c13fc5b4e53e9ba7a2ec77e95be0d2a1b0a479f5eebc1a184c36f8",
+      "synth1g_sha256": "c799967259c13fc5b4e53e9ba7a2ec77e95be0d2a1b0a479f5eebc1a184c36f8",
+      "equal": true
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_mx_byte_engine.v",
+      "manifest_sha256": "6a6a418e87e4eb7baf9d4f28628332eff3667d07e24ce5ad4e4056f865bdcb89",
+      "current_sha256": "6a6a418e87e4eb7baf9d4f28628332eff3667d07e24ce5ad4e4056f865bdcb89",
+      "synth1g_sha256": "6a6a418e87e4eb7baf9d4f28628332eff3667d07e24ce5ad4e4056f865bdcb89",
+      "equal": true
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sd_cmd_transactor.v",
+      "manifest_sha256": "c06f7ae8f930eb7f96decb57687e1315f11b43e4c3627560741555c166b918da",
+      "current_sha256": "c06f7ae8f930eb7f96decb57687e1315f11b43e4c3627560741555c166b918da",
+      "synth1g_sha256": "c06f7ae8f930eb7f96decb57687e1315f11b43e4c3627560741555c166b918da",
+      "equal": true
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sd_init_sequence.v",
+      "manifest_sha256": "49244c13844b5788e6315ab48b76a0860ad9b8318509b956b50c068f3bb8fe73",
+      "current_sha256": "49244c13844b5788e6315ab48b76a0860ad9b8318509b956b50c068f3bb8fe73",
+      "synth1g_sha256": "49244c13844b5788e6315ab48b76a0860ad9b8318509b956b50c068f3bb8fe73",
+      "equal": true
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sd_spi_byte_engine.v",
+      "manifest_sha256": "00f7e8bb553385014f62b69061a1ca630515d53358a47ccedd36192e482a1510",
+      "current_sha256": "00f7e8bb553385014f62b69061a1ca630515d53358a47ccedd36192e482a1510",
+      "synth1g_sha256": "00f7e8bb553385014f62b69061a1ca630515d53358a47ccedd36192e482a1510",
+      "equal": true
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sd_spi_sector_reader.v",
+      "manifest_sha256": "d895a7efe15cb557c29e0984bfaa74f4edfdad6d638a84d3d6255b48855fbf87",
+      "current_sha256": "d895a7efe15cb557c29e0984bfaa74f4edfdad6d638a84d3d6255b48855fbf87",
+      "synth1g_sha256": "d895a7efe15cb557c29e0984bfaa74f4edfdad6d638a84d3d6255b48855fbf87",
+      "equal": true
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "manifest_sha256": "4a12c246f3410b9ad3ce45172a2d4b4ec5d0f103331f67311cff37e4ca31a8e3",
+      "current_sha256": "4a12c246f3410b9ad3ce45172a2d4b4ec5d0f103331f67311cff37e4ca31a8e3",
+      "synth1g_sha256": "4a12c246f3410b9ad3ce45172a2d4b4ec5d0f103331f67311cff37e4ca31a8e3",
+      "equal": true
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sdram_refresh_timer.v",
+      "manifest_sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f",
+      "current_sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f",
+      "synth1g_sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f",
+      "equal": true
+    }
+  ],
+  "test_sources": [
+    {
+      "path": "tb_fdi_label_store.sv",
+      "sha256": "6d9f4a6f298e88ebe48a6c015886d387cf8dbdf4a671d68facb6676e7ad64dc6"
+    },
+    {
+      "path": "sd_spi_card_model.sv",
+      "sha256": "440712aa7372c9699fce2a4e31303d9ed0a1127cf19d54e7ca68482e317b8651"
+    },
+    {
+      "path": "EG_PHY_SDRAM_2M_32.sv",
+      "sha256": "a404ee5b18ef3c676f3ddfc740057faaa79dd3e7d54b791e02d3141094eab13f"
+    },
+    {
+      "path": "gen_fixture.cjs",
+      "sha256": "981abfd34430636732ebb14d6f3dad4e14cf9d2a5a8ae378d6fd015ae29e9ccb"
+    }
+  ],
+  "scenario_results": [
+    {
+      "scenario": 0,
+      "log": "scenario0.log",
+      "sha256": "1b2aa0a9733790f990ccb5084ea55ea7ba1b172d3131cb1b26a3fd43b453e3a5",
+      "result": "LOADER_PASS fileBytes=921654 physicalWords=153600 readBursts=3 cycles=27110610 SPIreads=2029 SDRAMrefresh=34385"
+    },
+    {
+      "scenario": 1,
+      "log": "scenario1.log",
+      "sha256": "e1d10395f3ba58605e15bc2b99ea07f78b27412d4deb1f0b7aa1d6331e4bf4f6",
+      "result": "LOADER_FAULT_PASS scenario=1 code=41 cycles=21504209"
+    },
+    {
+      "scenario": 2,
+      "log": "scenario2.log",
+      "sha256": "81b69c71f7f271a728afff9f358aba71b11950d2fdcacdd547825299889bc38d",
+      "result": "LOADER_FAULT_PASS scenario=2 code=40 cycles=173563"
+    },
+    {
+      "scenario": 3,
+      "log": "scenario3.log",
+      "sha256": "a00370988f973cf5e1d700de1d659117cbbde8c68f07d432dc62a32d7f707fea",
+      "result": "LOADER_FAULT_PASS scenario=3 code=48 cycles=27110610"
+    },
+    {
+      "scenario": 4,
+      "log": "scenario4.log",
+      "sha256": "eee63d70832344ef2c7303813f1ca14efff0f21b3ab2399625f04a00f4815578",
+      "result": "LOADER_FAULT_PASS scenario=4 code=22 cycles=183477"
+    },
+    {
+      "scenario": 5,
+      "log": "scenario5.log",
+      "sha256": "b36a6409ae359f9638a78b6f35d22b0ead49c6aa9868e75ae8a44a45f8bc5a79",
+      "result": "LOADER_FAULT_PASS scenario=5 code=10 cycles=183484"
+    },
+    {
+      "scenario": 6,
+      "log": "scenario6.log",
+      "sha256": "2dfb40da162666194e1e68a87c7ed3a28ca1b1ce24cdd4c8e577ffcbe277c476",
+      "result": "LOADER_FAULT_PASS scenario=6 code=83 cycles=31602882"
+    },
+    {
+      "scenario": 7,
+      "log": "scenario7.log",
+      "sha256": "8fec61d336184405b1933943f9f1a8f80a16b5c20d31f6023b05016c0a309a19",
+      "result": "LOADER_FAULT_PASS scenario=7 code=23 cycles=267669"
+    },
+    {
+      "scenario": 8,
+      "log": "scenario8.log",
+      "sha256": "a88f6d3a029274549a7dcfab82ae2f36c40fd926d52e76f8b75ef5b72880f8b9",
+      "result": "LOADER_FAULT_PASS scenario=8 code=25 cycles=267669"
+    },
+    {
+      "scenario": 9,
+      "log": "scenario9.log",
+      "sha256": "4ff0c9eb9a1793269092f3b287125f69c84698697c5a13150e66eda3c7650f96",
+      "result": "LOADER_FAULT_PASS scenario=9 code=24 cycles=267669"
+    },
+    {
+      "scenario": 10,
+      "log": "scenario10.log",
+      "sha256": "48821f7aa2ecf55cbeca344be7a4a1d2eea14ebb0594ddcd7ca793487ea42e2a",
+      "result": "LOADER_FAULT_PASS scenario=10 code=23 cycles=21504208"
+    },
+    {
+      "scenario": 11,
+      "log": "scenario11.log",
+      "sha256": "7573539028a1a1d95ffd74a469be017514fea4df1362ea9a43aa4f3f909563db",
+      "result": "LOADER_PASS fileBytes=921654 physicalWords=153600 readBursts=3 cycles=27121133 SPIreads=2030 SDRAMrefresh=34398"
+    },
+    {
+      "scenario": 12,
+      "log": "scenario12.log",
+      "sha256": "d58cb2700846b22029dcab868c9efa9f32f524724fe7b00e471c9c5610891bff",
+      "result": "LOADER_PASS fileBytes=921654 physicalWords=153600 readBursts=3 cycles=27121134 SPIreads=2030 SDRAMrefresh=34398"
+    }
+  ],
+  "test_startup_cycles": 32,
+  "test_boot_timeout_cycles": 60000000,
+  "default_startup_cycles": 500000,
+  "default_ready_time_measured": false,
+  "hardware_pass": false,
+  "overall_td_gate": "FAILED; synth1g/gate.area Utilization LUT21206 of19600, 90pct17640; DSP18; checked.qor Setup -5.044ns 7 violated endpoints; Hold +0.471ns 0 violated endpoints; checked.timing 9 clocks, STA coverage99.77pct, Confidence Synthesized; existing gate.db reloaded with target SDC, no RTL changes or resynthesis",
+  "overall_td_evidence": {
+    "area": "td_run/synth1g/gate.area",
+    "target_timing": "td_run/synth1g/checked.qor",
+    "timing_coverage": "td_run/synth1g/checked.timing",
+    "readonly_recheck_script": "td_run/synth1g/check_timing.tcl",
+    "excluded_initial_timing": "Original gate.qor/gate.timing Setup -10.567ns and 37 violated endpoints used one default clock because read_sdc quoted path did not load; retained unchanged, excluded from target-SDC gate assessment",
+    "lut_gate_basis": "gate.area Utilization #lut=21206; checked.qor #luts=15068 is the distinct LUT Statistics basis and does not replace utilization gate"
+  },
+  "remaining": "Stop production RTL work; await specification decision."
+}

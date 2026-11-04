@@ -27,6 +27,12 @@
 |---|---|---|
 | **stage12 整机候选** | **重大迭代 · 未出 bit** | 相对 467A 的重大改动：去歌词 + 直角旋转 + 默认图铺满 + 三模式键表 + 两层仪表盘 + 按需图墙 + 八图驻留 + TF 热重载 + 手动播放 |
 
+## visual/（旧方向归档，2026-10-11 已转向）
+
+`visual/` 保存早期「视觉增强」方向的 13 个渲染器原型源码（color_glow / eight_bar / energy_envelope /
+particle_terrain / pcb_* / spectral_ridge / tidal_particles / vanta_wave_field）与 m6 全屏集成的
+RTL 与文档。**该方向已在 2026-10-11 停止**，代码仅作过程留档；实验副本与门级网表未纳入。
+
 ## 不纳入
 
 - task_026：虽有上板 PASS，但归档未能把 bit 与源码快照逐文件绑定；

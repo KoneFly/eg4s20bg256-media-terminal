@@ -1,0 +1,20 @@
+{
+  "generated_utc": "2026-10-04T11:10:47.776Z",
+  "top": "pcb_frame_updater",
+  "authoritative_source_sha256": {
+    "pcb_frame_updater.v": "f7500ac223a06476074939d31f459473df19d63523d3dca410e205a3c92aeaa2",
+    "pcb_ram_2k16.v": "0d4f10a9f8180d90e7f746c7140bb1fcbf17396b356022662c0a4ddf998835a9",
+    "pcb_dynamic_roms_v2.vh": "53fe1e5b5a3115d4080aa95e2eb4712659818c3c6b0cbe038dfc45d5ca3b3199"
+  },
+  "artifact_sha256": {
+    "pcb_frame_updater.v": "f7500ac223a06476074939d31f459473df19d63523d3dca410e205a3c92aeaa2",
+    "pcb_ram_2k16.v": "0d4f10a9f8180d90e7f746c7140bb1fcbf17396b356022662c0a4ddf998835a9",
+    "pcb_dynamic_roms_v2.vh": "53fe1e5b5a3115d4080aa95e2eb4712659818c3c6b0cbe038dfc45d5ca3b3199",
+    "clock.sdc": "3dc67d4d2e7c322e0c1e0f6694713efd9f5a8152e5cebb0f4036b72d033a8449",
+    "run.tcl": "df1f6728648b7a5cb97995a15395af3f8d76f36bca3182ec97b8a59fdd0bc960",
+    "run.log": "dca169f2202a3a6c066eca49d0c806a80d21eac5417fd3cb58b3f3b2004f6997",
+    "area.txt": "491b376950eb4ff205800972c21c3b7ded5905def2dee95ef218f3189eb5f11b",
+    "timing.txt": "b0f7e5ba6f0c15d558d14f0dec76b0b1490ccb2faae35cefebec13effe6689bd",
+    "resource.qor": "1358874855a68ce1d3afa6a0f8d124429acd6657252f5cc66d36f1a69cbc01b7"
+  }
+}

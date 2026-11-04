@@ -1,0 +1,8 @@
+{"status":"PASS","scenario":"all_empty","pixels":307200,"delay":647,"bubbles":true,"prefetch_cycles":198,"build_cycles":4007,"fits_36000_vblank_cycles":true}
+{"status":"PASS","scenario":"bar_step","pixels":307200,"delay":647,"bubbles":false,"prefetch_cycles":198,"build_cycles":21665,"fits_36000_vblank_cycles":true}
+{"status":"PASS","scenario":"bar_triangle","pixels":307200,"delay":647,"bubbles":true,"prefetch_cycles":198,"build_cycles":19565,"fits_36000_vblank_cycles":true}
+{"status":"PASS","scenario":"bar_saturate","pixels":307200,"delay":647,"bubbles":false,"prefetch_cycles":198,"build_cycles":20522,"fits_36000_vblank_cycles":true}
+{"status":"PASS","scenario":"bar_alternating","pixels":307200,"delay":647,"bubbles":true,"prefetch_cycles":198,"build_cycles":55273,"fits_36000_vblank_cycles":false}
+{"status":"PASS","scenario":"bar_random","pixels":307200,"delay":647,"bubbles":false,"prefetch_cycles":198,"build_cycles":28019,"fits_36000_vblank_cycles":true}
+{"status":"PASS","scenario":"alpha_zero","pixels":307200,"delay":647,"bubbles":true,"prefetch_cycles":198,"build_cycles":20522,"fits_36000_vblank_cycles":true}
+{"status":"PASS","scenario":"alpha_partial","pixels":307200,"delay":647,"bubbles":false,"prefetch_cycles":198,"build_cycles":20522,"fits_36000_vblank_cycles":true}

@@ -1,0 +1,516 @@
+{
+  "status": "PASS_STATIC_REVIEW_HARDWARE_READBACK_BANK_UNCONFIRMED",
+  "bit": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\deliverables\\M6_FDI_A2_20261005_7B97635A.bit",
+  "bit_sha256": "7b97635aadd6fa4ebab8f3fc598f195cde5bafcdf6b6968bf105ac62284cd57c",
+  "gate": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\check_a2\\gate_netlist.v",
+  "gate_sha256": "602945bc4e658655c33c97b9d2b39064c80fab080591b540f0067ce90e601a73",
+  "route": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\bit_a2_final\\route_netlist.v",
+  "route_sha256": "c311bc51282c372ac6c1d5844ec12f2e2546dacbbf7a76bedbd40dc08ccb91d9",
+  "comparisons": [
+    {
+      "output": "\\u_display/u_label_store/state_reg[0]_syn_241",
+      "constant": 499999999,
+      "hex": "0x1dcd64ff",
+      "line": 62626,
+      "bits_28_to_0": "11101110011010110010011111111",
+      "leaves": {
+        "\\u_display/u_label_store/watchdog [0]": 1,
+        "\\u_display/u_label_store/watchdog [10]": 1,
+        "\\u_display/u_label_store/watchdog [11]": 0,
+        "\\u_display/u_label_store/watchdog [12]": 0,
+        "\\u_display/u_label_store/watchdog [13]": 1,
+        "\\u_display/u_label_store/watchdog [14]": 1,
+        "\\u_display/u_label_store/watchdog [15]": 0,
+        "\\u_display/u_label_store/watchdog [16]": 1,
+        "\\u_display/u_label_store/watchdog [17]": 0,
+        "\\u_display/u_label_store/watchdog [18]": 1,
+        "\\u_display/u_label_store/watchdog [19]": 1,
+        "\\u_display/u_label_store/watchdog [1]": 1,
+        "\\u_display/u_label_store/watchdog [20]": 0,
+        "\\u_display/u_label_store/watchdog [21]": 0,
+        "\\u_display/u_label_store/watchdog [22]": 1,
+        "\\u_display/u_label_store/watchdog [23]": 1,
+        "\\u_display/u_label_store/watchdog [24]": 1,
+        "\\u_display/u_label_store/watchdog [25]": 0,
+        "\\u_display/u_label_store/watchdog [26]": 1,
+        "\\u_display/u_label_store/watchdog [27]": 1,
+        "\\u_display/u_label_store/watchdog [28]": 1,
+        "\\u_display/u_label_store/watchdog [2]": 1,
+        "\\u_display/u_label_store/watchdog [3]": 1,
+        "\\u_display/u_label_store/watchdog [4]": 1,
+        "\\u_display/u_label_store/watchdog [5]": 1,
+        "\\u_display/u_label_store/watchdog [6]": 1,
+        "\\u_display/u_label_store/watchdog [7]": 1,
+        "\\u_display/u_label_store/watchdog [8]": 0,
+        "\\u_display/u_label_store/watchdog [9]": 0
+      }
+    },
+    {
+      "output": "\\u_display/u_label_store/state_reg[0]_syn_257",
+      "constant": 499999,
+      "hex": "0x7a11f",
+      "line": 62696,
+      "bits_28_to_0": "00000000001111010000100011111",
+      "leaves": {
+        "\\u_display/u_label_store/watchdog [0]": 1,
+        "\\u_display/u_label_store/watchdog [10]": 0,
+        "\\u_display/u_label_store/watchdog [11]": 0,
+        "\\u_display/u_label_store/watchdog [12]": 0,
+        "\\u_display/u_label_store/watchdog [13]": 1,
+        "\\u_display/u_label_store/watchdog [14]": 0,
+        "\\u_display/u_label_store/watchdog [15]": 1,
+        "\\u_display/u_label_store/watchdog [16]": 1,
+        "\\u_display/u_label_store/watchdog [17]": 1,
+        "\\u_display/u_label_store/watchdog [18]": 1,
+        "\\u_display/u_label_store/watchdog [19]": 0,
+        "\\u_display/u_label_store/watchdog [1]": 1,
+        "\\u_display/u_label_store/watchdog [20]": 0,
+        "\\u_display/u_label_store/watchdog [21]": 0,
+        "\\u_display/u_label_store/watchdog [22]": 0,
+        "\\u_display/u_label_store/watchdog [23]": 0,
+        "\\u_display/u_label_store/watchdog [24]": 0,
+        "\\u_display/u_label_store/watchdog [25]": 0,
+        "\\u_display/u_label_store/watchdog [26]": 0,
+        "\\u_display/u_label_store/watchdog [27]": 0,
+        "\\u_display/u_label_store/watchdog [28]": 0,
+        "\\u_display/u_label_store/watchdog [2]": 1,
+        "\\u_display/u_label_store/watchdog [3]": 1,
+        "\\u_display/u_label_store/watchdog [4]": 1,
+        "\\u_display/u_label_store/watchdog [5]": 0,
+        "\\u_display/u_label_store/watchdog [6]": 0,
+        "\\u_display/u_label_store/watchdog [7]": 0,
+        "\\u_display/u_label_store/watchdog [8]": 1,
+        "\\u_display/u_label_store/watchdog [9]": 0
+      }
+    }
+  ],
+  "registers": [
+    {
+      "instance": "\\u_display/u_label_store/debug_snapshot_reg[0]",
+      "line": 58827,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/state [0]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_snapshot [0]",
+        "v": "153"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/debug_snapshot_reg[0]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/state [0]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_snapshot [0]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/rtl/fdi_label_store.v(153)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/debug_snapshot_reg[1]",
+      "line": 59135,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/state [1]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_snapshot [1]",
+        "v": "153"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/debug_snapshot_reg[1]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/state [1]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_snapshot [1]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/rtl/fdi_label_store.v(153)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/debug_snapshot_reg[2]",
+      "line": 59289,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/state [2]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_snapshot [2]",
+        "v": "153"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/debug_snapshot_reg[2]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/state [2]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_snapshot [2]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/rtl/fdi_label_store.v(153)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/debug_snapshot_reg[3]",
+      "line": 59443,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/state [3]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_snapshot [3]",
+        "v": "153"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/debug_snapshot_reg[3]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/state [3]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_snapshot [3]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/rtl/fdi_label_store.v(153)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/state_reg[0]",
+      "line": 61887,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/state_reg[0]_syn_2",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/state [0]",
+        "v": "163"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/state_reg[0]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/state_reg[0]_syn_2 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/state [0]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/rtl/fdi_label_store.v(163)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/state_reg[1]",
+      "line": 63264,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/state_reg[1]_syn_2",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/state [1]",
+        "v": "163"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/state_reg[1]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/state_reg[1]_syn_2 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/state [1]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/rtl/fdi_label_store.v(163)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/state_reg[2]",
+      "line": 63339,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/state_reg[2]_syn_2",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/state [2]",
+        "v": "163"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/state_reg[2]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/state_reg[2]_syn_2 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/state [2]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/rtl/fdi_label_store.v(163)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/state_reg[3]",
+      "line": 63647,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/state_reg[3]_syn_2",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/state [3]",
+        "v": "163"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/state_reg[3]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/state_reg[3]_syn_2 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/state [3]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/rtl/fdi_label_store.v(163)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_init/state_reg[0]",
+      "line": 64683,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_init/mux12_syn_126",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_init/debug_status [0]",
+        "v": "130"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_init/state_reg[0]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_init/mux12_syn_126 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_init/debug_status [0]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sd_init_sequence.v(130)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_init/state_reg[1]",
+      "line": 64696,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_init/mux12_syn_48",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_init/debug_status [1]",
+        "v": "130"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_init/state_reg[1]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_init/mux12_syn_48 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_init/debug_status [1]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sd_init_sequence.v(130)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_init/state_reg[2]",
+      "line": 64709,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_init/mux12_syn_68",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_init/debug_status [2]",
+        "v": "130"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_init/state_reg[2]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_init/mux12_syn_68 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_init/debug_status [2]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sd_init_sequence.v(130)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_init/state_reg[3]",
+      "line": 64722,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_init/mux12_syn_88",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_init/debug_status [3]",
+        "v": "130"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_init/state_reg[3]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_init/mux12_syn_88 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_init/debug_status [3]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sd_init_sequence.v(130)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_mem/state_reg[0]",
+      "line": 71804,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_mem/mux63_syn_222",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_mem/debug_state [0]",
+        "v": "169"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_mem/state_reg[0]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_mem/mux63_syn_222 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_mem/debug_state [0]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v(169)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_mem/state_reg[1]",
+      "line": 71817,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_mem/mux63_syn_96",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_mem/debug_state [1]",
+        "v": "169"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_mem/state_reg[1]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_mem/mux63_syn_96 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_mem/debug_state [1]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v(169)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_mem/state_reg[2]",
+      "line": 71830,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_mem/mux63_syn_130",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_mem/debug_state [2]",
+        "v": "169"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_mem/state_reg[2]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_mem/mux63_syn_130 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_mem/debug_state [2]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v(169)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_mem/state_reg[3]",
+      "line": 71843,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_mem/mux63_syn_156",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_mem/debug_state [3]",
+        "v": "169"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_mem/state_reg[3]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_mem/mux63_syn_156 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_mem/debug_state [3]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v(169)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_mem/state_reg[4]",
+      "line": 71856,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_mem/mux63_syn_184",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_mem/debug_state [4]",
+        "v": "169"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_mem/state_reg[4]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_mem/mux63_syn_184 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_mem/debug_state [4]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v(169)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_reader/state_reg[0]",
+      "line": 74884,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_reader/mux56_syn_42",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_reader/debug_state [0]",
+        "v": "132"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_reader/state_reg[0]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_reader/mux56_syn_42 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_reader/debug_state [0]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sd_spi_sector_reader.v(132)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_reader/state_reg[1]",
+      "line": 74897,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_reader/mux56_syn_196",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_reader/debug_state [1]",
+        "v": "132"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_reader/state_reg[1]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_reader/mux56_syn_196 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_reader/debug_state [1]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sd_spi_sector_reader.v(132)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_reader/state_reg[2]",
+      "line": 74910,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_reader/mux56_syn_110",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_reader/debug_state [2]",
+        "v": "132"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_reader/state_reg[2]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_reader/mux56_syn_110 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_reader/debug_state [2]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sd_spi_sector_reader.v(132)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_reader/state_reg[3]",
+      "line": 74923,
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_reader/mux56_syn_212",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_reader/debug_state [3]",
+        "v": "132"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_reader/state_reg[3]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_reader/mux56_syn_212 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_reader/debug_state [3]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sd_spi_sector_reader.v(132)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/u_reader/state_reg[4]",
+      "line": 74936,
+      "ports": {
+        "INIT": "1'b1",
+        "CEMUX": "\"1\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"SET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/u_reader/mux56_syn_170",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/u_reader/debug_state [4]",
+        "v": "132"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b1),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"SET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/u_reader/state_reg[4]  (\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/u_reader/mux56_syn_170 ),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/u_reader/debug_state [4]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/fdi_loader/fdi_sd_spi_sector_reader.v(132)"
+    }
+  ],
+  "loader_recoded_log_lines": [
+    "SYN-1067 : encoded FSM with state register 'u_display/u_label_store/byte_phase_reg' using encoding 'one_hot' in model 'eth_udp_m6_master_top'",
+    "SYN-1067 : encoded FSM with state register 'u_display/u_label_store/u_reader/u_byte_engine/state_reg' using encoding 'one_hot' in model 'eth_udp_m6_master_top'"
+  ],
+  "limits": "LUT INIT 静态展开及寄存器直连证据；不证明真卡、时钟/复位或板上实际开关电平。"
+}

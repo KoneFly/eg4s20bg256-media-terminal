@@ -1,0 +1,1142 @@
+{
+  "status": "PASS_STATIC_BOOT_COUNTER_REVIEW",
+  "gate_sha256": "d04c8e33d45cbf042a15fad09e7cd15d0169ad9456446acd7c9d13deb88a3267",
+  "route_sha256": "557dbc4233d2ca0cf856acdea5876b5b0e5a8d224a84bff3085078ab2e3f6580",
+  "comparisons": [
+    {
+      "output": "\\u_display/u_label_store/state_reg[0]_syn_163",
+      "constant": 499999999,
+      "leaves": {
+        "\\u_display/u_label_store/debug_progress [0]": 1,
+        "\\u_display/u_label_store/debug_progress [10]": 1,
+        "\\u_display/u_label_store/debug_progress [11]": 0,
+        "\\u_display/u_label_store/debug_progress [12]": 0,
+        "\\u_display/u_label_store/debug_progress [13]": 1,
+        "\\u_display/u_label_store/debug_progress [14]": 1,
+        "\\u_display/u_label_store/debug_progress [15]": 0,
+        "\\u_display/u_label_store/debug_progress [16]": 1,
+        "\\u_display/u_label_store/debug_progress [17]": 0,
+        "\\u_display/u_label_store/debug_progress [18]": 1,
+        "\\u_display/u_label_store/debug_progress [19]": 1,
+        "\\u_display/u_label_store/debug_progress [1]": 1,
+        "\\u_display/u_label_store/debug_progress [20]": 0,
+        "\\u_display/u_label_store/debug_progress [21]": 0,
+        "\\u_display/u_label_store/debug_progress [22]": 1,
+        "\\u_display/u_label_store/debug_progress [23]": 1,
+        "\\u_display/u_label_store/debug_progress [24]": 1,
+        "\\u_display/u_label_store/debug_progress [25]": 0,
+        "\\u_display/u_label_store/debug_progress [26]": 1,
+        "\\u_display/u_label_store/debug_progress [27]": 1,
+        "\\u_display/u_label_store/debug_progress [28]": 1,
+        "\\u_display/u_label_store/debug_progress [2]": 1,
+        "\\u_display/u_label_store/debug_progress [3]": 1,
+        "\\u_display/u_label_store/debug_progress [4]": 1,
+        "\\u_display/u_label_store/debug_progress [5]": 1,
+        "\\u_display/u_label_store/debug_progress [6]": 1,
+        "\\u_display/u_label_store/debug_progress [7]": 1,
+        "\\u_display/u_label_store/debug_progress [8]": 0,
+        "\\u_display/u_label_store/debug_progress [9]": 0
+      }
+    },
+    {
+      "output": "\\u_display/u_label_store/state_reg[0]_syn_85",
+      "constant": 499999,
+      "leaves": {
+        "\\u_display/u_label_store/debug_progress [0]": 1,
+        "\\u_display/u_label_store/debug_progress [10]": 0,
+        "\\u_display/u_label_store/debug_progress [11]": 0,
+        "\\u_display/u_label_store/debug_progress [12]": 0,
+        "\\u_display/u_label_store/debug_progress [13]": 1,
+        "\\u_display/u_label_store/debug_progress [14]": 0,
+        "\\u_display/u_label_store/debug_progress [15]": 1,
+        "\\u_display/u_label_store/debug_progress [16]": 1,
+        "\\u_display/u_label_store/debug_progress [17]": 1,
+        "\\u_display/u_label_store/debug_progress [18]": 1,
+        "\\u_display/u_label_store/debug_progress [19]": 0,
+        "\\u_display/u_label_store/debug_progress [1]": 1,
+        "\\u_display/u_label_store/debug_progress [20]": 0,
+        "\\u_display/u_label_store/debug_progress [21]": 0,
+        "\\u_display/u_label_store/debug_progress [22]": 0,
+        "\\u_display/u_label_store/debug_progress [23]": 0,
+        "\\u_display/u_label_store/debug_progress [24]": 0,
+        "\\u_display/u_label_store/debug_progress [25]": 0,
+        "\\u_display/u_label_store/debug_progress [26]": 0,
+        "\\u_display/u_label_store/debug_progress [27]": 0,
+        "\\u_display/u_label_store/debug_progress [28]": 0,
+        "\\u_display/u_label_store/debug_progress [2]": 1,
+        "\\u_display/u_label_store/debug_progress [3]": 1,
+        "\\u_display/u_label_store/debug_progress [4]": 1,
+        "\\u_display/u_label_store/debug_progress [5]": 0,
+        "\\u_display/u_label_store/debug_progress [6]": 0,
+        "\\u_display/u_label_store/debug_progress [7]": 0,
+        "\\u_display/u_label_store/debug_progress [8]": 1,
+        "\\u_display/u_label_store/debug_progress [9]": 0,
+        "\\u_display/u_label_store/state [0]": 0
+      }
+    },
+    {
+      "output": "\\u_display/u_label_store/init_start_n",
+      "constant": 499999,
+      "leaves": {
+        "\\u_display/u_label_store/debug_progress [0]": 1,
+        "\\u_display/u_label_store/debug_progress [10]": 0,
+        "\\u_display/u_label_store/debug_progress [11]": 0,
+        "\\u_display/u_label_store/debug_progress [12]": 0,
+        "\\u_display/u_label_store/debug_progress [13]": 1,
+        "\\u_display/u_label_store/debug_progress [14]": 0,
+        "\\u_display/u_label_store/debug_progress [15]": 1,
+        "\\u_display/u_label_store/debug_progress [16]": 1,
+        "\\u_display/u_label_store/debug_progress [17]": 1,
+        "\\u_display/u_label_store/debug_progress [18]": 1,
+        "\\u_display/u_label_store/debug_progress [19]": 0,
+        "\\u_display/u_label_store/debug_progress [1]": 1,
+        "\\u_display/u_label_store/debug_progress [20]": 0,
+        "\\u_display/u_label_store/debug_progress [21]": 0,
+        "\\u_display/u_label_store/debug_progress [22]": 0,
+        "\\u_display/u_label_store/debug_progress [23]": 0,
+        "\\u_display/u_label_store/debug_progress [24]": 0,
+        "\\u_display/u_label_store/debug_progress [25]": 0,
+        "\\u_display/u_label_store/debug_progress [26]": 0,
+        "\\u_display/u_label_store/debug_progress [27]": 0,
+        "\\u_display/u_label_store/debug_progress [28]": 0,
+        "\\u_display/u_label_store/debug_progress [2]": 1,
+        "\\u_display/u_label_store/debug_progress [3]": 1,
+        "\\u_display/u_label_store/debug_progress [4]": 1,
+        "\\u_display/u_label_store/debug_progress [5]": 0,
+        "\\u_display/u_label_store/debug_progress [6]": 0,
+        "\\u_display/u_label_store/debug_progress [7]": 0,
+        "\\u_display/u_label_store/debug_progress [8]": 1,
+        "\\u_display/u_label_store/debug_progress [9]": 0,
+        "\\u_display/u_label_store/state [0]": 0,
+        "\\u_display/u_label_store/state [1]": 0,
+        "\\u_display/u_label_store/state [2]": 0,
+        "\\u_display/u_label_store/state [3]": 0
+      }
+    }
+  ],
+  "route_comparisons": [
+    {
+      "output": "\\u_display/u_label_store/state_reg[0]_syn_163",
+      "constant": 499999999,
+      "gate_route_leaves_identical": true,
+      "leaves": {
+        "\\u_display/u_label_store/debug_progress [0]": 1,
+        "\\u_display/u_label_store/debug_progress [10]": 1,
+        "\\u_display/u_label_store/debug_progress [11]": 0,
+        "\\u_display/u_label_store/debug_progress [12]": 0,
+        "\\u_display/u_label_store/debug_progress [13]": 1,
+        "\\u_display/u_label_store/debug_progress [14]": 1,
+        "\\u_display/u_label_store/debug_progress [15]": 0,
+        "\\u_display/u_label_store/debug_progress [16]": 1,
+        "\\u_display/u_label_store/debug_progress [17]": 0,
+        "\\u_display/u_label_store/debug_progress [18]": 1,
+        "\\u_display/u_label_store/debug_progress [19]": 1,
+        "\\u_display/u_label_store/debug_progress [1]": 1,
+        "\\u_display/u_label_store/debug_progress [20]": 0,
+        "\\u_display/u_label_store/debug_progress [21]": 0,
+        "\\u_display/u_label_store/debug_progress [22]": 1,
+        "\\u_display/u_label_store/debug_progress [23]": 1,
+        "\\u_display/u_label_store/debug_progress [24]": 1,
+        "\\u_display/u_label_store/debug_progress [25]": 0,
+        "\\u_display/u_label_store/debug_progress [26]": 1,
+        "\\u_display/u_label_store/debug_progress [27]": 1,
+        "\\u_display/u_label_store/debug_progress [28]": 1,
+        "\\u_display/u_label_store/debug_progress [2]": 1,
+        "\\u_display/u_label_store/debug_progress [3]": 1,
+        "\\u_display/u_label_store/debug_progress [4]": 1,
+        "\\u_display/u_label_store/debug_progress [5]": 1,
+        "\\u_display/u_label_store/debug_progress [6]": 1,
+        "\\u_display/u_label_store/debug_progress [7]": 1,
+        "\\u_display/u_label_store/debug_progress [8]": 0,
+        "\\u_display/u_label_store/debug_progress [9]": 0
+      }
+    },
+    {
+      "output": "\\u_display/u_label_store/state_reg[0]_syn_85",
+      "constant": 499999,
+      "gate_route_leaves_identical": true,
+      "leaves": {
+        "\\u_display/u_label_store/debug_progress [0]": 1,
+        "\\u_display/u_label_store/debug_progress [10]": 0,
+        "\\u_display/u_label_store/debug_progress [11]": 0,
+        "\\u_display/u_label_store/debug_progress [12]": 0,
+        "\\u_display/u_label_store/debug_progress [13]": 1,
+        "\\u_display/u_label_store/debug_progress [14]": 0,
+        "\\u_display/u_label_store/debug_progress [15]": 1,
+        "\\u_display/u_label_store/debug_progress [16]": 1,
+        "\\u_display/u_label_store/debug_progress [17]": 1,
+        "\\u_display/u_label_store/debug_progress [18]": 1,
+        "\\u_display/u_label_store/debug_progress [19]": 0,
+        "\\u_display/u_label_store/debug_progress [1]": 1,
+        "\\u_display/u_label_store/debug_progress [20]": 0,
+        "\\u_display/u_label_store/debug_progress [21]": 0,
+        "\\u_display/u_label_store/debug_progress [22]": 0,
+        "\\u_display/u_label_store/debug_progress [23]": 0,
+        "\\u_display/u_label_store/debug_progress [24]": 0,
+        "\\u_display/u_label_store/debug_progress [25]": 0,
+        "\\u_display/u_label_store/debug_progress [26]": 0,
+        "\\u_display/u_label_store/debug_progress [27]": 0,
+        "\\u_display/u_label_store/debug_progress [28]": 0,
+        "\\u_display/u_label_store/debug_progress [2]": 1,
+        "\\u_display/u_label_store/debug_progress [3]": 1,
+        "\\u_display/u_label_store/debug_progress [4]": 1,
+        "\\u_display/u_label_store/debug_progress [5]": 0,
+        "\\u_display/u_label_store/debug_progress [6]": 0,
+        "\\u_display/u_label_store/debug_progress [7]": 0,
+        "\\u_display/u_label_store/debug_progress [8]": 1,
+        "\\u_display/u_label_store/debug_progress [9]": 0,
+        "\\u_display/u_label_store/state [0]": 0
+      }
+    },
+    {
+      "output": "\\u_display/u_label_store/init_start_n",
+      "constant": 499999,
+      "gate_route_leaves_identical": true,
+      "leaves": {
+        "\\u_display/u_label_store/debug_progress [0]": 1,
+        "\\u_display/u_label_store/debug_progress [10]": 0,
+        "\\u_display/u_label_store/debug_progress [11]": 0,
+        "\\u_display/u_label_store/debug_progress [12]": 0,
+        "\\u_display/u_label_store/debug_progress [13]": 1,
+        "\\u_display/u_label_store/debug_progress [14]": 0,
+        "\\u_display/u_label_store/debug_progress [15]": 1,
+        "\\u_display/u_label_store/debug_progress [16]": 1,
+        "\\u_display/u_label_store/debug_progress [17]": 1,
+        "\\u_display/u_label_store/debug_progress [18]": 1,
+        "\\u_display/u_label_store/debug_progress [19]": 0,
+        "\\u_display/u_label_store/debug_progress [1]": 1,
+        "\\u_display/u_label_store/debug_progress [20]": 0,
+        "\\u_display/u_label_store/debug_progress [21]": 0,
+        "\\u_display/u_label_store/debug_progress [22]": 0,
+        "\\u_display/u_label_store/debug_progress [23]": 0,
+        "\\u_display/u_label_store/debug_progress [24]": 0,
+        "\\u_display/u_label_store/debug_progress [25]": 0,
+        "\\u_display/u_label_store/debug_progress [26]": 0,
+        "\\u_display/u_label_store/debug_progress [27]": 0,
+        "\\u_display/u_label_store/debug_progress [28]": 0,
+        "\\u_display/u_label_store/debug_progress [2]": 1,
+        "\\u_display/u_label_store/debug_progress [3]": 1,
+        "\\u_display/u_label_store/debug_progress [4]": 1,
+        "\\u_display/u_label_store/debug_progress [5]": 0,
+        "\\u_display/u_label_store/debug_progress [6]": 0,
+        "\\u_display/u_label_store/debug_progress [7]": 0,
+        "\\u_display/u_label_store/debug_progress [8]": 1,
+        "\\u_display/u_label_store/debug_progress [9]": 0,
+        "\\u_display/u_label_store/state [0]": 0,
+        "\\u_display/u_label_store/state [1]": 0,
+        "\\u_display/u_label_store/state [2]": 0,
+        "\\u_display/u_label_store/state [3]": 0
+      }
+    }
+  ],
+  "boot_checks": [
+    {
+      "current_state": 0,
+      "watchdog": 65534,
+      "next_state": 0,
+      "counter_ce": 1,
+      "synchronous_counter_clear": 0,
+      "other_inputs": "unknown, conservatively propagated"
+    },
+    {
+      "current_state": 0,
+      "watchdog": 65535,
+      "next_state": 0,
+      "counter_ce": 1,
+      "synchronous_counter_clear": 0,
+      "other_inputs": "unknown, conservatively propagated"
+    },
+    {
+      "current_state": 0,
+      "watchdog": 65536,
+      "next_state": 0,
+      "counter_ce": 1,
+      "synchronous_counter_clear": 0,
+      "other_inputs": "unknown, conservatively propagated"
+    },
+    {
+      "current_state": 0,
+      "watchdog": 499998,
+      "next_state": 0,
+      "counter_ce": 1,
+      "synchronous_counter_clear": 0,
+      "other_inputs": "unknown, conservatively propagated"
+    },
+    {
+      "current_state": 0,
+      "watchdog": 499999,
+      "next_state": 1,
+      "counter_ce": 1,
+      "synchronous_counter_clear": 0,
+      "other_inputs": "unknown, conservatively propagated"
+    },
+    {
+      "current_state": 0,
+      "watchdog": 500000,
+      "next_state": 0,
+      "counter_ce": 1,
+      "synchronous_counter_clear": 0,
+      "other_inputs": "unknown, conservatively propagated"
+    }
+  ],
+  "gate_counter_registers": [
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[0]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [0]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [0]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[0]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [0]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [0]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[10]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [10]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [10]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[10]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [10]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [10]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[11]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [11]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [11]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[11]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [11]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [11]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[12]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [12]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [12]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[12]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [12]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [12]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[13]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [13]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [13]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[13]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [13]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [13]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[14]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [14]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [14]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[14]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [14]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [14]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[15]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [15]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [15]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[15]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [15]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [15]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[16]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [16]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [16]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[16]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [16]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [16]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[17]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [17]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [17]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[17]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [17]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [17]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[18]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [18]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [18]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[18]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [18]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [18]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[19]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [19]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [19]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[19]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [19]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [19]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[1]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [1]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [1]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[1]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [1]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [1]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[20]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [20]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [20]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[20]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [20]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [20]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[21]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [21]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [21]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[21]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [21]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [21]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[22]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [22]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [22]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[22]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [22]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [22]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[23]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [23]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [23]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[23]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [23]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [23]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[24]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [24]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [24]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[24]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [24]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [24]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[25]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [25]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [25]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[25]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [25]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [25]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[26]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [26]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [26]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[26]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [26]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [26]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[27]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [27]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [27]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[27]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [27]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [27]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[28]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [28]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [28]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[28]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [28]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [28]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[2]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [2]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [2]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[2]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [2]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [2]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[3]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [3]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [3]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[3]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [3]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [3]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[4]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [4]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [4]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[4]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [4]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [4]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[5]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [5]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [5]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[5]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [5]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [5]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[6]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [6]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [6]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[6]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [6]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [6]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[7]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [7]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [7]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[7]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [7]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [7]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[8]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [8]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [8]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[8]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [8]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [8]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[9]",
+      "ports": {
+        "INIT": "1'b0",
+        "CEMUX": "\"CE\"",
+        "CLKMUX": "\"CLK\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"SR\"",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "\\u_display/u_label_store/watchdog_b [9]",
+        "sr": "ctrl_reset_sync[1]",
+        "q": "\\u_display/u_label_store/debug_progress [9]",
+        "v": "165"
+      },
+      "text": "  AL_MAP_SEQ #(\n    //.INIT(1'b0),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .REGSET(\"RESET\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\"))\n    \\u_display/u_label_store/watchdog_reg[9]  (\n    .ce(\\u_display/u_label_store/debug_snapshot_b_n ),\n    .clk(\\u_display/u_label_store/u_check_buffer/wr_clk ),\n    .d(\\u_display/u_label_store/watchdog_b [9]),\n    .sr(ctrl_reset_sync[1]),\n    .q(\\u_display/u_label_store/debug_progress [9]));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a3_20261006_153543/src/rtl/fdi_label_store.v(165)"
+    }
+  ],
+  "physical_counter_registers": [
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[10]_syn_4",
+      "parameters": "\n    //.LUT0(\"(C*~D)\"),\n    //.LUT1(\"(C*~D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUT0(16'b0000000011110000),\n    .INIT_LUT1(16'b0000000011110000),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/watchdog_b7 [10],\\u_display/u_label_store/watchdog_b7 [8]}",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/mux122_syn_102 }",
+        "sr": "\\ctrl_reset_sync[1]_dup_7",
+        "q": "{\\u_display/u_label_store/debug_progress [10],\\u_display/u_label_store/debug_progress [8]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[11]_syn_4",
+      "parameters": "\n    //.LUT0(\"(C*~D)\"),\n    //.LUT1(\"(C*~D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUT0(16'b0000000011110000),\n    .INIT_LUT1(16'b0000000011110000),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/watchdog_b7 [11],\\u_display/u_label_store/watchdog_b7 [15]}",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/mux122_syn_102 }",
+        "sr": "\\ctrl_reset_sync[1]_dup_7",
+        "q": "{\\u_display/u_label_store/debug_progress [11],\\u_display/u_label_store/debug_progress [15]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[12]_syn_4",
+      "parameters": "\n    //.LUT0(\"(C*~D)\"),\n    //.LUT1(\"(C*~D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUT0(16'b0000000011110000),\n    .INIT_LUT1(16'b0000000011110000),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/watchdog_b7 [12],\\u_display/u_label_store/watchdog_b7 [7]}",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/mux122_syn_102 }",
+        "sr": "\\ctrl_reset_sync[1]_dup_7",
+        "q": "{\\u_display/u_label_store/debug_progress [12],\\u_display/u_label_store/debug_progress [7]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[13]_syn_4",
+      "parameters": "\n    //.LUT0(\"(~C*~D)\"),\n    //.LUT1(\"(C*~D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUT0(16'b0000000000001111),\n    .INIT_LUT1(16'b0000000011110000),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/watchdog_b7 [13],\\u_display/u_label_store/debug_progress [0]}",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/mux122_syn_102 }",
+        "sr": "\\ctrl_reset_sync[1]_dup_7",
+        "q": "{\\u_display/u_label_store/debug_progress [13],\\u_display/u_label_store/debug_progress [0]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[16]_syn_4",
+      "parameters": "\n    //.LUT0(\"(C*~D)\"),\n    //.LUT1(\"(C*~D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUT0(16'b0000000011110000),\n    .INIT_LUT1(16'b0000000011110000),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/watchdog_b7 [16],\\u_display/u_label_store/watchdog_b7 [17]}",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/mux122_syn_102 }",
+        "sr": "\\ctrl_reset_sync[1]_dup_7",
+        "q": "{\\u_display/u_label_store/debug_progress [16],\\u_display/u_label_store/debug_progress [17]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[18]_syn_4",
+      "parameters": "\n    //.LUTF0(\"(~C*D)\"),\n    //.LUTF1(\"(C*~D)\"),\n    //.LUTG0(\"(~C*D)\"),\n    //.LUTG1(\"(C*~D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUTF0(16'b0000111100000000),\n    .INIT_LUTF1(16'b0000000011110000),\n    .INIT_LUTG0(16'b0000111100000000),\n    .INIT_LUTG1(16'b0000000011110000),\n    .LSFMUX0(\"FUNC5\"),\n    .LSFMUX1(\"FUNC5\"),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/watchdog_b7 [18],\\u_display/u_label_store/mux122_syn_102 }",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/watchdog_b7 [19]}",
+        "sr": "\\ctrl_reset_sync[1]_dup_7",
+        "q": "{\\u_display/u_label_store/debug_progress [18],\\u_display/u_label_store/debug_progress [19]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[1]_syn_4",
+      "parameters": "\n    //.LUT0(\"(C*~D)\"),\n    //.LUT1(\"(C*~D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUT0(16'b0000000011110000),\n    .INIT_LUT1(16'b0000000011110000),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/watchdog_b7 [1],\\u_display/u_label_store/watchdog_b7 [2]}",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/mux122_syn_102 }",
+        "sr": "\\ctrl_reset_sync[1]_dup_18",
+        "q": "{\\u_display/u_label_store/debug_progress [1],\\u_display/u_label_store/debug_progress [2]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[20]_syn_4",
+      "parameters": "\n    //.LUTF0(\"(~C*D)\"),\n    //.LUTG0(\"(~C*D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUTF0(16'b0000111100000000),\n    .INIT_LUTG0(16'b0000111100000000),\n    .LSFMUX0(\"FUNC5\"),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{open_n41499,\\u_display/u_label_store/mux122_syn_102 }",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{open_n41500,\\u_display/u_label_store/watchdog_b7 [20]}",
+        "sr": "\\ctrl_reset_sync[1]_dup_7",
+        "q": "{open_n41522,\\u_display/u_label_store/debug_progress [20]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[21]_syn_4",
+      "parameters": "\n    //.LUTF0(\"(~C*D)\"),\n    //.LUTF1(\"(~C*D)\"),\n    //.LUTG0(\"(~C*D)\"),\n    //.LUTG1(\"(~C*D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUTF0(16'b0000111100000000),\n    .INIT_LUTF1(16'b0000111100000000),\n    .INIT_LUTG0(16'b0000111100000000),\n    .INIT_LUTG1(16'b0000111100000000),\n    .LSFMUX0(\"FUNC5\"),\n    .LSFMUX1(\"FUNC5\"),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/mux122_syn_102 }",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/watchdog_b7 [21],\\u_display/u_label_store/watchdog_b7 [22]}",
+        "sr": "\\ctrl_reset_sync[1]_dup_7",
+        "q": "{\\u_display/u_label_store/debug_progress [21],\\u_display/u_label_store/debug_progress [22]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[23]_syn_4",
+      "parameters": "\n    //.LUT0(\"(~C*D)\"),\n    //.LUT1(\"(~C*D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUT0(16'b0000111100000000),\n    .INIT_LUT1(16'b0000111100000000),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/mux122_syn_102 }",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/watchdog_b7 [23],\\u_display/u_label_store/watchdog_b7 [24]}",
+        "sr": "\\ctrl_reset_sync[1]_dup_57",
+        "q": "{\\u_display/u_label_store/debug_progress [23],\\u_display/u_label_store/debug_progress [24]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[25]_syn_4",
+      "parameters": "\n    //.LUT0(\"(~C*D)\"),\n    //.LUT1(\"(~C*D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUT0(16'b0000111100000000),\n    .INIT_LUT1(16'b0000111100000000),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/mux122_syn_102 }",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/watchdog_b7 [25],\\u_display/u_label_store/watchdog_b7 [26]}",
+        "sr": "\\ctrl_reset_sync[1]_dup_18",
+        "q": "{\\u_display/u_label_store/debug_progress [25],\\u_display/u_label_store/debug_progress [26]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[27]_syn_4",
+      "parameters": "\n    //.LUTF0(\"(~C*D)\"),\n    //.LUTF1(\"(~C*D)\"),\n    //.LUTG0(\"(~C*D)\"),\n    //.LUTG1(\"(~C*D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUTF0(16'b0000111100000000),\n    .INIT_LUTF1(16'b0000111100000000),\n    .INIT_LUTG0(16'b0000111100000000),\n    .INIT_LUTG1(16'b0000111100000000),\n    .LSFMUX0(\"FUNC5\"),\n    .LSFMUX1(\"FUNC5\"),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/mux122_syn_102 }",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/watchdog_b7 [27],\\u_display/u_label_store/watchdog_b7 [28]}",
+        "sr": "\\ctrl_reset_sync[1]_dup_7",
+        "q": "{\\u_display/u_label_store/debug_progress [27],\\u_display/u_label_store/debug_progress [28]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[3]_syn_4",
+      "parameters": "\n    //.LUTF0(\"(C*~D)\"),\n    //.LUTF1(\"(C*~D)\"),\n    //.LUTG0(\"(C*~D)\"),\n    //.LUTG1(\"(C*~D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUTF0(16'b0000000011110000),\n    .INIT_LUTF1(16'b0000000011110000),\n    .INIT_LUTG0(16'b0000000011110000),\n    .INIT_LUTG1(16'b0000000011110000),\n    .LSFMUX0(\"FUNC5\"),\n    .LSFMUX1(\"FUNC5\"),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/watchdog_b7 [3],\\u_display/u_label_store/watchdog_b7 [5]}",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/mux122_syn_102 }",
+        "sr": "\\ctrl_reset_sync[1]_dup_7",
+        "q": "{\\u_display/u_label_store/debug_progress [3],\\u_display/u_label_store/debug_progress [5]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[4]_syn_4",
+      "parameters": "\n    //.LUTF0(\"(C*~D)\"),\n    //.LUTF1(\"(C*~D)\"),\n    //.LUTG0(\"(C*~D)\"),\n    //.LUTG1(\"(C*~D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUTF0(16'b0000000011110000),\n    .INIT_LUTF1(16'b0000000011110000),\n    .INIT_LUTG0(16'b0000000011110000),\n    .INIT_LUTG1(16'b0000000011110000),\n    .LSFMUX0(\"FUNC5\"),\n    .LSFMUX1(\"FUNC5\"),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/watchdog_b7 [4],\\u_display/u_label_store/watchdog_b7 [14]}",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/mux122_syn_102 }",
+        "sr": "\\ctrl_reset_sync[1]_dup_7",
+        "q": "{\\u_display/u_label_store/debug_progress [4],\\u_display/u_label_store/debug_progress [14]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/watchdog_reg[6]_syn_4",
+      "parameters": "\n    //.LUTF0(\"(C*~D)\"),\n    //.LUTF1(\"(C*~D)\"),\n    //.LUTG0(\"(C*~D)\"),\n    //.LUTG1(\"(C*~D)\"),\n    .CEMUX(\"CE\"),\n    .CLKMUX(\"CLK\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUTF0(16'b0000000011110000),\n    .INIT_LUTF1(16'b0000000011110000),\n    .INIT_LUTG0(16'b0000000011110000),\n    .INIT_LUTG1(16'b0000000011110000),\n    .LSFMUX0(\"FUNC5\"),\n    .LSFMUX1(\"FUNC5\"),\n    .MODE(\"LOGIC\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"F\"),\n    .REG1_REGSET(\"RESET\"),\n    .REG1_SD(\"F\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "c": "{\\u_display/u_label_store/watchdog_b7 [6],\\u_display/u_label_store/watchdog_b7 [9]}",
+        "ce": "\\u_display/u_label_store/debug_snapshot_b_n",
+        "clk": "\\u_display/u_label_store/u_check_buffer/wr_clk",
+        "d": "{\\u_display/u_label_store/mux122_syn_102 ,\\u_display/u_label_store/mux122_syn_102 }",
+        "sr": "\\ctrl_reset_sync[1]_dup_7",
+        "q": "{\\u_display/u_label_store/debug_progress [6],\\u_display/u_label_store/debug_progress [9]}"
+      }
+    }
+  ],
+  "ripple_chain": [
+    {
+      "instance": "\\u_display/u_label_store/add7_syn_176",
+      "parameters": "\n    //.MACRO(\"u_display/u_label_store/add7_syn_176\"),\n    //.R_POSITION(\"X0Y0Z0\"),\n    .CEMUX(\"1\"),\n    .CLKMUX(\"CLK\"),\n    .DEMUX0(\"E\"),\n    .DEMUX1(\"E\"),\n    .DFFMODE(\"FF\"),\n    .INIT_LUTF0(16'h000A),\n    .INIT_LUTF1(16'hA55A),\n    .INIT_LUTG0(16'hC33C),\n    .INIT_LUTG1(16'hC33C),\n    .LSFMUX0(\"SUM\"),\n    .LSFMUX1(\"SUM\"),\n    .LSFXMUX0(\"SUM\"),\n    .LSFXMUX1(\"SUM\"),\n    .MODE(\"RIPPLE\"),\n    .REG0_REGSET(\"RESET\"),\n    .REG0_SD(\"MI\"),\n    .SRMODE(\"ASYNC\"),\n    .SRMUX(\"SR\")",
+      "ports": {
+        "a": "{\\u_display/u_label_store/debug_progress [1],1'b0}",
+        "b": "{\\u_display/u_label_store/debug_progress [2],\\u_display/u_label_store/debug_progress [0]}",
+        "c": "2'b00",
+        "clk": "\\u_display/pixel_clk",
+        "d": "2'b01",
+        "e": "2'b01",
+        "mi": "{open_n29260,\\u_display/u_hdmi/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_vsync_3d }",
+        "sr": "\\u_display/u_hdmi/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_30",
+        "f": "{\\u_display/u_label_store/watchdog_b7 [1],open_n29272}",
+        "fco": "\\u_display/u_label_store/add7_syn_149",
+        "fx": "{\\u_display/u_label_store/watchdog_b7 [2],open_n29273}",
+        "q": "{open_n29274,\\u_display/u_hdmi/u_hdmi_tx_controller_wrapper/u_hdmi_data_distribution/I_island_data_ch0 [1]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/add7_syn_177",
+      "parameters": "\n    //.MACRO(\"u_display/u_label_store/add7_syn_176\"),\n    //.R_POSITION(\"X0Y0Z1\"),\n    .DEMUX0(\"E\"),\n    .DEMUX1(\"E\"),\n    .INIT_LUTF0(16'hA55A),\n    .INIT_LUTF1(16'hA55A),\n    .INIT_LUTG0(16'hC33C),\n    .INIT_LUTG1(16'hC33C),\n    .LSFMUX0(\"SUM\"),\n    .LSFMUX1(\"SUM\"),\n    .LSFXMUX0(\"SUM\"),\n    .LSFXMUX1(\"SUM\"),\n    .MODE(\"RIPPLE\")",
+      "ports": {
+        "a": "{\\u_display/u_label_store/debug_progress [5],\\u_display/u_label_store/debug_progress [3]}",
+        "b": "{\\u_display/u_label_store/debug_progress [6],\\u_display/u_label_store/debug_progress [4]}",
+        "c": "2'b00",
+        "d": "2'b00",
+        "e": "2'b00",
+        "fci": "\\u_display/u_label_store/add7_syn_149",
+        "f": "{\\u_display/u_label_store/watchdog_b7 [5],\\u_display/u_label_store/watchdog_b7 [3]}",
+        "fco": "\\u_display/u_label_store/add7_syn_153",
+        "fx": "{\\u_display/u_label_store/watchdog_b7 [6],\\u_display/u_label_store/watchdog_b7 [4]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/add7_syn_178",
+      "parameters": "\n    //.MACRO(\"u_display/u_label_store/add7_syn_176\"),\n    //.R_POSITION(\"X0Y1Z0\"),\n    .DEMUX0(\"E\"),\n    .DEMUX1(\"E\"),\n    .INIT_LUTF0(16'hA55A),\n    .INIT_LUTF1(16'hA55A),\n    .INIT_LUTG0(16'hC33C),\n    .INIT_LUTG1(16'hC33C),\n    .LSFMUX0(\"SUM\"),\n    .LSFMUX1(\"SUM\"),\n    .LSFXMUX0(\"SUM\"),\n    .LSFXMUX1(\"SUM\"),\n    .MODE(\"RIPPLE\")",
+      "ports": {
+        "a": "{\\u_display/u_label_store/debug_progress [9],\\u_display/u_label_store/debug_progress [7]}",
+        "b": "{\\u_display/u_label_store/debug_progress [10],\\u_display/u_label_store/debug_progress [8]}",
+        "c": "2'b00",
+        "d": "2'b00",
+        "e": "2'b00",
+        "fci": "\\u_display/u_label_store/add7_syn_153",
+        "f": "{\\u_display/u_label_store/watchdog_b7 [9],\\u_display/u_label_store/watchdog_b7 [7]}",
+        "fco": "\\u_display/u_label_store/add7_syn_157",
+        "fx": "{\\u_display/u_label_store/watchdog_b7 [10],\\u_display/u_label_store/watchdog_b7 [8]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/add7_syn_179",
+      "parameters": "\n    //.MACRO(\"u_display/u_label_store/add7_syn_176\"),\n    //.R_POSITION(\"X0Y1Z1\"),\n    .DEMUX0(\"E\"),\n    .DEMUX1(\"E\"),\n    .INIT_LUTF0(16'hA55A),\n    .INIT_LUTF1(16'hA55A),\n    .INIT_LUTG0(16'hC33C),\n    .INIT_LUTG1(16'hC33C),\n    .LSFMUX0(\"SUM\"),\n    .LSFMUX1(\"SUM\"),\n    .LSFXMUX0(\"SUM\"),\n    .LSFXMUX1(\"SUM\"),\n    .MODE(\"RIPPLE\")",
+      "ports": {
+        "a": "{\\u_display/u_label_store/debug_progress [13],\\u_display/u_label_store/debug_progress [11]}",
+        "b": "{\\u_display/u_label_store/debug_progress [14],\\u_display/u_label_store/debug_progress [12]}",
+        "c": "2'b00",
+        "d": "2'b00",
+        "e": "2'b00",
+        "fci": "\\u_display/u_label_store/add7_syn_157",
+        "f": "{\\u_display/u_label_store/watchdog_b7 [13],\\u_display/u_label_store/watchdog_b7 [11]}",
+        "fco": "\\u_display/u_label_store/add7_syn_161",
+        "fx": "{\\u_display/u_label_store/watchdog_b7 [14],\\u_display/u_label_store/watchdog_b7 [12]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/add7_syn_180",
+      "parameters": "\n    //.MACRO(\"u_display/u_label_store/add7_syn_176\"),\n    //.R_POSITION(\"X0Y2Z0\"),\n    .DEMUX0(\"E\"),\n    .DEMUX1(\"E\"),\n    .INIT_LUTF0(16'hA55A),\n    .INIT_LUTF1(16'hA55A),\n    .INIT_LUTG0(16'hC33C),\n    .INIT_LUTG1(16'hC33C),\n    .LSFMUX0(\"SUM\"),\n    .LSFMUX1(\"SUM\"),\n    .LSFXMUX0(\"SUM\"),\n    .LSFXMUX1(\"SUM\"),\n    .MODE(\"RIPPLE\")",
+      "ports": {
+        "a": "{\\u_display/u_label_store/debug_progress [17],\\u_display/u_label_store/debug_progress [15]}",
+        "b": "{\\u_display/u_label_store/debug_progress [18],\\u_display/u_label_store/debug_progress [16]}",
+        "c": "2'b00",
+        "d": "2'b00",
+        "e": "2'b00",
+        "fci": "\\u_display/u_label_store/add7_syn_161",
+        "f": "{\\u_display/u_label_store/watchdog_b7 [17],\\u_display/u_label_store/watchdog_b7 [15]}",
+        "fco": "\\u_display/u_label_store/add7_syn_165",
+        "fx": "{\\u_display/u_label_store/watchdog_b7 [18],\\u_display/u_label_store/watchdog_b7 [16]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/add7_syn_181",
+      "parameters": "\n    //.MACRO(\"u_display/u_label_store/add7_syn_176\"),\n    //.R_POSITION(\"X0Y2Z1\"),\n    .DEMUX0(\"E\"),\n    .DEMUX1(\"E\"),\n    .INIT_LUTF0(16'hA55A),\n    .INIT_LUTF1(16'hA55A),\n    .INIT_LUTG0(16'hC33C),\n    .INIT_LUTG1(16'hC33C),\n    .LSFMUX0(\"SUM\"),\n    .LSFMUX1(\"SUM\"),\n    .LSFXMUX0(\"SUM\"),\n    .LSFXMUX1(\"SUM\"),\n    .MODE(\"RIPPLE\")",
+      "ports": {
+        "a": "{\\u_display/u_label_store/debug_progress [21],\\u_display/u_label_store/debug_progress [19]}",
+        "b": "{\\u_display/u_label_store/debug_progress [22],\\u_display/u_label_store/debug_progress [20]}",
+        "c": "2'b00",
+        "d": "2'b00",
+        "e": "2'b00",
+        "fci": "\\u_display/u_label_store/add7_syn_165",
+        "f": "{\\u_display/u_label_store/watchdog_b7 [21],\\u_display/u_label_store/watchdog_b7 [19]}",
+        "fco": "\\u_display/u_label_store/add7_syn_169",
+        "fx": "{\\u_display/u_label_store/watchdog_b7 [22],\\u_display/u_label_store/watchdog_b7 [20]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/add7_syn_182",
+      "parameters": "\n    //.MACRO(\"u_display/u_label_store/add7_syn_176\"),\n    //.R_POSITION(\"X0Y3Z0\"),\n    .DEMUX0(\"E\"),\n    .DEMUX1(\"E\"),\n    .INIT_LUTF0(16'hA55A),\n    .INIT_LUTF1(16'hA55A),\n    .INIT_LUTG0(16'hC33C),\n    .INIT_LUTG1(16'hC33C),\n    .LSFMUX0(\"SUM\"),\n    .LSFMUX1(\"SUM\"),\n    .LSFXMUX0(\"SUM\"),\n    .LSFXMUX1(\"SUM\"),\n    .MODE(\"RIPPLE\")",
+      "ports": {
+        "a": "{\\u_display/u_label_store/debug_progress [25],\\u_display/u_label_store/debug_progress [23]}",
+        "b": "{\\u_display/u_label_store/debug_progress [26],\\u_display/u_label_store/debug_progress [24]}",
+        "c": "2'b00",
+        "d": "2'b00",
+        "e": "2'b00",
+        "fci": "\\u_display/u_label_store/add7_syn_169",
+        "f": "{\\u_display/u_label_store/watchdog_b7 [25],\\u_display/u_label_store/watchdog_b7 [23]}",
+        "fco": "\\u_display/u_label_store/add7_syn_173",
+        "fx": "{\\u_display/u_label_store/watchdog_b7 [26],\\u_display/u_label_store/watchdog_b7 [24]}"
+      }
+    },
+    {
+      "instance": "\\u_display/u_label_store/add7_syn_183",
+      "parameters": "\n    //.MACRO(\"u_display/u_label_store/add7_syn_176\"),\n    //.R_POSITION(\"X0Y3Z1\"),\n    .DEMUX0(\"E\"),\n    .DEMUX1(\"E\"),\n    .INIT_LUTF0(16'hA55A),\n    .INIT_LUTF1(16'hA55A),\n    .INIT_LUTG0(16'hC33C),\n    .INIT_LUTG1(16'hC33C),\n    .LSFMUX0(\"SUM\"),\n    .LSFMUX1(\"SUM\"),\n    .LSFXMUX0(\"SUM\"),\n    .LSFXMUX1(\"SUM\"),\n    .MODE(\"RIPPLE\")",
+      "ports": {
+        "a": "{open_n29383,\\u_display/u_label_store/debug_progress [27]}",
+        "b": "{open_n29384,\\u_display/u_label_store/debug_progress [28]}",
+        "c": "2'b00",
+        "d": "{open_n29387,1'b0}",
+        "e": "{open_n29388,1'b0}",
+        "fci": "\\u_display/u_label_store/add7_syn_173",
+        "f": "{open_n29403,\\u_display/u_label_store/watchdog_b7 [27]}",
+        "fx": "{open_n29405,\\u_display/u_label_store/watchdog_b7 [28]}"
+      }
+    }
+  ],
+  "limits": "比较器LUT INIT及寄存器/进位连接静态证据；没有解密原厂RIPPLE模型或实测计数值，不能证明板上进位传播、复位无短脉冲或频率正确。"
+}

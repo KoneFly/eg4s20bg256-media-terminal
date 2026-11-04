@@ -1,0 +1,93 @@
+{
+  "date_local": "2026-10-06",
+  "status": "USER_OBSERVED_FAIL_NO_IMAGE_VALID_DIAGNOSTIC_READBACK",
+  "bit_sha256": "7b97635aadd6fa4ebab8f3fc598f195cde5bafcdf6b6968bf105ac62284cd57c",
+  "raw_user_observation": "页号保持 000，切换 SW0，两位置各等 0.3 秒，无任何画面；按住 KEY1 约 1 秒，记录数码管熄灭；不再复位，SW0 置 1，d104096，d200000,d300000,d400112,d500000,d600000,d732512",
+  "key1_display_blank_observed": true,
+  "bank_when_read": "SW0=1; d1..d7",
+  "elapsed_after_key1_release_seconds": null,
+  "normal_bank_decimal_value": null,
+  "decoded": {
+    "pages_decimal": [
+      4096,
+      0,
+      0,
+      112,
+      0,
+      0,
+      32512
+    ],
+    "pages_hex": [
+      "1000",
+      "0000",
+      "0000",
+      "0070",
+      "0000",
+      "0000",
+      "7F00"
+    ],
+    "store": {
+      "code": 0,
+      "name": "BOOT"
+    },
+    "init": {
+      "code": 0,
+      "name": "IDLE"
+    },
+    "reader": {
+      "code": 16,
+      "name": "IDLE"
+    },
+    "command": {
+      "code": 7,
+      "name": "IDLE"
+    },
+    "init_byte": {
+      "code": 0,
+      "name": "IDLE"
+    },
+    "memory": {
+      "code": 0,
+      "name": "PWR_UP"
+    },
+    "mem_busy": false,
+    "eng_init": false,
+    "init_ready": false,
+    "sector_number": 0,
+    "sector_lba": 64,
+    "write_pending": false,
+    "eng_ready": false,
+    "init_busy": false,
+    "cmd_busy": false,
+    "init_byte_busy": false,
+    "bytes_seen": 0,
+    "write_index": 0,
+    "cmd_done": false,
+    "cmd_timeout": false,
+    "init_error": false,
+    "init_done": false,
+    "sector_busy": false,
+    "sector_valid": false,
+    "eng_resp": false,
+    "init_code": 0,
+    "sticky": {
+      "init_done": false,
+      "init_error": false,
+      "cmd_done": false,
+      "cmd_timeout": false,
+      "init_byte_done": false,
+      "eng_resp": false
+    },
+    "init_r1_hex": "00",
+    "reader_r1_hex": "7F",
+    "interpretation": "故障后为进入ERROR前一拍；READY正常运行时是滚动观测。硬件验收需另记线稿和10分钟。"
+  },
+  "native_route_sha256": "c311bc51282c372ac6c1d5844ec12f2e2546dacbbf7a76bedbd40dc08ccb91d9",
+  "native_pll_config": "  EG_PHY_PLL #(\n    //.RID(\"0X0100\"),\n    //.WID(\"0X0100\"),\n    .CLKC0_CPHASE(7),\n    .CLKC0_DIV(8),\n    .CLKC0_DIV2_ENABLE(\"DISABLE\"),\n    .CLKC0_ENABLE(\"ENABLE\"),\n    .CLKC0_FPHASE(0),\n    .CLKC1_CPHASE(19),\n    .CLKC1_DIV(20),\n    .CLKC1_DIV2_ENABLE(\"DISABLE\"),\n    .CLKC1_ENABLE(\"ENABLE\"),\n    .CLKC1_FPHASE(0),\n    .CLKC2_CPHASE(79),\n    .CLKC2_DIV(80),\n    .CLKC2_DIV2_ENABLE(\"DISABLE\"),\n    .CLKC2_ENABLE(\"ENABLE\"),\n    .CLKC2_FPHASE(0),\n    .CLKC3_CPHASE(9),\n    .CLKC3_DIV(20),\n    .CLKC3_DIV2_ENABLE(\"DISABLE\"),\n    .CLKC3_ENABLE(\"ENABLE\"),\n    .CLKC3_FPHASE(0),\n    .CLKC4_CPHASE(1),\n    .CLKC4_DIV(8),\n    .CLKC4_DIV2_ENABLE(\"DISABLE\"),\n    .CLKC4_ENABLE(\"ENABLE\"),\n    .CLKC4_FPHASE(0),\n    .DERIVE_PLL_CLOCKS(\"DISABLE\"),\n    .DPHASE_SOURCE(\"DISABLE\"),\n    .DYNCFG(\"DISABLE\"),\n    .FBCLK_DIV(5),\n    .FEEDBK_MODE(\"NORMAL\"),\n    .FEEDBK_PATH(\"CLKC0_EXT\"),\n    .FIN(\"50.000000\"),\n    .FREQ_LOCK_ACCURACY(2),\n    .GEN_BASIC_CLOCK(\"DISABLE\"),\n    .GMC_GAIN(2),\n    .GMC_TEST(14),\n    .ICP_CURRENT(9),\n    .IF_ESCLKSTSW(\"DISABLE\"),\n    .INTFB_WAKE(\"DISABLE\"),\n    .KVCO(2),\n    .LPF_CAPACITOR(1),\n    .LPF_RESISTOR(8),\n    .NORESET(\"DISABLE\"),\n    .ODIV_MUXC0(\"DIV\"),\n    .ODIV_MUXC1(\"DIV\"),\n    .ODIV_MUXC2(\"DIV\"),\n    .ODIV_MUXC3(\"DIV\"),\n    .ODIV_MUXC4(\"DIV\"),\n    .PLLC2RST_ENA(\"DISABLE\"),\n    .PLLC34RST_ENA(\"DISABLE\"),\n    .PLLMRST_ENA(\"DISABLE\"),\n    .PLLRST_ENA(\"ENABLE\"),\n    .PLL_LOCK_MODE(0),\n    .PREDIV_MUXC0(\"VCO\"),\n    .PREDIV_MUXC1(\"VCO\"),\n    .PREDIV_MUXC2(\"VCO\"),\n    .PREDIV_MUXC3(\"VCO\"),\n    .PREDIV_MUXC4(\"VCO\"),\n    .REFCLK_DIV(2),\n    .REFCLK_SEL(\"INTERNAL\"),\n    .STDBY_ENABLE(\"DISABLE\"),\n    .STDBY_VCO_ENA(\"DISABLE\"),\n    .SYNC_ENABLE(\"DISABLE\"),\n    .VCO_NORESET(\"DISABLE\"))\n    \\u_clk/u_pll_0/pll_inst  (\n    .daddr(6'b000000),\n    .dclk(1'b0),\n    .dcs(1'b0),\n    .di(8'b00000000),\n    .dwe(1'b0),\n    .fbclk(\\u_temac/gtx_clk ),\n    .load_reg(1'b0),\n    .psclk(1'b0),\n    .psclksel(3'b000),\n    .psdown(1'b0),\n    .psstep(1'b0),\n    .refclk(\\u_decimal/clk ),\n    .reset(\\u_clk/reset ),\n    .stdby(1'b0),\n    .clkc({\\u_temac/u1_rgmii_interface/rgmii_txc_ddr/clk ,\\u_clk/mem_raw ,open_n3443,\\u_clk/ctrl_raw ,\\u_clk/u_pll_0/clk0_buf }),\n    .extlock(\\u_clk/locked ));  // C:/Users/KoneFly/AppData/Local/Temp/fdi_synth_a2_20261005_225337/src/vendor/udp_base/ip/pll_gen.v(89)",
+  "limits": [
+    "时间间隔及普通bank数码管完整显示仍待补充",
+    "BOOT/PWR_UP 为观测状态；没有 watchdog、SDRAM cnt 或时钟心跳读数，不唯一归因 PLL/复位",
+    "reader R1=0x7F 与空闲复位值0xFF不一致，需交叉核验",
+    "未更改 RTL/约束/位，未宣称真卡PASS"
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "generated_utc": "2026-10-04T12:30:24.803552+00:00",
+  "scope": "W2 multicycle DUT default/protocol only; no configuration-boundary, physical timing or board acceptance",
+  "status": "PASS",
+  "backend": "WSL Ubuntu Verilator",
+  "profile": "no_particles_v2",
+  "source_sha256": {
+    "pcb_frame_updater.v": "49c189938efd8d0d02dc6db9aa764e8c77f06908da73dfc5c31eb7a77e2c3703",
+    "pcb_dynamic_roms_w2.vh": "c36620064278f7ba57aaed455b4d7097e2709ed77a6cb816b4f73a36f19ee1d9",
+    "tb_w2.cpp": "48a0faf366f063a48ef8f7105a9517f9198a3e88d8dab70f8b64e147cbc242ee",
+    "pcb_ram_2k16.v": "0d4f10a9f8180d90e7f746c7140bb1fcbf17396b356022662c0a4ddf998835a9"
+  },
+  "golden_manifest": {
+    "profile": "no_particles_v2",
+    "noninterference_frames": 2400,
+    "model_sha256": "fbb2298fc26cef6f3e951c03bdc4857eee769209e57ce9e547a711d9996cf351",
+    "profile_sha256": "0140e2a60fa7bb43e0ece79daf0c5b186adfe1a5bc491c9963747f707aa2a628",
+    "generator_sha256": "404fa14dfc04cf7bc61d8d920a07db5878aa4f004606441119d720f71cc7763d",
+    "packer_sha256": "9d6c08c40d539aac6a025974a360aeb3bed8cf416285e736c906cda6ca251415",
+    "manifest": [
+      {
+        "scenario": "boot_silence",
+        "frames": 300,
+        "frame_stride": 2736,
+        "sha256": "2b7cbc6c49fca669d240aa16b6c606d3c5fbba1c4f9b50acdb079bf6c12b3899"
+      },
+      {
+        "scenario": "boot_low",
+        "frames": 300,
+        "frame_stride": 2736,
+        "sha256": "f3217c17b918a64d59b4a962fa7ad414f12aff9a5db767fd9a0542d81792e3ac"
+      },
+      {
+        "scenario": "play_low",
+        "frames": 300,
+        "frame_stride": 2736,
+        "sha256": "f3217c17b918a64d59b4a962fa7ad414f12aff9a5db767fd9a0542d81792e3ac"
+      },
+      {
+        "scenario": "play_mid",
+        "frames": 300,
+        "frame_stride": 2736,
+        "sha256": "0b28539e012a4f452096307cb0ff2424d842c37718e5e0ebe46bc5cd93b08073"
+      },
+      {
+        "scenario": "play_high",
+        "frames": 300,
+        "frame_stride": 2736,
+        "sha256": "c4d67e28687323152bf11a8a19b7f37f7ad698039d2ea63ff06e23cd40e4ef20"
+      },
+      {
+        "scenario": "saturate",
+        "frames": 300,
+        "frame_stride": 2736,
+        "sha256": "f4a28287c232757637e283e73ef9d6d6bcc0d9497da3aaba3a0b6419ec878e3d"
+      },
+      {
+        "scenario": "impulse_broadcast",
+        "frames": 300,
+        "frame_stride": 2736,
+        "sha256": "f4504d033209f1a4ef158dd363eb4b80c7f0f4a329d3dbe469d49d2d116ce23b"
+      },
+      {
+        "scenario": "silence_decay",
+        "frames": 300,
+        "frame_stride": 2736,
+        "sha256": "79c9c685c0f4a11758f2bc68cfd4327cbeebf7aae76e29591f0a38b6a5ceb255"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "status": "PASS",
+      "scenario": "boot_silence",
+      "frames": 300,
+      "max_update_cycles": 17900,
+      "overrun": false,
+      "reset_reentry": false,
+      "vector_sha256": "2b7cbc6c49fca669d240aa16b6c606d3c5fbba1c4f9b50acdb079bf6c12b3899"
+    },
+    {
+      "status": "PASS",
+      "scenario": "boot_low",
+      "frames": 300,
+      "max_update_cycles": 18276,
+      "overrun": false,
+      "reset_reentry": false,
+      "vector_sha256": "f3217c17b918a64d59b4a962fa7ad414f12aff9a5db767fd9a0542d81792e3ac"
+    },
+    {
+      "status": "PASS",
+      "scenario": "play_low",
+      "frames": 300,
+      "max_update_cycles": 18276,
+      "overrun": false,
+      "reset_reentry": false,
+      "vector_sha256": "f3217c17b918a64d59b4a962fa7ad414f12aff9a5db767fd9a0542d81792e3ac"
+    },
+    {
+      "status": "PASS",
+      "scenario": "play_mid",
+      "frames": 300,
+      "max_update_cycles": 18115,
+      "overrun": false,
+      "reset_reentry": false,
+      "vector_sha256": "0b28539e012a4f452096307cb0ff2424d842c37718e5e0ebe46bc5cd93b08073"
+    },
+    {
+      "status": "PASS",
+      "scenario": "play_high",
+      "frames": 300,
+      "max_update_cycles": 17988,
+      "overrun": false,
+      "reset_reentry": false,
+      "vector_sha256": "c4d67e28687323152bf11a8a19b7f37f7ad698039d2ea63ff06e23cd40e4ef20"
+    },
+    {
+      "status": "PASS",
+      "scenario": "saturate",
+      "frames": 300,
+      "max_update_cycles": 17900,
+      "overrun": false,
+      "reset_reentry": false,
+      "vector_sha256": "f4a28287c232757637e283e73ef9d6d6bcc0d9497da3aaba3a0b6419ec878e3d"
+    },
+    {
+      "status": "PASS",
+      "scenario": "impulse_broadcast",
+      "frames": 300,
+      "max_update_cycles": 18188,
+      "overrun": false,
+      "reset_reentry": false,
+      "vector_sha256": "f4504d033209f1a4ef158dd363eb4b80c7f0f4a329d3dbe469d49d2d116ce23b"
+    },
+    {
+      "status": "PASS",
+      "scenario": "silence_decay",
+      "frames": 300,
+      "max_update_cycles": 17900,
+      "overrun": false,
+      "reset_reentry": false,
+      "vector_sha256": "79c9c685c0f4a11758f2bc68cfd4327cbeebf7aae76e29591f0a38b6a5ceb255"
+    },
+    {
+      "status": "PASS",
+      "scenario": "tick_overrun",
+      "frames": 300,
+      "max_update_cycles": 18276,
+      "overrun": true,
+      "reset_reentry": false,
+      "vector_sha256": "f3217c17b918a64d59b4a962fa7ad414f12aff9a5db767fd9a0542d81792e3ac"
+    },
+    {
+      "status": "PASS",
+      "scenario": "reset_reentry",
+      "frames": 300,
+      "max_update_cycles": 18276,
+      "overrun": false,
+      "reset_reentry": true,
+      "vector_sha256": "f3217c17b918a64d59b4a962fa7ad414f12aff9a5db767fd9a0542d81792e3ac"
+    }
+  ],
+  "max_update_cycles": 18276
+}

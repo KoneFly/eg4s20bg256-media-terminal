@@ -1,0 +1,22 @@
+{
+  "generated_utc": "2026-10-04T12:53:56.700Z",
+  "source_sha256": {
+    "pcb_frame_updater.v": "49c189938efd8d0d02dc6db9aa764e8c77f06908da73dfc5c31eb7a77e2c3703",
+    "pcb_dynamic_roms_w2.vh": "c36620064278f7ba57aaed455b4d7097e2709ed77a6cb816b4f73a36f19ee1d9",
+    "tb_w2.cpp": "48a0faf366f063a48ef8f7105a9517f9198a3e88d8dab70f8b64e147cbc242ee",
+    "pcb_ram_2k16.v": "0d4f10a9f8180d90e7f746c7140bb1fcbf17396b356022662c0a4ddf998835a9"
+  },
+  "artifact_sha256": {
+    "pcb_frame_updater.v": "49c189938efd8d0d02dc6db9aa764e8c77f06908da73dfc5c31eb7a77e2c3703",
+    "pcb_ram_2k16.v": "0d4f10a9f8180d90e7f746c7140bb1fcbf17396b356022662c0a4ddf998835a9",
+    "pcb_dynamic_roms_w2.vh": "c36620064278f7ba57aaed455b4d7097e2709ed77a6cb816b4f73a36f19ee1d9",
+    "clock.sdc": "3dc67d4d2e7c322e0c1e0f6694713efd9f5a8152e5cebb0f4036b72d033a8449",
+    "run.tcl": "b1fa633451c530ba95594cfb6c1f31fde4c5d4e08f255e5f577913869e44bcf2",
+    "input_manifest.json": "5ef1443791c08ecf4fe0f8ba35ecc7e895ecbd1457f50c84d61d5bda92127f2e",
+    "run.log": "f270a2c2cc303513cdb85baa189b40d63de97a3068acc2112c03463a2588228b",
+    "rtl.area": "83c199ae1b74646a76157a93f5c2e05332b8cc2beca2cc8cbe90267ea138c277",
+    "area.txt": "1882e7bde6b74468a81c6c3893021a9f8a3dc1ddb759fcb16f2c3ebf85bc3615",
+    "timing.txt": "3c494c9ab2d428a5618af80cda3394d558cbf90adedebb974e426c102ef0d54b",
+    "resource.qor": "77b07d01abe837dc37c52b0d4112ee690be62e5a5e18d5ed04e31b90658fbf94"
+  }
+}

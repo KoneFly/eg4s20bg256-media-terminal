@@ -1,0 +1,27 @@
+{
+  "date_local": "2026-10-06",
+  "status": "USER_OBSERVED_FAIL_BOOT_WITH_LOW_COUNTER_ACTIVITY_AND_NO_HIGH_BITS",
+  "bit_sha256": "c289d59c93115706b2c996d4a44629d60f70f9809d5f567183228d03bc38c6d9",
+  "raw_user_confirmation": "① d0 是05463、d7是65280  d6  变为20480 SW0=0  屏幕仍无线稿  数码管p均为0",
+  "raw_user_high_counter_confirmation": "d2  57344，一直固定",
+  "calibration": {"d0": 5463, "d7": 65280, "status": "PASS_USER_OBSERVED"},
+  "corrected_d6": {"decimal": 20480, "hex": "5000", "store": "BOOT=0", "init": "IDLE=0", "reader": "IDLE=16", "mem_busy": 0, "eng_init": 1, "init_ready": 0},
+  "d2_recheck": {"decimal": 57344, "hex": "E000", "watchdog_high13": 0, "key1": 1, "pll_locked": 1, "ctrl_rst_n": 1, "reported": "一直固定", "requested_recheck_interval_seconds": 10, "actual_timed_interval_independently_verified": false},
+  "d1_and_d4": "CHANGING_TOO_FAST_TO_READ; numeric readings not required",
+  "d3": 32768,
+  "d3_after_reported_10_seconds": 32768,
+  "d5": 270,
+  "normal_bank_raw": "数码管p均为0",
+  "normal_bank_individually_read_pages": null,
+  "screen": "NO_PCB_IMAGE",
+  "findings": [
+    "Corrected d6 now agrees with d5 eng_init=1 and init_ready=0; earlier d6=270 remains preserved as a superseded reading.",
+    "CTRL activity and released reset are observed at page-sample times; they do not exclude brief reset pulses between samples or prove clock frequency.",
+    "The observed state is pre-SD-initialization BOOT; SDRAM eng_init flag is already1. Do not blame the card, CRC, or SPI response based on these observations.",
+    "Watchdog low16 varies while high13 remains0; examine bit/carry progress and brief reset events using read-only sticky observations.",
+    "Static gate/physical review preserves29 watchdog bits and8 connected RIPPLE cells, comparator constants499999 and499999999, and gate BOOT transition at499999. This is not hardware carry-propagation verification."
+  ],
+  "hardware_acceptance": "FAIL_NO_PCB_IMAGE",
+  "next_experiment": "A4_READ_ONLY_BIT_HISTORY_AND_RESET_EVENTS",
+  "rtl_sdc_bit_changed_by_this_record": false
+}

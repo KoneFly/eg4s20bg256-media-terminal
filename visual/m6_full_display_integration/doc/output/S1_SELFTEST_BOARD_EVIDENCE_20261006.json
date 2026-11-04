@@ -1,0 +1,18 @@
+{
+  "status": "SEALED_USER_REPORTED_S1_FUNCTIONAL_CHECK",
+  "prior_index_sha256": "e092cd6f01099f1c745f5d3b70ee3441509ea0506ec782d178191d0e88fb34f5",
+  "verified_prior_entries": 222,
+  "bit_sha256": "4ba41b2fce390c31eea5cd1f8eb19332e56db424f3c751f682150ba8053f2a6d",
+  "files": [
+    {
+      "path": "doc/output/S1_SELFTEST_BOARD_RESULT_20261006.json",
+      "bytes": 1030,
+      "sha256": "f6d7548eb8732f924c74de8f795f8f67766a5919b0cb03218ed80f92f0f926ac"
+    },
+    {
+      "path": "scripts/seal_s1_board_result.py",
+      "bytes": 2258,
+      "sha256": "3a29e7406f6a14d52c46f91d0ad94ac4127be1d3c39d5abd8fe88f7a6937cba3"
+    }
+  ]
+}

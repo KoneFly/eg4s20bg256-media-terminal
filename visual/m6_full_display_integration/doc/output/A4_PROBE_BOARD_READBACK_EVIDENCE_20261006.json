@@ -1,0 +1,639 @@
+{
+  "status": "SEALED_USER_BOARD_OBSERVATION_PARTIAL",
+  "hardware_status": "FAIL_NO_PCB_IMAGE_REPORTED",
+  "unresolved": "Current-run d0/d7, KEY1 precondition, d3 numeric detail and explicit no-signal versus black image",
+  "bit_sha256": "343714aaa27eec0f317dc4b546e591496cc16cfc0ba6c0f56f3faff3d40d8fe8",
+  "files": [
+    {
+      "path": "doc/output/A4_PROBE_BOARD_READBACK_PARTIAL_20261006.json",
+      "bytes": 3282,
+      "sha256": "0c881541c46c1bcc0c62dce95715cc9a0fa5d3a7d997c18bc57b67026b47976e"
+    },
+    {
+      "path": "doc/output/A4_PROBE_BOARD_ANALYSIS_PARTIAL_20261006.md",
+      "bytes": 3577,
+      "sha256": "d4bd8d6bafca5b39cc374b7c81094f607155432db0d9fea7cc7482c44796085c"
+    },
+    {
+      "path": "doc/output/A4_PROBE_HISTORY_STATIC_20261006.json",
+      "bytes": 72340,
+      "sha256": "b585eff0846ae539a6454d3073afbb5905f31927ffa370632a07794c78b6dfbc"
+    },
+    {
+      "path": "scripts/review_a4_history_readback.py",
+      "bytes": 7731,
+      "sha256": "50aab7e8a72222eee9ee085a6ed3b8edf6974aafea35aa2b940d2d63e02e9257"
+    },
+    {
+      "path": "scripts/seal_a4_board_readback.py",
+      "bytes": 4043,
+      "sha256": "f0c64e6e513615e5c72e8d0479aaabc3f85665321d4d31b56c3a589df2c956cd"
+    }
+  ],
+  "prior_archives": [
+    {
+      "path": "doc/output/BOARD_PROBE_A4_EVIDENCE_INDEX.json",
+      "sha256": "71ba13f36983ecd8efb8200ca19736b039589dc8fd9a63ffed520fc2358e1755",
+      "verified_entries": 313,
+      "compressed_payloads": [
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/bit_a4_final/route.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\bit_a4_final\\route.timing.gz",
+          "gzip_bytes": 186237,
+          "gzip_sha256": "d0cbe22a236d22d43084c9069f13de0225c891213f8a5a8bc2a45bd339310480",
+          "decompressed_bytes": 6356189,
+          "decompressed_sha256": "750f499efe7091c971109fe1f92b165f8f491e6290e636000ac436548186523f"
+        },
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/bit_a4_final/route_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\bit_a4_final\\route_exception.timing.gz",
+          "gzip_bytes": 351539,
+          "gzip_sha256": "670c29a7b9fc0f63b9e81669a19b7f8052a7def173f8ad505ec64ea2ed192214",
+          "decompressed_bytes": 14577758,
+          "decompressed_sha256": "989c4e928eae18d2eb3553d8d56a1e25b8cb89894513490021123b42a8195911"
+        },
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/bit_a4_final/route_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\bit_a4_final\\route_ignored.timing.gz",
+          "gzip_bytes": 206608,
+          "gzip_sha256": "61e070cf06e27147ce5e22f3270c3471f3839c69df5f1a33a68c58dd17f43d6f",
+          "decompressed_bytes": 9562026,
+          "decompressed_sha256": "7932e9f3590a3733f9838563283c39179f676ddab0916af4d9b8128ee91e813d"
+        },
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/check_a4/gate.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\check_a4\\gate.timing.gz",
+          "gzip_bytes": 120115,
+          "gzip_sha256": "f69ed49539c8c3962739734415591d5d4ef74af315eb8761b5c469314edfa1d7",
+          "decompressed_bytes": 6619905,
+          "decompressed_sha256": "eba9e81deb6c4f1b036388d2c571a40924967b27fbd45a499a4bcf40148e3f9d"
+        },
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/check_a4/gate_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\check_a4\\gate_exception.timing.gz",
+          "gzip_bytes": 198109,
+          "gzip_sha256": "a802bbdddbb375ccd147feacf8e1953d354e85802a4ad8a762043635496f2b9f",
+          "decompressed_bytes": 14413999,
+          "decompressed_sha256": "89e3763707d1172ea5936a45b38f42be894241fe8ef86d1012a16d43cb3747a1"
+        },
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/check_a4/gate_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\check_a4\\gate_ignored.timing.gz",
+          "gzip_bytes": 269471,
+          "gzip_sha256": "b9b990be230360267cc7d439f36cefc51543317135a75f1848204892dafa83a1",
+          "decompressed_bytes": 17750821,
+          "decompressed_sha256": "4a207e8e1e487362b7f77170f0bb3b9d2c4ce4e3270785a4b95cc78c2df672ea"
+        },
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/hold_a4_clock/route.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\hold_a4_clock\\route.timing.gz",
+          "gzip_bytes": 186237,
+          "gzip_sha256": "05d40b75a5544b74105dc890fbf9c962a44fef910ef36d6d95268b4f18a675fd",
+          "decompressed_bytes": 6356190,
+          "decompressed_sha256": "c6efe88b7ab5c3e1283f73e44e3dfb2f0cfdec6fc668317d99e722ac54058745"
+        },
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/hold_a4_clock/route_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\hold_a4_clock\\route_exception.timing.gz",
+          "gzip_bytes": 351538,
+          "gzip_sha256": "1649820c5b8c43b7580d75106959b0dd24d3e4ed4ec19b152509c4b938ab465d",
+          "decompressed_bytes": 14577759,
+          "decompressed_sha256": "6eca4d6f03fcabb42bcf31bc7dcf4684c3dbd3bc3eebfe60d07df45c212b50af"
+        },
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/hold_a4_clock/route_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\hold_a4_clock\\route_ignored.timing.gz",
+          "gzip_bytes": 206607,
+          "gzip_sha256": "ab2d391a5894b33155cedb355a27a3a600c6054826b905a5a6d3297b5b096cc2",
+          "decompressed_bytes": 9562027,
+          "decompressed_sha256": "3d1d06c5f374de2ce34158d795cc7a6ca4db40fe97ea0633154ad9a7856c3d1e"
+        },
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/place_a4/place.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\place_a4\\place.timing.gz",
+          "gzip_bytes": 196701,
+          "gzip_sha256": "c26f123ef765a286168b83b41cb9e5bf3408f2a4f849744449c8349e8a3fb4bf",
+          "decompressed_bytes": 7346028,
+          "decompressed_sha256": "168a69d2cb9d0f9266b8536da97da90aa1fe26d87d43e5f8e691788d12203780"
+        },
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/place_a4/place_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\place_a4\\place_ignored.timing.gz",
+          "gzip_bytes": 194708,
+          "gzip_sha256": "da1fa507fffea7763edb2c898185cd614c54dda027a8e250bb64da1ee8445eae",
+          "decompressed_bytes": 9083965,
+          "decompressed_sha256": "56ef02ae84255e47476868079df27c6cb324414e7be325bd1951e9566f549eb7"
+        },
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/route_a4/route.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\route_a4\\route.timing.gz",
+          "gzip_bytes": 185463,
+          "gzip_sha256": "4653e38e1cee0f0758318dc9013cf04043e473028921b8a463e70d33fb31bc91",
+          "decompressed_bytes": 6356572,
+          "decompressed_sha256": "4b6db060a6fd7565732f9bb565fbeed0bdd1d1b9fb08f27c3feef82c126cf328"
+        },
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/route_a4/route_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\route_a4\\route_exception.timing.gz",
+          "gzip_bytes": 351533,
+          "gzip_sha256": "4bc0de4597c6bb8a2c49a7b8702e7480d0b46ea1c49c47993b87c3fa3277b26a",
+          "decompressed_bytes": 14577754,
+          "decompressed_sha256": "808e7ef147fa1e32a672919fcb8915086064881e709a5a3a83e1fc8d0b280af2"
+        },
+        {
+          "original_path": "experiments/board_0x46_A4_work/td_run/route_a4/route_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A4_work\\td_run\\route_a4\\route_ignored.timing.gz",
+          "gzip_bytes": 206602,
+          "gzip_sha256": "e16ff8bce5e6cede62cec97852e643ab2564d90f3ffe1f86a00521635e44a3be",
+          "decompressed_bytes": 9562022,
+          "decompressed_sha256": "92dafd823a0f59fd54f2d0f960ba8f7b784b69a53a0b5595f35c2fe2363c05de"
+        }
+      ]
+    },
+    {
+      "path": "doc/output/A3_PROBE_BOARD_READBACK_EVIDENCE_20261006.json",
+      "sha256": "f3cde09410c608c0418db323d361fd80852d4edef524689c1ebc5b118ef4910f",
+      "verified_entries": 6,
+      "compressed_payloads": []
+    },
+    {
+      "path": "doc/output/BOARD_PROBE_A3_EVIDENCE_INDEX.json",
+      "sha256": "d0e0dddb1d67086efc4f6445518873139f7d7239d2736aa2325964a53292bb05",
+      "verified_entries": 330,
+      "compressed_payloads": [
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/bit_a3_final/route.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\bit_a3_final\\route.timing.gz",
+          "gzip_bytes": 180016,
+          "gzip_sha256": "1ef6170a3814ba8df64a56451773a78dd24ba6f4bd295010df7aa8b618364b46",
+          "decompressed_bytes": 6343701,
+          "decompressed_sha256": "f181e1e83cc1ab4facab558dbbab04157162219ba38f65eb4a1e3ed7ec35f9ed"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/bit_a3_final/route_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\bit_a3_final\\route_exception.timing.gz",
+          "gzip_bytes": 352648,
+          "gzip_sha256": "4d06fceae6f2f1cafc857c591dc27fc54e54068bbd8d91f1349bd4936d364740",
+          "decompressed_bytes": 14575651,
+          "decompressed_sha256": "4544c013e9c581cca20709947bc4e054f1b39f8ddd56b7282becd0a789e0f48c"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/bit_a3_final/route_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\bit_a3_final\\route_ignored.timing.gz",
+          "gzip_bytes": 189787,
+          "gzip_sha256": "1bfa8ee52c3fabc9c1743955e2462b202b6eaeda35dbe1e3e8382bfc12051779",
+          "decompressed_bytes": 9289639,
+          "decompressed_sha256": "8f16b381ede07f9fe833aa5cb76da24de85f96f7b0934e6d062f207f9fce5608"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/check_a3/gate.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\check_a3\\gate.timing.gz",
+          "gzip_bytes": 119465,
+          "gzip_sha256": "89fd1ecba8f16f9f773ea4142ec204a6d92550c4ad6fddbdc7b55ce7e36c5188",
+          "decompressed_bytes": 6592892,
+          "decompressed_sha256": "520038e223d678e47595d7f7cdb35e899a95007164a313d83c7b9e80f05f28cb"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/check_a3/gate_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\check_a3\\gate_exception.timing.gz",
+          "gzip_bytes": 198109,
+          "gzip_sha256": "30bafcffca0212af2adbc32bcc70564bd64b0c7d83125cbc83251bead47be3dc",
+          "decompressed_bytes": 14413999,
+          "decompressed_sha256": "4423893096e864618f09796d7a55fb7139ddf7e2520b77c40903c387f3ec34ec"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/check_a3/gate_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\check_a3\\gate_ignored.timing.gz",
+          "gzip_bytes": 268327,
+          "gzip_sha256": "a033ce3d26549b9126f2fdd133a9acd971c87c00ddc60050189dfb7f6f6d70f4",
+          "decompressed_bytes": 18048206,
+          "decompressed_sha256": "98dfe012c8d7114796a324ef5d4489e6e3c724d20052b6b959cd5a45628193ef"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/hold_a3_clock/route.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\hold_a3_clock\\route.timing.gz",
+          "gzip_bytes": 180016,
+          "gzip_sha256": "4a8db168160eb1fd815d9586623267b260f316aa76e8e746f13facd0e6dbae13",
+          "decompressed_bytes": 6343702,
+          "decompressed_sha256": "ca6e39418e1db57d9be22946b2efedeb8f1ca2b878d16e9ce13ed9394a220fe1"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/hold_a3_clock/route_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\hold_a3_clock\\route_exception.timing.gz",
+          "gzip_bytes": 352647,
+          "gzip_sha256": "27891dfcba381d1f768832eb8a22bc5d2feff2cfb0262590dd4ff2a745e1a25b",
+          "decompressed_bytes": 14575652,
+          "decompressed_sha256": "82bde89f933e24a11d60ce4432996add46b10a2127f9aafca4bcbc0a88cf452d"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/hold_a3_clock/route_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\hold_a3_clock\\route_ignored.timing.gz",
+          "gzip_bytes": 189784,
+          "gzip_sha256": "a602a94aa1cc79abde3087a16915989aa877aa564efed3a8e7aa4827b7c420d5",
+          "decompressed_bytes": 9289640,
+          "decompressed_sha256": "726c7755d7ac7cf63a84a2921e32505409d09e326cfc16e6dfa1bd75b707060c"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/pcheck_a3/place.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\pcheck_a3\\place.timing.gz",
+          "gzip_bytes": 147714,
+          "gzip_sha256": "fb0d7c3ebb0db86d0c5d98765a40ee2c79202d6c00a2b6ffbb146fda0c52e2cc",
+          "decompressed_bytes": 6181825,
+          "decompressed_sha256": "2770d0cbd12ae230175a254be0d00a32eb3b489a18d849e497e4fba4c7fc70d1"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/pcheck_a3/place_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\pcheck_a3\\place_exception.timing.gz",
+          "gzip_bytes": 298560,
+          "gzip_sha256": "27b8f0080fa28bef6377f47d1e935d07e1684205a0ef43278e93da8e10263dc5",
+          "decompressed_bytes": 14574615,
+          "decompressed_sha256": "a7eb56735badf71c1a59ecf25d586f3b517089640d60d39db2f9cb2138192679"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/pcheck_a3/place_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\pcheck_a3\\place_ignored.timing.gz",
+          "gzip_bytes": 189862,
+          "gzip_sha256": "b754e7838e2684b6a8c76a1bea6a93ecf359a123e8525da505740f963e96ff87",
+          "decompressed_bytes": 9294699,
+          "decompressed_sha256": "f01e7cb266b6b689799fd9f0ff1eaeaba22ea5918d1f9f3ce5ec8b668e33d898"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/place_a3/place.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\place_a3\\place.timing.gz",
+          "gzip_bytes": 172180,
+          "gzip_sha256": "af55f18fd3de53fb8171049cb3e65a6ec3fa5f7bd7e5f682a7d54481e27f426d",
+          "decompressed_bytes": 7140925,
+          "decompressed_sha256": "73ce2edb66ee49c4186495c90372e91ab6a4b502f0457327f5e684b683151942"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/place_a3/place_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\place_a3\\place_ignored.timing.gz",
+          "gzip_bytes": 178092,
+          "gzip_sha256": "432b2d4520f5f5f60f09c8997f473ec59ec0d5895c3f753c6df0f2857be960e6",
+          "decompressed_bytes": 8828289,
+          "decompressed_sha256": "0ddfca6ed23dd7544f187991042779c81d408437f40a89441a624acdaf2d3b85"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/route_a3/route.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\route_a3\\route.timing.gz",
+          "gzip_bytes": 179019,
+          "gzip_sha256": "953855516189844f5e7ee217df2acf0e3b4b4b98321beacbadc582380f11afbb",
+          "decompressed_bytes": 6344464,
+          "decompressed_sha256": "48363e392499bb798f732128af4b1853905bc75805d6cf5d29e05ed975762c15"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/route_a3/route_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\route_a3\\route_exception.timing.gz",
+          "gzip_bytes": 352642,
+          "gzip_sha256": "f5c25c82147dd48cd3c7492c8d5bfcc9a57c2f796d6f944461782130e3e348f5",
+          "decompressed_bytes": 14575647,
+          "decompressed_sha256": "c5aa7d33864926752f3c348e87f8a3250b0191e9cf07cea9d8d420d43b21baf4"
+        },
+        {
+          "original_path": "experiments/board_0x46_A3_work/td_run/route_a3/route_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A3_work\\td_run\\route_a3\\route_ignored.timing.gz",
+          "gzip_bytes": 189781,
+          "gzip_sha256": "ec6099c3d6be3309b86a2dfd6cbc56b121f9a37b3bca67a888c17f3c28ef5330",
+          "decompressed_bytes": 9289635,
+          "decompressed_sha256": "9af1068453332f45045a3b67f1d094fb03dfc5d63df9ab78488b857be7756b91"
+        }
+      ]
+    },
+    {
+      "path": "doc/output/BOARD_PROBE_A2_EVIDENCE_INDEX.json",
+      "sha256": "862c2dd5c72fbab9d70b5006d84514f2fcf10dae6715b27ee339226e0a286ba8",
+      "verified_entries": 319,
+      "compressed_payloads": [
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/bit_a2_final/route.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\bit_a2_final\\route.timing.gz",
+          "gzip_bytes": 175714,
+          "gzip_sha256": "76fc1f8a9f73cb94585cc00fb7540708f94636f7cfe7716f2ba821fac774374a",
+          "decompressed_bytes": 6326109,
+          "decompressed_sha256": "671b32662ac9825bbe3c21756fe9c869c3f6d84aa789a277dc6074fdf07ba4b4"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/bit_a2_final/route_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\bit_a2_final\\route_exception.timing.gz",
+          "gzip_bytes": 349886,
+          "gzip_sha256": "420021a21a32fcbeb17ffd0c2b8a424c819e378d55e3035f68c7cebc250a1698",
+          "decompressed_bytes": 14586778,
+          "decompressed_sha256": "d025e69265aadd9f81fc2762502aa04c063d6260781abe3e5c50788470b535ef"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/bit_a2_final/route_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\bit_a2_final\\route_ignored.timing.gz",
+          "gzip_bytes": 193958,
+          "gzip_sha256": "217e8c36a0e4fcbdfa597a1b7f0ed67c1b0f405ba2690f408d0c19d95b5d15d6",
+          "decompressed_bytes": 9061426,
+          "decompressed_sha256": "4513a18788f3ee926e45b42c985e9aacd758c5e3099bb2934a273f5eb745c742"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/check_a2/gate.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\check_a2\\gate.timing.gz",
+          "gzip_bytes": 119745,
+          "gzip_sha256": "f9f5b48122680f84091185791700add3630f895231627d44a574b2436d95e9c2",
+          "decompressed_bytes": 6594079,
+          "decompressed_sha256": "e5c4ac8ff3e78214d97eea9f5a6f045f9d8ac40c9b8ec0d23a8e96277f9489e9"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/check_a2/gate_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\check_a2\\gate_exception.timing.gz",
+          "gzip_bytes": 198109,
+          "gzip_sha256": "795d37782b7da6e64ed039563b7c25cc3964057f87de2817aea2fd7025417b9a",
+          "decompressed_bytes": 14413999,
+          "decompressed_sha256": "a974ae8ef9ee133b00f691350f4ce6f5032bb7cb8d1a28fde93ea99c29b55fe3"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/check_a2/gate_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\check_a2\\gate_ignored.timing.gz",
+          "gzip_bytes": 268815,
+          "gzip_sha256": "8135828635c3dd2c693c38e9fc16bfdcfd4db2df2112da21c58a08458d275ae0",
+          "decompressed_bytes": 17610878,
+          "decompressed_sha256": "b94c6c00375c335b52b13054822aa2aab6931030b1023c3a7d6bdf724e9396b1"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/hold_a2_clock/route.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\hold_a2_clock\\route.timing.gz",
+          "gzip_bytes": 175715,
+          "gzip_sha256": "00d0430853fdae3cf53533d3740960d0585282b1866d95e843c4d50e64c367a6",
+          "decompressed_bytes": 6326110,
+          "decompressed_sha256": "9bdcb8e883622c0c245b60f7b1a729e53ea929b854c1b0fcb2e2c6c8a5709518"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/hold_a2_clock/route_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\hold_a2_clock\\route_exception.timing.gz",
+          "gzip_bytes": 349884,
+          "gzip_sha256": "a24ca46b0387c386b7ee08f4c601e73c9c55a3e61df8c48e1b65dbefb456c607",
+          "decompressed_bytes": 14586779,
+          "decompressed_sha256": "c5155ba72d1360557a261c2f7ab43c635c05fe87d02c95c35c54f14b7a5cc0ab"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/hold_a2_clock/route_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\hold_a2_clock\\route_ignored.timing.gz",
+          "gzip_bytes": 193956,
+          "gzip_sha256": "16361ce9c175969ba5990682b231d170c45cc674742ecad4dcd9f950ce7b7bdf",
+          "decompressed_bytes": 9061427,
+          "decompressed_sha256": "7da6760d777aa82e9abad71745ef3fda66fd437604362dea68df333e35009eb9"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/pcheck_a2/place.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\pcheck_a2\\place.timing.gz",
+          "gzip_bytes": 165176,
+          "gzip_sha256": "ed4f52d5c2bbaf91e888c3d970b8bd3584a29963d1ff8e25ec69cafd30fdafe0",
+          "decompressed_bytes": 6434677,
+          "decompressed_sha256": "98619e83e4e55677c24d518a0375e0274dc0cb88e2b827b060ce45078644d336"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/pcheck_a2/place_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\pcheck_a2\\place_exception.timing.gz",
+          "gzip_bytes": 292859,
+          "gzip_sha256": "ceea7b9cf39aa5c387807d71c20c7a53aab46a7e35f81085b7193884af2f39e9",
+          "decompressed_bytes": 14585750,
+          "decompressed_sha256": "1b811f00fa2afe49b578a5ab6c3e445e9a3f74bec37894d8ee512d4c1d02ecdd"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/pcheck_a2/place_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\pcheck_a2\\place_ignored.timing.gz",
+          "gzip_bytes": 193950,
+          "gzip_sha256": "fe92a5dee3f4a79a5beb9590b9a1ea918138a2e3069859eb30a83983fc3cecf0",
+          "decompressed_bytes": 9061614,
+          "decompressed_sha256": "a6c04a42117ddc937a84e2a1e5944b4d2539664c8e87074d75023bd118e16c35"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/place_a2/place.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\place_a2\\place.timing.gz",
+          "gzip_bytes": 189571,
+          "gzip_sha256": "a6c82e0287e98d5ae6fa06793b5e27b9cbca7ab60893f3e3a7c3dd910b2efcb0",
+          "decompressed_bytes": 7392364,
+          "decompressed_sha256": "b966f91ca884f696608695e3a2459120a454358aa0023296de249968dcb76dc0"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/place_a2/place_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\place_a2\\place_ignored.timing.gz",
+          "gzip_bytes": 181780,
+          "gzip_sha256": "ba37e2b3dcc8f73848fb0f94ddc608405de0bdd7603ff7ac10eff6f18c36e717",
+          "decompressed_bytes": 8582279,
+          "decompressed_sha256": "e161b83100a00c08a4d16940cd9093080228e82c079c4b595e4f11d68db6e136"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/route_a2/route.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\route_a2\\route.timing.gz",
+          "gzip_bytes": 175545,
+          "gzip_sha256": "71ccb8bd3e1f2f11cf843d31ef56d14b301a5fa13213819359375d73e7acf002",
+          "decompressed_bytes": 6324069,
+          "decompressed_sha256": "1b8ab842b130923544a665fc0c2ce991e88b630644e9fc4e61f6c2e4ed11f64a"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/route_a2/route_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\route_a2\\route_exception.timing.gz",
+          "gzip_bytes": 349877,
+          "gzip_sha256": "c8924b08177d68f4a3cd6c98ce59048987e5c519068201a462b2825068721510",
+          "decompressed_bytes": 14586774,
+          "decompressed_sha256": "8439f24cd4aebd9f4e28cdbc3f100b8168fb9908e0a434e325f09c4ca8b7fbfc"
+        },
+        {
+          "original_path": "experiments/board_0x46_A2_work/td_run/route_a2/route_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A2_work\\td_run\\route_a2\\route_ignored.timing.gz",
+          "gzip_bytes": 193952,
+          "gzip_sha256": "4f945901d5c2d391d59173d8928f9682601e073c8186a2f2c1e60599c3495983",
+          "decompressed_bytes": 9061422,
+          "decompressed_sha256": "10924ea83dd9c60a6ba702b26b55dd624edd09e830e1d6b6fea5fbe8fd0843bb"
+        }
+      ]
+    },
+    {
+      "path": "doc/output/BOARD_PROBE_A2_SUPPORTING_EVIDENCE.json",
+      "sha256": "7f3180c99dc4a9a2c8b1f67b23a43d8bfa901350a4bc719c3b5cce1eb78ad39c",
+      "verified_entries": 14,
+      "compressed_payloads": [
+        {
+          "original_path": "experiments/board_0x46_A0_work/td_run/hold_a0_clock/route.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\experiments\\board_0x46_A0_work\\td_run\\hold_a0_clock\\route.timing.gz",
+          "gzip_bytes": 174671,
+          "gzip_sha256": "a1592b9f6060f0f53128140eea6f0089e022f34a02781f1015fcbda612a70999",
+          "decompressed_bytes": 6286641,
+          "decompressed_sha256": "78f3efb5a49802bfc48c6ab1f40c70628c9649bb7d6529de6f7818f6033bda2c"
+        }
+      ]
+    },
+    {
+      "path": "doc/output/ROUND2_EVIDENCE_INDEX.json",
+      "sha256": "3fc1ce4375878d23aa7f75fea06e6da85a58526237aad57c30dbb2f1e22f04d9",
+      "verified_entries": 400,
+      "compressed_payloads": [
+        {
+          "original_path": "sim/round2_card/label_only.img",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\sim\\round2_card\\label_only.img.gz",
+          "gzip_bytes": 174832,
+          "gzip_sha256": "c415afa54936425e7cf982ad50cbf9198e4c5f9dd0f2ac260c5967b7290bbd71",
+          "decompressed_bytes": 134217728,
+          "decompressed_sha256": "7516832b924652d64ed323ceca77b4e5d4260f15bd9413fadb843bd1308efc8c"
+        },
+        {
+          "original_path": "sim/round2_card/label_pcm_short_real.img",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\sim\\round2_card\\label_pcm_short_real.img.gz",
+          "gzip_bytes": 5113353,
+          "gzip_sha256": "07c91705a2cddf663a8b09b6e22aee19367f02de1e869d3c02a12f4e6f3df3b3",
+          "decompressed_bytes": 134217728,
+          "decompressed_sha256": "db41b9c551ccde1c0ecdad878e997357ff9443f56ff095096e69407933f3a5f0"
+        },
+        {
+          "original_path": "td_run/bit2_final/route.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\bit2_final\\route.timing.gz",
+          "gzip_bytes": 170377,
+          "gzip_sha256": "d40e9b6326fbc1a5070f8c1a0e1584f7b07c888eb4600a1c12a54b10afd54244",
+          "decompressed_bytes": 6038113,
+          "decompressed_sha256": "6125864ed8f4ddb06467f8c1d8c618148d5969e63fdfd03a065b974f7e26b9b1"
+        },
+        {
+          "original_path": "td_run/bit2_final/route_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\bit2_final\\route_exception.timing.gz",
+          "gzip_bytes": 350333,
+          "gzip_sha256": "e52229045407117c795611f203522a4a46f4055f6e7223a7623883d114f3d682",
+          "decompressed_bytes": 14572223,
+          "decompressed_sha256": "ccabccbf7c1027645a66e692fdb49274bb52232bc94c2354cd789ddac0d75622"
+        },
+        {
+          "original_path": "td_run/bit2_final/route_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\bit2_final\\route_ignored.timing.gz",
+          "gzip_bytes": 193542,
+          "gzip_sha256": "cf36211e73b6a854f233b5a0d2da8824ae80f7bf98a9bc0eca91a614009ef0ca",
+          "decompressed_bytes": 9233400,
+          "decompressed_sha256": "4ba93efae298db58da10a676ef58aa625286c4e3957ad5f99ee7245c2502b955"
+        },
+        {
+          "original_path": "td_run/checked2d/gate.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\checked2d\\gate.timing.gz",
+          "gzip_bytes": 112640,
+          "gzip_sha256": "c385a0de3f07e06a18e4d6d6194ea32f8c9a51df4990a121376b035cf2844b86",
+          "decompressed_bytes": 6362696,
+          "decompressed_sha256": "ee9cae3acaaf054e8847a8287639f3c154de64b198113b5f5b36e9be1bd341ae"
+        },
+        {
+          "original_path": "td_run/checked2d/gate_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\checked2d\\gate_exception.timing.gz",
+          "gzip_bytes": 201438,
+          "gzip_sha256": "0045fa4f1740b8935487123477dbf60bdbf3b8055973bb50b95e181b9fd17b82",
+          "decompressed_bytes": 14397616,
+          "decompressed_sha256": "d5f3536dca48a687b417fb90f0ee330d944f0b1c28d84e9a9d8de06270c51186"
+        },
+        {
+          "original_path": "td_run/checked2d/gate_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\checked2d\\gate_ignored.timing.gz",
+          "gzip_bytes": 272936,
+          "gzip_sha256": "477657058cd1ec5f5369b4e62fa07eea43d17d116e666c3c067460d39e95e132",
+          "decompressed_bytes": 17911210,
+          "decompressed_sha256": "cd28c4c306ae16fcfeaaf96ff575e6bd8d482d91e763d0f79d20073ee4ca4a9d"
+        },
+        {
+          "original_path": "td_run/hold2h_clock/route.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\hold2h_clock\\route.timing.gz",
+          "gzip_bytes": 170379,
+          "gzip_sha256": "228cc571e4f8672c6e4f8ba13f1b0703cd433fca6b88f838b919c41e4e9c460d",
+          "decompressed_bytes": 6038115,
+          "decompressed_sha256": "d2aa0166cc2db9e36414561ef879110881c2abb5353e2ce2c2a5e67960b31fb9"
+        },
+        {
+          "original_path": "td_run/hold2h_clock/route_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\hold2h_clock\\route_exception.timing.gz",
+          "gzip_bytes": 350334,
+          "gzip_sha256": "5274a9fc280c46302f3b7473dc5ae8f057ca53902bc2c308cb579744404c5862",
+          "decompressed_bytes": 14572225,
+          "decompressed_sha256": "98109bb817594075d072e6a5ea40b24916288e93520ecfe4e23183f5e25c7ff0"
+        },
+        {
+          "original_path": "td_run/hold2h_clock/route_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\hold2h_clock\\route_ignored.timing.gz",
+          "gzip_bytes": 193539,
+          "gzip_sha256": "12c3cc2645fa0dd74d52346446b73b09425d3a3e6b2076402b95668ecc70d5e7",
+          "decompressed_bytes": 9233402,
+          "decompressed_sha256": "151a5c48b50b55882dc931d9364fa21999fd917aa504c4c96358399e0e54a8de"
+        },
+        {
+          "original_path": "td_run/place2d/place.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\place2d\\place.timing.gz",
+          "gzip_bytes": 172771,
+          "gzip_sha256": "a9f08e9bb2c12efc3da9eba223227c79e6940f5fab445da2e3fcc54658723b55",
+          "decompressed_bytes": 7050916,
+          "decompressed_sha256": "9e629dd81ca02e615b6037574a18779f3a3d50c162dd72a7d6f1c0f4742f35e0"
+        },
+        {
+          "original_path": "td_run/place2d/place_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\place2d\\place_ignored.timing.gz",
+          "gzip_bytes": 182557,
+          "gzip_sha256": "b108257621a0a1ead674f4eab28bec810c1ca35b0d8ab7c24b8c7f366d2f6c45",
+          "decompressed_bytes": 8793494,
+          "decompressed_sha256": "3cc82e0c83782ec0263da9e5eb4142c6661492d4acf27088d4a8110a20c917a9"
+        },
+        {
+          "original_path": "td_run/placed_checked2d/place.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\placed_checked2d\\place.timing.gz",
+          "gzip_bytes": 147877,
+          "gzip_sha256": "f01fed965433e3f5bf6b9cef80dbeff242d3fdb0531fe09ec3b06f4a45993eb5",
+          "decompressed_bytes": 6092684,
+          "decompressed_sha256": "c59f1d7f834783f2336c8299fdd363df15519f91d402aecca289d6f598aaa75f"
+        },
+        {
+          "original_path": "td_run/placed_checked2d/place_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\placed_checked2d\\place_exception.timing.gz",
+          "gzip_bytes": 295845,
+          "gzip_sha256": "1269dea4d34b80c9e5dd0f530e3e5e8831ed2ec958e4b4798981a2367ddf04dc",
+          "decompressed_bytes": 14571206,
+          "decompressed_sha256": "9f60ddd1522072aebab077d998e5e83eb7b0efc443f4f8b8f92ab7c73301bea6"
+        },
+        {
+          "original_path": "td_run/placed_checked2d/place_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\placed_checked2d\\place_ignored.timing.gz",
+          "gzip_bytes": 193484,
+          "gzip_sha256": "fffdb6647bdc98cf799a7945297ef0df721d294acaccb59afe0a578c0bfcca9c",
+          "decompressed_bytes": 9233486,
+          "decompressed_sha256": "c0f27337858e2565cd9c11dc90264515cec22f9ec615c9ca1967494c08c839e0"
+        },
+        {
+          "original_path": "td_run/route2h/route.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\route2h\\route.timing.gz",
+          "gzip_bytes": 168006,
+          "gzip_sha256": "2def44721e83608e986ce92e2818945374a7202836f52af6f04c9021f1d09c4a",
+          "decompressed_bytes": 6037572,
+          "decompressed_sha256": "f8267ba6ec395f178e1b92531846864981efb10ea36b4cd83336d07a15d686e7"
+        },
+        {
+          "original_path": "td_run/route2h/route_exception.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\route2h\\route_exception.timing.gz",
+          "gzip_bytes": 350327,
+          "gzip_sha256": "264e149426fecdb585a0ffce84a97d199e48d2e3058a41125d8f543315f1e0e8",
+          "decompressed_bytes": 14572220,
+          "decompressed_sha256": "95c20fb51fe23e712daa0461ad7de8552b7794cc92d5f06451b48e25cd05ac8a"
+        },
+        {
+          "original_path": "td_run/route2h/route_ignored.timing",
+          "gzip_path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\td_run\\route2h\\route_ignored.timing.gz",
+          "gzip_bytes": 193536,
+          "gzip_sha256": "d7bb6e1868304906935def6eb5abd31d2b99a4c4f10ce35720f7b072d8a9a0c8",
+          "decompressed_bytes": 9233397,
+          "decompressed_sha256": "0533ae7d0435efe877d99780dc3d24845ce7d67a576aca958b462d40b1397a09"
+        }
+      ]
+    },
+    {
+      "path": "doc/output/A2_PROBE_REVIEW_EVIDENCE_INDEX_20261006.json",
+      "sha256": "4da4414926ddd6bb486be3a984a51a2f4b28efc88017f32d2031c262d90f3843",
+      "verified_entries": 5,
+      "compressed_payloads": []
+    },
+    {
+      "path": "doc/output/A2_PROBE_BOARD_READBACK_EVIDENCE_20261006.json",
+      "sha256": "6b0c53f40e4bb4bcd64222dac82e2cf098d6d99b7a47250abf5d1d7bffde8fef",
+      "verified_entries": 2,
+      "compressed_payloads": []
+    }
+  ],
+  "protected_assets": {
+    "path": "doc/output/ROUND2_PREFLIGHT.json",
+    "sha256": "4d1c08dc84abf28e14a7f45e1c96e3626eba35de225f398fbe814c2c0a7adac4",
+    "verified_entries": 81,
+    "compressed_payloads": []
+  },
+  "no_rtl_sdc_bit_mutation": true
+}

@@ -1,0 +1,11 @@
+{
+  "generated": "2026-10-02T15:41:54.040Z",
+  "manifest": [
+    {
+      "scenario": "mixed",
+      "frames": 2,
+      "boot_frames": 1,
+      "play_frames": 1
+    }
+  ]
+}

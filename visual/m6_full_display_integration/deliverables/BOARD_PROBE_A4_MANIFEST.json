@@ -1,0 +1,28 @@
+{
+  "experiment": "A4_READ_ONLY_BIT_HISTORY_AND_RESET_EVENTS",
+  "bit_path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/visual_workspace/rtl_handoff/m6_full_display_integration/deliverables/M6_FDI_A4_20261006_343714AA.bit",
+  "bit_sha256": "343714aaa27eec0f317dc4b546e591496cc16cfc0ba6c0f56f3faff3d40d8fe8",
+  "bit_bytes": 636626,
+  "final_run": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/visual_workspace/rtl_handoff/m6_full_display_integration/experiments/board_0x46_A4_work/td_run/bit_a4_final",
+  "physical": {
+    "lut": 16338,
+    "reg": 11381,
+    "bram9k": 43,
+    "bram32k": 5,
+    "dsp": 18,
+    "pll": 3,
+    "mslices": 4677
+  },
+  "sta": {
+    "setup_wns_ns": 1.123,
+    "hold_wns_ns": 0.027,
+    "setup_violations": 0,
+    "hold_violations": 0
+  },
+  "parent_bit_sha256": "c289d59c93115706b2c996d4a44629d60f70f9809d5f567183228d03bc38c6d9",
+  "parent_hardware_status": "FAIL_NO_IMAGE_BOOT_LOW_COUNTER_ACTIVE_HIGH_BITS_ZERO",
+  "build_display": "SW0=1 d0 05464; d7 constant 65280 calibration",
+  "hardware_status": "PENDING_TRUE_CARD",
+  "bit_readback_verified": false,
+  "required": "逐页真卡实测；线稿出现后仍须≥10分钟稳定及KEY1复现；BURN_INDEX由主人/规格方登记。"
+}

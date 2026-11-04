@@ -1,0 +1,5 @@
+LOADER_FAULT_PASS scenario=5 code=10 cycles=183484
+- vendor/fdi_loader/tests/tb_fdi_label_store.sv:60: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 4ms; walltime 0.336 s; speed 22.904 ms/s
+- Verilator: cpu 0.160 s on 1 threads; alloced 131 MB

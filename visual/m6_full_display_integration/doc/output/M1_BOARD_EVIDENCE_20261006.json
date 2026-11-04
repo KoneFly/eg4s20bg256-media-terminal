@@ -1,0 +1,17 @@
+{
+  "status": "FAIL_DIAGNOSTIC_FALSE_ALARM_CONFIRMED_BY_BOUNDARY_REPRO",
+  "prior_index_sha256": "11581d282aa9d365a1e581d0672565645f714354a7f31bca6ea462108103a0bf",
+  "verified_prior_entries": 403,
+  "files": [
+    {
+      "path": "doc/output/M1_BOARD_RESULT_20261006.json",
+      "bytes": 1140,
+      "sha256": "de570a0730428bb4611a742c658c976cc36ba5d3652972182de591a919685a31"
+    },
+    {
+      "path": "scripts/seal_m1_board_result.py",
+      "bytes": 2060,
+      "sha256": "fc00966ec286d8317d4b0032f589573fef6676fd05e039ebc9a4a0e2c122dcb5"
+    }
+  ]
+}

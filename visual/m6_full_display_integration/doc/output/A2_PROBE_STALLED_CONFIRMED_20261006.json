@@ -1,0 +1,36 @@
+{
+  "date_local": "2026-10-06",
+  "status": "USER_OBSERVED_FAIL_PERSISTENT_PRESTART_NO_TIMEOUT_CODE",
+  "bit_sha256": "7b97635aadd6fa4ebab8f3fc598f195cde5bafcdf6b6968bf105ac62284cd57c",
+  "observation": "KEY1 放开12秒后，SW0=0普通页除p7=05401外其余为0；SW0=1隔10秒再读d1/d6/d7无变化",
+  "pages_previous_decimal": [
+    4096,
+    0,
+    0,
+    112,
+    0,
+    0,
+    32512
+  ],
+  "normal_page7": 5401,
+  "normal_page0_to6": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "after_release_wait_seconds": 12,
+  "recheck_interval_seconds": 10,
+  "rechecked_same": {
+    "d1": 4096,
+    "d6": 0,
+    "d7": 32512
+  },
+  "interpretation": "持续无启动进度且普通bank未报超时；下一步只读测CTRL心跳、复位标志、watchdog及SDRAM cnt。未唯一归因PLL/MISO/复位。",
+  "next_experiment": "A3_CLOCK_COUNTER_READ_ONLY",
+  "hardware_acceptance": "FAIL_NO_PCB_IMAGE",
+  "rtl_changes_this_record": false
+}

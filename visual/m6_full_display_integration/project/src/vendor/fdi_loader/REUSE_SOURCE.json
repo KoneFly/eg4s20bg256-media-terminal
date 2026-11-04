@@ -1,0 +1,52 @@
+[
+  {
+    "original": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/vendor/audio043/sd_init_sequence.v",
+    "original_sha256": "C1BC1EEEFBE00785A2DB70328DF0B8B3755DC10BD80DBE5449D7AB5D4A924F18",
+    "copy": "project/src/vendor/fdi_loader/fdi_sd_init_sequence.v"
+  },
+  {
+    "original": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/vendor/audio043/sd_cmd_transactor.v",
+    "original_sha256": "95A6EBE22E566C8CACA331E3B4A8C9EAE73AA76A27521E13055A4E34641AA519",
+    "copy": "project/src/vendor/fdi_loader/fdi_sd_cmd_transactor.v"
+  },
+  {
+    "original": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/vendor/audio043/sd_spi_byte_engine.v",
+    "original_sha256": "3A2C12090E45F3CF4041FA0429A734ECFF49020D277860DA2B6E22A2F4777CA6",
+    "copy": "project/src/vendor/fdi_loader/fdi_sd_spi_byte_engine.v"
+  },
+  {
+    "original": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/vendor/audio043/sd_spi_sector_reader.v",
+    "original_sha256": "0FAF99292DFF126D3C0E423CB01BEBAC0F9B78B593267290E3C03B29E6AE14E2",
+    "copy": "project/src/vendor/fdi_loader/fdi_sd_spi_sector_reader.v"
+  },
+  {
+    "original": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/vendor/audio043/mx_byte_engine.v",
+    "original_sha256": "BE4BA7A31359217BF2D02888D541A15F11810689FB941DF03A2F5C6373A324B7",
+    "copy": "project/src/vendor/fdi_loader/fdi_mx_byte_engine.v"
+  },
+  {
+    "original": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/vendor/audio043/crc7_calc.v",
+    "original_sha256": "1393E4079D41FF9AD7927E8B234A7AB88C6C752A2E9774D61F4A31239F8250A3",
+    "copy": "project/src/vendor/fdi_loader/fdi_crc7_calc.v"
+  },
+  {
+    "original": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/vendor/audio043/fat32_volume_scanner.v",
+    "original_sha256": "55D46913A345641D4A39C74C5C1FC33F32B082F6ADD58B7CC66BA30EB195DF72",
+    "copy": "project/src/vendor/fdi_loader/fdi_fat32_volume_scanner.v"
+  },
+  {
+    "original": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/vendor/audio043/fat32_file_streamer.v",
+    "original_sha256": "4C6A91390D85CAF2924EEE29267E1BF6181C702E115C565105208E2213466595",
+    "copy": "project/src/vendor/fdi_loader/fdi_fat32_file_streamer.v"
+  },
+  {
+    "original": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_043_mainline_integration/rtl/sdram_cmd_engine.v",
+    "original_sha256": "45A1009DB6A230CC3C37770FA623387E952A74C7E76372ADCFB210F7BC79DAE0",
+    "copy": "project/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v"
+  },
+  {
+    "original": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_043_mainline_integration/rtl/sdram_refresh_timer.v",
+    "original_sha256": "B5A165A89CA6B519BB780E8897A5E7769348F47A4B703787C00D5E73F8DC5244",
+    "copy": "project/src/vendor/fdi_loader/fdi_sdram_refresh_timer.v"
+  }
+]

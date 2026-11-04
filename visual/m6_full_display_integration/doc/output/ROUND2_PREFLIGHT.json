@@ -1,0 +1,472 @@
+{
+  "generated_utc": "2026-10-05T10:13:57.687Z",
+  "status": "PASS_READ_ONLY",
+  "scope": "只读资产核对；不代表集成 TD、时序、预算或上板通过",
+  "baseline": {
+    "directory": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2",
+    "bit_sha256": "75959e68b425de7a36ee937949c683b956d90164ea72c68e2bbcd40b6d5d5d1b",
+    "source_manifest_entries": 75
+  },
+  "bitmap": {
+    "signature": "BM",
+    "declared_bytes": 921654,
+    "pixel_offset": 54,
+    "dib_bytes": 40,
+    "width": 640,
+    "height": 480,
+    "planes": 1,
+    "bits_per_pixel": 24,
+    "compression": 0,
+    "actual_bytes": 921654,
+    "file_crc32": "47E2A01D",
+    "decoded_bytes": 614400,
+    "top_down_labels_le_crc32": "9E9CE1C5",
+    "physical_bottom_up_labels_le_crc32": "A1E4D4E1"
+  },
+  "row_span": {
+    "rows": 480,
+    "min_width": 39,
+    "max_width": 513,
+    "total_span_pixels": 184827,
+    "mean_width": 385.05625,
+    "y_below_451_span_pixels": 180318,
+    "y_below_451_bl8_aligned_words": 93456,
+    "max_bl8_aligned_words_per_row": 264
+  },
+  "pins": {
+    "baseline_explicit": 46,
+    "baseline_implicit_hdmi_negative": [
+      "C2",
+      "G6",
+      "F2",
+      "D1"
+    ],
+    "proposed_tf": [
+      {
+        "signal": "sd_dclk",
+        "pin": "A14"
+      },
+      {
+        "signal": "sd_miso",
+        "pin": "B14"
+      },
+      {
+        "signal": "sd_mosi",
+        "pin": "A13"
+      },
+      {
+        "signal": "sd_ncs",
+        "pin": "A12"
+      }
+    ],
+    "overlaps": []
+  },
+  "faults": [],
+  "artifacts": [
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/constraints/eth_fft_cdc.sdc",
+      "bytes": 7284,
+      "sha256": "88533c89a74ab2177630f47c21221293c32fd35d9ffa4827a437e601c69a880d"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/constraints/eth_m6_master.adc",
+      "bytes": 8114,
+      "sha256": "99f7aa3b38006ebbd93f9f8f7b282bdb1a0c696dda77dd8112a640b113a1ecde"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/constraints/eth_m6_master.sdc",
+      "bytes": 1396,
+      "sha256": "293d274f584e0e77cf53095233319894f44f6f86d86001257fd3623610c00350"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/constraints/eth_m6_snapshot_alias.sdc",
+      "bytes": 442,
+      "sha256": "8488aa3d166210a6ff30015f29d58e5ff9798a6626eb512c3b283bbd94e0068d"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/constraints/eth_pcm.adc",
+      "bytes": 7524,
+      "sha256": "ac2ddefed16a0643299a63fbef3e02646e8634584ea855d34b4db8dc98eaf029"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/constraints/eth_pcm.sdc",
+      "bytes": 6546,
+      "sha256": "5fac6ad6662b27be23f1ce84ac00b151f7411f57409c4650ac7dee596c2bd1dd"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/constraints/eth_udp_shell.adc",
+      "bytes": 3253,
+      "sha256": "da7e3657221a1d6d054b572262a2407ddda78625bfbdd8de90935c9ac91aba3e"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/constraints/eth_udp_shell.sdc",
+      "bytes": 537,
+      "sha256": "120154f9bc8ac39871d9c9ce507b5206f91526eb83957cd4969a7b1f5bcb05bf"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/eth_pcm_master_top.v",
+      "bytes": 1833,
+      "sha256": "8bb6f60517dfa311f536dd6cf2853fecc7d150d7c4f0126c5c1435ba0a7e33d8"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/eth_pcm_slave_top.v",
+      "bytes": 1821,
+      "sha256": "9348b6ba3299f582b90c4033ac4707cc284873f08013daeece68b9de1de0066f"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/eth_udp_shell_top.v",
+      "bytes": 7788,
+      "sha256": "d9685715ed1f666b606d357aeb0c3bcbbd377a666ccaffd58500066897586635"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_bafifo.v",
+      "bytes": 9817,
+      "sha256": "7e5d86759d5a5e0ea0f48430fee1fc73c4d97ddf2041a8d00d4f2b6a1bb9ed40"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_crc32_ref.v",
+      "bytes": 4783,
+      "sha256": "b69f9a7c7d733fcc5172c23c1f63bb71d3f13f378a188a75b2c1b050bc3d521e"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_link_core.v",
+      "bytes": 23269,
+      "sha256": "9c721bb52186c9bd5379eda35a58ae7bc13a4fbe7b6490b54eea18af9ba0c97b"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_pcm_pattern.v",
+      "bytes": 1146,
+      "sha256": "3ddbb5fecb8a8d182f632289f0197373ae356effa7865e8f4ecd11c45e47da54"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_pll_rx.v",
+      "bytes": 2797,
+      "sha256": "ddc0ff5590e5804f72d8e43a8d0353394e8351feaf70eabe79ff621d1b0ddb8e"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_pll_tx.v",
+      "bytes": 2905,
+      "sha256": "9e2c419f360de1ab71f722f15a2d86300952351df62ee41a037c3113d9a2afbe"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_rec_fifo.v",
+      "bytes": 4353,
+      "sha256": "e044527fcfdcc8104c4da5cba4b6eda2bb899023dfb49fc434c513094f0ceb31"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_rgmii_rx.v",
+      "bytes": 1598,
+      "sha256": "1a21f061d241d09b2ab828349ba563925a581a4656d1dbdef30890fbc33438da"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_rgmii_tx.v",
+      "bytes": 2463,
+      "sha256": "fc0ab5f0575608a89c072ae1e79142103132b3c441033127b70a74dd3e2d1175"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_rx_capture.v",
+      "bytes": 7039,
+      "sha256": "e3409268fb2188a4c5d27322a1325150b4d865e7540b87538907aec70b4982a7"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_rx_pack.v",
+      "bytes": 15290,
+      "sha256": "dc04033df7dabcd562ec16a1434f1210e6208036a0ce1f042caee896e895ac0d"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_rxc_rate.v",
+      "bytes": 2601,
+      "sha256": "83552b27588c8833865e4645eaab4be345ac62e236d2030016e3cb2dc80dcdd7"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_stats.v",
+      "bytes": 22405,
+      "sha256": "e9f1c0d38f9d6d4ad95f817cfbc6bd882628bc5aa8e08e0e2aadbaca74e080be"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_temac.v",
+      "bytes": 4444,
+      "sha256": "37bc922f67826cdaa9d4e06d2fd981945fe55541a76e3a61452bd76f8438cd09"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_tx_drain.v",
+      "bytes": 7312,
+      "sha256": "b5ae69c1977d6cda8c1656656f1df56405cceb72c4911becdd53eceaa2c98bb0"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/ethm_tx_pack.v",
+      "bytes": 11245,
+      "sha256": "a5afb4df59540be4145b4bb46f9cd7d7a80724670a538e83740a671f81716cbb"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v7_decimal_display.v",
+      "bytes": 3938,
+      "sha256": "b8d8e92229a97cb270af2d66f7609ce48b4d2d455f9e387a8bcd51612f043d1f"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v7_dled_output.v",
+      "bytes": 1212,
+      "sha256": "73f390535fe063fcd65060b99c95f10bdbfb32f743a4b468a5f9dc9a9ea1fafd"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v7_ready_probe.v",
+      "bytes": 1804,
+      "sha256": "50299652f5f935ecf121c6be3e79675ea25cbe97be0310f716906156b2cd7825"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v7_udp_cam_ctrl_pcm.v",
+      "bytes": 5464,
+      "sha256": "a3dfb49b92cef25da4a2750421817dcf31811c26db05e5e6690ab2891aac3093"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v7_udp_echo.v",
+      "bytes": 3194,
+      "sha256": "b2162a1fb4d5ec472d5475244a6a2537b8f036863544e28e377a0989168e5e49"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v7_udp_pcm_diag.v",
+      "bytes": 3287,
+      "sha256": "fc90e93da8a2948ced07382ea1a0dc173782e203896366408599fa9850ca6b6c"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v7_udp_pcm_top.v",
+      "bytes": 21567,
+      "sha256": "b12b1afacc792f464777ecd4c0c17eece543174ac90f354264600cb00161262e"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v8_fft_dataplane.v",
+      "bytes": 2214,
+      "sha256": "960e51f685f1793e06fb73413b6e1bebac9d76bf8cb596aae6ce2931c36e6b8e"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v8_fft_window.v",
+      "bytes": 2804,
+      "sha256": "f62da4033c55eaecc76b2a8eabce03ed80a296b79eb3910031c8115c82c06ba1"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v8_pcm_commit.v",
+      "bytes": 5759,
+      "sha256": "86fc6de16e2987806d1270f0f9bc0e0e215d687b596ff51d9de7917be1a1689d"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v8_spectrum_tx.v",
+      "bytes": 3217,
+      "sha256": "393855b9b299a76f3e373b2e2017160fe5e324a1d71e9f098ca8eafaddc3fd1d"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v8_udp_fft_slave_top.v",
+      "bytes": 10282,
+      "sha256": "76169b05aaaba892acfc5e35906563717aafec3b2ae0a273532640c6e600f356"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v9_m6_hdmi.v",
+      "bytes": 4107,
+      "sha256": "3d64450a1c76e708d8555cd9bc9e0fb2af7883733e4797e0b2e89e70e57b23a2"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v9_m6_scan.v",
+      "bytes": 3712,
+      "sha256": "fd2014eed73f00f74aef27848ceab1959e0bedcd124f518c3a3e88a667e5648e"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v9_spectrum_snapshot.v",
+      "bytes": 6417,
+      "sha256": "15806e4f5fd81396f3908c985d3fe6c6caa8c2df49b2228d1b0ff34fbc2ff62f"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/rtl/v9_udp_m6_master_top.v",
+      "bytes": 10829,
+      "sha256": "6c298688fd473f71132a1d63717e15f940ddcaf9a2cab785236ec316bdc2f975"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/display020/axis_pixel_adapter.v",
+      "bytes": 5895,
+      "sha256": "309071d0c1151aa10649ba31eb7ee3d9080988c5b8d7e7ab47a4212f5831b20e"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "bytes": 328975,
+      "sha256": "867e0b0bdd874bc383d00918c9e1be3fe01edf41f343b6a0d73e262776596a63"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/display020/hdmi_phy_wrapper.v",
+      "bytes": 3784,
+      "sha256": "193d60e02fb68cb721c1d0d834fdd7e40ae100d26a2bd1be56dfbed7870165df"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/display020/hdmi_pll.v",
+      "bytes": 7399,
+      "sha256": "d6efb17508dacef2a74c3098e512829974cac0a5bbc5cb03ed6d845ff78cf784"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/display020/lane_lvds_10_1.v",
+      "bytes": 2632,
+      "sha256": "305f40ee9561c5bcfdd1409deb152927ffcf0e90e41d79a2b9821a2b8de57c2d"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/fft055/fft_tables.vh",
+      "bytes": 175266,
+      "sha256": "80472fb4af0ef54bbb7649f62e385e135096e8ca9f0d5920c45597266f9fc0e8"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/fft055/pcf_fft_frontend.v",
+      "bytes": 17763,
+      "sha256": "945f4c5c71cd66acc7284f6c80b068e38124f7daf0055703631018026cff371d"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/m6_s2/pcb_bar_cache.v",
+      "bytes": 1221,
+      "sha256": "7edaaaa14704eabc680e18350ddd4655c57345576c8426cfc6396df82c259f9e"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/m6_s2/pcb_linebuf_dp.v",
+      "bytes": 1071,
+      "sha256": "fe9185f2798062e5a51b26d32ea2c58065b3ff93b978405f218c85ce88521109"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/m6_s2/pcb_pixel_renderer.v",
+      "bytes": 35919,
+      "sha256": "413f8996098d7208b219fdf06e504dd344dadfc72dc81bbe5c251b44b5ebea49"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/m6_s2/pcb_pulse_slot.v",
+      "bytes": 1503,
+      "sha256": "469956fe201c8fad18797141789c154a25f500ca5d857a8a2ac4a808ee070a3a"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/m6_s2/pcb_rc_slot.v",
+      "bytes": 996,
+      "sha256": "4c735c9871ac9808c278c3a4c239bd0ca5732bb4755e21d16aa8d83685431293"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/m6_s2/pcb_roms.vh",
+      "bytes": 12916,
+      "sha256": "d07dcae71aab7146a694e6730b53abe8ab6e1428830a895cf38896e115abb0c8"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/m6_s2/pcb_state_mem.v",
+      "bytes": 3041,
+      "sha256": "1f13753053a8e5cff5b488e9da60943e78b7837e2f69b84460fc1f626cc6a2f4"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/import/BUFGMUX.v",
+      "bytes": 2437,
+      "sha256": "a0886a9fca9c44268bce19a0f05fcf967345586c8e98212f7a49511bbc20a5c3"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/import/clk_gen_rst_gen.v",
+      "bytes": 2567,
+      "sha256": "41e9e1bedc86eada10e130b76bc24831be2adf6112be706d981b25a437ff334c"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/import/div_clk_gen.v",
+      "bytes": 1874,
+      "sha256": "d33d57f0d70d8d05a9e7b81fb5b56690505c6127d119a24f8dcb49c96e2afe7a"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/import/IDDR.v",
+      "bytes": 1851,
+      "sha256": "3f3615266af31a6dd44e801826b4e9e9f9e41f8248f8d38dcca76ccce0d0a3b5"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/import/ODDR.v",
+      "bytes": 1666,
+      "sha256": "0e714181f0326f87e4a2ccd9b6fa367366ebb6c5019f2e84c979c1781a5f8010"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/import/RAMB16_S9_S9.v",
+      "bytes": 2222,
+      "sha256": "eb40b83e948c48b381dfb517d830d7dfb03e86fa0dc8cc03967b32fccb65fccc"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/import/rgmii_interface.v",
+      "bytes": 11079,
+      "sha256": "e991629b34bd65150e4fadfdf057725b578a36ef617a875e7467dce3a722d7aa"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/import/rx_client_fifo.v",
+      "bytes": 26448,
+      "sha256": "72a66834f448eab11fa4bc4591cf32535b67203f150298b07858c76c624408ca"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/import/temac_block.v",
+      "bytes": 15612,
+      "sha256": "c01a28548571f64f4e708762034228360cd57e6c8829d0c007b966e07e7f01a5"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/import/temac_clk_gen.v",
+      "bytes": 2189,
+      "sha256": "261e4b503b8ca58b988df84af2d7613beec4f14078a32fa6d6df190dc4647a8c"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/import/tx_client_fifo.v",
+      "bytes": 39538,
+      "sha256": "e03bebfa76fc8899e1f550b7d361b7996af7cc508e50f7db791d30c9f7b1427c"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/import/tx_clk_en_gen.v",
+      "bytes": 7144,
+      "sha256": "da8c09e5308e8bebbfdfacaad7d83f5f9371811f54a8f6203e452e40649b02e9"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/ip/pll_gen.v",
+      "bytes": 2971,
+      "sha256": "7cccfd0b0b6bfd62e0858883a480925b9205225701b1a2dfbfed0f1aaa9a4aac"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/ip/TEMAC_CORE/RTL/include/define.v",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/ip/TEMAC_CORE/RTL/mac_core_aead6cd6dadd.v",
+      "bytes": 7327,
+      "sha256": "d2aabbcf33f66377c8a50a6e725c13d80ed5a99aab98b74ec91531a94bd1f970"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/ip/TEMAC_CORE/RTL/TEMAC_CORE_aead6cd6dadd.v",
+      "bytes": 464637,
+      "sha256": "8ae9162609d7ac1bd165068a1704f5d5cbb8a480171a05ffa94ac68a89a7b443"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/ip/TEMAC_CORE/TEMAC_CORE.v",
+      "bytes": 3986,
+      "sha256": "c2ee23bb45ecf9dd7e8e94c6617eb49fd0538a384e5a89b7f98908d1c6af529a"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/src/vendor/udp_base/udp_ip_protocol_stack_merge.enc.v",
+      "bytes": 255598,
+      "sha256": "983da722caeb6303dc6e9f610c0d3a5d93509317b3a06aed972899d3903ffdc7"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/iccoder_workspace/tasks/task_052_ethernet_pcm_link/td_run/v9_display_20261004_final2/eth_udp_m6_master_top.bit",
+      "bytes": 629642,
+      "sha256": "75959e68b425de7a36ee937949c683b956d90164ea72c68e2bbcd40b6d5d5d1b"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/visual_workspace/rtl_handoff/pcb_dynamic_layer/rtl/pcb_frame_updater.v",
+      "bytes": 29506,
+      "sha256": "49c189938efd8d0d02dc6db9aa764e8c77f06908da73dfc5c31eb7a77e2c3703"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/visual_workspace/rtl_handoff/pcb_dynamic_layer/rtl/pcb_ram_2k16.v",
+      "bytes": 908,
+      "sha256": "0d4f10a9f8180d90e7f746c7140bb1fcbf17396b356022662c0a4ddf998835a9"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/visual_workspace/rtl_handoff/pcb_dynamic_layer/rtl/pcb_dynamic_roms_w2.vh",
+      "bytes": 29406,
+      "sha256": "c36620064278f7ba57aaed455b4d7097e2709ed77a6cb816b4f73a36f19ee1d9"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/visual_workspace/golden/pcb/PCB.BMP",
+      "bytes": 921654,
+      "sha256": "938219a71dde50745624d8821554cca0822c748149b2e3f9cd8d31eccfe26516"
+    },
+    {
+      "path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/visual_workspace/golden/pcb/rom/rom_row_span.hex",
+      "bytes": 4320,
+      "sha256": "2399851ce9498039af59ae7bd5f2a7e2b32fb3a7b2c2c687ef1804d677d9b4cd"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "model_sha256": "fbb2298fc26cef6f3e951c03bdc4857eee769209e57ce9e547a711d9996cf351",
+  "generator_sha256": "4b133b77c0b7ff4dcc873cbf8ad129acd316e1a19b3595e929735613c11b654d",
+  "packer_sha256": "49ea7d92eecbe1cd7fc649ce8d72f1567fd2e93b4045f9132597ef7c596715b0",
+  "manifest": [
+    {
+      "scenario": "boot_silence",
+      "frames": 300,
+      "frame_stride": 5808,
+      "sha256": "36b120956a5e1a17b43c8004e8dbd7913103fdc5238beddb17e4902ce7049b19"
+    },
+    {
+      "scenario": "boot_low",
+      "frames": 300,
+      "frame_stride": 5808,
+      "sha256": "84bdaec21ebab143413226dcf99784395a15fc40e76b526ee9ab4fd708ba9bc4"
+    },
+    {
+      "scenario": "play_low",
+      "frames": 300,
+      "frame_stride": 5808,
+      "sha256": "84bdaec21ebab143413226dcf99784395a15fc40e76b526ee9ab4fd708ba9bc4"
+    },
+    {
+      "scenario": "play_mid",
+      "frames": 300,
+      "frame_stride": 5808,
+      "sha256": "798b5166a81707ded2b7c033d13afd65713d7ba198dc1029e3c7d9e51b3d87e2"
+    },
+    {
+      "scenario": "play_high",
+      "frames": 300,
+      "frame_stride": 5808,
+      "sha256": "900a3c1f9039f1e73081a56057c385a50ecffe9615b3b95b5cc9fc9f5d445946"
+    },
+    {
+      "scenario": "saturate",
+      "frames": 300,
+      "frame_stride": 5808,
+      "sha256": "440f506f7822f06614235ffdf397e71ff6b5534d542869dc17a8bf6dc503acf3"
+    },
+    {
+      "scenario": "impulse_broadcast",
+      "frames": 300,
+      "frame_stride": 5808,
+      "sha256": "6bff081bac85866709ba9c16379535f150ca8e0fe64658e334c345ebf1de6ce0"
+    },
+    {
+      "scenario": "silence_decay",
+      "frames": 300,
+      "frame_stride": 5808,
+      "sha256": "e4af8de4599f4c4723cd5013eaaf561bafad993ab2956f64925f1642e4335f4c"
+    }
+  ]
+}

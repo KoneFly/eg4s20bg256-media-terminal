@@ -1,0 +1,27 @@
+{
+  "status": "DIAGNOSTIC_ONLY_PENDING_BOARD",
+  "bit_path": "deliverables/M6_FDI_S1_20261006_4BA41B2F.bit",
+  "bit_sha256": "4ba41b2fce390c31eea5cd1f8eb19332e56db424f3c751f682150ba8053f2a6d",
+  "bit_bytes": 629637,
+  "measured": {
+    "lut": 2181,
+    "reg": 1878,
+    "bram9k": 10,
+    "bram32k": 0,
+    "dsp": 0,
+    "pll": 3,
+    "mslices": 691
+  },
+  "sta": {
+    "setup_wns_ns": 6.071,
+    "hold_wns_ns": 0.003,
+    "setup_violations": 0,
+    "hold_violations": 0
+  },
+  "source_manifest_sha256": "23a3aa68c1dc314ffa9846b329704663f40b5d60aa6fd4ae0ae01c4ae5ee2342",
+  "cdc_audit_sha256": "3cfd1078d7949a3c2f58fd435a9f233e5e05ddcf99e385457fdfba5366069526",
+  "native_bist_audit_sha256": "7aca93a101a1be0d7693d2de862cde5d30b0aa93ae356b7a86fb6e43750f9df3",
+  "software_validation_sha256": "e92bf1d26872b3e8d116e280f2270b7d94dcaba4429eb7579c4cf9699a0690c4",
+  "subboard": "7175ECC3_UNCHANGED",
+  "tf_layout": "UNCHANGED_NOT_USED_IN_S1"
+}

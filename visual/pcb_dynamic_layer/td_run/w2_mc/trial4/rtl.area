@@ -1,0 +1,37 @@
+standard
+***Report Model: pcb_frame_updater Device: EG4S20BG256***
+
+IO Statistics
+#IO                      1105
+  #input                 1051
+  #output                  54
+  #inout                    0
+
+Gate Statistics
+#Basic gates             6578
+  #and                   2106
+  #nand                     0
+  #or                     112
+  #nor                      0
+  #xor                      1
+  #xnor                     0
+  #buf                      0
+  #not                    163
+  #bufif1                   0
+  #MX21                  1538
+  #FADD                     0
+  #DFF                   2658
+  #LATCH                    0
+#MACRO_ADD                102
+#MACRO_EQ                  40
+#MACRO_MULT                 1
+#MACRO_MUX               1518
+#MACRO_OTHERS               1
+
+Report Hierarchy Area:
++--------------------------------------------------------+
+|Instance     |Module            |gates  |seq    |macros |
++--------------------------------------------------------+
+|top          |pcb_frame_updater |3920   |2658   |144    |
+|  state_bank |pcb_ram_2k16      |0      |0      |1      |
++--------------------------------------------------------+

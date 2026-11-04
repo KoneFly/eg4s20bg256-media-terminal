@@ -1,0 +1,17 @@
+{
+  "fixed_delay": 647,
+  "span_pool_depth": 4096,
+  "span_count_max": 2467,
+  "frames": [
+    {
+      "frame": "frame_0000",
+      "hitPixels": 7332,
+      "spanCount": 2170
+    },
+    {
+      "frame": "frame_0001",
+      "hitPixels": 7766,
+      "spanCount": 2467
+    }
+  ]
+}

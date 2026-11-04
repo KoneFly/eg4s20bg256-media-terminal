@@ -1,0 +1,1319 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Sun Oct  4 20:07:57 2026
+
+Top Model           : pcb_frame_updater
+Device              : EG4S20BG256
+Speed               : NA
+STA coverage        : 100.00%
+Constraint File     : D:/Download/Ç¶Èüfpga_°²Â·/eg4s20bg256/topic1_media_terminal/visual_workspace/rtl_handoff/pcb_dynamic_layer/td_run/w2_mc/trial2/clock.sdc;
+Confidence          : Synthesized
+Check Corner        : Both (Slow and Fast)
+CRPR Enabled        : Yes
+Report Scheme       : 10 end point(s) per path group, 1 path(s) per end point
+
+
+Check Status
+-------------
+
+Corner   | Max      Min     
+------------------------------------
+Slow     | yes      yes     
+Fast     | yes      yes     
+
+
+Timing Status
+--------------------
+	SWNS: 5.193ns, STNS: 0.000ns
+	HWNS: 0.621ns, HTNS: 0.000ns
+	Period Check WNS: 16.586ns
+
+
+Clock Summary
+--------------------
+
+       Clock-Id:       C-Freq       Fanout   Clock-Name
+--------------------------------------------------------------------------------
+           clk0:       50.000         2671   clk
+--------------------------------------------------------------------------------
+
+       Name            Type         Rise(ns)   Fall(ns)          C-Period(ns)     C-Freq(MHz)          R-Period(ns)     R-Freq(MHz)         SWNS(ns)   STNS(ns)         HWNS(ns)   HTNS(ns)         Skew(ns)           Fanout        Max-Level        CC-From    CC-To
+       clk0           local            0.000     10.000                20.000          50.000                14.807          67.536            5.193      0.000            0.621      0.000            0.000             2671               11             no       no
+
+Notes
+----------
+C-Period  :  constraint period
+C-Freq    :  constraint freq
+R-Period  :  report min period
+R-Freq    :  report fmax
+CC-From   :  has path(s) from cross-domain clock
+CC-To     :  has path(s) to cross-domain clock
+
+
+*   Clock R-Period data only takes intra-clock timing. SWNS/STNS/HWNS/HTNS take both intra-clock and inter-clock timing.
+*   If there is mismatch between R-Period and SWNS, check inter-clock timing of this clock as capture clock.
+*   SWNS/STNS/HWNS/HTNS of timing exception (SMCP/SMD) only counted in global Timing Status, not counted in Clock Summary.
+
+Intra clock domain timing
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     clk -> clk
+Type           :     Self
+From Clock     :     clk
+To Clock       :     clk
+Min Period     :     14.807ns
+Fmax           :     67.536MHz
+
+Statistics:
+Max            : SWNS      5.193ns, STNS      0.000ns,         0 Viol Endpoints,      5218 Total Endpoints,     26374 Paths Analyzed
+Min            : HWNS      0.621ns, HTNS      0.000ns,         0 Viol Endpoints,      5218 Total Endpoints,     26374 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 5.193ns
+Begin Point         : state_reg[6].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : bus_addr_reg[1].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk rising@20.000ns - clk rising@0.000ns }
+Data Path Delay     : 13.691ns (cell 4.768ns (34%), net 8.923ns (66%))
+Clock Skew          : 0.000ns
+Logic Level         : 11 ( LUT4=4  LUT2=4  LUT3=2  LUT5=1 )
+Max Fanout          : 193
+Clock Uncertainty   : 1.000ns (sdc uncertainty: 1.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: state_reg[6].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: state_reg[6].q
+net (fo=193)                            1.410          1.556          net: state[6],  pcb_frame_updater.v(37)
+                                                                      pin: mul_return_reg[0]_syn_24.b
+LUT2                                    0.408    f     1.964       1  pin: mul_return_reg[0]_syn_24.o
+net (fo=16)                             0.960          2.924          net: state[6]_syn_2596,  pcb_frame_updater.v(37)
+                                                                      pin: mul_return_reg[0]_syn_25.a
+LUT2                                    0.408    f     3.332       2  pin: mul_return_reg[0]_syn_25.o
+net (fo=8)                              0.825          4.157          net: al_224,  NOFILE(0)
+                                                                      pin: bus_addr_b[8]_syn_28.b
+LUT4                                    0.408    f     4.565       3  pin: bus_addr_b[8]_syn_28.o
+net (fo=1)                              0.562          5.127          net: bus_addr_b[8]_syn_29,  NOFILE(0)
+                                                                      pin: bus_addr_b[8]_syn_30.a
+LUT2                                    0.408    f     5.535       4  pin: bus_addr_b[8]_syn_30.o
+net (fo=2)                              0.600          6.135          net: bus_addr_b[8]_syn_31,  NOFILE(0)
+                                                                      pin: bus_addr_b[8]_syn_32.a
+LUT3                                    0.408    f     6.543       5  pin: bus_addr_b[8]_syn_32.o
+net (fo=2)                              0.600          7.143          net: bus_addr_b[8]_syn_33,  NOFILE(0)
+                                                                      pin: bus_addr_b[8]_syn_34.a
+LUT4                                    0.408    f     7.551       6  pin: bus_addr_b[8]_syn_34.o
+net (fo=2)                              0.600          8.151          net: bus_addr_b[8]_syn_35,  NOFILE(0)
+                                                                      pin: bus_addr_b[8]_syn_38.a
+LUT2                                    0.408    f     8.559       7  pin: bus_addr_b[8]_syn_38.o
+net (fo=18)                             0.983          9.542          net: state[6]_syn_9744,  pcb_frame_updater.v(37)
+                                                                      pin: bus_addr_b[2]_syn_19.a
+LUT3                                    0.408    f     9.950       8  pin: bus_addr_b[2]_syn_19.o
+net (fo=4)                              0.697         10.647          net: bus_addr_b[2]_syn_20,  NOFILE(0)
+                                                                      pin: bus_addr_b[1]_syn_18.a
+LUT4                                    0.408    f    11.055       9  pin: bus_addr_b[1]_syn_18.o
+net (fo=1)                              0.562         11.617          net: bus_addr_b[1]_syn_19,  NOFILE(0)
+                                                                      pin: bus_addr_b[1]_syn_20.a
+LUT5                                    0.424    f    12.041      10  pin: bus_addr_b[1]_syn_20.o
+net (fo=1)                              0.562         12.603          net: bus_addr_b[1]_syn_21,  NOFILE(0)
+                                                                      pin: bus_addr_b[1]_syn_24.a
+LUT4                                    0.408    f    13.011      11  pin: bus_addr_b[1]_syn_24.o
+net (fo=1)                              0.562         13.573          net: bus_addr_b[1],  NOFILE(0)
+                                                                      pin: bus_addr_reg[1].d
+SEQ (reg)                               0.118    f    13.691          net: bus_addr[1],  pcb_frame_updater.v(50)
+--------------------------------------------------------------------  ---------------
+Arrival                                               13.691               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: bus_addr_reg[1].clk
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         19.884               
+clock uncertainty                      -1.000         18.884               
+clock pessimism                         0.000         18.884               
+--------------------------------------------------------------------  ---------------
+Required                                              18.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.193               
+
+Slack               : 5.193ns
+Begin Point         : state_reg[6].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : bus_addr_reg[2].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk rising@20.000ns - clk rising@0.000ns }
+Data Path Delay     : 13.691ns (cell 4.768ns (34%), net 8.923ns (66%))
+Clock Skew          : 0.000ns
+Logic Level         : 11 ( LUT4=4  LUT2=4  LUT3=2  LUT5=1 )
+Max Fanout          : 193
+Clock Uncertainty   : 1.000ns (sdc uncertainty: 1.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: state_reg[6].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: state_reg[6].q
+net (fo=193)                            1.410          1.556          net: state[6],  pcb_frame_updater.v(37)
+                                                                      pin: mul_return_reg[0]_syn_24.b
+LUT2                                    0.408    f     1.964       1  pin: mul_return_reg[0]_syn_24.o
+net (fo=16)                             0.960          2.924          net: state[6]_syn_2596,  pcb_frame_updater.v(37)
+                                                                      pin: mul_return_reg[0]_syn_25.a
+LUT2                                    0.408    f     3.332       2  pin: mul_return_reg[0]_syn_25.o
+net (fo=8)                              0.825          4.157          net: al_224,  NOFILE(0)
+                                                                      pin: bus_addr_b[8]_syn_28.b
+LUT4                                    0.408    f     4.565       3  pin: bus_addr_b[8]_syn_28.o
+net (fo=1)                              0.562          5.127          net: bus_addr_b[8]_syn_29,  NOFILE(0)
+                                                                      pin: bus_addr_b[8]_syn_30.a
+LUT2                                    0.408    f     5.535       4  pin: bus_addr_b[8]_syn_30.o
+net (fo=2)                              0.600          6.135          net: bus_addr_b[8]_syn_31,  NOFILE(0)
+                                                                      pin: bus_addr_b[8]_syn_32.a
+LUT3                                    0.408    f     6.543       5  pin: bus_addr_b[8]_syn_32.o
+net (fo=2)                              0.600          7.143          net: bus_addr_b[8]_syn_33,  NOFILE(0)
+                                                                      pin: bus_addr_b[8]_syn_34.a
+LUT4                                    0.408    f     7.551       6  pin: bus_addr_b[8]_syn_34.o
+net (fo=2)                              0.600          8.151          net: bus_addr_b[8]_syn_35,  NOFILE(0)
+                                                                      pin: bus_addr_b[8]_syn_38.a
+LUT2                                    0.408    f     8.559       7  pin: bus_addr_b[8]_syn_38.o
+net (fo=18)                             0.983          9.542          net: state[6]_syn_9744,  pcb_frame_updater.v(37)
+                                                                      pin: bus_addr_b[2]_syn_19.a
+LUT3                                    0.408    f     9.950       8  pin: bus_addr_b[2]_syn_19.o
+net (fo=4)                              0.697         10.647          net: bus_addr_b[2]_syn_20,  NOFILE(0)
+                                                                      pin: bus_addr_b[2]_syn_23.a
+LUT4                                    0.408    f    11.055       9  pin: bus_addr_b[2]_syn_23.o
+net (fo=1)                              0.562         11.617          net: bus_addr_b[2]_syn_24,  NOFILE(0)
+                                                                      pin: bus_addr_b[2]_syn_25.a
+LUT5                                    0.424    f    12.041      10  pin: bus_addr_b[2]_syn_25.o
+net (fo=1)                              0.562         12.603          net: bus_addr_b[2]_syn_26,  NOFILE(0)
+                                                                      pin: bus_addr_b[2]_syn_29.a
+LUT4                                    0.408    f    13.011      11  pin: bus_addr_b[2]_syn_29.o
+net (fo=1)                              0.562         13.573          net: bus_addr_b[2],  NOFILE(0)
+                                                                      pin: bus_addr_reg[2].d
+SEQ (reg)                               0.118    f    13.691          net: bus_addr[2],  pcb_frame_updater.v(50)
+--------------------------------------------------------------------  ---------------
+Arrival                                               13.691               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: bus_addr_reg[2].clk
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         19.884               
+clock uncertainty                      -1.000         18.884               
+clock pessimism                         0.000         18.884               
+--------------------------------------------------------------------  ---------------
+Required                                              18.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.193               
+
+Slack               : 5.599ns
+Begin Point         : i_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : comp_fade_reg[96].ce (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk rising@20.000ns - clk rising@0.000ns }
+Data Path Delay     : 13.243ns (cell 4.737ns (35%), net 8.506ns (65%))
+Clock Skew          : 0.000ns
+Logic Level         : 11 ( LUT4=7  LUT3=2  LUT5=1  LUT2=1 )
+Max Fanout          : 407
+Clock Uncertainty   : 1.000ns (sdc uncertainty: 1.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: i_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: i_reg[1].q
+net (fo=407)                            1.536          1.682          net: i[1],  pcb_frame_updater.v(70)
+                                                                      pin: mux241_syn_474.d
+LUT4                                    0.408    f     2.090       1  pin: mux241_syn_474.o
+net (fo=1)                              0.562          2.652          net: mux241_syn_475,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_476.a
+LUT5                                    0.424    f     3.076       2  pin: mux241_syn_476.o
+net (fo=1)                              0.562          3.638          net: mux241_syn_477,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_482.a
+LUT4                                    0.408    f     4.046       3  pin: mux241_syn_482.o
+net (fo=1)                              0.562          4.608          net: mux241_syn_483,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_492.a
+LUT4                                    0.408    f     5.016       4  pin: mux241_syn_492.o
+net (fo=1)                              0.562          5.578          net: mux241_syn_493,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_498.a
+LUT4                                    0.408    f     5.986       5  pin: mux241_syn_498.o
+net (fo=3)                              0.651          6.637          net: mux105_syn_132,  pcb_frame_updater.v(393)
+                                                                      pin: mux241_syn_598.b
+LUT4                                    0.408    f     7.045       6  pin: mux241_syn_598.o
+net (fo=1)                              0.562          7.607          net: mux241_syn_599,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_600.b
+LUT4                                    0.408    f     8.015       7  pin: mux241_syn_600.o
+net (fo=1)                              0.562          8.577          net: mux241_syn_601,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_602.a
+LUT3                                    0.408    f     8.985       8  pin: mux241_syn_602.o
+net (fo=2)                              0.600          9.585          net: mux241_syn_603,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_604.a
+LUT4                                    0.408    f     9.993       9  pin: mux241_syn_604.o
+net (fo=4)                              0.697         10.690          net: mux241_syn_332,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_617.a
+LUT2                                    0.408    f    11.098      10  pin: mux241_syn_617.o
+net (fo=8)                              0.825         11.923          net: mux241_syn_618,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_619.a
+LUT3                                    0.408    f    12.331      11  pin: mux241_syn_619.o
+net (fo=8)                              0.825         13.156          net: mux241_syn_11[96],  pcb_frame_updater.v(181)
+                                                                      pin: comp_fade_reg[96].ce
+SEQ (reg)                               0.087    r    13.243               
+--------------------------------------------------------------------  ---------------
+Arrival                                               13.243               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: comp_fade_reg[96].clk
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.158         19.842               
+clock uncertainty                      -1.000         18.842               
+clock pessimism                         0.000         18.842               
+--------------------------------------------------------------------  ---------------
+Required                                              18.842               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.599               
+
+Slack               : 5.599ns
+Begin Point         : i_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : comp_fade_reg[97].ce (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk rising@20.000ns - clk rising@0.000ns }
+Data Path Delay     : 13.243ns (cell 4.737ns (35%), net 8.506ns (65%))
+Clock Skew          : 0.000ns
+Logic Level         : 11 ( LUT4=7  LUT3=2  LUT5=1  LUT2=1 )
+Max Fanout          : 407
+Clock Uncertainty   : 1.000ns (sdc uncertainty: 1.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: i_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: i_reg[1].q
+net (fo=407)                            1.536          1.682          net: i[1],  pcb_frame_updater.v(70)
+                                                                      pin: mux241_syn_474.d
+LUT4                                    0.408    f     2.090       1  pin: mux241_syn_474.o
+net (fo=1)                              0.562          2.652          net: mux241_syn_475,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_476.a
+LUT5                                    0.424    f     3.076       2  pin: mux241_syn_476.o
+net (fo=1)                              0.562          3.638          net: mux241_syn_477,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_482.a
+LUT4                                    0.408    f     4.046       3  pin: mux241_syn_482.o
+net (fo=1)                              0.562          4.608          net: mux241_syn_483,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_492.a
+LUT4                                    0.408    f     5.016       4  pin: mux241_syn_492.o
+net (fo=1)                              0.562          5.578          net: mux241_syn_493,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_498.a
+LUT4                                    0.408    f     5.986       5  pin: mux241_syn_498.o
+net (fo=3)                              0.651          6.637          net: mux105_syn_132,  pcb_frame_updater.v(393)
+                                                                      pin: mux241_syn_598.b
+LUT4                                    0.408    f     7.045       6  pin: mux241_syn_598.o
+net (fo=1)                              0.562          7.607          net: mux241_syn_599,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_600.b
+LUT4                                    0.408    f     8.015       7  pin: mux241_syn_600.o
+net (fo=1)                              0.562          8.577          net: mux241_syn_601,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_602.a
+LUT3                                    0.408    f     8.985       8  pin: mux241_syn_602.o
+net (fo=2)                              0.600          9.585          net: mux241_syn_603,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_604.a
+LUT4                                    0.408    f     9.993       9  pin: mux241_syn_604.o
+net (fo=4)                              0.697         10.690          net: mux241_syn_332,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_617.a
+LUT2                                    0.408    f    11.098      10  pin: mux241_syn_617.o
+net (fo=8)                              0.825         11.923          net: mux241_syn_618,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_619.a
+LUT3                                    0.408    f    12.331      11  pin: mux241_syn_619.o
+net (fo=8)                              0.825         13.156          net: mux241_syn_11[96],  pcb_frame_updater.v(181)
+                                                                      pin: comp_fade_reg[97].ce
+SEQ (reg)                               0.087    r    13.243               
+--------------------------------------------------------------------  ---------------
+Arrival                                               13.243               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: comp_fade_reg[97].clk
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.158         19.842               
+clock uncertainty                      -1.000         18.842               
+clock pessimism                         0.000         18.842               
+--------------------------------------------------------------------  ---------------
+Required                                              18.842               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.599               
+
+Slack               : 5.599ns
+Begin Point         : i_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : comp_fade_reg[98].ce (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk rising@20.000ns - clk rising@0.000ns }
+Data Path Delay     : 13.243ns (cell 4.737ns (35%), net 8.506ns (65%))
+Clock Skew          : 0.000ns
+Logic Level         : 11 ( LUT4=7  LUT3=2  LUT5=1  LUT2=1 )
+Max Fanout          : 407
+Clock Uncertainty   : 1.000ns (sdc uncertainty: 1.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: i_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: i_reg[1].q
+net (fo=407)                            1.536          1.682          net: i[1],  pcb_frame_updater.v(70)
+                                                                      pin: mux241_syn_474.d
+LUT4                                    0.408    f     2.090       1  pin: mux241_syn_474.o
+net (fo=1)                              0.562          2.652          net: mux241_syn_475,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_476.a
+LUT5                                    0.424    f     3.076       2  pin: mux241_syn_476.o
+net (fo=1)                              0.562          3.638          net: mux241_syn_477,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_482.a
+LUT4                                    0.408    f     4.046       3  pin: mux241_syn_482.o
+net (fo=1)                              0.562          4.608          net: mux241_syn_483,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_492.a
+LUT4                                    0.408    f     5.016       4  pin: mux241_syn_492.o
+net (fo=1)                              0.562          5.578          net: mux241_syn_493,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_498.a
+LUT4                                    0.408    f     5.986       5  pin: mux241_syn_498.o
+net (fo=3)                              0.651          6.637          net: mux105_syn_132,  pcb_frame_updater.v(393)
+                                                                      pin: mux241_syn_598.b
+LUT4                                    0.408    f     7.045       6  pin: mux241_syn_598.o
+net (fo=1)                              0.562          7.607          net: mux241_syn_599,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_600.b
+LUT4                                    0.408    f     8.015       7  pin: mux241_syn_600.o
+net (fo=1)                              0.562          8.577          net: mux241_syn_601,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_602.a
+LUT3                                    0.408    f     8.985       8  pin: mux241_syn_602.o
+net (fo=2)                              0.600          9.585          net: mux241_syn_603,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_604.a
+LUT4                                    0.408    f     9.993       9  pin: mux241_syn_604.o
+net (fo=4)                              0.697         10.690          net: mux241_syn_332,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_617.a
+LUT2                                    0.408    f    11.098      10  pin: mux241_syn_617.o
+net (fo=8)                              0.825         11.923          net: mux241_syn_618,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_619.a
+LUT3                                    0.408    f    12.331      11  pin: mux241_syn_619.o
+net (fo=8)                              0.825         13.156          net: mux241_syn_11[96],  pcb_frame_updater.v(181)
+                                                                      pin: comp_fade_reg[98].ce
+SEQ (reg)                               0.087    r    13.243               
+--------------------------------------------------------------------  ---------------
+Arrival                                               13.243               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: comp_fade_reg[98].clk
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.158         19.842               
+clock uncertainty                      -1.000         18.842               
+clock pessimism                         0.000         18.842               
+--------------------------------------------------------------------  ---------------
+Required                                              18.842               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.599               
+
+Slack               : 5.599ns
+Begin Point         : i_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : comp_fade_reg[99].ce (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk rising@20.000ns - clk rising@0.000ns }
+Data Path Delay     : 13.243ns (cell 4.737ns (35%), net 8.506ns (65%))
+Clock Skew          : 0.000ns
+Logic Level         : 11 ( LUT4=7  LUT3=2  LUT5=1  LUT2=1 )
+Max Fanout          : 407
+Clock Uncertainty   : 1.000ns (sdc uncertainty: 1.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: i_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: i_reg[1].q
+net (fo=407)                            1.536          1.682          net: i[1],  pcb_frame_updater.v(70)
+                                                                      pin: mux241_syn_474.d
+LUT4                                    0.408    f     2.090       1  pin: mux241_syn_474.o
+net (fo=1)                              0.562          2.652          net: mux241_syn_475,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_476.a
+LUT5                                    0.424    f     3.076       2  pin: mux241_syn_476.o
+net (fo=1)                              0.562          3.638          net: mux241_syn_477,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_482.a
+LUT4                                    0.408    f     4.046       3  pin: mux241_syn_482.o
+net (fo=1)                              0.562          4.608          net: mux241_syn_483,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_492.a
+LUT4                                    0.408    f     5.016       4  pin: mux241_syn_492.o
+net (fo=1)                              0.562          5.578          net: mux241_syn_493,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_498.a
+LUT4                                    0.408    f     5.986       5  pin: mux241_syn_498.o
+net (fo=3)                              0.651          6.637          net: mux105_syn_132,  pcb_frame_updater.v(393)
+                                                                      pin: mux241_syn_598.b
+LUT4                                    0.408    f     7.045       6  pin: mux241_syn_598.o
+net (fo=1)                              0.562          7.607          net: mux241_syn_599,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_600.b
+LUT4                                    0.408    f     8.015       7  pin: mux241_syn_600.o
+net (fo=1)                              0.562          8.577          net: mux241_syn_601,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_602.a
+LUT3                                    0.408    f     8.985       8  pin: mux241_syn_602.o
+net (fo=2)                              0.600          9.585          net: mux241_syn_603,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_604.a
+LUT4                                    0.408    f     9.993       9  pin: mux241_syn_604.o
+net (fo=4)                              0.697         10.690          net: mux241_syn_332,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_617.a
+LUT2                                    0.408    f    11.098      10  pin: mux241_syn_617.o
+net (fo=8)                              0.825         11.923          net: mux241_syn_618,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_619.a
+LUT3                                    0.408    f    12.331      11  pin: mux241_syn_619.o
+net (fo=8)                              0.825         13.156          net: mux241_syn_11[96],  pcb_frame_updater.v(181)
+                                                                      pin: comp_fade_reg[99].ce
+SEQ (reg)                               0.087    r    13.243               
+--------------------------------------------------------------------  ---------------
+Arrival                                               13.243               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: comp_fade_reg[99].clk
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.158         19.842               
+clock uncertainty                      -1.000         18.842               
+clock pessimism                         0.000         18.842               
+--------------------------------------------------------------------  ---------------
+Required                                              18.842               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.599               
+
+Slack               : 5.599ns
+Begin Point         : i_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : comp_fade_reg[100].ce (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk rising@20.000ns - clk rising@0.000ns }
+Data Path Delay     : 13.243ns (cell 4.737ns (35%), net 8.506ns (65%))
+Clock Skew          : 0.000ns
+Logic Level         : 11 ( LUT4=7  LUT3=2  LUT5=1  LUT2=1 )
+Max Fanout          : 407
+Clock Uncertainty   : 1.000ns (sdc uncertainty: 1.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: i_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: i_reg[1].q
+net (fo=407)                            1.536          1.682          net: i[1],  pcb_frame_updater.v(70)
+                                                                      pin: mux241_syn_474.d
+LUT4                                    0.408    f     2.090       1  pin: mux241_syn_474.o
+net (fo=1)                              0.562          2.652          net: mux241_syn_475,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_476.a
+LUT5                                    0.424    f     3.076       2  pin: mux241_syn_476.o
+net (fo=1)                              0.562          3.638          net: mux241_syn_477,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_482.a
+LUT4                                    0.408    f     4.046       3  pin: mux241_syn_482.o
+net (fo=1)                              0.562          4.608          net: mux241_syn_483,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_492.a
+LUT4                                    0.408    f     5.016       4  pin: mux241_syn_492.o
+net (fo=1)                              0.562          5.578          net: mux241_syn_493,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_498.a
+LUT4                                    0.408    f     5.986       5  pin: mux241_syn_498.o
+net (fo=3)                              0.651          6.637          net: mux105_syn_132,  pcb_frame_updater.v(393)
+                                                                      pin: mux241_syn_598.b
+LUT4                                    0.408    f     7.045       6  pin: mux241_syn_598.o
+net (fo=1)                              0.562          7.607          net: mux241_syn_599,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_600.b
+LUT4                                    0.408    f     8.015       7  pin: mux241_syn_600.o
+net (fo=1)                              0.562          8.577          net: mux241_syn_601,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_602.a
+LUT3                                    0.408    f     8.985       8  pin: mux241_syn_602.o
+net (fo=2)                              0.600          9.585          net: mux241_syn_603,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_604.a
+LUT4                                    0.408    f     9.993       9  pin: mux241_syn_604.o
+net (fo=4)                              0.697         10.690          net: mux241_syn_332,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_617.a
+LUT2                                    0.408    f    11.098      10  pin: mux241_syn_617.o
+net (fo=8)                              0.825         11.923          net: mux241_syn_618,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_619.a
+LUT3                                    0.408    f    12.331      11  pin: mux241_syn_619.o
+net (fo=8)                              0.825         13.156          net: mux241_syn_11[96],  pcb_frame_updater.v(181)
+                                                                      pin: comp_fade_reg[100].ce
+SEQ (reg)                               0.087    r    13.243               
+--------------------------------------------------------------------  ---------------
+Arrival                                               13.243               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: comp_fade_reg[100].clk
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.158         19.842               
+clock uncertainty                      -1.000         18.842               
+clock pessimism                         0.000         18.842               
+--------------------------------------------------------------------  ---------------
+Required                                              18.842               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.599               
+
+Slack               : 5.599ns
+Begin Point         : i_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : comp_fade_reg[101].ce (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk rising@20.000ns - clk rising@0.000ns }
+Data Path Delay     : 13.243ns (cell 4.737ns (35%), net 8.506ns (65%))
+Clock Skew          : 0.000ns
+Logic Level         : 11 ( LUT4=7  LUT3=2  LUT5=1  LUT2=1 )
+Max Fanout          : 407
+Clock Uncertainty   : 1.000ns (sdc uncertainty: 1.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: i_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: i_reg[1].q
+net (fo=407)                            1.536          1.682          net: i[1],  pcb_frame_updater.v(70)
+                                                                      pin: mux241_syn_474.d
+LUT4                                    0.408    f     2.090       1  pin: mux241_syn_474.o
+net (fo=1)                              0.562          2.652          net: mux241_syn_475,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_476.a
+LUT5                                    0.424    f     3.076       2  pin: mux241_syn_476.o
+net (fo=1)                              0.562          3.638          net: mux241_syn_477,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_482.a
+LUT4                                    0.408    f     4.046       3  pin: mux241_syn_482.o
+net (fo=1)                              0.562          4.608          net: mux241_syn_483,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_492.a
+LUT4                                    0.408    f     5.016       4  pin: mux241_syn_492.o
+net (fo=1)                              0.562          5.578          net: mux241_syn_493,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_498.a
+LUT4                                    0.408    f     5.986       5  pin: mux241_syn_498.o
+net (fo=3)                              0.651          6.637          net: mux105_syn_132,  pcb_frame_updater.v(393)
+                                                                      pin: mux241_syn_598.b
+LUT4                                    0.408    f     7.045       6  pin: mux241_syn_598.o
+net (fo=1)                              0.562          7.607          net: mux241_syn_599,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_600.b
+LUT4                                    0.408    f     8.015       7  pin: mux241_syn_600.o
+net (fo=1)                              0.562          8.577          net: mux241_syn_601,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_602.a
+LUT3                                    0.408    f     8.985       8  pin: mux241_syn_602.o
+net (fo=2)                              0.600          9.585          net: mux241_syn_603,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_604.a
+LUT4                                    0.408    f     9.993       9  pin: mux241_syn_604.o
+net (fo=4)                              0.697         10.690          net: mux241_syn_332,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_617.a
+LUT2                                    0.408    f    11.098      10  pin: mux241_syn_617.o
+net (fo=8)                              0.825         11.923          net: mux241_syn_618,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_619.a
+LUT3                                    0.408    f    12.331      11  pin: mux241_syn_619.o
+net (fo=8)                              0.825         13.156          net: mux241_syn_11[96],  pcb_frame_updater.v(181)
+                                                                      pin: comp_fade_reg[101].ce
+SEQ (reg)                               0.087    r    13.243               
+--------------------------------------------------------------------  ---------------
+Arrival                                               13.243               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: comp_fade_reg[101].clk
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.158         19.842               
+clock uncertainty                      -1.000         18.842               
+clock pessimism                         0.000         18.842               
+--------------------------------------------------------------------  ---------------
+Required                                              18.842               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.599               
+
+Slack               : 5.599ns
+Begin Point         : i_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : comp_fade_reg[102].ce (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk rising@20.000ns - clk rising@0.000ns }
+Data Path Delay     : 13.243ns (cell 4.737ns (35%), net 8.506ns (65%))
+Clock Skew          : 0.000ns
+Logic Level         : 11 ( LUT4=7  LUT3=2  LUT5=1  LUT2=1 )
+Max Fanout          : 407
+Clock Uncertainty   : 1.000ns (sdc uncertainty: 1.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: i_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: i_reg[1].q
+net (fo=407)                            1.536          1.682          net: i[1],  pcb_frame_updater.v(70)
+                                                                      pin: mux241_syn_474.d
+LUT4                                    0.408    f     2.090       1  pin: mux241_syn_474.o
+net (fo=1)                              0.562          2.652          net: mux241_syn_475,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_476.a
+LUT5                                    0.424    f     3.076       2  pin: mux241_syn_476.o
+net (fo=1)                              0.562          3.638          net: mux241_syn_477,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_482.a
+LUT4                                    0.408    f     4.046       3  pin: mux241_syn_482.o
+net (fo=1)                              0.562          4.608          net: mux241_syn_483,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_492.a
+LUT4                                    0.408    f     5.016       4  pin: mux241_syn_492.o
+net (fo=1)                              0.562          5.578          net: mux241_syn_493,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_498.a
+LUT4                                    0.408    f     5.986       5  pin: mux241_syn_498.o
+net (fo=3)                              0.651          6.637          net: mux105_syn_132,  pcb_frame_updater.v(393)
+                                                                      pin: mux241_syn_598.b
+LUT4                                    0.408    f     7.045       6  pin: mux241_syn_598.o
+net (fo=1)                              0.562          7.607          net: mux241_syn_599,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_600.b
+LUT4                                    0.408    f     8.015       7  pin: mux241_syn_600.o
+net (fo=1)                              0.562          8.577          net: mux241_syn_601,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_602.a
+LUT3                                    0.408    f     8.985       8  pin: mux241_syn_602.o
+net (fo=2)                              0.600          9.585          net: mux241_syn_603,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_604.a
+LUT4                                    0.408    f     9.993       9  pin: mux241_syn_604.o
+net (fo=4)                              0.697         10.690          net: mux241_syn_332,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_617.a
+LUT2                                    0.408    f    11.098      10  pin: mux241_syn_617.o
+net (fo=8)                              0.825         11.923          net: mux241_syn_618,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_619.a
+LUT3                                    0.408    f    12.331      11  pin: mux241_syn_619.o
+net (fo=8)                              0.825         13.156          net: mux241_syn_11[96],  pcb_frame_updater.v(181)
+                                                                      pin: comp_fade_reg[102].ce
+SEQ (reg)                               0.087    r    13.243               
+--------------------------------------------------------------------  ---------------
+Arrival                                               13.243               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: comp_fade_reg[102].clk
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.158         19.842               
+clock uncertainty                      -1.000         18.842               
+clock pessimism                         0.000         18.842               
+--------------------------------------------------------------------  ---------------
+Required                                              18.842               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.599               
+
+Slack               : 5.599ns
+Begin Point         : i_reg[1].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : comp_fade_reg[103].ce (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk rising@20.000ns - clk rising@0.000ns }
+Data Path Delay     : 13.243ns (cell 4.737ns (35%), net 8.506ns (65%))
+Clock Skew          : 0.000ns
+Logic Level         : 11 ( LUT4=7  LUT3=2  LUT5=1  LUT2=1 )
+Max Fanout          : 407
+Clock Uncertainty   : 1.000ns (sdc uncertainty: 1.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: i_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.146    r     0.146          pin: i_reg[1].q
+net (fo=407)                            1.536          1.682          net: i[1],  pcb_frame_updater.v(70)
+                                                                      pin: mux241_syn_474.d
+LUT4                                    0.408    f     2.090       1  pin: mux241_syn_474.o
+net (fo=1)                              0.562          2.652          net: mux241_syn_475,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_476.a
+LUT5                                    0.424    f     3.076       2  pin: mux241_syn_476.o
+net (fo=1)                              0.562          3.638          net: mux241_syn_477,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_482.a
+LUT4                                    0.408    f     4.046       3  pin: mux241_syn_482.o
+net (fo=1)                              0.562          4.608          net: mux241_syn_483,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_492.a
+LUT4                                    0.408    f     5.016       4  pin: mux241_syn_492.o
+net (fo=1)                              0.562          5.578          net: mux241_syn_493,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_498.a
+LUT4                                    0.408    f     5.986       5  pin: mux241_syn_498.o
+net (fo=3)                              0.651          6.637          net: mux105_syn_132,  pcb_frame_updater.v(393)
+                                                                      pin: mux241_syn_598.b
+LUT4                                    0.408    f     7.045       6  pin: mux241_syn_598.o
+net (fo=1)                              0.562          7.607          net: mux241_syn_599,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_600.b
+LUT4                                    0.408    f     8.015       7  pin: mux241_syn_600.o
+net (fo=1)                              0.562          8.577          net: mux241_syn_601,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_602.a
+LUT3                                    0.408    f     8.985       8  pin: mux241_syn_602.o
+net (fo=2)                              0.600          9.585          net: mux241_syn_603,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_604.a
+LUT4                                    0.408    f     9.993       9  pin: mux241_syn_604.o
+net (fo=4)                              0.697         10.690          net: mux241_syn_332,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_617.a
+LUT2                                    0.408    f    11.098      10  pin: mux241_syn_617.o
+net (fo=8)                              0.825         11.923          net: mux241_syn_618,  pcb_frame_updater.v(181)
+                                                                      pin: mux241_syn_619.a
+LUT3                                    0.408    f    12.331      11  pin: mux241_syn_619.o
+net (fo=8)                              0.825         13.156          net: mux241_syn_11[96],  pcb_frame_updater.v(181)
+                                                                      pin: comp_fade_reg[103].ce
+SEQ (reg)                               0.087    r    13.243               
+--------------------------------------------------------------------  ---------------
+Arrival                                               13.243               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: comp_fade_reg[103].clk
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.158         19.842               
+clock uncertainty                      -1.000         18.842               
+clock pessimism                         0.000         18.842               
+--------------------------------------------------------------------  ---------------
+Required                                              18.842               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.599               
+
+
+Period Check
+----------------------------------------------------------------------------------------------------
+    Type       Setting(ns)      Required(ns)         Slack(ns)   Point
+--------------------------------------------------------------------------------
+    ERAM            20.000             3.414            16.586   mult0_syn_3.clk
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 0.621ns
+Begin Point         : ram_wdata_reg[15].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : state_bank/mem_syn_1.dia[15] (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.671ns (cell 0.109ns (16%), net 0.562ns (84%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB32K=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: ram_wdata_reg[15].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: ram_wdata_reg[15].q
+net (fo=1)                              0.562          0.671          net: ram_wdata[15],  pcb_frame_updater.v(52)
+                                                                      pin: state_bank/mem_syn_1.dia[15]
+EMB32K (reg)                            0.000    f     0.671       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.671               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: state_bank/mem_syn_1.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.000          0.000               
+clock uncertainty                       0.050          0.050               
+clock pessimism                         0.000          0.050               
+--------------------------------------------------------------------  ---------------
+Required                                               0.050               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.621               
+
+Slack               : 0.621ns
+Begin Point         : ram_we_reg.clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : state_bank/mem_syn_1.wea (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.671ns (cell 0.109ns (16%), net 0.562ns (84%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: ram_we_reg.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: ram_we_reg.q
+net (fo=1)                              0.562          0.671          net: state_bank/we,  pcb_ram_2k16.v(3)
+                                                                      pin: state_bank/mem_syn_1.wea
+EMB32K (reg)                            0.000    f     0.671               
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.671               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: state_bank/mem_syn_1.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.000          0.000               
+clock uncertainty                       0.050          0.050               
+clock pessimism                         0.000          0.050               
+--------------------------------------------------------------------  ---------------
+Required                                               0.050               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.621               
+
+Slack               : 0.644ns
+Begin Point         : cfg_reg[16].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : active_cfg_reg[16].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.755ns (cell 0.193ns (25%), net 0.562ns (75%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: cfg_reg[16].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: cfg_reg[16].q
+net (fo=1)                              0.562          0.671          net: cfg[6][0],  pcb_frame_updater.v(40)
+                                                                      pin: active_cfg_reg[16].d
+SEQ (reg)                               0.084    r     0.755          net: active_cfg[6][0],  pcb_frame_updater.v(40)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.755               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: active_cfg_reg[16].clk
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          0.061               
+clock uncertainty                       0.050          0.111               
+clock pessimism                         0.000          0.111               
+--------------------------------------------------------------------  ---------------
+Required                                               0.111               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.644               
+
+Slack               : 0.644ns
+Begin Point         : cfg_reg[17].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : active_cfg_reg[17].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.755ns (cell 0.193ns (25%), net 0.562ns (75%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: cfg_reg[17].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: cfg_reg[17].q
+net (fo=1)                              0.562          0.671          net: cfg[6][1],  pcb_frame_updater.v(40)
+                                                                      pin: active_cfg_reg[17].d
+SEQ (reg)                               0.084    r     0.755          net: active_cfg[6][1],  pcb_frame_updater.v(40)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.755               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: active_cfg_reg[17].clk
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          0.061               
+clock uncertainty                       0.050          0.111               
+clock pessimism                         0.000          0.111               
+--------------------------------------------------------------------  ---------------
+Required                                               0.111               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.644               
+
+Slack               : 0.644ns
+Begin Point         : cfg_reg[18].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : active_cfg_reg[18].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.755ns (cell 0.193ns (25%), net 0.562ns (75%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: cfg_reg[18].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: cfg_reg[18].q
+net (fo=1)                              0.562          0.671          net: cfg[6][2],  pcb_frame_updater.v(40)
+                                                                      pin: active_cfg_reg[18].d
+SEQ (reg)                               0.084    r     0.755          net: active_cfg[6][2],  pcb_frame_updater.v(40)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.755               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: active_cfg_reg[18].clk
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          0.061               
+clock uncertainty                       0.050          0.111               
+clock pessimism                         0.000          0.111               
+--------------------------------------------------------------------  ---------------
+Required                                               0.111               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.644               
+
+Slack               : 0.644ns
+Begin Point         : cfg_reg[19].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : active_cfg_reg[19].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.755ns (cell 0.193ns (25%), net 0.562ns (75%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: cfg_reg[19].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: cfg_reg[19].q
+net (fo=1)                              0.562          0.671          net: cfg[6][3],  pcb_frame_updater.v(40)
+                                                                      pin: active_cfg_reg[19].d
+SEQ (reg)                               0.084    r     0.755          net: active_cfg[6][3],  pcb_frame_updater.v(40)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.755               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: active_cfg_reg[19].clk
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          0.061               
+clock uncertainty                       0.050          0.111               
+clock pessimism                         0.000          0.111               
+--------------------------------------------------------------------  ---------------
+Required                                               0.111               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.644               
+
+Slack               : 0.644ns
+Begin Point         : cfg_reg[20].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : active_cfg_reg[20].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.755ns (cell 0.193ns (25%), net 0.562ns (75%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: cfg_reg[20].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: cfg_reg[20].q
+net (fo=1)                              0.562          0.671          net: cfg[6][4],  pcb_frame_updater.v(40)
+                                                                      pin: active_cfg_reg[20].d
+SEQ (reg)                               0.084    r     0.755          net: active_cfg[6][4],  pcb_frame_updater.v(40)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.755               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: active_cfg_reg[20].clk
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          0.061               
+clock uncertainty                       0.050          0.111               
+clock pessimism                         0.000          0.111               
+--------------------------------------------------------------------  ---------------
+Required                                               0.111               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.644               
+
+Slack               : 0.644ns
+Begin Point         : cfg_reg[21].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : active_cfg_reg[21].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.755ns (cell 0.193ns (25%), net 0.562ns (75%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: cfg_reg[21].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: cfg_reg[21].q
+net (fo=1)                              0.562          0.671          net: cfg[6][5],  pcb_frame_updater.v(40)
+                                                                      pin: active_cfg_reg[21].d
+SEQ (reg)                               0.084    r     0.755          net: active_cfg[6][5],  pcb_frame_updater.v(40)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.755               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: active_cfg_reg[21].clk
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          0.061               
+clock uncertainty                       0.050          0.111               
+clock pessimism                         0.000          0.111               
+--------------------------------------------------------------------  ---------------
+Required                                               0.111               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.644               
+
+Slack               : 0.644ns
+Begin Point         : cfg_reg[22].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : active_cfg_reg[22].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.755ns (cell 0.193ns (25%), net 0.562ns (75%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: cfg_reg[22].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: cfg_reg[22].q
+net (fo=1)                              0.562          0.671          net: cfg[6][6],  pcb_frame_updater.v(40)
+                                                                      pin: active_cfg_reg[22].d
+SEQ (reg)                               0.084    r     0.755          net: active_cfg[6][6],  pcb_frame_updater.v(40)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.755               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: active_cfg_reg[22].clk
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          0.061               
+clock uncertainty                       0.050          0.111               
+clock pessimism                         0.000          0.111               
+--------------------------------------------------------------------  ---------------
+Required                                               0.111               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.644               
+
+Slack               : 0.644ns
+Begin Point         : cfg_reg[23].clk (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : active_cfg_reg[23].d (rising edge triggered by clock clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { clk rising@0.000ns - clk rising@0.000ns }
+Data Path Delay     : 0.755ns (cell 0.193ns (25%), net 0.562ns (75%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.050ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: cfg_reg[23].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.109    f     0.109          pin: cfg_reg[23].q
+net (fo=1)                              0.562          0.671          net: cfg[6][7],  pcb_frame_updater.v(40)
+                                                                      pin: active_cfg_reg[23].d
+SEQ (reg)                               0.084    r     0.755          net: active_cfg[6][7],  pcb_frame_updater.v(40)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.755               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=2671)                           0.000          0.000          net: clk_dup_1,  pcb_frame_updater.v(3)
+                                                                      pin: active_cfg_reg[23].clk
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          0.061               
+clock uncertainty                       0.050          0.111               
+clock pessimism                         0.000          0.111               
+--------------------------------------------------------------------  ---------------
+Required                                               0.111               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.644               
+
+
+Inter clock domain timing
+--------------------------------------------------
+
+IP timing
+--------------------------------------------------

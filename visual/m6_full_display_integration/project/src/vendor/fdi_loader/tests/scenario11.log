@@ -1,0 +1,5 @@
+LOADER_PASS fileBytes=921654 physicalWords=153600 readBursts=3 cycles=27121133 SPIreads=2030 SDRAMrefresh=34398
+- vendor/fdi_loader/tests/tb_fdi_label_store.sv:85: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 542ms; walltime 9.449 s; speed 58.502 ms/s
+- Verilator: cpu 9.272 s on 1 threads; alloced 131 MB

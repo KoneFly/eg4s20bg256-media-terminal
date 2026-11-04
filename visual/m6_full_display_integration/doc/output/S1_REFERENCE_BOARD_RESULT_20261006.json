@@ -1,0 +1,10 @@
+{
+  "date_local": "2026-10-06",
+  "raw_user_message": "画面正常，p1是1，一直正常，那就切换思路，之前思路改了好几次一直不行该换了",
+  "reference_bit_sha256": "75959e68b425de7a36ee937949c683b956d90164ea72c68e2bbcd40b6d5d5d1b",
+  "hardware_status": "USER_REPORTED_NORMAL_PICTURE_AND_P1_1",
+  "duration_seconds": null,
+  "independently_witnessed": false,
+  "full_FDI_acceptance": false,
+  "authorized_next_step": "ISOLATED_MINIMAL_SELFTEST"
+}

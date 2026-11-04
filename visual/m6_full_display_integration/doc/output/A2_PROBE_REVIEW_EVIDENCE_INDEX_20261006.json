@@ -1,0 +1,43 @@
+{
+  "status": "SEALED_REVIEW_SUPPLEMENT",
+  "hardware": "USER_REPORTED_NO_IMAGE_READBACK_BANK_UNCONFIRMED",
+  "bit_sha256": "7b97635aadd6fa4ebab8f3fc598f195cde5bafcdf6b6968bf105ac62284cd57c",
+  "user_observation": "上电 → 设 SW0=1、SW[3:1]=000，显示 d0 05462；SW0=0 → 按 KEY1 复位并放开屏幕一直无现象，d0一直是05462，p1到p6都是0，p7是05401",
+  "input_document_at_review": {
+    "path": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\m6_full_display_integration\\doc\\output\\A2_PROBE_RESULT_AND_NEXT_20261006.md",
+    "sha256": "4b0cc293328eabc254861d6ef1df927b14d0e32cf2ea35b70f06818650613e91",
+    "role": "owner input; later amendments require a new review"
+  },
+  "prior_indices_verified": {
+    "BOARD_PROBE_A2_EVIDENCE_INDEX.json": 319,
+    "BOARD_PROBE_A2_SUPPORTING_EVIDENCE.json": 14,
+    "ROUND2_EVIDENCE_INDEX.json": 400
+  },
+  "files": [
+    {
+      "path": "scripts/review_a2_readback.py",
+      "bytes": 12651,
+      "sha256": "400a42b827431112bc4054694e298da7b702d1003811f92b1bddd7fc59a1723e"
+    },
+    {
+      "path": "doc/output/A2_PROBE_REVIEW_20261006.md",
+      "bytes": 7634,
+      "sha256": "ed17740f9a4304fccaa78dcb437911d67d7bc8534eb25965c6b149b07a27efad"
+    },
+    {
+      "path": "doc/output/A2_PROBE_STATIC_REVIEW_20261006.json",
+      "bytes": 30811,
+      "sha256": "4644ae5a69aeca1b3d3f5e9b2dd5e18b1b9b90177c8f591bf7a8f9fdb256f67f"
+    },
+    {
+      "path": "doc/output/A2_PROBE_STATIC_REVIEW_FINAL_20261006.json",
+      "bytes": 73339,
+      "sha256": "968aa425d315e96bac32f1dbaa539746bc7fe19447f39a560257ef1934a88fde"
+    },
+    {
+      "path": "doc/output/A2_PROBE_GATE_BOOT_CHECK_20261006.json",
+      "bytes": 417,
+      "sha256": "50d84018bd90f3fd27d54781852cbe1110b069671931abc9e545732a04c6a9c2"
+    }
+  ]
+}

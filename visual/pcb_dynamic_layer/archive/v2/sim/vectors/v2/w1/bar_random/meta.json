@@ -1,0 +1,11 @@
+{
+  "profile": "no_particles_v2",
+  "frame_dir": "independent synthetic T2",
+  "pixels": 307200,
+  "hit_pixels": 7408,
+  "span_count": 1282,
+  "span_pool_depth": 6144,
+  "overflow": false,
+  "fixed_delay": 647,
+  "ov_k": 255
+}

@@ -1,0 +1,290 @@
+{
+  "checked_date": "2026-10-04",
+  "status": "PASS",
+  "purpose": "修订后契约与独立黄金审计；不是 RTL 仿真或板级验收",
+  "audit_script_sha256": "14BF300C46AC964ECE11B5A0C0BDBB71E31FE7976D3B49CAC2C07D1204BB2A95",
+  "sources": [
+    {
+      "file": "visual_workspace/prototype/pcb_model.js",
+      "sha256": "FBB2298FC26CEF6F3E951C03BDC4857EEE769209E57CE9E547A711D9996CF351"
+    },
+    {
+      "file": "visual_workspace/prototype/pcb_layout.js",
+      "sha256": "BA8DD3DA1F0E3DD869948EDFB4047FAB5AEE801BDE3242B7E47A7A43794C8B7E"
+    },
+    {
+      "file": "visual_workspace/prototype/pcb_labels.js",
+      "sha256": "26D98F73B2E53AEE0AF5843E8491CAF4D8C283822501CEA71F7B018989EB83C0"
+    },
+    {
+      "file": "visual_workspace/spec/M6_PCB_SKETCH.md",
+      "sha256": "5DA64B6763CFD4E5C1858B09A2F5AE1D0ADDF0D98C996193FAD0494BAE6A2BD6"
+    },
+    {
+      "file": "visual_workspace/spec/M6_PCB_PORTING_PLAN.md",
+      "sha256": "E7257181978EDA454B0E48665BE13878EE918680CE79D59F54DA17F7C267EE55"
+    },
+    {
+      "file": "visual_workspace/golden/pcb/obj_tables.json",
+      "sha256": "F2FDEEB55C988DE50E5E32958CAC194F69888B1487AE8B5CD2FA8E7DB26ACBB7"
+    },
+    {
+      "file": "iccoder_workspace/TASK_KICKOFF.md",
+      "sha256": "1EB7D9BBB41213108BC3EE396ACF8CF5ACC4FB5B717374A7C4781A21FA08D837"
+    },
+    {
+      "file": "iccoder_workspace/tasks/task_045_pcb_pixel_renderer/reference/gen_vectors.cjs",
+      "sha256": "664F71FF12F04AA622F3C91C817F5DE1403EBACBAB7EF527B2F4AF090E387093"
+    },
+    {
+      "file": "iccoder_workspace/tasks/task_045_pcb_pixel_renderer/rtl/pcb_pixel_renderer.v",
+      "sha256": "413F8996098D7208B219FDF06E504DD344DADFC72DC81BBE5C251B44B5EBEA49"
+    },
+    {
+      "file": "iccoder_workspace/tasks/task_045_pcb_pixel_renderer/doc/output/behavior_spec.md",
+      "sha256": "46EF25F1CD214ACECC8526BD8DB460EF1E209F49A8491C90AF97B79409907DE6"
+    },
+    {
+      "file": "visual_workspace/rtl_handoff/pcb_dynamic_layer/doc/brief/START_PROMPT.md",
+      "sha256": "57E7BE1AAE4194A1081CAEA0C6C1916326657F9A0F24F76E87201FC454F77374"
+    },
+    {
+      "file": "visual_workspace/rtl_handoff/pcb_dynamic_layer/doc/brief/INTERFACE_SPEC.md",
+      "sha256": "D6DC2227EC2679553A90C388F53D558ADEDC9AC068BC03EFB6FA44A684FF70E3"
+    },
+    {
+      "file": "visual_workspace/rtl_handoff/pcb_dynamic_layer/doc/brief/VERIFICATION_CONTRACT.md",
+      "sha256": "91BCD027F078506ECA4D160D6195777FD17B507B2829DFC5A498B598A4C513C0"
+    },
+    {
+      "file": "visual_workspace/rtl_handoff/pcb_dynamic_layer/reference/UPSTREAM_FACTS.md",
+      "sha256": "C0A255B14346EE276A60D3CF01B2CBDD88BD9F629187E18E9594C8C53CD2DAB8"
+    },
+    {
+      "file": "visual_workspace/rtl_handoff/pcb_dynamic_layer/reference/gen_state_vectors.cjs",
+      "sha256": "7909D65CD2B0FACB764E716C92CC7A8B230284EBBD6F676027194E9AE174AF18"
+    },
+    {
+      "file": "visual_workspace/rtl_handoff/pcb_dynamic_layer/reference/gen_overlay_vectors.cjs",
+      "sha256": "526B49FF65032BF230E301E38B37248290AF3A5A93DCCB29F7E3B4B10381C461"
+    }
+  ],
+  "frozen_sha_checks": 5,
+  "protected_hashes_unchanged": true,
+  "packing_default": {
+    "status": "PASS",
+    "frames": 1800,
+    "scenarios": 6,
+    "t1_words_per_frame": 512,
+    "t2_words_per_frame": 140,
+    "p_words_per_frame": 1536,
+    "rtl_write_protocol_tested": false
+  },
+  "signed_p_boundaries": {
+    "status": "PASS",
+    "x": [
+      -1024,
+      1023
+    ],
+    "y": [
+      -512,
+      511
+    ],
+    "reserved_bits_zero": true
+  },
+  "candidate_compact_24_spans": {
+    "status": "MODEL_ONLY",
+    "span_count_max": 4900,
+    "proposed_pool_depth": 6144,
+    "proposed_record_bits": 24,
+    "pool_logical_bits": 147456,
+    "row_directory_logical_bits": 11040,
+    "pixel_roundtrip_frames": 17,
+    "contract_approval_required": true,
+    "td_resources_measured": false
+  },
+  "findings": [
+    {
+      "id": "span_luma_conflict",
+      "status": "FIXED",
+      "changed_pixels": 0,
+      "first_difference": null,
+      "span_counts": {
+        "connected": 5,
+        "equal_luma": 29,
+        "overlap_max": 29,
+        "compact_24": 29
+      },
+      "fixture": "nonuniform_luma"
+    },
+    {
+      "id": "clip_order_conflict",
+      "status": "FIXED",
+      "x": 0,
+      "y": 20,
+      "model_rgb565": 0,
+      "golden_rgb565": 0,
+      "golden_luma": 0,
+      "fixture": "outside_before_dilation"
+    },
+    {
+      "id": "core_byte_spill",
+      "status": "FIXED",
+      "misc_address": 137,
+      "core_q8": 256,
+      "ov_k": 0,
+      "expected": "00000000",
+      "actual": "00000000"
+    },
+    {
+      "id": "valid_file_is_hit_mask",
+      "status": "FIXED",
+      "full_frame_valid_pixels": 307200,
+      "golden_valid_file_ones": 307200,
+      "fixture": "all_empty"
+    },
+    {
+      "id": "span_capacity_requires_decision",
+      "status": "FIXED",
+      "connected_span_count_max": 2675,
+      "equal_luma_span_count_max": 4900,
+      "pool_depth": 6144
+    }
+  ],
+  "capacity": [
+    {
+      "scenario": "boot_silence",
+      "frames": 300,
+      "connected_max": {
+        "count": 0,
+        "frame": 0
+      },
+      "equal_luma_max": {
+        "count": 0,
+        "frame": 0
+      },
+      "candidate_overlap_max": {
+        "count": 0,
+        "frame": 0
+      },
+      "candidate_compact_24_max": {
+        "count": 0,
+        "frame": 0
+      },
+      "first_exact_overflow": null
+    },
+    {
+      "scenario": "boot_low",
+      "frames": 300,
+      "connected_max": {
+        "count": 1554,
+        "frame": 226
+      },
+      "equal_luma_max": {
+        "count": 2692,
+        "frame": 105
+      },
+      "candidate_overlap_max": {
+        "count": 2622,
+        "frame": 105
+      },
+      "candidate_compact_24_max": {
+        "count": 2692,
+        "frame": 105
+      },
+      "first_exact_overflow": null
+    },
+    {
+      "scenario": "play_low",
+      "frames": 300,
+      "connected_max": {
+        "count": 1554,
+        "frame": 226
+      },
+      "equal_luma_max": {
+        "count": 2692,
+        "frame": 105
+      },
+      "candidate_overlap_max": {
+        "count": 2622,
+        "frame": 105
+      },
+      "candidate_compact_24_max": {
+        "count": 2692,
+        "frame": 105
+      },
+      "first_exact_overflow": null
+    },
+    {
+      "scenario": "play_mid",
+      "frames": 300,
+      "connected_max": {
+        "count": 2193,
+        "frame": 33
+      },
+      "equal_luma_max": {
+        "count": 3360,
+        "frame": 32
+      },
+      "candidate_overlap_max": {
+        "count": 3279,
+        "frame": 32
+      },
+      "candidate_compact_24_max": {
+        "count": 3360,
+        "frame": 32
+      },
+      "first_exact_overflow": null
+    },
+    {
+      "scenario": "play_high",
+      "frames": 300,
+      "connected_max": {
+        "count": 1866,
+        "frame": 206
+      },
+      "equal_luma_max": {
+        "count": 3197,
+        "frame": 294
+      },
+      "candidate_overlap_max": {
+        "count": 3131,
+        "frame": 294
+      },
+      "candidate_compact_24_max": {
+        "count": 3197,
+        "frame": 294
+      },
+      "first_exact_overflow": null
+    },
+    {
+      "scenario": "saturate",
+      "frames": 300,
+      "connected_max": {
+        "count": 2675,
+        "frame": 81
+      },
+      "equal_luma_max": {
+        "count": 4900,
+        "frame": 6
+      },
+      "candidate_overlap_max": {
+        "count": 4794,
+        "frame": 6
+      },
+      "candidate_compact_24_max": {
+        "count": 4900,
+        "frame": 6
+      },
+      "first_exact_overflow": {
+        "frame": 5,
+        "counts": {
+          "connected": 2242,
+          "equal_luma": 4442,
+          "overlap_max": 4332,
+          "compact_24": 4442
+        }
+      }
+    }
+  ]
+}

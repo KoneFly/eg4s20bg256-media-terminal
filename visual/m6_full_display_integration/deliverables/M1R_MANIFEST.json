@@ -1,0 +1,26 @@
+{
+  "status": "DIAGNOSTIC_PENDING_BOARD",
+  "bit_sha256": "685bc8d3f94658f30817e5696930cf9bbfd69506cbdcdbaaea4719f44d4f95ce",
+  "bit_bytes": 629643,
+  "bit_path": "deliverables/M6_FDI_M1R_20261006_685BC8D3.bit",
+  "version_decimal": 5467,
+  "measured": {
+    "lut": 2856,
+    "reg": 2520,
+    "bram9k": 10,
+    "bram32k": 0,
+    "dsp": 0,
+    "pll": 3,
+    "mslices": 938
+  },
+  "sta": {
+    "setup_wns_ns": 3.5,
+    "hold_wns_ns": 0.006,
+    "setup_violations": 0,
+    "hold_violations": 0
+  },
+  "source_manifest_sha256": "863027d89ee08e158cc77f3bce0d97e25dbd88990b575570af878a3e61a2d32d",
+  "cdc_sha256": "9bc60bcfea308a99143109c3bdb29260e8d33febad64aedb7ddee53cf8df49e8",
+  "native_audit_sha256": "7d486fd3ba5e5b8eb6e80cdf20a08aab2214249eb4f5a80f165a4f601ed59133",
+  "parent_board_sha256": "de570a0730428bb4611a742c658c976cc36ba5d3652972182de591a919685a31"
+}

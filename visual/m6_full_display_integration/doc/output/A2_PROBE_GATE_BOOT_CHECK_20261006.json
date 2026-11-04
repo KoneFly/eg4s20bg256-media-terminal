@@ -1,0 +1,17 @@
+{
+  "gate_sha256": "602945bc4e658655c33c97b9d2b39064c80fab080591b540f0067ce90e601a73",
+  "checks": [
+    {
+      "current_state": 0,
+      "watchdog": 499998,
+      "next_state": 0,
+      "other_inputs": "unknown, conservatively propagated"
+    },
+    {
+      "current_state": 0,
+      "watchdog": 499999,
+      "next_state": 1,
+      "other_inputs": "unknown, conservatively propagated"
+    }
+  ]
+}

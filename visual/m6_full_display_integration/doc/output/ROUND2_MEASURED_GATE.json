@@ -1,0 +1,759 @@
+{
+  "status": "PASS_SOFTWARE_GATES_BIT_READY_BOARD_PENDING",
+  "generated_utc": "2026-10-05T10:14:00.057132+00:00",
+  "final_tag": "bit2_final",
+  "canonical_gate_tag": "checked2d",
+  "final_native_result": {
+    "status": "PASS_STAGE",
+    "round": 2,
+    "confidence": "Routed",
+    "complete": true,
+    "failure": false,
+    "measured": {
+      "lut": 16297,
+      "reg": 11418,
+      "bram9k": 43,
+      "bram32k": 5,
+      "dsp": 18,
+      "pll": 3,
+      "mslices": 4717
+    },
+    "physical_gate": {
+      "capacity": 4900,
+      "require_positive_margin": true,
+      "target": 4850,
+      "optimization_target": 4410,
+      "headroom": 183,
+      "packing_mslices": null,
+      "final_netlist_mslices": 4717
+    },
+    "physical_gate_pass": true,
+    "other_resource_pass": true,
+    "sta": {
+      "setup_wns_ns": 0.889,
+      "hold_wns_ns": 0.027,
+      "setup_violations": 0,
+      "hold_violations": 0
+    },
+    "timing_pass": true,
+    "constraints_valid": true,
+    "warnings": {
+      "status": "NONE_REPORTED",
+      "count": 0,
+      "lines": []
+    },
+    "source_manifest_sha256": "65ba1a34610ada4eb08dcafe6ac5c6ddd0790acd285fdb1d626b36cda808a78b",
+    "bit_status": "GENERATED",
+    "bit": {
+      "path": "eth_udp_m6_master_top.bit",
+      "bytes": 636626,
+      "sha256": "6b810152e09eef36138e0ce8979712609a0828b18bf93de2b623fba79929b030"
+    }
+  },
+  "DB_lineage": [
+    "bit2_final",
+    "hold2h_clock",
+    "route2h",
+    "route2g",
+    "placed_checked2d",
+    "place2d",
+    "checked2d",
+    "synth2d"
+  ],
+  "physical_capacity_gate": {
+    "capacity": 4900,
+    "measured": 4717,
+    "positive_headroom": 183,
+    "target_4850_pass": true,
+    "optimization_4410_pass": false,
+    "utilization_percent": 96.26530612244898
+  },
+  "gate_lut": 19670,
+  "cdc": {
+    "status": "PASS_PRECISE_SCOPE",
+    "false_data_endpoints": 101,
+    "mcp_data_endpoints": 1024,
+    "exact_queries": 1125,
+    "accidental_pixel_shift_mcp_endpoints": 0,
+    "source_D_CE_alias_exemptions": 0
+  },
+  "bit": {
+    "status": "CANDIDATE_GENERATED_NOT_BURNED",
+    "path": "deliverables/M6_FDI_R2_20261005_6B810152.bit",
+    "sha256": "6b810152e09eef36138e0ce8979712609a0828b18bf93de2b623fba79929b030",
+    "bytes": 636626,
+    "native_source": "td_run/bit2_final/eth_udp_m6_master_top.bit",
+    "source_manifest_sha256": "65ba1a34610ada4eb08dcafe6ac5c6ddd0790acd285fdb1d626b36cda808a78b",
+    "route_db_sha256": "5147d5aedf4be0c5b8ca8e69487d75e33bddfae4bfe555a91539b44ba2ad11a5",
+    "active_sdc_sha256": "0ac5cea9407ff9871840e10129fc0162434ff21197a0ed4f034a13f758429357",
+    "hardware_burned": false,
+    "BURN_INDEX_registration": "PENDING_OWNER_SPEC_WORKFLOW"
+  },
+  "ROM": {
+    "status": "PASS_ROM_INIT",
+    "words": 512,
+    "mismatches": [],
+    "asset_sha256": "2399851ce9498039af59ae7bd5f2a7e2b32fb3a7b2c2c687ef1804d677d9b4cd",
+    "netlist_sha256": "e0d6eaee0d7b397a82fd8a4ce7e6cbd12122b0aa66dcac1973a633d5e3151887",
+    "confidence": "Routed",
+    "bit_readback_verified": false
+  },
+  "warnings": {
+    "application_interface": {
+      "status": "OPEN",
+      "count": 342
+    },
+    "canonical_gate": {
+      "status": "OPEN",
+      "count": 3,
+      "lines": [
+        "USR-6001 WARNING: No pins matched 'get_pins u_display/u_scan/ctrl_error_meta_reg[2].d'",
+        "USR-6001 WARNING: No pins matched 'get_pins u_display/u_scan/ctrl_error_meta_reg[3].d'",
+        "USR-6001 WARNING: No pins matched 'get_pins u_display/u_scan/ctrl_error_meta_reg[6].d'"
+      ]
+    },
+    "final_physical": {
+      "status": "NONE_REPORTED",
+      "count": 0,
+      "lines": []
+    },
+    "failed_intermediate_stages": "Historical evidence retained; not used as final signoff",
+    "board_and_card": "NOT_STARTED; not signed"
+  },
+  "pins": {
+    "external_count": 54,
+    "overlap": false,
+    "TF": {
+      "sd_dclk": "A14",
+      "sd_miso": "B14",
+      "sd_mosi": "A13",
+      "sd_ncs": "A12"
+    }
+  },
+  "intermediate_stages": [
+    {
+      "tag": "bit2_final",
+      "status": "PASS_STAGE",
+      "confidence": "Routed",
+      "measured": {
+        "lut": 16297,
+        "reg": 11418,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4717
+      },
+      "sta": {
+        "setup_wns_ns": 0.889,
+        "hold_wns_ns": 0.027,
+        "setup_violations": 0,
+        "hold_violations": 0
+      },
+      "constraints_valid": true,
+      "signoff": true,
+      "result_sha256": "e78c3cd26ec9113e4a912ff4589d981d5a203fa1ff00bd8008b2f7df86b25e94"
+    },
+    {
+      "tag": "checked2",
+      "status": "HOLD",
+      "confidence": "Synthesized",
+      "measured": {
+        "lut": null,
+        "reg": null,
+        "bram9k": null,
+        "bram32k": null,
+        "dsp": null,
+        "pll": null,
+        "mslices": null
+      },
+      "sta": {
+        "setup_wns_ns": null,
+        "hold_wns_ns": null,
+        "setup_violations": null,
+        "hold_violations": null
+      },
+      "constraints_valid": false,
+      "signoff": false,
+      "result_sha256": "337a45e116396d78e2db4c3f70bfbf22e4af577915835a689b48de9c6b7e11a5"
+    },
+    {
+      "tag": "checked2b",
+      "status": "PASS_STAGE",
+      "confidence": "Synthesized",
+      "measured": {
+        "lut": 19708,
+        "reg": 15547,
+        "bram9k": 44,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": null
+      },
+      "sta": {
+        "setup_wns_ns": 0.392,
+        "hold_wns_ns": 0.459,
+        "setup_violations": 0,
+        "hold_violations": 0
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "371f4e309be113f0cc742f3e24d54e6ebeac1fe35b78d8bd3b49c00ed59aaf10"
+    },
+    {
+      "tag": "checked2d",
+      "status": "PASS_STAGE",
+      "confidence": "Synthesized",
+      "measured": {
+        "lut": 19670,
+        "reg": 15547,
+        "bram9k": 44,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": null
+      },
+      "sta": {
+        "setup_wns_ns": 0.392,
+        "hold_wns_ns": 0.459,
+        "setup_violations": 0,
+        "hold_violations": 0
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "58488a3d32a2abd9fda683eb6ccf04f8b466639b27b0164207107ab96c253cd5"
+    },
+    {
+      "tag": "hold2",
+      "status": "HOLD",
+      "confidence": "Routed",
+      "measured": {
+        "lut": 16233,
+        "reg": 11394,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4675
+      },
+      "sta": {
+        "setup_wns_ns": 0.449,
+        "hold_wns_ns": -0.425,
+        "setup_violations": 0,
+        "hold_violations": 100
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "6db418d24717be79ca903ab19037b06e9ca781836e465d3bd1ffcbdf5bc4cd0e"
+    },
+    {
+      "tag": "hold2_clock",
+      "status": "HOLD",
+      "confidence": "Routed",
+      "measured": {
+        "lut": 16233,
+        "reg": 11394,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4675
+      },
+      "sta": {
+        "setup_wns_ns": 0.449,
+        "hold_wns_ns": -0.425,
+        "setup_violations": 0,
+        "hold_violations": 6
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "18ac7214c64a495f54d8a4a0136b20ef8e17163ae8ec87f738a2f00f83121fa5"
+    },
+    {
+      "tag": "hold2_io",
+      "status": "HOLD",
+      "confidence": "Routed",
+      "measured": {
+        "lut": 16233,
+        "reg": 11394,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4675
+      },
+      "sta": {
+        "setup_wns_ns": 0.449,
+        "hold_wns_ns": -0.425,
+        "setup_violations": 0,
+        "hold_violations": 100
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "2a39ade60e3cca37b7909622b1795f7b078f58b21a9b3bd5bc7133ed47fc7510"
+    },
+    {
+      "tag": "hold2_io_afterclock",
+      "status": "HOLD",
+      "confidence": "Routed",
+      "measured": {
+        "lut": 16233,
+        "reg": 11394,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4675
+      },
+      "sta": {
+        "setup_wns_ns": 0.449,
+        "hold_wns_ns": -0.425,
+        "setup_violations": 0,
+        "hold_violations": 6
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "08d756a3f1e8c9049f06c5ff09b1f15bba412776128cb1edbbb568a4f91765ff"
+    },
+    {
+      "tag": "hold2_miso_clock",
+      "status": "HOLD",
+      "confidence": "Routed",
+      "measured": {
+        "lut": 16233,
+        "reg": 11394,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4675
+      },
+      "sta": {
+        "setup_wns_ns": 0.449,
+        "hold_wns_ns": -0.425,
+        "setup_violations": 0,
+        "hold_violations": 6
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "403d2f0a0b184749d0928dbdc9e7be84aac1f09a544b8452bdd1e1b1116719b1"
+    },
+    {
+      "tag": "hold2h_clock",
+      "status": "PASS_STAGE",
+      "confidence": "Routed",
+      "measured": {
+        "lut": 16297,
+        "reg": 11418,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4717
+      },
+      "sta": {
+        "setup_wns_ns": 0.889,
+        "hold_wns_ns": 0.027,
+        "setup_violations": 0,
+        "hold_violations": 0
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "4da7485f4ee92753bc86d489d193bd37c61d2adb2266229bedeb68511a21356a"
+    },
+    {
+      "tag": "place2",
+      "status": "PASS_STAGE",
+      "confidence": "Placed",
+      "measured": {
+        "lut": 16233,
+        "reg": 11394,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4691
+      },
+      "sta": {
+        "setup_wns_ns": -4.421,
+        "hold_wns_ns": -0.061,
+        "setup_violations": 1094,
+        "hold_violations": 372
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "31f91862d0c5b3ed4007f97f01fc3d33d32e772f95794dbb1d92d702e1d648d0"
+    },
+    {
+      "tag": "place2d",
+      "status": "PASS_STAGE",
+      "confidence": "Placed",
+      "measured": {
+        "lut": 16297,
+        "reg": 11418,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4717
+      },
+      "sta": {
+        "setup_wns_ns": -3.735,
+        "hold_wns_ns": -0.064,
+        "setup_violations": 1098,
+        "hold_violations": 404
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "9968274c08f8acab7860beaeaf359fd31d1128c2b489759dc47b1dd7c883fd21"
+    },
+    {
+      "tag": "place2e",
+      "status": "PASS_STAGE",
+      "confidence": "Placed",
+      "measured": {
+        "lut": 16296,
+        "reg": 11407,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4689
+      },
+      "sta": {
+        "setup_wns_ns": -4.962,
+        "hold_wns_ns": -0.061,
+        "setup_violations": 1111,
+        "hold_violations": 384
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "c058070680ded744f44fc97a70831c16764a6ae3825e71d76722d6c5a9c3a291"
+    },
+    {
+      "tag": "placed_checked2b",
+      "status": "PASS_STAGE",
+      "confidence": "Placed",
+      "measured": {
+        "lut": 16233,
+        "reg": 11394,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4691
+      },
+      "sta": {
+        "setup_wns_ns": -1.743,
+        "hold_wns_ns": -0.061,
+        "setup_violations": 18,
+        "hold_violations": 372
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "dc0d62fcfd5530b9798c882959cc727aaf40cb3810690784090bee20dd20b238"
+    },
+    {
+      "tag": "placed_checked2c",
+      "status": "PASS_STAGE",
+      "confidence": "Placed",
+      "measured": {
+        "lut": 16233,
+        "reg": 11394,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4691
+      },
+      "sta": {
+        "setup_wns_ns": -1.743,
+        "hold_wns_ns": -0.061,
+        "setup_violations": 18,
+        "hold_violations": 372
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "743bc339e6d623d4cc5da33f91d91e52375b819840c8222cc11dabadc3558f37"
+    },
+    {
+      "tag": "placed_checked2d",
+      "status": "PASS_STAGE",
+      "confidence": "Placed",
+      "measured": {
+        "lut": 16297,
+        "reg": 11418,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4717
+      },
+      "sta": {
+        "setup_wns_ns": -1.493,
+        "hold_wns_ns": -0.064,
+        "setup_violations": 22,
+        "hold_violations": 404
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "30ee7b83a527dc6ce22ac6cea3743bf748037b9e5f0c14241f86e75183a0a30f"
+    },
+    {
+      "tag": "placed_checked2f",
+      "status": "PASS_STAGE",
+      "confidence": "Placed",
+      "measured": {
+        "lut": 16296,
+        "reg": 11407,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4689
+      },
+      "sta": {
+        "setup_wns_ns": -4.13,
+        "hold_wns_ns": -0.061,
+        "setup_violations": 35,
+        "hold_violations": 384
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "a837becd997bbaf06398e10ee12507fbd2ab62bdcec0419558727e54679f557d"
+    },
+    {
+      "tag": "prehold2",
+      "status": "PASS_STAGE",
+      "confidence": "Placed",
+      "measured": {
+        "lut": 16233,
+        "reg": 11394,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4675
+      },
+      "sta": {
+        "setup_wns_ns": -1.743,
+        "hold_wns_ns": -0.061,
+        "setup_violations": 18,
+        "hold_violations": 372
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "8b2dff997e22e07170631de70dc8428978775a92c813f422502c40014013c9cf"
+    },
+    {
+      "tag": "route2",
+      "status": "HOLD",
+      "confidence": "Routed",
+      "measured": {
+        "lut": 16233,
+        "reg": 11394,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4675
+      },
+      "sta": {
+        "setup_wns_ns": 0.449,
+        "hold_wns_ns": -0.425,
+        "setup_violations": 0,
+        "hold_violations": 100
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "faaefe37e6e5eca7dff062268be04c52e94d4d5857599a83604080b113570bf6"
+    },
+    {
+      "tag": "route2d",
+      "status": "HOLD",
+      "confidence": "Routed",
+      "measured": {
+        "lut": null,
+        "reg": null,
+        "bram9k": null,
+        "bram32k": null,
+        "dsp": null,
+        "pll": null,
+        "mslices": 4717
+      },
+      "sta": {
+        "setup_wns_ns": null,
+        "hold_wns_ns": null,
+        "setup_violations": null,
+        "hold_violations": null
+      },
+      "constraints_valid": false,
+      "signoff": false,
+      "result_sha256": "76151f33f25e0a8d7773df759eb853f5001d4800c932284b89e0e2d646b40691"
+    },
+    {
+      "tag": "route2e",
+      "status": "HOLD",
+      "confidence": "Routed",
+      "measured": {
+        "lut": null,
+        "reg": null,
+        "bram9k": null,
+        "bram32k": null,
+        "dsp": null,
+        "pll": null,
+        "mslices": 4717
+      },
+      "sta": {
+        "setup_wns_ns": null,
+        "hold_wns_ns": null,
+        "setup_violations": null,
+        "hold_violations": null
+      },
+      "constraints_valid": false,
+      "signoff": false,
+      "result_sha256": "bbf68631ed8682581b84cfd99cfb8de4b46d873efeb9139c092c6b4149a01129"
+    },
+    {
+      "tag": "route2f",
+      "status": "HOLD",
+      "confidence": "Routed",
+      "measured": {
+        "lut": null,
+        "reg": null,
+        "bram9k": null,
+        "bram32k": null,
+        "dsp": null,
+        "pll": null,
+        "mslices": 4689
+      },
+      "sta": {
+        "setup_wns_ns": null,
+        "hold_wns_ns": null,
+        "setup_violations": null,
+        "hold_violations": null
+      },
+      "constraints_valid": false,
+      "signoff": false,
+      "result_sha256": "d9f93b4ca150cc6ae111beb022ddeda49404659a09f00161024a897172c6478c"
+    },
+    {
+      "tag": "route2g",
+      "status": "HOLD",
+      "confidence": "Routed",
+      "measured": {
+        "lut": null,
+        "reg": null,
+        "bram9k": null,
+        "bram32k": null,
+        "dsp": null,
+        "pll": null,
+        "mslices": 4717
+      },
+      "sta": {
+        "setup_wns_ns": null,
+        "hold_wns_ns": null,
+        "setup_violations": null,
+        "hold_violations": null
+      },
+      "constraints_valid": false,
+      "signoff": false,
+      "result_sha256": "7f233328d8d1214030e675c6dd283b9c1273b61f5c2e43cefba1cd608bf387d2"
+    },
+    {
+      "tag": "route2h",
+      "status": "HOLD",
+      "confidence": "Routed",
+      "measured": {
+        "lut": 16297,
+        "reg": 11418,
+        "bram9k": 43,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": 4717
+      },
+      "sta": {
+        "setup_wns_ns": 0.889,
+        "hold_wns_ns": -0.055,
+        "setup_violations": 0,
+        "hold_violations": 108
+      },
+      "constraints_valid": true,
+      "signoff": false,
+      "result_sha256": "53d28bdca19a3adcd6cc64d940ff736eaea3d1a0b1c461477359eff2883e7097"
+    },
+    {
+      "tag": "synth2a",
+      "status": "HOLD",
+      "confidence": "Synthesized",
+      "measured": {
+        "lut": 19708,
+        "reg": 15547,
+        "bram9k": 44,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": null
+      },
+      "sta": {
+        "setup_wns_ns": -10.567,
+        "hold_wns_ns": 0.471,
+        "setup_violations": 37,
+        "hold_violations": 0
+      },
+      "constraints_valid": false,
+      "signoff": false,
+      "result_sha256": "e61dbfa2527ea0b83e1e04e0b23adc2e83b56092c959bb018bc1e3e821b40ec1"
+    },
+    {
+      "tag": "synth2b",
+      "status": "PASS_STAGE",
+      "confidence": "Synthesized",
+      "measured": {
+        "lut": 19708,
+        "reg": 15547,
+        "bram9k": 44,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": null
+      },
+      "sta": {
+        "setup_wns_ns": -10.567,
+        "hold_wns_ns": 0.471,
+        "setup_violations": 37,
+        "hold_violations": 0
+      },
+      "constraints_valid": false,
+      "signoff": false,
+      "result_sha256": "a0f41dc4b0bb3e50ba1a5c5741e36e932ac34169b457ceb78fab6dc07fbbe388"
+    },
+    {
+      "tag": "synth2d",
+      "status": "PASS_STAGE",
+      "confidence": "Synthesized",
+      "measured": {
+        "lut": 19670,
+        "reg": 15547,
+        "bram9k": 44,
+        "bram32k": 5,
+        "dsp": 18,
+        "pll": 3,
+        "mslices": null
+      },
+      "sta": {
+        "setup_wns_ns": -10.6,
+        "hold_wns_ns": 0.471,
+        "setup_violations": 37,
+        "hold_violations": 0
+      },
+      "constraints_valid": false,
+      "signoff": false,
+      "result_sha256": "d78f01a2c69f8544380d60f172ea9ac4f0739a84aeaad1aca974beb9d2cb2069"
+    }
+  ],
+  "frozen_semantics": "W2/S2/effects byte identical to round1; 61 frozen source items",
+  "hardware_acceptance": "NOT_STARTED",
+  "actual_TF_card_write": false
+}

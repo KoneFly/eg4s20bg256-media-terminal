@@ -1,0 +1,30 @@
+{
+  "experiment": "BOARD_0x46_A2",
+  "generated_utc": "2026-10-05T15:14:18.216871+00:00",
+  "bit_path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/visual_workspace/rtl_handoff/m6_full_display_integration/deliverables/M6_FDI_A2_20261005_7B97635A.bit",
+  "bit_sha256": "7b97635aadd6fa4ebab8f3fc598f195cde5bafcdf6b6968bf105ac62284cd57c",
+  "bit_bytes": 636626,
+  "final_run": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/visual_workspace/rtl_handoff/m6_full_display_integration/experiments/board_0x46_A2_work/td_run/bit_a2_final",
+  "build_display": "SW0=1, P0: d0 05462",
+  "baseline_bit_sha256": "6b810152e09eef36138e0ce8979712609a2828b18bf93de2b623fba79929b030",
+  "baseline_hardware_status": "FAIL_0x46",
+  "hardware_status": "PENDING_TRUE_CARD",
+  "hardware_required": "KEY1复现；线稿出现且至少10分钟稳定；若失败回传错误码及P1..P7。",
+  "formal_registration": "BURN_INDEX由主人/规格方登记，本脚本不代签或写上游。",
+  "physical": {
+    "lut": 16234,
+    "reg": 11434,
+    "bram9k": 43,
+    "bram32k": 5,
+    "dsp": 18,
+    "pll": 3,
+    "mslices": 4695
+  },
+  "sta": {
+    "setup_wns_ns": 0.901,
+    "hold_wns_ns": 0.021,
+    "setup_violations": 0,
+    "hold_violations": 0
+  },
+  "source_manifest_sha256": "cf53f146308cb934dc3b2236a2ccbb999161f6dacec1b77f4be6077070449691"
+}

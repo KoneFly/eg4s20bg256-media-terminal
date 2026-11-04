@@ -1,0 +1,7 @@
+{"status":"PASS","scenario":"cfg_min","frames":300,"max_update_cycles":19703,"overrun":false,"reset_reentry":false}
+{"status":"PASS","scenario":"cfg_max","frames":300,"max_update_cycles":17756,"overrun":false,"reset_reentry":false}
+{"status":"PASS","scenario":"cfg_clamp_low","frames":300,"max_update_cycles":19703,"overrun":false,"reset_reentry":false}
+{"status":"PASS","scenario":"cfg_clamp_high","frames":300,"max_update_cycles":17756,"overrun":false,"reset_reentry":false}
+{"status":"PASS","scenario":"cfg_same_tick","frames":300,"max_update_cycles":18513,"overrun":false,"reset_reentry":false}
+{"status":"PASS","scenario":"cfg_during_busy","frames":300,"max_update_cycles":18513,"overrun":false,"reset_reentry":false}
+{"status":"PASS","scenario":"cfg_retired_ignored","frames":300,"max_update_cycles":18513,"overrun":false,"reset_reentry":false}

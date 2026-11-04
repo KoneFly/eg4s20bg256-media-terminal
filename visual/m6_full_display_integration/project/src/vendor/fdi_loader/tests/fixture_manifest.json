@@ -1,0 +1,10 @@
+{
+  "bmpPath": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\golden\\pcb\\PCB.BMP",
+  "bmpSha256": "938219a71dde50745624d8821554cca0822c748149b2e3f9cd8d31eccfe26516",
+  "imageSha256": "f71c8cf850cb65086f607c0fdc44ffd4baae9009b50fa2753773edd61b28ec1f",
+  "sectors": 4096,
+  "sectorsPerCluster": 8,
+  "fileCluster": 3,
+  "fileBytes": 921654,
+  "words": 153600
+}

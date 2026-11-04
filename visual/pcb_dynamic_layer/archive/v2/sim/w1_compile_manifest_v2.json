@@ -1,0 +1,10 @@
+{
+  "generated_utc": "2026-10-04T10:50:38.343689+00:00",
+  "sources": {
+    "pcb_span_ram.v": "3d1549fe1afaa633e90cccbace7ce81f3fe66f916c719102bc07a27645aeeefb",
+    "pcb_ram_2k16.v": "0d4f10a9f8180d90e7f746c7140bb1fcbf17396b356022662c0a4ddf998835a9",
+    "tb_w1.cpp": "22ba93030396ba34626883cdb9e79464ab9bf56d6bfea7f04cbcfad77bc105d2",
+    "pcb_dynamic_roms_v2.vh": "53fe1e5b5a3115d4080aa95e2eb4712659818c3c6b0cbe038dfc45d5ca3b3199",
+    "pcb_particle_overlay.v": "24a304acdedf9f0ba33654ee35fa1424981aa55bcd9c4c3d143b0bd786e903c0"
+  }
+}

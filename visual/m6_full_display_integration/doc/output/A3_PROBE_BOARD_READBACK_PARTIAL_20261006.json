@@ -1,0 +1,41 @@
+{
+  "date_local": "2026-10-06",
+  "status": "PARTIAL_USER_READBACK_CLOCK_ACTIVITY_AND_STATE_CONTRADICTION",
+  "expected_bit_sha256": "c289d59c93115706b2c996d4a44629d60f70f9809d5f567183228d03bc38c6d9",
+  "bit_identity_from_board": "PENDING_D0_D7_CALIBRATION",
+  "raw_user_observation": "d1和d4变化太快了读不出，d2 57344 d3 32768 d5 00270 d6 00270,10秒后还是d3 32768",
+  "elapsed_after_key1_release_seconds": null,
+  "reported": {
+    "d0": null,
+    "d1": "CHANGING_TOO_FAST_TO_READ",
+    "d2": 57344,
+    "d3": 32768,
+    "d4": "CHANGING_TOO_FAST_TO_READ",
+    "d5": 270,
+    "d6": 270,
+    "d7": null,
+    "d3_recheck_after_10_seconds": 32768,
+    "normal_bank": null,
+    "screen": null
+  },
+  "decoded_using_a3_rtl": {
+    "d2": {"hex": "E000", "key1": 1, "pll_locked": 1, "ctrl_rst_n": 1, "watchdog_high13": 0},
+    "d3": {"hex": "8000", "eng_init": 1, "sdram_count": 0},
+    "d5": {"hex": "010E", "key1": 1, "pll_reset": 0, "reset": 0, "ctrl_reset_sync": 0, "ctrl_rst_n": 1, "snapshot_reader_r1_msb": 1, "snapshot_eng_init": 1, "snapshot_init_ready": 0},
+    "d6": {"hex": "010E", "snapshot_init_ready": 0, "snapshot_eng_init": 0, "mem_busy": 0, "reader_state": 1, "init_state": 0, "store_state": 14, "store_state_defined": false}
+  },
+  "findings": [
+    "Reported changing d4 is positive evidence of CTRL edges; it does not measure clock frequency or prove card operation.",
+    "Reported changing d1 is progress-counter activity; exact low16 decimal readings are not required at this stage.",
+    "D3 eng_init=1 and count=0 is compatible with an initialized SDRAM engine; it does not prove SDRAM contents or CRC passed.",
+    "D5 and D6 snapshot eng_init disagree, and store code14 is outside the declared BOOT0 through ERROR11 states. Recheck page identity and calibration before assigning a loader state.",
+    "D2 watchdog high13=0 is one page sample, not an elapsed-time measurement or proof of continuous reset."
+  ],
+  "required_next_observations": [
+    "Confirm full d0=05463 and d7=65280.",
+    "Keep this run, no reset; set page110, wait1second, confirm visible prefix d6 and reread all five decimal digits.",
+    "Set SW0=0 and report full normal-bank display and screen result."
+  ],
+  "hardware_acceptance": "PENDING_FULL_OBSERVATION_NO_PASS_CLAIM",
+  "rtl_sdc_bit_changed": false
+}

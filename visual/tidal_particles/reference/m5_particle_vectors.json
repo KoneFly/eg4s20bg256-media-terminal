@@ -1,0 +1,43 @@
+{
+  "provenance": "固定手算首帧状态与坐标/色值锚；不由原型运行时生成",
+  "reset_seed": 44257,
+  "reset_cursor": 0,
+  "energy": [64,128,0,0,0,0,0,0],
+  "frames": [
+    {"frame":1,"seed":45959,"cursor":2,"active":2,"slots":[
+      {"slot":0,"x":65,"y":349,"vx":-1,"vy":-3,"age":0,"band":0},
+      {"slot":1,"x":99,"y":361,"vx":2,"vy":-5,"age":0,"band":1}
+    ]},
+    {"frame":2,"seed":52766,"cursor":4,"active":2,"slots":[
+      {"slot":0,"x":64,"y":346,"vx":-1,"vy":-3,"age":1,"band":0},
+      {"slot":1,"x":101,"y":356,"vx":2,"vy":-5,"age":1,"band":1}
+    ]}
+  ],
+  "pixels": [
+    {"frame":0,"x":0,"y":0,"theme":0,"expected":14498},
+    {"frame":0,"x":320,"y":240,"theme":0,"expected":34},
+    {"frame":1,"x":65,"y":349,"theme":0,"expected":16383},
+    {"frame":1,"x":69,"y":349,"theme":0,"expected":2470},
+    {"frame":1,"x":65,"y":355,"theme":0,"expected":2470},
+    {"frame":1,"x":99,"y":361,"theme":0,"expected":32767},
+    {"frame":1,"x":99,"y":368,"theme":0,"expected":4518},
+    {"frame":1,"x":364,"y":240,"theme":0,"expected":34},
+    {"frame":1,"x":320,"y":240,"theme":0,"expected":34},
+    {"frame":2,"x":64,"y":346,"theme":0,"expected":16383},
+    {"frame":2,"x":101,"y":356,"theme":0,"expected":32767}
+  ],
+  "orbit_uniform_128": {"energy":[128,128,128,128,128,128,128,128],"theme":0,"pixels":[
+    {"x":320,"y":143,"expected":16383},
+    {"x":447,"y":270,"expected":32767},
+    {"x":448,"y":270,"expected":32767},
+    {"x":320,"y":397,"expected":65527},
+    {"x":410,"y":180,"expected":4518},
+    {"x":403,"y":270,"expected":14498},
+    {"x":0,"y":0,"expected":14498},
+    {"x":320,"y":270,"expected":34}
+  ]},
+  "orbit_silent": {"energy":[0,0,0,0,0,0,0,0],"theme":0,"pixels":[
+    {"x":415,"y":270,"expected":34},
+    {"x":403,"y":270,"expected":14498}
+  ]}
+}

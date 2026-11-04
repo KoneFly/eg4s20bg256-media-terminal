@@ -1,0 +1,31 @@
+{
+  "status": "DIAGNOSTIC_ONLY_PENDING_BOARD",
+  "hardware_status": "PENDING_M1_BOARD_TEST",
+  "bit_path": "deliverables/M6_FDI_M1_20261006_BDDEBAE7.bit",
+  "bit_bytes": 629643,
+  "bit_sha256": "bddebae74ee1b5ca0abe0b3dc914ab5b73008c0b272dad8b7961b5021f6ccbb6",
+  "version_decimal": 5466,
+  "hdmi": "HDMI-B",
+  "subboard": "7175ECC3_UNCHANGED",
+  "tf_layout": "UNCHANGED_NOT_USED_IN_M1",
+  "measured": {
+    "lut": 2924,
+    "reg": 2542,
+    "bram9k": 10,
+    "bram32k": 0,
+    "dsp": 0,
+    "pll": 3,
+    "mslices": 953
+  },
+  "sta": {
+    "setup_wns_ns": 2.321,
+    "hold_wns_ns": 0.004,
+    "setup_violations": 0,
+    "hold_violations": 0
+  },
+  "source_manifest_sha256": "3c614ce90395f2a7bd14072e0bddd9d80dd461be710e41a7d2f7572ca827a385",
+  "cdc_audit_sha256": "dc4516b8e08d346ef0f7b516a6448064c362fb6ea2ec52d6c981c1c98f4e3864",
+  "native_audit_sha256": "3f5b610577ad4685a71e0e892ef1c65dc84d681caa7a97573a07a3fc87833d98",
+  "software_validation_sha256": "8cd045b68ba47b7faf92820f54ae00349d86fec5bdf131b8ead9729aba35375c",
+  "s1_board_evidence_sha256": "5a562d386002316f13a2592b79f6f058e089639cb47508e6127f1ca0a104442c"
+}

@@ -1,0 +1,29 @@
+{
+  "date_local": "2026-10-06",
+  "bit_sha256": "685bc8d3f94658f30817e5696930cf9bbfd69506cbdcdbaaea4719f44d4f95ce",
+  "raw_user_message": "1. **d0=05467**\n2. **d1=00127、d2=00000，d3 255，d4 24 d5 23130 d6 23130 d7 65280**",
+  "d": {
+    "d0": 5467,
+    "d1": 127,
+    "d2": 0,
+    "d3": 255,
+    "d4": 24,
+    "d5": 23130,
+    "d6": 23130,
+    "d7": 65280
+  },
+  "status": "USER_CONFIRMED_ALL_INITIAL_D_READINGS_MATCH",
+  "interpretation": "按冻结RTL状态语义，首轮两组写读与刷新保持已完成，当前快照无错误；不代签持续巡检或复位复现。",
+  "color_bars_current_run_confirmed": false,
+  "p_pages_current_run": null,
+  "duration_seconds": null,
+  "ten_minute_stability_confirmed": false,
+  "key1_repeatability_confirmed": false,
+  "full_FDI_acceptance": false,
+  "pending": [
+    ">=10分钟彩条与d1/d2稳定",
+    "当前P4=16639",
+    "KEY1复位后正常值复现"
+  ],
+  "next_stage_after_board_checks": "FROZEN_TF_INIT_AND_CONTROLLED_LBA_HEADER_READ"
+}

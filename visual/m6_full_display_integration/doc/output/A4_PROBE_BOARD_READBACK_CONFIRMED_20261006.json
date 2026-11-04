@@ -1,0 +1,28 @@
+{
+  "date_local": "2026-10-06",
+  "status": "USER_OBSERVED_FAIL_A4_CALIBRATED",
+  "expected_bit_sha256": "343714aaa27eec0f317dc4b546e591496cc16cfc0ba6c0f56f3faff3d40d8fe8",
+  "actual_board_bit_contents_read_back": false,
+  "raw_first_user_message": "d1 65535 d2 59392 d3一直增加 d4 64 d5 268 d6 4096；十秒后全都一样；切 SW0=0，屏幕无信号，数码管全0",
+  "raw_user_clarification": "d0是**05464**、d7是**65280**  ；d3只在四位数中变化，一直变化，明确无信号",
+  "calibration": {"d0": 5464, "d7": 65280, "status": "PASS_USER_OBSERVED_VERSION_AND_FIXED_VALUE"},
+  "readings": {"d1": 65535, "d2": 59392, "d3": null, "d4": 64, "d5": 268, "d6": 4096},
+  "d3": {"status": "CONTINUOUSLY_CHANGING", "reported_range": "四位数中", "numeric_minimum": null, "numeric_maximum": null, "eng_init_bit15_observed_set": false, "clarification": "Latest user explicitly says d3 keeps changing; do not interpret prior unchanged-after10s phrase as a frozen d3"},
+  "other_pages_recheck": {"reported_interval_seconds": 10, "raw": "十秒后全都一样", "actual_interval_independently_verified": false},
+  "key1_reset_precondition_confirmed_in_current_messages": false,
+  "screen": {"status": "MONITOR_EXPLICIT_NO_SIGNAL", "source": "USER_OBSERVED", "not_merely_no_pcb_image": true},
+  "normal_display_raw": "数码管全0",
+  "normal_display_individually_read_pages": null,
+  "decode": {"d1_hex": "FFFF", "d2_hex": "E800", "watchdog_high13_or_history": 2048, "high_watchdog_bits_seen": [27], "watchdog_bit16_seen": 0, "d4_hex": "0040", "ctrl_edge_seen": 1, "start_limit_seen": 0, "boot_exit_seen": 0, "low_wrap_seen": 0, "ctrl_reset_seen": 0, "pll_unlock_seen": 0, "bad_state_seen": 0, "key1": 1, "pll_locked": 1, "ctrl_rst_n": 1, "eng_init": 0, "init_ready": 0, "observed_store": 0, "observed_init": 0, "observed_reader": 16, "mem_busy": 0},
+  "findings": [
+    "A4 version and fixed high-bit decimal calibration are now user-confirmed; the earlier history contradiction remains.",
+    "Under a zero initial watchdog and ordinary full-width +1 sequence, observing bit27 without any bit16 history is impossible. Counter carry failure, short resets, physical configuration or observation failures are not uniquely established.",
+    "The latest d3 clarification establishes continuing SDRAM count activity, not initialization completion, numerical maximum or CTRL frequency.",
+    "RTL gates scan DE on display_enabled; display_enabled requires state_committed and pixel_ready. BOOT gives no label_ready or label pixels, so this run cannot open valid video input normally.",
+    "The HDMI AXIS adapter valid equals DE. Thus explicit monitor no-signal can be downstream of absent valid video; it does not by itself prove absent pixel/serial clocks or a separate HDMI hardware failure.",
+    "The observed store/init/reader remain pre-SD initialization. No current evidence establishes TF read, CRC processing or a W2/S2 rendering fault."
+  ],
+  "hardware_acceptance": "FAIL_MONITOR_NO_SIGNAL_AND_NO_PCB_IMAGE",
+  "next_step": "KNOWN_GOOD_MASTER_75959E68_SAME_HARDWARE_COMPARISON_THEN_ISOLATED_CLOCK_BOOT_SELF_TEST",
+  "rtl_sdc_bit_changed_by_this_record": false
+}

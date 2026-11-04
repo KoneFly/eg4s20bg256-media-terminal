@@ -1,0 +1,10 @@
+{
+  "frame_dir": "D:\\Download\\嵌赛fpga_安路\\eg4s20bg256\\topic1_media_terminal\\visual_workspace\\rtl_handoff\\pcb_dynamic_layer\\reference\\_smoke_vectors3\\mixed\\frame_0000",
+  "pixels": 307200,
+  "hit_pixels": 7332,
+  "span_count": 1188,
+  "span_pool_depth": 4096,
+  "overflow": false,
+  "fixed_delay": 647,
+  "ov_k": 255
+}

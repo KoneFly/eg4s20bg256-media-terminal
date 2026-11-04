@@ -1,0 +1,22 @@
+{
+  "application_interface": {
+    "status": "OPEN",
+    "count": 342
+  },
+  "canonical_gate": {
+    "status": "OPEN",
+    "count": 3,
+    "lines": [
+      "USR-6001 WARNING: No pins matched 'get_pins u_display/u_scan/ctrl_error_meta_reg[2].d'",
+      "USR-6001 WARNING: No pins matched 'get_pins u_display/u_scan/ctrl_error_meta_reg[3].d'",
+      "USR-6001 WARNING: No pins matched 'get_pins u_display/u_scan/ctrl_error_meta_reg[6].d'"
+    ]
+  },
+  "final_physical": {
+    "status": "NONE_REPORTED",
+    "count": 0,
+    "lines": []
+  },
+  "failed_intermediate_stages": "Historical evidence retained; not used as final signoff",
+  "board_and_card": "NOT_STARTED; not signed"
+}

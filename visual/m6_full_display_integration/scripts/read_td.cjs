@@ -1,0 +1,25 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const [out,mode='synth']=process.argv.slice(2);
+const step=mode==='route'?'route':mode==='place'?'place':'gate';
+const log=fs.readFileSync(path.join(out,'console.log'),'utf8');
+const complete=log.includes(mode==='route'?'FDI_ROUTE_COMPLETE':mode==='place'?'FDI_PLACE_COMPLETE':'FDI_SYNTH_COMPLETE');
+const failure=/FDI_ERROR:|\b(?:HDL|SYN|USR|PHY)-\d+\s+(?:CRITICAL\s+)?ERROR\b|black box/i.test(log);
+const areaFile=path.join(out,`${step}.area`),qorFile=path.join(out,`${step}.qor`);
+if(!fs.existsSync(areaFile)||!fs.existsSync(qorFile)){fs.writeFileSync(path.join(out,'RESULT.json'),JSON.stringify({status:'BUILD_FAILED',complete,failure},null,2));process.exit(2);}
+const area=fs.readFileSync(areaFile,'utf8'),qor=fs.readFileSync(qorFile,'utf8');
+const timing=fs.readFileSync(path.join(out,`${step}.timing`),'utf8');
+const constraint_match=timing.match(/^Constraint File\s*:\s*(.*?)\s*$/m)?.[1]??'';
+const required_clocks=['clk_50','phy1_rgmii_rx_clk','u_clk/u_pll_0/pll_inst.clkc[1]','u_clk/u_pll_0/pll_inst.clkc[3]','u_display/u_pll/u_video_pll.clkc[0]'];
+const constraints_valid=constraint_match.includes('eth_m6_master.sdc')&&required_clocks.every(n=>timing.includes(n));
+const count=name=>Number(area.match(new RegExp('^#'+name+'\\s+(\\d+)','m'))?.[1]??NaN);
+const value=name=>Number(qor.match(new RegExp(name+'\\s*\\|\\s*(-?\\d+)\\s*\\|'))?.[1]??NaN);
+const measured={lut:count('lut'),reg:count('reg'),bram9k:count('bram'),bram32k:count('bram32k'),dsp:count('dsp'),pll:count('pll')};
+const limits={lut:17640,reg:17640,bram9k:57,bram32k:14,dsp:26,pll:3};
+const budget_pass=Object.entries(limits).every(([k,n])=>Number.isFinite(measured[k])&&measured[k]<=n);
+const sta={setup_wns_ns:value('Setup WNS')/1000,hold_wns_ns:value('Hold WNS')/1000,setup_violations:value('Num of violated S-EP'),hold_violations:value('Num of violated H-EP')};
+const timing_pass=constraints_valid&&sta.setup_violations===0&&sta.hold_violations===0&&sta.setup_wns_ns>=0&&sta.hold_wns_ns>=0;
+const warnings=log.split(/\r?\n/).filter(s=>/WARNING|CRITICAL/.test(s));
+const result={status:complete&&!failure&&budget_pass&&timing_pass?'PASS_TD':'HOLD',confidence:mode==='route'?'Routed':mode==='place'?'Placed':'Synthesized',complete,failure,measured,limits,budget_pass,sta,constraints_valid,constraint_file:constraint_match,timing_pass,warnings:{status:warnings.length?'OPEN':'NONE_REPORTED',lines:warnings},bit_status:'NOT_GENERATED',source_manifest_sha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(out,'SOURCE_MANIFEST.json'))).digest('hex')};
+fs.writeFileSync(path.join(out,'RESULT.json'),JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify({...result,warnings:{status:result.warnings.status,count:warnings.length}},null,2));
+if(result.status!=='PASS_TD')process.exitCode=1;

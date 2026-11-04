@@ -1,0 +1,8 @@
+create_clock -name clk -period 20.000 -waveform {0 10} [get_ports {clk}]
+set_clock_uncertainty -setup 1.000 [get_clocks {clk}]
+set_clock_uncertainty -hold 0.050 [get_clocks {clk}]
+set_input_delay -clock clk -max 2.000 [get_ports {frame_tick spec_frame[*] cfg_wr_en cfg_wr_addr[*] cfg_wr_data[*]}]
+set_input_delay -clock clk -min 0.300 [get_ports {frame_tick spec_frame[*] cfg_wr_en cfg_wr_addr[*] cfg_wr_data[*]}]
+set_output_delay -clock clk -max 3.000 [get_ports {state_wr_en state_wr_sel state_wr_addr[*] state_wr_data[*] state_wr_lane[*] state_commit_toggle frame_ready frame_accept frame_done busy err_valid err_code[*]}]
+set_output_delay -clock clk -min 0.500 [get_ports {state_wr_en state_wr_sel state_wr_addr[*] state_wr_data[*] state_wr_lane[*] state_commit_toggle frame_ready frame_accept frame_done busy err_valid err_code[*]}]
+set_false_path -from [get_ports {rst_n snapshot_ack_toggle}]

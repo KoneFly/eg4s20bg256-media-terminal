@@ -1,0 +1,8 @@
+create_clock -name clk -period 39.683 -waveform {0 19.8415} [get_ports {clk}]
+set_clock_uncertainty -setup 2.000 [get_clocks {clk}]
+set_clock_uncertainty -hold 0.050 [get_clocks {clk}]
+set_input_delay -clock clk -max 5.000 [get_ports {in_valid in_sof in_eol in_x[*] in_y[*] in_ridx[*] st_misc_rdata[*]}]
+set_input_delay -clock clk -min 0.500 [get_ports {in_valid in_sof in_eol in_x[*] in_y[*] in_ridx[*] st_misc_rdata[*]}]
+set_output_delay -clock clk -max 3.000 [get_ports {st_misc_addr[*] snapshot_ack_toggle overlay_valid overlay_hit overlay_rgb565[*] overlay_alpha[*] bucket_overflow_sticky}]
+set_output_delay -clock clk -min 0.500 [get_ports {st_misc_addr[*] snapshot_ack_toggle overlay_valid overlay_hit overlay_rgb565[*] overlay_alpha[*] bucket_overflow_sticky}]
+set_false_path -from [get_ports {rst_n state_commit_toggle}]

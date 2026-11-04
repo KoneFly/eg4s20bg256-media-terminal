@@ -1,0 +1,34 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const [out,mode]=process.argv.slice(2),step=['synth','check'].includes(mode)?'gate':['pcheck','prehold'].includes(mode)?'place':['hold','bit'].includes(mode)?'route':mode;
+const read=name=>fs.existsSync(path.join(out,name))?fs.readFileSync(path.join(out,name),'utf8'):'';
+const log=read('console.log'),area=read(`${step}.area`),qor=read(`${step}.qor`),timing=read(`${step}.timing`);
+const complete=log.includes(`FDI_R2_${mode.toUpperCase()}_COMPLETE`);
+const failure=/FDI_R2_ERROR:|\b(?:HDL|SYN|USR|PHY)-\d+\s+(?:CRITICAL\s+)?ERROR\b|black box/i.test(log);
+const count=n=>Number(area.match(new RegExp('^#'+n+'\\s+(\\d+)','m'))?.[1]??NaN);
+const value=n=>Number(qor.match(new RegExp(n+'\\s*\\|\\s*(-?\\d+)\\s*\\|'))?.[1]??NaN);
+const packing=[...log.matchAll(/RUN-1001\s*:\s*(\d+) mslices, (\d+) lslices/g)].at(-1);
+const packingError=log.match(/Design's mslice number = (\d+), exceeds the limit (\d+)/);
+const netlist=read(`${step}_netlist.v`);
+const netlistMslices=['place','route'].includes(step)?[...netlist.matchAll(/\bEG_PHY_MSLICE\s*#\(/g)].length:null;
+// 打包后物理优化可删除/复制cell；最终网表计数与初次打包计数分别保留。
+const packing_mslices=packing?Number(packing[1]):packingError?Number(packingError[1]):null;
+const mslices=netlistMslices||packing_mslices;
+const measured={lut:count('lut'),reg:count('reg'),bram9k:count('bram'),bram32k:count('bram32k'),dsp:count('dsp'),pll:count('pll'),mslices};
+const constraints_valid=timing.includes('Constraint File')&&timing.includes('production.sdc')&&['clk_50','phy1_rgmii_rx_clk','u_clk/u_pll_0/pll_inst.clkc[1]','u_clk/u_pll_0/pll_inst.clkc[3]','u_display/u_pll/u_video_pll.clkc[0]'].every(n=>timing.includes(n));
+const sta={setup_wns_ns:value('Setup WNS')/1000,hold_wns_ns:value('Hold WNS')/1000,setup_violations:value('Num of violated S-EP'),hold_violations:value('Num of violated H-EP')};
+const timing_pass=constraints_valid&&sta.setup_violations===0&&sta.hold_violations===0&&sta.setup_wns_ns>=0&&sta.hold_wns_ns>=0;
+const physical_gate_pass=mslices!==null&&mslices<4900&&(packing_mslices===null||packing_mslices<4900);
+const other_resource_pass=measured.reg<=17640&&measured.bram9k<=57&&measured.bram32k<=14&&measured.dsp<=26&&measured.pll<=3;
+// 综合阶段不以映射LUT替代物理MSlice；place阶段STA只报告，route最终必须0/0。
+const bitPath=path.join(out,'eth_udp_m6_master_top.bit');
+const bitPresent=fs.existsSync(bitPath)&&fs.statSync(bitPath).size>0;
+const pass=complete&&!failure&&other_resource_pass&&(step==='gate'||physical_gate_pass)&&(['check','route','hold','bit'].includes(mode)?timing_pass:true)&&(mode!=='bit'||bitPresent);
+const warnings=log.split(/\r?\n/).filter(s=>/WARNING|CRITICAL/.test(s));
+const result={status:pass?'PASS_STAGE':'HOLD',round:2,confidence:step==='gate'?'Synthesized':step==='place'?'Placed':'Routed',complete,failure,measured,physical_gate:{capacity:4900,require_positive_margin:true,target:4850,optimization_target:4410,headroom:mslices===null?null:4900-mslices},physical_gate_pass,other_resource_pass,sta,timing_pass,constraints_valid,warnings:{status:warnings.length?'OPEN':'NONE_REPORTED',count:warnings.length,lines:warnings},source_manifest_sha256:crypto.createHash('sha256').update(read('SOURCE_MANIFEST.json')).digest('hex'),bit_status:'NOT_GENERATED'};
+result.physical_gate.packing_mslices=packing_mslices;
+result.physical_gate.final_netlist_mslices=netlistMslices;
+if(mode==='bit')result.bit_status=bitPresent?'GENERATED':'MISSING';
+if(mode==='bit'&&bitPresent)result.bit={path:'eth_udp_m6_master_top.bit',bytes:fs.statSync(bitPath).size,sha256:crypto.createHash('sha256').update(fs.readFileSync(bitPath)).digest('hex')};
+fs.writeFileSync(path.join(out,'RESULT.json'),JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify({...result,warnings:{status:result.warnings.status,count:warnings.length}},null,2));
+if(!pass)process.exitCode=1;

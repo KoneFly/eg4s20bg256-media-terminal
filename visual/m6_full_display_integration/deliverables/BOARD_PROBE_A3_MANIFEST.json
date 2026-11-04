@@ -1,0 +1,28 @@
+{
+  "experiment": "A3_CLOCK_COUNTER_READ_ONLY",
+  "bit_path": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/visual_workspace/rtl_handoff/m6_full_display_integration/deliverables/M6_FDI_A3_20261006_C289D59C.bit",
+  "bit_sha256": "c289d59c93115706b2c996d4a44629d60f70f9809d5f567183228d03bc38c6d9",
+  "bit_bytes": 636626,
+  "final_run": "D:/Download/嵌赛fpga_安路/eg4s20bg256/topic1_media_terminal/visual_workspace/rtl_handoff/m6_full_display_integration/experiments/board_0x46_A3_work/td_run/bit_a3_final",
+  "physical": {
+    "lut": 16206,
+    "reg": 11391,
+    "bram9k": 43,
+    "bram32k": 5,
+    "dsp": 18,
+    "pll": 3,
+    "mslices": 4652
+  },
+  "sta": {
+    "setup_wns_ns": 0.395,
+    "hold_wns_ns": 0.023,
+    "setup_violations": 0,
+    "hold_violations": 0
+  },
+  "parent_bit_sha256": "7b97635aadd6fa4ebab8f3fc598f195cde5bafcdf6b6968bf105ac62284cd57c",
+  "parent_hardware_status": "FAIL_STALLED_BOOT_PWR_UP_NO_TIMEOUT_CODE",
+  "build_display": "SW0=1 d0 05463; d7 constant 65280 calibration",
+  "hardware_status": "PENDING_TRUE_CARD",
+  "bit_readback_verified": false,
+  "required": "逐页实测；若线稿出现仍须稳定至少10分钟及KEY1复现；BURN_INDEX由主人/规格方登记。"
+}

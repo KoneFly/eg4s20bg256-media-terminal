@@ -1,0 +1,23 @@
+{
+  "status": "SEALED_USER_BOARD_OBSERVATION",
+  "software_status": "NO_RTL_SDC_BIT_CHANGES",
+  "prior_indices_verified": {
+    "BOARD_PROBE_A2_EVIDENCE_INDEX.json": 319,
+    "BOARD_PROBE_A2_SUPPORTING_EVIDENCE.json": 14,
+    "ROUND2_EVIDENCE_INDEX.json": 400,
+    "A2_PROBE_REVIEW_EVIDENCE_INDEX_20261006.json": 5
+  },
+  "protected_upstream_checked": 81,
+  "files": [
+    {
+      "path": "doc/output/A2_PROBE_BOARD_READBACK_20261006.json",
+      "bytes": 5074,
+      "sha256": "f4460afbd505ad06faa20243eaf2d1c3be6ecc4207444e023771f05b883c527f"
+    },
+    {
+      "path": "doc/output/A2_PROBE_BOARD_ANALYSIS_20261006.md",
+      "bytes": 4986,
+      "sha256": "05df2b5901ae9a31623777978c62629ffeca3586ced0fcdc15ebbacb464785ba"
+    }
+  ]
+}

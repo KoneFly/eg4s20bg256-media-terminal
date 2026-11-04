@@ -1,0 +1,81 @@
+{
+  "generated_utc": "2026-10-04T08:42:02.893Z",
+  "scope": "W2 optimize_gate area only; excludes external P bank, W1 and physical timing",
+  "status": "FAIL_RESOURCE_BUDGET",
+  "budget": {
+    "lut": 2500,
+    "dsp": 2
+  },
+  "measured": {
+    "lut": 6646,
+    "total_luts": 4642,
+    "reg": 2204,
+    "dsp": 1,
+    "bram9k": 26,
+    "bram32k": 0,
+    "pad": 1133
+  },
+  "setup_wns": null,
+  "hold_wns": null,
+  "board_acceptance": "NOT_RUN",
+  "source_sha256": {
+    "rev2/pcb_frame_updater.v": "f2baa756322e81aa4ffc7877ef88ee45b2aad37397e2c7e74d889e4ff25e1806",
+    "rev2/pcb_dynamic_roms.vh": "9ddfdd157a1859d8e0dbedf85f7e73450852fe9a0b6205f80d22d05ea0bcf026",
+    "w2_area_rev2.tcl": "a3f48ab9b7298dc74f492006fb8e1d14d30fb373c9e890619b1a35123930755d",
+    "w2_area_rev2.log": "0af0d0da5affbe3c52e82b72a10c77a42e8515731e2824ed336d9757d3d3e72e",
+    "w2_rev2_gate.area": "45f75b3d3df6e3eb6767a6283f337ee00189c4ecfa7745bd0fed95f1f545c760",
+    "w2_rev2_rtl.area": "5076bfc370e86bad7d5213e608364eb1add2b4ea6e81ec44379113f65db923e2"
+  },
+  "protected_sources": [
+    {
+      "file": "visual_workspace/prototype/pcb_model.js",
+      "sha256": "fbb2298fc26cef6f3e951c03bdc4857eee769209e57ce9e547a711d9996cf351",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "visual_workspace/prototype/pcb_layout.js",
+      "sha256": "ba8dd3da1f0e3dd869948edfb4047fab5aee801bde3242b7e47a7a43794c8b7e",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "visual_workspace/prototype/pcb_labels.js",
+      "sha256": "26d98f73b2e53aee0af5843e8491caf4d8c283822501cea71f7b018989eb83c0",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "visual_workspace/spec/M6_PCB_SKETCH.md",
+      "sha256": "5da64b6763cfd4e5c1858b09a2f5ae1d0addf0d98c996193fad0494bae6a2bd6",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "visual_workspace/spec/M6_PCB_PORTING_PLAN.md",
+      "sha256": "e7257181978eda454b0e48665be13878ee918680ce79d59f54da17f7c267ee55",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "visual_workspace/golden/pcb/obj_tables.json",
+      "sha256": "f2fdeeb55c988de50e5e32958cac194f69888b1487ae8b5cd2fa8e7db26acbb7",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "iccoder_workspace/TASK_KICKOFF.md",
+      "sha256": "1eb7d9bbb41213108bc3ee396acf8cf5acc4fb5b717374a7c4781a21fa08d837",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "iccoder_workspace/tasks/task_045_pcb_pixel_renderer/reference/gen_vectors.cjs",
+      "sha256": "664f71ff12f04aa622f3c91c817f5de1403ebacbab7ef527b2f4af090e387093",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "iccoder_workspace/tasks/task_045_pcb_pixel_renderer/rtl/pcb_pixel_renderer.v",
+      "sha256": "413f8996098d7208b219fdf06e504dd344dadfc72dc81bbe5c251b44b5ebea49",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "iccoder_workspace/tasks/task_045_pcb_pixel_renderer/doc/output/behavior_spec.md",
+      "sha256": "46ef25f1cd214acecc8526bd8db460ef1e209f49a8491c90af97b79409907de6",
+      "status": "UNCHANGED"
+    }
+  ]
+}

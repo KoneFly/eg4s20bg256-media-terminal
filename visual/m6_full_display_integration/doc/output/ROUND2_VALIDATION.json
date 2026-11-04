@@ -1,0 +1,568 @@
+{
+  "status": "PASS_FUNCTIONAL_WITH_OPEN_INTERFACE_WARNINGS",
+  "frozen_round1_sources": [
+    {
+      "path": "rtl/ethm_bafifo.v",
+      "sha256": "7e5d86759d5a5e0ea0f48430fee1fc73c4d97ddf2041a8d00d4f2b6a1bb9ed40",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/ethm_crc32_ref.v",
+      "sha256": "b69f9a7c7d733fcc5172c23c1f63bb71d3f13f378a188a75b2c1b050bc3d521e",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/ethm_pcm_pattern.v",
+      "sha256": "3ddbb5fecb8a8d182f632289f0197373ae356effa7865e8f4ecd11c45e47da54",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/ethm_rec_fifo.v",
+      "sha256": "e044527fcfdcc8104c4da5cba4b6eda2bb899023dfb49fc434c513094f0ceb31",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/ethm_rx_pack.v",
+      "sha256": "dc04033df7dabcd562ec16a1434f1210e6208036a0ce1f042caee896e895ac0d",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/ethm_rxc_rate.v",
+      "sha256": "83552b27588c8833865e4645eaab4be345ac62e236d2030016e3cb2dc80dcdd7",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/ethm_stats.v",
+      "sha256": "e9f1c0d38f9d6d4ad95f817cfbc6bd882628bc5aa8e08e0e2aadbaca74e080be",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/ethm_tx_drain.v",
+      "sha256": "b5ae69c1977d6cda8c1656656f1df56405cceb72c4911becdd53eceaa2c98bb0",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/ethm_tx_pack.v",
+      "sha256": "a5afb4df59540be4145b4bb46f9cd7d7a80724670a538e83740a671f81716cbb",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/fdi_clock_tree.v",
+      "sha256": "8cae4180fa5664a1fe6803cbf16381b70d2ace9807515d8b84feffdbb223120b",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/fdi_label_stream.v",
+      "sha256": "f2f0e2b5d023894bb4444c8da64c81fb525ab67887e3eafb94d77777063edfea",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/fdi_state_lane.v",
+      "sha256": "a443fc0ecc6e3f98a8619b858fb7847b31e3037b632b7fe627574ace07a43632",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/v7_decimal_display.v",
+      "sha256": "b8d8e92229a97cb270af2d66f7609ce48b4d2d455f9e387a8bcd51612f043d1f",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/v7_ready_probe.v",
+      "sha256": "50299652f5f935ecf121c6be3e79675ea25cbe97be0310f716906156b2cd7825",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/v7_udp_cam_ctrl_pcm.v",
+      "sha256": "a3dfb49b92cef25da4a2750421817dcf31811c26db05e5e6690ab2891aac3093",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/v7_udp_pcm_diag.v",
+      "sha256": "fc90e93da8a2948ced07382ea1a0dc173782e203896366408599fa9850ca6b6c",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/v7_udp_pcm_top.v",
+      "sha256": "b12b1afacc792f464777ecd4c0c17eece543174ac90f354264600cb00161262e",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/v9_m6_hdmi.v",
+      "sha256": "ac92439eeb760c6957eaf6f11798788d8b3531b7c224a445de995d00388345c7",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/v9_m6_scan.v",
+      "sha256": "fe37fadf7d6cfded4b144352d942eccd08a301a4f45082d37ba6ed58d368d1da",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/v9_spectrum_snapshot.v",
+      "sha256": "15806e4f5fd81396f3908c985d3fe6c6caa8c2df49b2228d1b0ff34fbc2ff62f",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "rtl/v9_udp_m6_master_top.v",
+      "sha256": "21f2faaf2fac5af15da5d43c12bacfc2c11066e258cca61b9012756547a9bb64",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/display020/axis_pixel_adapter.v",
+      "sha256": "309071d0c1151aa10649ba31eb7ee3d9080988c5b8d7e7ab47a4212f5831b20e",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/display020/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "sha256": "867e0b0bdd874bc383d00918c9e1be3fe01edf41f343b6a0d73e262776596a63",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/display020/hdmi_phy_wrapper.v",
+      "sha256": "193d60e02fb68cb721c1d0d834fdd7e40ae100d26a2bd1be56dfbed7870165df",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/display020/hdmi_pll.v",
+      "sha256": "d6efb17508dacef2a74c3098e512829974cac0a5bbc5cb03ed6d845ff78cf784",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/display020/lane_lvds_10_1.v",
+      "sha256": "305f40ee9561c5bcfdd1409deb152927ffcf0e90e41d79a2b9821a2b8de57c2d",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/fdi_loader/fdi_crc7_calc.v",
+      "sha256": "fedb9b8e532673ba7d9a977acf0887fb80a46e6260f5baf3f77dd60d536b567c",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/fdi_loader/fdi_mx_byte_engine.v",
+      "sha256": "6a6a418e87e4eb7baf9d4f28628332eff3667d07e24ce5ad4e4056f865bdcb89",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/fdi_loader/fdi_sd_cmd_transactor.v",
+      "sha256": "c06f7ae8f930eb7f96decb57687e1315f11b43e4c3627560741555c166b918da",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/fdi_loader/fdi_sd_init_sequence.v",
+      "sha256": "49244c13844b5788e6315ab48b76a0860ad9b8318509b956b50c068f3bb8fe73",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/fdi_loader/fdi_sd_spi_byte_engine.v",
+      "sha256": "00f7e8bb553385014f62b69061a1ca630515d53358a47ccedd36192e482a1510",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/fdi_loader/fdi_sd_spi_sector_reader.v",
+      "sha256": "d895a7efe15cb557c29e0984bfaa74f4edfdad6d638a84d3d6255b48855fbf87",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "sha256": "4a12c246f3410b9ad3ce45172a2d4b4ec5d0f103331f67311cff37e4ca31a8e3",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/fdi_loader/fdi_sdram_refresh_timer.v",
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/fdi_stream/fdi_async_pixel_fifo.v",
+      "sha256": "61d43037b1556535e0b444dac2991b314b8a4c7a8165ef14f1bb0d7a6c4701cc",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/m6_s2/pcb_bar_cache.v",
+      "sha256": "7edaaaa14704eabc680e18350ddd4655c57345576c8426cfc6396df82c259f9e",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/m6_s2/pcb_linebuf_dp.v",
+      "sha256": "fe9185f2798062e5a51b26d32ea2c58065b3ff93b978405f218c85ce88521109",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/m6_s2/pcb_pixel_renderer.v",
+      "sha256": "9c1a11c050000b228930cc969fcaa9ca4a56a70fd6845f241610a1dffd17f1ea",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/m6_s2/pcb_pulse_slot.v",
+      "sha256": "469956fe201c8fad18797141789c154a25f500ca5d857a8a2ac4a808ee070a3a",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/m6_s2/pcb_rc_slot.v",
+      "sha256": "4c735c9871ac9808c278c3a4c239bd0ca5732bb4755e21d16aa8d83685431293",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/m6_s2/pcb_state_mem.v",
+      "sha256": "8cfd01e26e0e5df37ade22774b38ba8fccd9f72e32c7462e0077e0442428b599",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/import/BUFGMUX.v",
+      "sha256": "a0886a9fca9c44268bce19a0f05fcf967345586c8e98212f7a49511bbc20a5c3",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/import/IDDR.v",
+      "sha256": "3f3615266af31a6dd44e801826b4e9e9f9e41f8248f8d38dcca76ccce0d0a3b5",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/import/ODDR.v",
+      "sha256": "0e714181f0326f87e4a2ccd9b6fa367366ebb6c5019f2e84c979c1781a5f8010",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/import/RAMB16_S9_S9.v",
+      "sha256": "eb40b83e948c48b381dfb517d830d7dfb03e86fa0dc8cc03967b32fccb65fccc",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/import/rgmii_interface.v",
+      "sha256": "e991629b34bd65150e4fadfdf057725b578a36ef617a875e7467dce3a722d7aa",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/import/rx_client_fifo.v",
+      "sha256": "72a66834f448eab11fa4bc4591cf32535b67203f150298b07858c76c624408ca",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/import/temac_block.v",
+      "sha256": "c01a28548571f64f4e708762034228360cd57e6c8829d0c007b966e07e7f01a5",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/import/temac_clk_gen.v",
+      "sha256": "261e4b503b8ca58b988df84af2d7613beec4f14078a32fa6d6df190dc4647a8c",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/import/tx_client_fifo.v",
+      "sha256": "e03bebfa76fc8899e1f550b7d361b7996af7cc508e50f7db791d30c9f7b1427c",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/import/tx_clk_en_gen.v",
+      "sha256": "da8c09e5308e8bebbfdfacaad7d83f5f9371811f54a8f6203e452e40649b02e9",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/ip/TEMAC_CORE/RTL/TEMAC_CORE_aead6cd6dadd.v",
+      "sha256": "8ae9162609d7ac1bd165068a1704f5d5cbb8a480171a05ffa94ac68a89a7b443",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/ip/TEMAC_CORE/RTL/mac_core_aead6cd6dadd.v",
+      "sha256": "d2aabbcf33f66377c8a50a6e725c13d80ed5a99aab98b74ec91531a94bd1f970",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/ip/TEMAC_CORE/TEMAC_CORE.v",
+      "sha256": "c2ee23bb45ecf9dd7e8e94c6617eb49fd0538a384e5a89b7f98908d1c6af529a",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/ip/pll_gen.v",
+      "sha256": "931f7d72cf0174e090413c631748d6fa27a00501dd04477c24af4f8ee64daec7",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/udp_base/udp_ip_protocol_stack_merge.enc.v",
+      "sha256": "983da722caeb6303dc6e9f610c0d3a5d93509317b3a06aed972899d3903ffdc7",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/w2/pcb_frame_updater.v",
+      "sha256": "49c189938efd8d0d02dc6db9aa764e8c77f06908da73dfc5c31eb7a77e2c3703",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/w2/pcb_ram_2k16.v",
+      "sha256": "0d4f10a9f8180d90e7f746c7140bb1fcbf17396b356022662c0a4ddf998835a9",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/w2/pcb_dynamic_roms_w2.vh",
+      "sha256": "c36620064278f7ba57aaed455b4d7097e2709ed77a6cb816b4f73a36f19ee1d9",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "vendor/fdi_stream/fdi_row_span_rom.vh",
+      "sha256": "0c407702e3d9d1d0addda5bfd42165eaa5d3dcb43aadf529d61d17f43fc59d4a",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "constraints/eth_m6_master.adc",
+      "sha256": "c511b60830086d43d9f1fb46b17e53be1f35f6228a03c7a9f5e90b5ba421f922",
+      "status": "BYTE_IDENTICAL"
+    }
+  ],
+  "frozen_round1_count": 61,
+  "production_changes_from_round1": [
+    "rtl/fdi_label_store.v",
+    "constraints/eth_m6_master.sdc"
+  ],
+  "removed_production_files": [
+    "vendor/fdi_loader/fdi_fat32_file_streamer.v",
+    "vendor/fdi_loader/fdi_fat32_volume_scanner.v"
+  ],
+  "compiled_loader_inputs": [
+    {
+      "path": "project/src/vendor/fdi_stream/fdi_async_pixel_fifo.v",
+      "sha256": "61d43037b1556535e0b444dac2991b314b8a4c7a8165ef14f1bb0d7a6c4701cc"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_crc7_calc.v",
+      "sha256": "fedb9b8e532673ba7d9a977acf0887fb80a46e6260f5baf3f77dd60d536b567c"
+    },
+    {
+      "path": "project/src/rtl/fdi_label_store.v",
+      "sha256": "f8ed7a807809de58af7c830cb190612199f3fd8f3dad510cb2b7629d1c1ea2e5"
+    },
+    {
+      "path": "project/src/rtl/fdi_label_stream.v",
+      "sha256": "f2f0e2b5d023894bb4444c8da64c81fb525ab67887e3eafb94d77777063edfea"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_mx_byte_engine.v",
+      "sha256": "6a6a418e87e4eb7baf9d4f28628332eff3667d07e24ce5ad4e4056f865bdcb89"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sd_cmd_transactor.v",
+      "sha256": "c06f7ae8f930eb7f96decb57687e1315f11b43e4c3627560741555c166b918da"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sd_init_sequence.v",
+      "sha256": "49244c13844b5788e6315ab48b76a0860ad9b8318509b956b50c068f3bb8fe73"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sd_spi_byte_engine.v",
+      "sha256": "00f7e8bb553385014f62b69061a1ca630515d53358a47ccedd36192e482a1510"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sd_spi_sector_reader.v",
+      "sha256": "d895a7efe15cb557c29e0984bfaa74f4edfdad6d638a84d3d6255b48855fbf87"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "sha256": "4a12c246f3410b9ad3ce45172a2d4b4ec5d0f103331f67311cff37e4ca31a8e3"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sdram_refresh_timer.v",
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    },
+    {
+      "path": "project/src/rtl/fdi_state_lane.v",
+      "sha256": "a443fc0ecc6e3f98a8619b858fb7847b31e3037b632b7fe627574ace07a43632"
+    },
+    {
+      "path": "project/src/vendor/fdi_stream/fdi_row_span_rom.vh",
+      "sha256": "0c407702e3d9d1d0addda5bfd42165eaa5d3dcb43aadf529d61d17f43fc59d4a"
+    },
+    {
+      "path": "tb/controlled_loader/EG_LOGIC_BUF.sv",
+      "sha256": "3f6aaeb30110e1f9c2e18e480cf1aeccbdb73af428fdeec533b1aeaa979f6100"
+    },
+    {
+      "path": "tb/controlled_loader/EG_PHY_SDRAM_2M_32.sv",
+      "sha256": "a404ee5b18ef3c676f3ddfc740057faaa79dd3e7d54b791e02d3141094eab13f"
+    },
+    {
+      "path": "tb/controlled_loader/sd_spi_card_model.sv",
+      "sha256": "3d2caedf814e34a095eda59e34ace1b980cc12112f23719f935daedc856be642"
+    },
+    {
+      "path": "tb/controlled_loader/tb_controlled_loader.sv",
+      "sha256": "f6d74f6d06cb332fdc49cc8bee5f07e2804355ef5c9f55cd2292e494e6ee19c8"
+    }
+  ],
+  "loader_cases": [
+    {
+      "scenario": 0,
+      "name": "normal_full_stream",
+      "status": "PASS",
+      "log": "sim/round2_loader/scenario0.log",
+      "sha256": "1dc19e7dc715722de30a189ebc18937af8326eae94ce5c1b34bf7a4514664d32",
+      "result_lines": [
+        "RAW_STREAM_PASS pixels=307200 SPIreads=1801 refresh=32567",
+        "RAW_LOADER_PASS scenario=0 bytes=921654 words=153600 boot_cycles=24863814"
+      ]
+    },
+    {
+      "scenario": 1,
+      "name": "file_CRC32_fault",
+      "status": "PASS",
+      "log": "sim/round2_loader/scenario1.log",
+      "sha256": "e81220b66b8b6519352128089731b23fc432623972ad1eae3438116c01d6bef8",
+      "result_lines": [
+        "RAW_FAULT_PASS scenario=1 code=41 cycles=19103814"
+      ]
+    },
+    {
+      "scenario": 2,
+      "name": "BMP_header_fault",
+      "status": "PASS",
+      "log": "sim/round2_loader/scenario2.log",
+      "sha256": "cedae8e1d711614de40045d1ccbeff13658f74e408a820fbbca5734a900ecac4",
+      "result_lines": [
+        "RAW_FAULT_PASS scenario=2 code=40 cycles=152493"
+      ]
+    },
+    {
+      "scenario": 3,
+      "name": "SDRAM_label_CRC32_fault",
+      "status": "PASS",
+      "log": "sim/round2_loader/scenario3.log",
+      "sha256": "da38f56cedfbf7c790b6a957d46604f70e8f1ecbf365a8e77db89547ae56e854",
+      "result_lines": [
+        "RAW_FAULT_PASS scenario=3 code=48 cycles=24863814"
+      ]
+    },
+    {
+      "scenario": 4,
+      "name": "wrong_raw_location",
+      "status": "PASS",
+      "log": "sim/round2_loader/scenario4.log",
+      "sha256": "e9869b665b6693049b6b9f95d5e19d6fa0e8041e177a7ee40882e8176ff060f3",
+      "result_lines": [
+        "RAW_FAULT_PASS scenario=4 code=40 cycles=152133"
+      ]
+    },
+    {
+      "scenario": 5,
+      "name": "first_sector_CRC16_fault",
+      "status": "PASS",
+      "log": "sim/round2_loader/scenario5.log",
+      "sha256": "8db08f84564ae78c7038aa794ba21ef45a6a44b31776d8eb4924a3c21a6a3cd6",
+      "result_lines": [
+        "RAW_FAULT_PASS scenario=5 code=05 cycles=162413"
+      ]
+    },
+    {
+      "scenario": 6,
+      "name": "no_card_timeout",
+      "status": "PASS",
+      "log": "sim/round2_loader/scenario6.log",
+      "sha256": "d75409bb65102b2a46dd3781a3ebbf74ca1e3bb919c44a8a0de3b739e46dcf0f",
+      "result_lines": [
+        "RAW_FAULT_PASS scenario=6 code=83 cycles=31602882"
+      ]
+    },
+    {
+      "scenario": 7,
+      "name": "slow_data_token_full_stream",
+      "status": "PASS",
+      "log": "sim/round2_loader/scenario7.log",
+      "sha256": "24ce5208d582b4078eb405d65a585de8eab7821f8909e5323ff68cf3244649f4",
+      "result_lines": [
+        "RAW_STREAM_PASS pixels=307200 SPIreads=1801 refresh=33011",
+        "RAW_LOADER_PASS scenario=7 bytes=921654 words=153600 boot_cycles=25224014"
+      ]
+    },
+    {
+      "scenario": 8,
+      "name": "last_sector_CRC16_fault",
+      "status": "PASS",
+      "log": "sim/round2_loader/scenario8.log",
+      "sha256": "038d89cbd7e25d0d595ab0d736991b6bdf2ac309fa729e957dd0b7a649432458",
+      "result_lines": [
+        "RAW_FAULT_PASS scenario=8 code=05 cycles=19103813"
+      ]
+    },
+    {
+      "scenario": 9,
+      "name": "runtime_unaligned_address",
+      "status": "PASS",
+      "log": "sim/round2_loader/scenario9.log",
+      "sha256": "08e68bdd9f695f59906a90b40ffa869ea5460e3dee851d62b3a8e80f3ca4f00b",
+      "result_lines": [
+        "RAW_LOADER_PASS scenario=9 bytes=921654 words=153600 boot_cycles=24863814"
+      ]
+    },
+    {
+      "scenario": 10,
+      "name": "runtime_out_of_range",
+      "status": "PASS",
+      "log": "sim/round2_loader/scenario10.log",
+      "sha256": "39c8299e0d0d7807fdf13d3d5ad4f2fc1f0f3369f4de9104e5e53dd6768fc3aa",
+      "result_lines": [
+        "RAW_LOADER_PASS scenario=10 bytes=921654 words=153600 boot_cycles=24863814"
+      ]
+    }
+  ],
+  "fixture": {
+    "label_lba": 64,
+    "end_lba_exclusive": 1865,
+    "bmp_bytes": 921654,
+    "physical_words": 153600,
+    "bmp_sha256": "938219a71dde50745624d8821554cca0822c748149b2e3f9cd8d31eccfe26516",
+    "file_crc32": "47E2A01D",
+    "label_crc32": "A1E4D4E1"
+  },
+  "loader_test_configuration": {
+    "STARTUP_CYCLES": 32,
+    "controller_hz": 50000000,
+    "BOOT_TIMEOUT_CYCLES": 60000000,
+    "note": "Short startup test; production defaults unchanged"
+  },
+  "loader_strict_lint": {
+    "status": "PASS",
+    "warnings": 0,
+    "errors": 0,
+    "log_sha256": "bf713709403dd93785bbded4311122b9b63b7895d9e840eb04e4ae0b8cc19ff9"
+  },
+  "W2_strict_lint": {
+    "status": "PASS",
+    "warnings": 0,
+    "errors": 0,
+    "log_sha256": "b00f5abaa740d0eb183e8583dbd2c1c66e43f2efad7732cb612d3862d0ae347b"
+  },
+  "application_interface_lint": {
+    "status": "PASS",
+    "warnings": 342,
+    "errors": 0,
+    "warning_status": "OPEN",
+    "log_sha256": "f91abfb2bf76bfded559844845ac511cbffa2ab4c74d045302a75b26cc393b61",
+    "scope": "Original IP boundary stubs and public primitives; IP internals and physical delays excluded"
+  },
+  "round1_W2_S2_evidence_reuse": {
+    "reason": "61 frozen RTL/include/ADC items byte identical; label-facing formal interface unchanged",
+    "file": "sim/w2_display_result.json",
+    "sha256": "ec758dc2c2b2f99443375bd422d2353edcdd41ac525f5946511894bd8fe27b5d",
+    "write_batches": 2404,
+    "writes": 1567408,
+    "display_frames": 2403,
+    "retiming_pixels": 738201600,
+    "JS_golden_frames": 40,
+    "JS_golden_pixels": 12288000,
+    "max_W2_update_cycles": 18276,
+    "rerun_this_round": false
+  },
+  "controlled_card_tool": {
+    "status": "PASS",
+    "checks": 8,
+    "synthetic_PCM_only": true,
+    "hardware_card_written": false,
+    "result_sha256": "c726a4579f0472ff6295bae52014ffc657e35a19eef9d069af08f81a24e06704"
+  },
+  "real_short_PCM_image": {
+    "status": "PASS_IMAGE",
+    "hardware_card_written": false,
+    "image": "sim/round2_card/label_pcm_short_real.img",
+    "sha256": "db41b9c551ccde1c0ecdad878e997357ff9443f56ff095096e69407933f3a5f0",
+    "PCM_source": "052 read-only short files",
+    "result_sha256": "f3cea71bf37dc7d02a01f9d83fb05f2f98f2006df44da65716cfa8c8c6b02b1d"
+  },
+  "physical_timing_proof": "Separate native TD final-route reports; Verilator identity BUF does not model delay",
+  "hardware_board_acceptance": "NOT_STARTED"
+}

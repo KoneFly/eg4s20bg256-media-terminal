@@ -1,0 +1,11 @@
+{
+  "source":"设计时固定手算序列；非RTL生成；initial为初始状态，expected首项对应第一次有效frame_tick后的状态",
+  "cases":[
+    {"id":"attack_half","initial":0,"target":255,"attack":1,"release":3,"expected":[128,192,224,240,248,252,254,255,255]},
+    {"id":"release_eighth","initial":255,"target":0,"attack":1,"release":3,"expected":[223,195,170,148,129,112,98,85]},
+    {"id":"small_release","initial":7,"target":0,"attack":1,"release":3,"expected":[6,5,4,3,2,1,0,0]},
+    {"id":"small_attack","initial":0,"target":3,"attack":3,"release":3,"expected":[1,2,3,3]},
+    {"id":"direct","initial":0,"target":255,"attack":0,"release":0,"expected":[255,255]},
+    {"id":"equal","initial":128,"target":128,"attack":3,"release":3,"expected":[128,128]}
+  ]
+}

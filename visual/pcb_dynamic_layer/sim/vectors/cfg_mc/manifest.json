@@ -1,0 +1,199 @@
+{
+  "profile": "no_particles_v2",
+  "scope": "Supplemental configurations; does not replace or rewrite baseline",
+  "model_sha256": "fbb2298fc26cef6f3e951c03bdc4857eee769209e57ce9e547a711d9996cf351",
+  "profile_sha256": "0140e2a60fa7bb43e0ece79daf0c5b186adfe1a5bc491c9963747f707aa2a628",
+  "packer_sha256": "9d6c08c40d539aac6a025974a360aeb3bed8cf416285e736c906cda6ca251415",
+  "generator_sha256": "e174e7c29ed8674b9c500e2aa6d8ab93f81023644b80e129e71622c7d568a54e",
+  "cases": [
+    {
+      "scenario": "cfg_min",
+      "mode": "cfg",
+      "raw": [
+        30,
+        12,
+        0,
+        0,
+        0,
+        16,
+        64,
+        8
+      ],
+      "applied": [
+        30,
+        12,
+        0,
+        0,
+        0,
+        16,
+        64,
+        8
+      ],
+      "frames": 300,
+      "vector_sha256": "e6afdc1e3cea8b38790a033aafcd44a8340bf0fb5d0942f3fda1893675739473",
+      "config_sha256": "be5e1e1d9d8e8b0bf187dcdc94761048657fbbde108057d20751fecdfa627e8a"
+    },
+    {
+      "scenario": "cfg_max",
+      "mode": "cfg",
+      "raw": [
+        200,
+        90,
+        30,
+        32,
+        64,
+        96,
+        512,
+        64
+      ],
+      "applied": [
+        200,
+        90,
+        30,
+        32,
+        64,
+        96,
+        512,
+        64
+      ],
+      "frames": 300,
+      "vector_sha256": "1a2b14c8df90a750081b8b8be9a15221fae0a3c466dee5430c0d45154e213bb8",
+      "config_sha256": "860df5c1cf551f756132f98cab3dca517147576b7a31786e5dca2d91fbe154db"
+    },
+    {
+      "scenario": "cfg_clamp_low",
+      "mode": "cfg",
+      "raw": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "applied": [
+        30,
+        12,
+        0,
+        0,
+        0,
+        16,
+        64,
+        8
+      ],
+      "frames": 300,
+      "vector_sha256": "e6afdc1e3cea8b38790a033aafcd44a8340bf0fb5d0942f3fda1893675739473",
+      "config_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+    },
+    {
+      "scenario": "cfg_clamp_high",
+      "mode": "cfg",
+      "raw": [
+        65535,
+        65535,
+        65535,
+        65535,
+        65535,
+        65535,
+        65535,
+        65535
+      ],
+      "applied": [
+        200,
+        90,
+        30,
+        32,
+        64,
+        96,
+        512,
+        64
+      ],
+      "frames": 300,
+      "vector_sha256": "1a2b14c8df90a750081b8b8be9a15221fae0a3c466dee5430c0d45154e213bb8",
+      "config_sha256": "5ac6a5945f16500911219129984ba8b387a06f24fe383ce4e81a73294065461b"
+    },
+    {
+      "scenario": "cfg_same_tick",
+      "mode": "cfg_tick",
+      "raw": [
+        70,
+        36,
+        9,
+        32,
+        24,
+        44,
+        160,
+        18
+      ],
+      "applied": [
+        70,
+        36,
+        9,
+        32,
+        24,
+        44,
+        160,
+        18
+      ],
+      "frames": 300,
+      "vector_sha256": "299fcab6e3fff0947b0731d714760a8f88c3c931353c30f41b7a629aac461e95",
+      "config_sha256": "97e2977c53ece10ddc6ad0ebd4e61f27d8a72aa84f577b7010f0e2852d419be6"
+    },
+    {
+      "scenario": "cfg_during_busy",
+      "mode": "cfg_busy",
+      "raw": [
+        70,
+        36,
+        9,
+        32,
+        24,
+        44,
+        160,
+        18
+      ],
+      "applied": [
+        70,
+        36,
+        9,
+        32,
+        24,
+        44,
+        160,
+        18
+      ],
+      "frames": 300,
+      "vector_sha256": "299fcab6e3fff0947b0731d714760a8f88c3c931353c30f41b7a629aac461e95",
+      "config_sha256": "97e2977c53ece10ddc6ad0ebd4e61f27d8a72aa84f577b7010f0e2852d419be6"
+    },
+    {
+      "scenario": "cfg_retired_ignored",
+      "mode": "cfg_retired",
+      "raw": [
+        70,
+        36,
+        9,
+        8,
+        24,
+        44,
+        160,
+        18
+      ],
+      "applied": [
+        70,
+        36,
+        9,
+        8,
+        24,
+        44,
+        160,
+        18
+      ],
+      "frames": 300,
+      "vector_sha256": "41bd5776e1dc6d5371b35abb5d553613dcbdef5ca77808c4958e2d376e72571c",
+      "config_sha256": "991d5c88870436eb5ee387582b6020600fc5921183f524d3d9e2aca4a55dc9a7"
+    }
+  ]
+}

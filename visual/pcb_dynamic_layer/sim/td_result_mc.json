@@ -1,0 +1,266 @@
+{
+  "generated_utc": "2026-10-04T12:53:56.700Z",
+  "scope": "W2 only; independent optimize_gate area and synthesized STA; no board selection or integration",
+  "profile": "no_particles_v2",
+  "revision": "trial4",
+  "measurement_status": "COMPLETE",
+  "hard_gate_status": "PASS",
+  "budget": {
+    "lut_minimum": 4500,
+    "lut_optimized_target": 4000,
+    "lut_metric": "#lut",
+    "dsp": 2,
+    "frame_cycles": 833333
+  },
+  "measured": {
+    "lut": 4492,
+    "total_luts": 3468,
+    "reg": 1544,
+    "dsp": 1,
+    "bram9k": 0,
+    "bram32k": 1,
+    "pad": 1105
+  },
+  "sta": {
+    "confidence": "Synthesized",
+    "coverage_percent": 100,
+    "clock_frequency_mhz": 50,
+    "clock_period_ns": 20,
+    "reported_min_period_ns": 17.091,
+    "reported_fmax_mhz": 58.51,
+    "setup_wns_ns": 2.909,
+    "setup_tns_ns": 0,
+    "hold_wns_ns": 0.621,
+    "hold_tns_ns": 0,
+    "setup_violating_endpoints": 0,
+    "hold_violating_endpoints": 0
+  },
+  "warnings": {
+    "status": "OPEN",
+    "counts": {
+      "SYN-5025": 1,
+      "SYN-6562": 1
+    },
+    "lines": [
+      "SYN-5025 WARNING: Using 0 for all undriven pins and nets",
+      "SYN-6562 WARNING: The init value of \"state_bank/mem(pcb_ram_2k16.v(18))\" will be ignored since gate eram_init is set to off"
+    ]
+  },
+  "gates": {
+    "lut_minimum": "PASS",
+    "lut_optimized_target": "NOT_MET",
+    "dsp": "PASS",
+    "setup": "PASS_SYNTHESIZED",
+    "hold": "PASS_SYNTHESIZED",
+    "frame_cycles": "PASS"
+  },
+  "functional_evidence": {
+    "default_and_protocol_frames": 3000,
+    "configuration_supplement_frames": 2100,
+    "default_max_update_cycles": 18276,
+    "all_tested_max_update_cycles": 19703,
+    "fixed_baseline_sha_status": "UNCHANGED",
+    "mutation": "KILLED",
+    "complete_per_parameter_boundary_matrix": "NOT_RUN",
+    "gate_primitive_simulation": "NOT_RUN",
+    "w1": "RETIRED_ARCHIVED"
+  },
+  "source_sha256": {
+    "pcb_frame_updater.v": "49c189938efd8d0d02dc6db9aa764e8c77f06908da73dfc5c31eb7a77e2c3703",
+    "pcb_dynamic_roms_w2.vh": "c36620064278f7ba57aaed455b4d7097e2709ed77a6cb816b4f73a36f19ee1d9",
+    "tb_w2.cpp": "48a0faf366f063a48ef8f7105a9517f9198a3e88d8dab70f8b64e147cbc242ee",
+    "pcb_ram_2k16.v": "0d4f10a9f8180d90e7f746c7140bb1fcbf17396b356022662c0a4ddf998835a9"
+  },
+  "artifacts": {
+    "directory": "td_run/w2_mc/trial4",
+    "sha256": {
+      "pcb_frame_updater.v": "49c189938efd8d0d02dc6db9aa764e8c77f06908da73dfc5c31eb7a77e2c3703",
+      "pcb_ram_2k16.v": "0d4f10a9f8180d90e7f746c7140bb1fcbf17396b356022662c0a4ddf998835a9",
+      "pcb_dynamic_roms_w2.vh": "c36620064278f7ba57aaed455b4d7097e2709ed77a6cb816b4f73a36f19ee1d9",
+      "clock.sdc": "3dc67d4d2e7c322e0c1e0f6694713efd9f5a8152e5cebb0f4036b72d033a8449",
+      "run.tcl": "b1fa633451c530ba95594cfb6c1f31fde4c5d4e08f255e5f577913869e44bcf2",
+      "input_manifest.json": "5ef1443791c08ecf4fe0f8ba35ecc7e895ecbd1457f50c84d61d5bda92127f2e",
+      "run.log": "f270a2c2cc303513cdb85baa189b40d63de97a3068acc2112c03463a2588228b",
+      "rtl.area": "83c199ae1b74646a76157a93f5c2e05332b8cc2beca2cc8cbe90267ea138c277",
+      "area.txt": "1882e7bde6b74468a81c6c3893021a9f8a3dc1ddb759fcb16f2c3ebf85bc3615",
+      "timing.txt": "3c494c9ab2d428a5618af80cda3394d558cbf90adedebb974e426c102ef0d54b",
+      "resource.qor": "77b07d01abe837dc37c52b0d4112ee690be62e5a5e18d5ed04e31b90658fbf94"
+    }
+  },
+  "iterations": [
+    {
+      "revision": "trial1",
+      "lut": 4908,
+      "total_luts": 3674,
+      "reg": 1864,
+      "dsp": 1,
+      "bram9k": 0,
+      "bram32k": 1,
+      "pad": 1105,
+      "confidence": "Synthesized",
+      "coverage_percent": 100,
+      "clock_frequency_mhz": 50,
+      "clock_period_ns": 20,
+      "reported_min_period_ns": 17.318,
+      "reported_fmax_mhz": 57.743,
+      "setup_wns_ns": 2.682,
+      "setup_tns_ns": 0,
+      "hold_wns_ns": 0.621,
+      "hold_tns_ns": 0,
+      "setup_violating_endpoints": 0,
+      "hold_violating_endpoints": 0,
+      "source_sha256": "90b4d3e460e2f1cfd4d740a8a08eff8f6c54abe5e7ac259d7ebd0b7d316afb09"
+    },
+    {
+      "revision": "trial2",
+      "lut": 4697,
+      "total_luts": 3463,
+      "reg": 1592,
+      "dsp": 1,
+      "bram9k": 0,
+      "bram32k": 1,
+      "pad": 1105,
+      "confidence": "Synthesized",
+      "coverage_percent": 100,
+      "clock_frequency_mhz": 50,
+      "clock_period_ns": 20,
+      "reported_min_period_ns": 14.807,
+      "reported_fmax_mhz": 67.536,
+      "setup_wns_ns": 5.193,
+      "setup_tns_ns": 0,
+      "hold_wns_ns": 0.621,
+      "hold_tns_ns": 0,
+      "setup_violating_endpoints": 0,
+      "hold_violating_endpoints": 0,
+      "source_sha256": "5d1ec06a97e3108a1d90b293eefb02c5d5e9c4385937d9dcaaa603abc823801d"
+    },
+    {
+      "revision": "trial3",
+      "lut": 4498,
+      "total_luts": 3468,
+      "reg": 1544,
+      "dsp": 1,
+      "bram9k": 0,
+      "bram32k": 1,
+      "pad": 1105,
+      "confidence": "Synthesized",
+      "coverage_percent": 100,
+      "clock_frequency_mhz": 50,
+      "clock_period_ns": 20,
+      "reported_min_period_ns": 17.587,
+      "reported_fmax_mhz": 56.86,
+      "setup_wns_ns": 2.413,
+      "setup_tns_ns": 0,
+      "hold_wns_ns": 0.621,
+      "hold_tns_ns": 0,
+      "setup_violating_endpoints": 0,
+      "hold_violating_endpoints": 0,
+      "source_sha256": "3f0db15a8fc21ff31d4d0e17d42760bbba2562d2ea9e45d2c97b139bb0727f23"
+    },
+    {
+      "revision": "trial4",
+      "lut": 4492,
+      "total_luts": 3468,
+      "reg": 1544,
+      "dsp": 1,
+      "bram9k": 0,
+      "bram32k": 1,
+      "pad": 1105,
+      "confidence": "Synthesized",
+      "coverage_percent": 100,
+      "clock_frequency_mhz": 50,
+      "clock_period_ns": 20,
+      "reported_min_period_ns": 17.091,
+      "reported_fmax_mhz": 58.51,
+      "setup_wns_ns": 2.909,
+      "setup_tns_ns": 0,
+      "hold_wns_ns": 0.621,
+      "hold_tns_ns": 0,
+      "setup_violating_endpoints": 0,
+      "hold_violating_endpoints": 0,
+      "source_sha256": "49c189938efd8d0d02dc6db9aa764e8c77f06908da73dfc5c31eb7a77e2c3703"
+    }
+  ],
+  "protected_sources": [
+    {
+      "file": "visual_workspace/prototype/pcb_model.js",
+      "sha256": "fbb2298fc26cef6f3e951c03bdc4857eee769209e57ce9e547a711d9996cf351",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "visual_workspace/prototype/pcb_layout.js",
+      "sha256": "ba8dd3da1f0e3dd869948edfb4047fab5aee801bde3242b7e47a7a43794c8b7e",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "visual_workspace/prototype/pcb_labels.js",
+      "sha256": "26d98f73b2e53aee0af5843e8491caf4d8c283822501cea71f7b018989eb83c0",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "visual_workspace/spec/M6_PCB_SKETCH.md",
+      "sha256": "5da64b6763cfd4e5c1858b09a2f5ae1d0addf0d98c996193fad0494bae6a2bd6",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "visual_workspace/spec/M6_PCB_PORTING_PLAN.md",
+      "sha256": "e7257181978eda454b0e48665be13878ee918680ce79d59f54da17f7c267ee55",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "visual_workspace/golden/pcb/obj_tables.json",
+      "sha256": "f2fdeeb55c988de50e5e32958cac194f69888b1487ae8b5cd2fa8e7db26acbb7",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "iccoder_workspace/TASK_KICKOFF.md",
+      "sha256": "1eb7d9bbb41213108bc3ee396acf8cf5acc4fb5b717374a7c4781a21fa08d837",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "iccoder_workspace/tasks/task_045_pcb_pixel_renderer/reference/gen_vectors.cjs",
+      "sha256": "664f71ff12f04aa622f3c91c817f5de1403ebacbab7ef527b2f4af090e387093",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "iccoder_workspace/tasks/task_045_pcb_pixel_renderer/rtl/pcb_pixel_renderer.v",
+      "sha256": "413f8996098d7208b219fdf06e504dd344dadfc72dc81bbe5c251b44b5ebea49",
+      "status": "UNCHANGED"
+    },
+    {
+      "file": "iccoder_workspace/tasks/task_045_pcb_pixel_renderer/doc/output/behavior_spec.md",
+      "sha256": "46ef25f1cd214acecc8526bd8db460ef1e209f49a8491c90af97b79409907de6",
+      "status": "UNCHANGED"
+    }
+  ],
+  "evidence_sha256": {
+    "sim/sim_result_mc.json": "8cca3b0ca7d02f1dbdfdd8a9b6aaaeb287a0a411681e84b2d3f8d42b3ee88973",
+    "sim/cfg_result_mc.json": "b22324a02500d336dbb2c7dfbc93e24d0598d2824e51cc425ff383de47729255",
+    "sim/mutation_result_mc.json": "acc7482a82a60309d72b74c930b9040e0a1f46c5cba751371c56eaea4bbd6354",
+    "sim/w2_compile_manifest_mc.json": "9f4b8aad48911507e0b30832ffb14021c88d520d358ea23bddc91794442759ee",
+    "sim/w2_cfg_compile_manifest_mc.json": "9c1027e74def4640ea0df31e5126d24aeffc93e0351b35edfde8041aba2353c3",
+    "sim/vectors/v2/w2/manifest.json": "07cc3e40c62fd2b43667bd9896c2ee1a0e4f33f5d23a18604af090f5a8959d2a",
+    "sim/vectors/cfg_mc/manifest.json": "54b8b6e904862a04cdf9f76d048d6ccb371e6a0fc74278d7f607cb92e5b5e9b0",
+    "sim/logs/w2_mc/w2_lint.log": "99f2dfc62fd8f10c8333347e732791134021fd00549e17eff3bfb00ca98520c9",
+    "sim/logs/w2_mc/mutation.log": "4268504d03db5b598374fad2837c41876faa31e1e1d9d37be59ba50331df8c2c",
+    "sim/logs/w2_mc/cfg.log": "b6c370a7887e5f61fd56d3417f49ff08deba1f44dc5d929d3c9bd78e50ded3e2",
+    "sim/logs/w2_mc/boot_silence.log": "d9b3d6d2a396db6bdc046a9e5113d3290bd3ca39ae8d1fe2bd8293f73ed9a96a",
+    "sim/logs/w2_mc/boot_low.log": "e8754330b5f8887c08f7f6c56e2824507ddb0b611362f75a7fbb03f629217efa",
+    "sim/logs/w2_mc/play_low.log": "7f182020e29308f255e0120db58f0a513fe732b3a10b9948eac9863d91a70669",
+    "sim/logs/w2_mc/play_mid.log": "d3dc3ebe481ea94c3659f3d8caaa9479536e6ebbd1fd7e53aeb005026aea8a16",
+    "sim/logs/w2_mc/play_high.log": "f8fd0253cf51e3d05cf6a2f222420776c842f421d203bf84881574d31c115c1a",
+    "sim/logs/w2_mc/saturate.log": "ea93b566fc3b12c639b03c9497c5821b1c99f275b5857dbd654cbbbc9b2b7e2a",
+    "sim/logs/w2_mc/impulse_broadcast.log": "bf07c4d9e487210034a7b14bcb9acba4f0fe4dada1a1d763491d2155ccc1c407",
+    "sim/logs/w2_mc/silence_decay.log": "910315ae0f9dba0679cee31fe9e1fe70acb91e6da470d0a4d478dcdf51f9fa9d",
+    "sim/logs/w2_mc/tick_overrun.log": "3313a86ffa97fbca8061138f4764b656e22ba8deb4a1b5b12859cca22353964c",
+    "sim/logs/w2_mc/reset_reentry.log": "81b0994c5252fd2c0ab639d052fc6ab17a24c9cf0e70af4bf550a49f3245524d"
+  },
+  "archive_script_sha256": "3df53bf8ccf1d95adc8f21e4eea44d5aaa7e33ab1946d8290c6b1d187e51a302",
+  "limitations": [
+    "4000 LUT optimized target is not met.",
+    "Synthesized STA only; no placement/routing or board acceptance.",
+    "1105-pad internal-interface top exceeds 188 device pads; used only for logic measurement.",
+    "Behavioral RAM passed Verilator; TD primitive gate simulation was not run.",
+    "Combined extrema/lock tests do not cover the complete per-parameter boundary matrix."
+  ]
+}

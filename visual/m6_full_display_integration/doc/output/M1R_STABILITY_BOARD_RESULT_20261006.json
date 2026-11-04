@@ -1,0 +1,17 @@
+{
+  "date_local": "2026-10-06",
+  "bit_sha256": "685bc8d3f94658f30817e5696930cf9bbfd69506cbdcdbaaea4719f44d4f95ce",
+  "raw_question": "请保持M1R连续运行≥10分钟，确认彩条仍正常、SW0=1时d1=00127/d2=00000、SW0=0页100时P4=16639；记录后再按复位键约1秒，放开等2秒，确认彩条及d0～d7恢复本次正常值。请反馈长稳和复位复现结果。",
+  "raw_user_message": "≥10分钟均正常，复位后正常复现",
+  "status": "USER_CONFIRMED_TEN_MINUTE_STABILITY_AND_RESET_REPEATABILITY",
+  "minimum_duration_seconds": 600,
+  "color_bars_normal": true,
+  "d1": 127,
+  "d2": 0,
+  "p4": 16639,
+  "reset_repeatability_confirmed": true,
+  "interpretation": "用户确认问题中长稳、彩条、指定读数和复位复现全部正常；SDRAM分层自检通过。",
+  "scope": "M1R_SDRAM_LAYER_ONLY",
+  "full_FDI_acceptance": false,
+  "next_stage": "FROZEN_TF_INIT_AND_LBA64_FIRST_SECTOR_SELFTEST"
+}

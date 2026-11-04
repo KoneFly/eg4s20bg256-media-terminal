@@ -1,0 +1,387 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = D:/AnLu/bin/td_commands_prompt.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     KoneFly
+   Run Date =   Sun Oct  4 20:07:27 2026
+
+   Run on =     KONEFLY
+============================================================
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+RUN-1001 : Using default speed grade: NA
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "set_param flow qor_monitor on"
+RUN-1002 : start command "read_hdl -file pcb_frame_updater.v pcb_ram_2k16.v -top pcb_frame_updater"
+HDL-1007 : analyze verilog file pcb_frame_updater.v
+HDL-1007 : analyze included file pcb_dynamic_roms_w2.vh in pcb_frame_updater.v(18)
+HDL-1007 : back to file 'pcb_frame_updater.v' in pcb_frame_updater.v(18)
+HDL-1007 : analyze verilog file pcb_ram_2k16.v
+HDL-1007 : elaborate module pcb_frame_updater in pcb_frame_updater.v(2)
+HDL-1007 : elaborate module pcb_ram_2k16 in pcb_ram_2k16.v(2)
+HDL-1007 : elaborate module EG_LOGIC_BRAM(DATA_WIDTH_A=16,DATA_WIDTH_B=16,ADDR_WIDTH_A=11,ADDR_WIDTH_B=11,DATA_DEPTH_A=2048,DATA_DEPTH_B=2048,IMPLEMENT="32K") in D:\AnLu\arch/eagle_macro.v(986)
+HDL-1200 : Current top model is pcb_frame_updater
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file D:/AnLu/license/Anlogic.lic
+SYN-1001 : Stage 1 | Optimize RTL
+SYN-1001 : Stage 1.1 | Check Design Sanity
+SYN-1001 : End Stage 1.1 | Check Design Sanity; Time: 0.001860s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 349, reserved = 327, peak = 349;
+
+SYN-1079 : finish stage Check Design Sanity. Total instances: 6740, Total nets: 20591.
+
+SYN-1001 : Stage 1.2 | Initialize Design
+SYN-1001 : End Stage 1.2 | Initialize Design; Time: 0.410984s wall, 0.359375s user + 0.031250s system = 0.390625s CPU (95.0%); Memory(MB): used = 349, reserved = 327, peak = 349;
+
+SYN-1079 : finish stage Initialize Design. Total instances: 821, Total nets: 13841.
+
+SYN-1001 : Stage 1.3 | Flatten Module
+SYN-1011 : Flatten model pcb_frame_updater
+SYN-1001 : End Stage 1.3 | Flatten Module; Time: 0.001942s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 349, reserved = 327, peak = 349;
+
+SYN-1079 : finish stage Flatten Module. Total instances: 820, Total nets: 13785.
+
+SYN-1001 : Stage 1.4 | Uniform Instance
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1001 : End Stage 1.4 | Uniform Instance; Time: 0.029326s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (106.6%); Memory(MB): used = 349, reserved = 327, peak = 349;
+
+SYN-1079 : finish stage Uniform Instance. Total instances: 819, Total nets: 13783.
+
+SYN-1001 : Stage 1.5 | Optimize Design
+SYN-1021 : Optimized 3 onehot mux instances.
+SYN-1068 : Optimized 43 binary mux instances.
+SYN-1021 : Optimized 1 onehot mux instances.
+SYN-1001 : Optimize 1 less-than instances
+SYN-1016 : Merged 597 instances.
+SYN-1016 : Merged 8487 instances.
+SYN-1001 : End Stage 1.5 | Optimize Design; Time: 2.695780s wall, 2.593750s user + 0.078125s system = 2.671875s CPU (99.1%); Memory(MB): used = 343, reserved = 323, peak = 349;
+
+SYN-1079 : finish stage Optimize Design. Total instances: 9440, Total nets: 11014.
+
+SYN-1001 : Stage 1.6 | Optimize Iteratively
+SYN-1014 : Optimize round 1
+SYN-1044 : Optimized 23 inv instances.
+SYN-1017 : Remove 25 const input seq instances
+SYN-1019 : Optimized 216 mux instances.
+SYN-1020 : Optimized 544 distributor mux.
+SYN-1001 : Optimize 13 less-than instances
+SYN-1019 : Optimized 49 mux instances.
+SYN-2595 : bram inst: state_bank/mem is set to PDPW/SP from DP for resource saving
+SYN-1016 : Merged 1286 instances.
+SYN-1015 : Optimize round 1, 5266 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 6 inv instances.
+SYN-1019 : Optimized 17 mux instances.
+SYN-1020 : Optimized 3 distributor mux.
+SYN-1016 : Merged 8 instances.
+SYN-1015 : Optimize round 2, 38 better
+SYN-3010 : Optimized 40 DFF(s)
+SYN-1014 : Optimize round 1
+SYN-1020 : Optimized 4 distributor mux.
+SYN-1019 : Optimized 1 mux instances.
+SYN-1016 : Merged 15 instances.
+SYN-1015 : Optimize round 1, 24 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 1 inv instances.
+SYN-1019 : Optimized 1 mux instances.
+SYN-1015 : Optimize round 2, 2 better
+SYN-1014 : Optimize round 3
+SYN-1015 : Optimize round 3, 0 better
+SYN-1001 : End Stage 1.6 | Optimize Iteratively; Time: 4.483076s wall, 3.937500s user + 0.515625s system = 4.453125s CPU (99.3%); Memory(MB): used = 305, reserved = 294, peak = 349;
+
+SYN-1079 : finish stage Optimize Iteratively. Total instances: 8348, Total nets: 9912.
+
+SYN-1001 : Stage 1.7 | Check Design
+SYN-1001 : End Stage 1.7 | Check Design; Time: 0.002680s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (583.1%); Memory(MB): used = 305, reserved = 294, peak = 349;
+
+SYN-1079 : finish stage Check Design. Total instances: 8348, Total nets: 9912.
+
+SYN-1001 : End Stage 1 | Optimize RTL; Time: 7.626438s wall, 6.937500s user + 0.625000s system = 7.562500s CPU (99.2%); Memory(MB): used = 305, reserved = 294, peak = 349;
+
+SYN-1079 : finish stage Optimize RTL. Total instances: 8348, Total nets: 9912.
+
+RUN-1003 : finish command "optimize_rtl" in  7.640272s wall, 6.937500s user + 0.625000s system = 7.562500s CPU (99.0%)
+
+RUN-1004 : used memory is 305 MB, reserved memory is 294 MB, peak memory is 349 MB
+RUN-1002 : start command "report_area -file rtl.area"
+RUN-1001 : standard
+***Report Model: pcb_frame_updater Device: EG4S20BG256***
+
+IO Statistics
+#IO                      1105
+  #input                 1051
+  #output                  54
+  #inout                    0
+
+Gate Statistics
+#Basic gates             6649
+  #and                   2104
+  #nand                     0
+  #or                     108
+  #nor                      0
+  #xor                      1
+  #xnor                     0
+  #buf                      0
+  #not                    170
+  #bufif1                   0
+  #MX21                  1548
+  #FADD                     0
+  #DFF                   2718
+  #LATCH                    0
+#MACRO_ADD                113
+#MACRO_EQ                  39
+#MACRO_MULT                 1
+#MACRO_MUX               1538
+#MACRO_OTHERS               1
+
+RUN-1002 : start command "read_sdc clock.sdc"
+RUN-1002 : start command "optimize_gate"
+RUN-1001 : Open license file D:/AnLu/license/Anlogic.lic
+SYN-1001 : Stage 2 | Optimize Gate
+SYN-1001 : Stage 2.1 | Map Reg
+SYN-1001 : End Stage 2.1 | Map Reg; Time: 0.172496s wall, 0.140625s user + 0.031250s system = 0.171875s CPU (99.6%); Memory(MB): used = 304, reserved = 293, peak = 349;
+
+SYN-1079 : finish stage Map Reg. Total instances: 8348, Total nets: 9912.
+
+SYN-1001 : Stage 2.2 | Map IO
+SYN-2001 : Map 1105 IOs to PADs of model 'pcb_frame_updater'
+SYN-1001 : End Stage 2.2 | Map IO; Time: 1.378477s wall, 1.296875s user + 0.078125s system = 1.375000s CPU (99.7%); Memory(MB): used = 306, reserved = 295, peak = 349;
+
+SYN-1001 : Stage 2.3 | Map Macro
+RUN-1002 : start command "update_pll_param -module pcb_frame_updater"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-6562 WARNING: The init value of "state_bank/mem(pcb_ram_2k16.v(18))" will be ignored since gate eram_init is set to off
+SYN-2571 : Map 1 macro multiplier
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1016 : Merged 11 instances.
+SYN-2571 : Optimize after map_dsp, round 1, 11 better
+SYN-2571 : Optimize after map_dsp, round 2
+SYN-2571 : Optimize after map_dsp, round 2, 0 better
+SYN-1001 : Throwback 150 control mux instances
+SYN-1001 : Generate 9 bigger adders
+SYN-1001 : Convert 1 adder
+SYN-1001 : Optimize 9 adders
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 41 instances.
+SYN-2501 : Optimize round 1, 269 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 1 instances.
+SYN-2501 : Optimize round 1, 1 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 107 macro adder(s)
+SYN-2501 : Inferred 45 ROM instances
+SYN-1019 : Optimized 636 mux instances.
+SYN-1016 : Merged 576 instances.
+SYN-1001 : End Stage 2.3 | Map Macro; Time: 13.062483s wall, 12.328125s user + 0.640625s system = 12.968750s CPU (99.3%); Memory(MB): used = 337, reserved = 327, peak = 349;
+
+SYN-1079 : finish stage Map Macro. Total instances: 12110, Total nets: 13581.
+
+SYN-1001 : Stage 2.4 | Map Gate
+SYN-3001 : Collect 2767 PI 1144 PO (2 timing unconstrained) for mapping
+SYN-2581 : Mapping with K=5, #lut = 3493 (3.73), #lev = 13 (3.53), #crit_level = 0
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 3365 (3.73), #lev = 11 (3.29), #crit_level = 0
+SYN-3001 : Logic optimization opt = 1.58 sec, map = 0.49 sec, post map opt = 1.13 sec.
+SYN-3001 : Mapper removed 5 lut buffers
+SYN-1001 : End Stage 2.4 | Map Gate; Time: 5.092088s wall, 4.765625s user + 0.218750s system = 4.984375s CPU (97.9%); Memory(MB): used = 348, reserved = 328, peak = 349;
+
+SYN-1001 : Packing model "pcb_frame_updater" ...
+SYN-4010 : Pack lib has 59 rtl pack models with 26 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 1592 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 36 carry chain into lslice
+SYN-4007 : Packing 854 adder to BLE ...
+SYN-4008 : Packed 854 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+RUN-1002 : start command "report_qor -step gate -file gate.qor"
+RUN-1002 : start command "start_timer"
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |         5193                |
+|     Setup TNS             |            0                |
+|     Num of violated S-EP  |            0                |
+|     Hold WNS              |          621                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |         1592                |
+|     #luts                 |         3463                |
+|     #lut1                 |            6                |
+|     #lut1(~A)             |            6                |
+|     #slices               |          568                |
+|     slices percentage     |        5.80%                |
+|     #RAMs                 |            1                |
+|     #DSPs                 |            1                |
+|     #f7mux                |        0.00%                |
+|     #MACROs               |           95                |
+|     #insts in MACRO       |          568                |
+-----------------------------------------------------------
+| kept_net                  |                             |
+|     #syn_keep             |            0                |
+|     #keep_hier            |            0                |
+|     #dont_touch           |            0                |
+|     #mark_debug           |            0                |
+|     #max_fanout_keep      |            0                |
+|     #async_reg            |            0                |
+-----------------------------------------------------------
+| Top 10% datanet fanout#   |        73.17                |
+| dff(single fanout)->dff   |           18                |
+| dff(single fanout)->dram  |            0                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     Total                 |            0                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+-----------------------------------------------------------
+Note*: Over-quota path shows the over-path-level-threshold path number of each clock.
+       The clock will not be shown if no path is with path level over the threshold.
+       The threshold is defined as worst path_margin / 800ps.
+Note**: Rent shows the rent exponent value of the modules whose rent value exceeds the threshold.
+        Only modules under top are reported, and the threshold is defined as 0.7.
+
+Logic Level Distribution
+------------------------------------------------------------------------------------------------------------------------------
+  Clock  |  Period            |  0     |  1    |  2    |  3     |  4    |  5    |  6    |  7    |  8    |  9   |  10  |  11
+------------------------------------------------------------------------------------------------------------------------------
+  clk    |  20.000ns (50MHz)  |  1302  |  121  |  337  |  1741  |  619  |  306  |  264  |  122  |  209  |  53  |  22  |  122
+------------------------------------------------------------------------------------------------------------------------------
+Note: The table count the worst 100000 paths, each endpoint count only one time.(5218 paths analyzed)
+
+Hierarchical Rent Exponent Report
++-------------------------------------------------------------------+
+|Inst     |Model             |Rent     |Cell     |Pin     |Term     |
++-------------------------------------------------------------------+
+|top      |pcb_frame_updater |0.17     |6730     |30390   |20       |
++-------------------------------------------------------------------+
+Note: Cell represents total number of cells inside module; Pin represents total number of pins
+      which have net connection inside module; Term represents total number of PIs and POs of module.
+      Rent represents the relationship between number of terms and number of cells in module.
+      A module with higher rent corresponds to highly connected logic and strong connectivity with others.
+Report gate stage QoR done.
+
+SYN-1001 : End Stage 2 | Optimize Gate; Time: 20.771203s wall, 19.593750s user + 0.968750s system = 20.562500s CPU (99.0%); Memory(MB): used = 348, reserved = 328, peak = 349;
+
+RUN-1003 : finish command "optimize_gate" in  20.780702s wall, 19.593750s user + 0.968750s system = 20.562500s CPU (98.9%)
+
+RUN-1004 : used memory is 348 MB, reserved memory is 328 MB, peak memory is 349 MB
+RUN-1002 : start command "update_timing"
+RUN-1002 : start command "start_timer"
+RUN-1002 : start command "report_area -io_info -file area.txt"
+RUN-1001 : standard
+***Report Model: pcb_frame_updater Device: EG4S20BG256***
+
+IO Statistics
+#IO                      1105   out of    188  587.77%
+  #input                 1051
+  #output                  54
+  #inout                    0
+
+LUT Statistics
+#Total_luts              3463
+  #lut4                  2901
+  #lut5                   464
+  #lut6                    98
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                     4697   out of  19600   23.96%
+#reg                     1592   out of  19600    8.12%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    1   out of     16    6.25%
+#dsp                        1   out of     29    3.45%
+#pad                     1105   out of    188  587.77%
+  #ireg                  1025
+  #oreg                    51
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+RUN-1002 : start command "report_timing_summary -file timing.txt"
+RUN-1002 : start command "report_qor -step gate -file resource.qor"
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |         5193                |
+|     Setup TNS             |            0                |
+|     Num of violated S-EP  |            0                |
+|     Hold WNS              |          621                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |         1592                |
+|     #luts                 |         3463                |
+|     #lut1                 |            6                |
+|     #lut1(~A)             |            6                |
+|     #slices               |          568                |
+|     slices percentage     |        5.80%                |
+|     #RAMs                 |            1                |
+|     #DSPs                 |            1                |
+|     #f7mux                |        0.00%                |
+|     #MACROs               |           95                |
+|     #insts in MACRO       |          568                |
+-----------------------------------------------------------
+| kept_net                  |                             |
+|     #syn_keep             |            0                |
+|     #keep_hier            |            0                |
+|     #dont_touch           |            0                |
+|     #mark_debug           |            0                |
+|     #max_fanout_keep      |            0                |
+|     #async_reg            |            0                |
+-----------------------------------------------------------
+| Top 10% datanet fanout#   |        73.17                |
+| dff(single fanout)->dff   |           18                |
+| dff(single fanout)->dram  |            0                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     Total                 |            0                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+-----------------------------------------------------------
+Note*: Over-quota path shows the over-path-level-threshold path number of each clock.
+       The clock will not be shown if no path is with path level over the threshold.
+       The threshold is defined as worst path_margin / 800ps.
+Note**: Rent shows the rent exponent value of the modules whose rent value exceeds the threshold.
+        Only modules under top are reported, and the threshold is defined as 0.7.
+
+Logic Level Distribution
+------------------------------------------------------------------------------------------------------------------------------
+  Clock  |  Period            |  0     |  1    |  2    |  3     |  4    |  5    |  6    |  7    |  8    |  9   |  10  |  11
+------------------------------------------------------------------------------------------------------------------------------
+  clk    |  20.000ns (50MHz)  |  1302  |  121  |  337  |  1741  |  619  |  306  |  264  |  122  |  209  |  53  |  22  |  122
+------------------------------------------------------------------------------------------------------------------------------
+Note: The table count the worst 100000 paths, each endpoint count only one time.(5218 paths analyzed)
+
+Hierarchical Rent Exponent Report
++-------------------------------------------------------------------+
+|Inst     |Model             |Rent     |Cell     |Pin     |Term     |
++-------------------------------------------------------------------+
+|top      |pcb_frame_updater |0.17     |6730     |30390   |20       |
++-------------------------------------------------------------------+
+Note: Cell represents total number of cells inside module; Pin represents total number of pins
+      which have net connection inside module; Term represents total number of PIs and POs of module.
+      Rent represents the relationship between number of terms and number of cells in module.
+      A module with higher rent corresponds to highly connected logic and strong connectivity with others.
+Report gate stage QoR done.
+

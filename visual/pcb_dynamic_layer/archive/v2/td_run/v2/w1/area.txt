@@ -1,0 +1,47 @@
+standard
+***Report Model: pcb_particle_overlay Device: EG4S20BG256***
+
+IO Statistics
+#IO                        90   out of    188   47.87%
+  #input                   54
+  #output                  36
+  #inout                    0
+
+LUT Statistics
+#Total_luts              2316
+  #lut4                  2009
+  #lut5                   279
+  #lut6                    28
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                     5816   out of  19600   29.67%
+#reg                      764   out of  19600    3.90%
+#bram                      34   out of     64   53.12%
+  #bram9k                  34
+  #fifo9k                   0
+#bram32k                    6   out of     16   37.50%
+#dsp                        1   out of     29    3.45%
+#pad                       90   out of    188   47.87%
+  #ireg                    18
+  #oreg                    36
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+
+Detailed IO Report
+
+  Name    Direction    Location    IOStandard    IOType    DriveStrength    PullType    PackReg  
+
+Report Hierarchy Area:
++------------------------------------------------------------------------------------+
+|Instance         |Module               |lut     |ripple  |seq     |bram    |dsp     |
++------------------------------------------------------------------------------------+
+|top              |pcb_particle_overlay |5451    |365     |818     |40      |1       |
+|  pool           |pcb_span_ram         |23      |0       |2       |6       |0       |
+|    bank[0]$high |pcb_ram_2k16         |1       |0       |0       |2       |0       |
+|    bank[1]$high |pcb_ram_2k16         |1       |0       |0       |2       |0       |
+|    bank[2]$high |pcb_ram_2k16         |1       |0       |0       |2       |0       |
++------------------------------------------------------------------------------------+

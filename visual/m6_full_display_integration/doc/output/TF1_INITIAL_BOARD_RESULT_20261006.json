@@ -1,0 +1,40 @@
+{
+  "date_local": "2026-10-06",
+  "bit_sha256": "9345f2b77237f0a42ac1676bae3822f739455795afae94e847c3e057c8c46203",
+  "raw_user_message": "`05468、00127、00000、00512、00112、24356、62544、65280`  ；SW0=0：**P1持续增加，P4=16639、P5=127、P6=0**，彩条正常。",
+  "status": "USER_CONFIRMED_INITIAL_TF_SECTOR_REPEAT_READ_PASS",
+  "d": {
+    "d0": 5468,
+    "d1": 127,
+    "d2": 0,
+    "d3": 512,
+    "d4": 112,
+    "d5": 24356,
+    "d6": 62544,
+    "d7": 65280
+  },
+  "p": {
+    "p1_increasing": true,
+    "p2": null,
+    "p3": null,
+    "p4": 16639,
+    "p5": 127,
+    "p6": 0
+  },
+  "color_bars_normal": true,
+  "sector_lba": 64,
+  "sector_bytes": 512,
+  "sector_crc32": "F4505F24",
+  "interpretation": "按本位冻结RTL，TF初始化、原reader CRC16、首扇区CRC32及重复读取通过；S1/M1R健康。",
+  "duration_seconds": null,
+  "ten_minute_stability_confirmed": false,
+  "reset_repeatability_confirmed": false,
+  "full_file_crc_verified": false,
+  "full_FDI_acceptance": false,
+  "original_A4_root_cause": "UNRESOLVED: BASE域/启动依赖和MISO缓冲同时区别，不能单点归因",
+  "pending": [
+    ">=10分钟真卡复读、彩条与S1/M1R健康",
+    "复位后正常读数及复读恢复"
+  ],
+  "next_stage_after_board_checks": "CONTROLLED_FULL_LABEL_LOAD_AND_FILE_SDRAM_DOUBLE_CRC"
+}

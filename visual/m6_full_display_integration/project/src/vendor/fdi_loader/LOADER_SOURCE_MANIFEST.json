@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-04",
+  "module": "fdi_label_store",
+  "source_files": [
+    {
+      "path": "project/src/rtl/fdi_label_store.v",
+      "sha256": "dcb4d4adfea54a1ec9e98fde9a0b46b09372a95ded40138ca9e0f35a09baca8e"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_crc7_calc.v",
+      "sha256": "fedb9b8e532673ba7d9a977acf0887fb80a46e6260f5baf3f77dd60d536b567c"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_fat32_file_streamer.v",
+      "sha256": "b7b33336e1305555372a1139c16341f01ffb7d72e4589f73c242ffcb590b6c11"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_fat32_volume_scanner.v",
+      "sha256": "c799967259c13fc5b4e53e9ba7a2ec77e95be0d2a1b0a479f5eebc1a184c36f8"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_mx_byte_engine.v",
+      "sha256": "6a6a418e87e4eb7baf9d4f28628332eff3667d07e24ce5ad4e4056f865bdcb89"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sd_cmd_transactor.v",
+      "sha256": "c06f7ae8f930eb7f96decb57687e1315f11b43e4c3627560741555c166b918da"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sd_init_sequence.v",
+      "sha256": "49244c13844b5788e6315ab48b76a0860ad9b8318509b956b50c068f3bb8fe73"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sd_spi_byte_engine.v",
+      "sha256": "00f7e8bb553385014f62b69061a1ca630515d53358a47ccedd36192e482a1510"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sd_spi_sector_reader.v",
+      "sha256": "d895a7efe15cb557c29e0984bfaa74f4edfdad6d638a84d3d6255b48855fbf87"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sdram_cmd_engine.v",
+      "sha256": "4a12c246f3410b9ad3ce45172a2d4b4ec5d0f103331f67311cff37e4ca31a8e3"
+    },
+    {
+      "path": "project/src/vendor/fdi_loader/fdi_sdram_refresh_timer.v",
+      "sha256": "5d9362ef1802898bca67808277eacf6c8e260a70a78f7f15e5c880231593172f"
+    }
+  ],
+  "td_sources_exclude": "project/src/vendor/fdi_loader/tests/**",
+  "lint": "Verilator 5.032 --lint-only --timing -Wall -Wno-BLKSEQ",
+  "area_timing": "NOT_MEASURED"
+}

@@ -1,0 +1,9 @@
+{
+  "generated_utc": "2026-10-04T10:50:27.052552+00:00",
+  "sources": {
+    "pcb_ram_2k16.v": "0d4f10a9f8180d90e7f746c7140bb1fcbf17396b356022662c0a4ddf998835a9",
+    "tb_w2.cpp": "4b688f284e54e50276039fc160267d9481618cabb41985e4638d577961f7e3fa",
+    "pcb_dynamic_roms_v2.vh": "53fe1e5b5a3115d4080aa95e2eb4712659818c3c6b0cbe038dfc45d5ca3b3199",
+    "pcb_frame_updater.v": "f7500ac223a06476074939d31f459473df19d63523d3dca410e205a3c92aeaa2"
+  }
+}

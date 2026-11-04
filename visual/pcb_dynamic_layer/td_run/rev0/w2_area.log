@@ -1,0 +1,389 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = D:/AnLu/bin/td_commands_prompt.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     KoneFly
+   Run Date =   Sun Oct  4 16:11:21 2026
+
+   Run on =     KONEFLY
+============================================================
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+RUN-1001 : Using default speed grade: NA
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "read_hdl -file ../rtl/pcb_frame_updater.v -top pcb_frame_updater"
+HDL-1007 : analyze verilog file ../rtl/pcb_frame_updater.v
+HDL-1007 : analyze included file ../rtl/pcb_dynamic_roms.vh in ../rtl/pcb_frame_updater.v(21)
+HDL-1007 : back to file '../rtl/pcb_frame_updater.v' in ../rtl/pcb_frame_updater.v(21)
+HDL-1007 : elaborate module pcb_frame_updater in ../rtl/pcb_frame_updater.v(2)
+HDL-1007 : extracting RAM for identifier 'previous' in ../rtl/pcb_frame_updater.v(41)
+HDL-1007 : extracting RAM for identifier 'trace_mem' in ../rtl/pcb_frame_updater.v(51)
+HDL-1007 : extracting RAM for identifier 'start_mem' in ../rtl/pcb_frame_updater.v(52)
+HDL-1007 : extracting RAM for identifier 'node_mem' in ../rtl/pcb_frame_updater.v(53)
+HDL-1007 : extracting RAM for identifier 'bar_mem' in ../rtl/pcb_frame_updater.v(54)
+HDL-1007 : extracting RAM for identifier 'particle_mem' in ../rtl/pcb_frame_updater.v(55)
+HDL-1007 : extracting RAM for identifier 'history_mem' in ../rtl/pcb_frame_updater.v(57)
+HDL-1200 : Current top model is pcb_frame_updater
+HDL-1100 : Inferred 7 RAMs.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file D:/AnLu/license/Anlogic.lic
+SYN-1001 : Stage 1 | Optimize RTL
+SYN-1001 : Stage 1.1 | Check Design Sanity
+SYN-1001 : End Stage 1.1 | Check Design Sanity; Time: 0.002605s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 340, reserved = 327, peak = 340;
+
+SYN-1079 : finish stage Check Design Sanity. Total instances: 11902, Total nets: 33368.
+
+SYN-1001 : Stage 1.2 | Initialize Design
+SYN-1001 : End Stage 1.2 | Initialize Design; Time: 0.496812s wall, 0.484375s user + 0.000000s system = 0.484375s CPU (97.5%); Memory(MB): used = 340, reserved = 327, peak = 340;
+
+SYN-1079 : finish stage Initialize Design. Total instances: 1977, Total nets: 21074.
+
+SYN-1001 : Stage 1.3 | Flatten Module
+SYN-1011 : Flatten model pcb_frame_updater
+SYN-1001 : End Stage 1.3 | Flatten Module; Time: 0.002247s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (695.5%); Memory(MB): used = 340, reserved = 327, peak = 340;
+
+SYN-1079 : finish stage Flatten Module. Total instances: 1977, Total nets: 21074.
+
+SYN-1001 : Stage 1.4 | Uniform Instance
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1001 : End Stage 1.4 | Uniform Instance; Time: 0.021638s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (72.2%); Memory(MB): used = 340, reserved = 327, peak = 340;
+
+SYN-1079 : finish stage Uniform Instance. Total instances: 1969, Total nets: 21065.
+
+SYN-1001 : Stage 1.5 | Optimize Design
+SYN-1066 : Inferred FSM for state register 'emit_dir_reg' in module 'pcb_frame_updater'
+-----------------------------------------------------------
+                    Previous Encoding     New Encoding
+-----------------------------------------------------------
+     00000000000000000000000000000000               01
+     00000000000000000000000000000001               10
+-----------------------------------------------------------
+SYN-1067 : encoded FSM with state register 'emit_dir_reg' using encoding 'one_hot' in model 'pcb_frame_updater'
+SYN-1057 : Inferred 1 FSM(s)
+SYN-1032 : 20970/35 useful/useless nets, 1965/1 useful/useless insts
+SYN-1021 : Optimized 41 onehot mux instances.
+SYN-1019 : Optimized 2 mux instances.
+SYN-1021 : Optimized 3 onehot mux instances.
+SYN-1016 : Merged 6697 instances.
+SYN-1025 : Merged 136 RAM ports.
+SYN-1026 : Infer Logic BRAM(ramread0_syn_4)
+	 port mode: single dual port
+	 port a size: 128 x 32	 write mode: NORMAL
+	 port b size: 128 x 32	 write mode: READBEFOREWRITE
+SYN-1026 : Infer Logic BRAM(ramread1_syn_4)
+	 port mode: single dual port
+	 port a size: 128 x 80	 write mode: NORMAL
+	 port b size: 128 x 80	 write mode: READBEFOREWRITE
+SYN-1026 : Infer Logic BRAM(ramread2_syn_4)
+	 port mode: single dual port
+	 port a size: 128 x 168	 write mode: NORMAL
+	 port b size: 128 x 168	 write mode: READBEFOREWRITE
+SYN-1026 : Infer Logic BRAM(ramread3_syn_4)
+	 port mode: single dual port
+	 port a size: 128 x 128	 write mode: NORMAL
+	 port b size: 128 x 128	 write mode: READBEFOREWRITE
+SYN-1025 : Merged 1 RAM ports.
+SYN-1027 : Infer Logic DRAM(ramread4_syn_36) read 128x8, write 128x8
+SYN-1026 : Infer Logic BRAM(ramread5_syn_4)
+	 port mode: single dual port
+	 port a size: 128 x 16	 write mode: NORMAL
+	 port b size: 128 x 16	 write mode: READBEFOREWRITE
+SYN-1026 : Infer Logic BRAM(ramread6_syn_4)
+	 port mode: single dual port
+	 port a size: 128 x 32	 write mode: NORMAL
+	 port b size: 128 x 32	 write mode: READBEFOREWRITE
+SYN-1023 : Infer 1 Logic DRAMs, 6 Logic BRAMs.
+SYN-1016 : Merged 1616 instances.
+SYN-1001 : Optimize 1 decoder instances
+SYN-1001 : End Stage 1.5 | Optimize Design; Time: 3.535975s wall, 3.437500s user + 0.046875s system = 3.484375s CPU (98.5%); Memory(MB): used = 331, reserved = 317, peak = 343;
+
+SYN-1079 : finish stage Optimize Design. Total instances: 13756, Total nets: 16696.
+
+SYN-1001 : Stage 1.6 | Optimize Iteratively
+SYN-1014 : Optimize round 1
+SYN-1044 : Optimized 222 inv instances.
+SYN-1017 : Remove 28 const input seq instances
+SYN-1019 : Optimized 13 mux instances.
+SYN-1020 : Optimized 404 distributor mux.
+SYN-1001 : Optimize 14 less-than instances
+SYN-1019 : Optimized 17 mux instances.
+SYN-2595 : bram inst: ramread0_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: ramread1_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: ramread2_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: ramread3_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: ramread5_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: ramread6_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-1016 : Merged 1276 instances.
+SYN-1015 : Optimize round 1, 6236 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 8 inv instances.
+SYN-1017 : Remove 1 const input seq instances
+SYN-1019 : Optimized 33 mux instances.
+SYN-1020 : Optimized 2 distributor mux.
+SYN-1016 : Merged 11 instances.
+SYN-1015 : Optimize round 2, 141 better
+SYN-5011 WARNING: Undriven pin: model "pcb_frame_updater" / inst "ramread1_syn_4" in ../rtl/pcb_frame_updater.v(64) / pin "bea[0]"
+SYN-5011 WARNING: Undriven pin: model "pcb_frame_updater" / inst "ramread1_syn_4" in ../rtl/pcb_frame_updater.v(64) / pin "beb[0]"
+SYN-5011 WARNING: Undriven pin: model "pcb_frame_updater" / inst "ramread3_syn_4" in ../rtl/pcb_frame_updater.v(62) / pin "bea[0]"
+SYN-5011 WARNING: Undriven pin: model "pcb_frame_updater" / inst "ramread3_syn_4" in ../rtl/pcb_frame_updater.v(62) / pin "beb[0]"
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-3010 : Optimized 118 DFF(s)
+SYN-1014 : Optimize round 1
+SYN-1020 : Optimized 1 distributor mux.
+SYN-1019 : Optimized 2 mux instances.
+SYN-1016 : Merged 7 instances.
+SYN-1015 : Optimize round 1, 31 better
+SYN-1014 : Optimize round 2
+SYN-1019 : Optimized 2 mux instances.
+SYN-1015 : Optimize round 2, 2 better
+SYN-1014 : Optimize round 3
+SYN-1015 : Optimize round 3, 0 better
+SYN-1001 : End Stage 1.6 | Optimize Iteratively; Time: 8.511802s wall, 8.281250s user + 0.187500s system = 8.468750s CPU (99.5%); Memory(MB): used = 316, reserved = 309, peak = 344;
+
+SYN-1079 : finish stage Optimize Iteratively. Total instances: 12246, Total nets: 15045.
+
+SYN-1001 : Stage 1.7 | Check Design
+SYN-1001 : End Stage 1.7 | Check Design; Time: 0.003252s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 316, reserved = 309, peak = 344;
+
+SYN-1079 : finish stage Check Design. Total instances: 12246, Total nets: 15045.
+
+SYN-1001 : End Stage 1 | Optimize RTL; Time: 12.575016s wall, 12.250000s user + 0.234375s system = 12.484375s CPU (99.3%); Memory(MB): used = 316, reserved = 309, peak = 344;
+
+SYN-1079 : finish stage Optimize RTL. Total instances: 12246, Total nets: 15045.
+
+RUN-1003 : finish command "optimize_rtl" in  12.584186s wall, 12.250000s user + 0.234375s system = 12.484375s CPU (99.2%)
+
+RUN-1004 : used memory is 316 MB, reserved memory is 309 MB, peak memory is 344 MB
+RUN-1002 : start command "report_area -file w2_rtl.area"
+RUN-1001 : standard
+***Report Model: pcb_frame_updater Device: EG4S20BG256***
+
+IO Statistics
+#IO                      1133
+  #input                 1051
+  #output                  82
+  #inout                    0
+
+Gate Statistics
+#Basic gates             9172
+  #and                    524
+  #nand                     0
+  #or                     380
+  #nor                      0
+  #xor                      4
+  #xnor                     4
+  #buf                      0
+  #not                    166
+  #bufif1                   0
+  #MX21                  4530
+  #FADD                     0
+  #DFF                   3564
+  #LATCH                    0
+#MACRO_ADD                189
+#MACRO_EQ                  81
+#MACRO_MULT                11
+#MACRO_MUX               2779
+#MACRO_OTHERS               5
+
+RUN-1002 : start command "optimize_gate"
+RUN-1001 : Open license file D:/AnLu/license/Anlogic.lic
+SYN-1001 : Stage 2 | Optimize Gate
+SYN-1001 : Stage 2.1 | Map Reg
+SYN-1001 : End Stage 2.1 | Map Reg; Time: 0.246864s wall, 0.234375s user + 0.015625s system = 0.250000s CPU (101.3%); Memory(MB): used = 315, reserved = 308, peak = 344;
+
+SYN-1079 : finish stage Map Reg. Total instances: 12246, Total nets: 15045.
+
+SYN-1001 : Stage 2.2 | Map IO
+SYN-2001 : Map 1133 IOs to PADs of model 'pcb_frame_updater'
+SYN-1001 : End Stage 2.2 | Map IO; Time: 1.554388s wall, 1.546875s user + 0.000000s system = 1.546875s CPU (99.5%); Memory(MB): used = 316, reserved = 309, peak = 344;
+
+SYN-1001 : Stage 2.3 | Map Macro
+RUN-1002 : start command "update_pll_param -module pcb_frame_updater"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-6562 WARNING: The init value of "ramread0_syn_4(../rtl/pcb_frame_updater.v(63))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "ramread1_syn_4(../rtl/pcb_frame_updater.v(64))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "ramread3_syn_4(../rtl/pcb_frame_updater.v(62))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "ramread6_syn_4(../rtl/pcb_frame_updater.v(63))" will be ignored since gate eram_init is set to off
+SYN-2571 : Map 11 macro multiplier
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1016 : Merged 6 instances.
+SYN-2571 : Optimize after map_dsp, round 1, 6 better
+SYN-2571 : Optimize after map_dsp, round 2
+SYN-2571 : Optimize after map_dsp, round 2, 0 better
+SYN-1001 : Throwback 177 control mux instances
+SYN-1001 : Generate 6 bigger adders
+SYN-1001 : Optimize 14 adders
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 615 instances.
+SYN-2501 : Optimize round 1, 1383 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 24 instances.
+SYN-2501 : Optimize round 1, 24 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 186 macro adder(s)
+SYN-2501 : Inferred 36 ROM instances
+SYN-1019 : Optimized 478 mux instances.
+SYN-1016 : Merged 825 instances.
+SYN-1001 : End Stage 2.3 | Map Macro; Time: 9.416866s wall, 9.203125s user + 0.156250s system = 9.359375s CPU (99.4%); Memory(MB): used = 336, reserved = 333, peak = 344;
+
+SYN-1079 : finish stage Map Macro. Total instances: 18654, Total nets: 21379.
+
+SYN-1001 : Stage 2.4 | Map Gate
+SYN-2581 : Mapping with K=5, #lut = 7421 (3.77), #lev = 13 (4.12), #crit_level = 0
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 7370 (3.84), #lev = 11 (4.20), #crit_level = 0
+SYN-3001 : Logic optimization opt = 1.72 sec, map = 1.15 sec, post map opt = 4.02 sec.
+SYN-1001 : End Stage 2.4 | Map Gate; Time: 7.833461s wall, 7.750000s user + 0.031250s system = 7.781250s CPU (99.3%); Memory(MB): used = 365, reserved = 346, peak = 367;
+
+SYN-1001 : Packing model "pcb_frame_updater" ...
+SYN-4010 : Pack lib has 59 rtl pack models with 26 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 2385 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 88 carry chain into lslice
+SYN-4007 : Packing 1379 adder to BLE ...
+SYN-4008 : Packed 1379 adder and 6 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4013 : Packed 16 DRAM and 0 SEQ.
+RUN-1002 : start command "report_qor -step gate -file gate.qor"
+RUN-1002 : start command "start_timer"
+RUN-1003 : finish command "start_timer" in  2.406372s wall, 2.375000s user + 0.015625s system = 2.390625s CPU (99.3%)
+
+RUN-1004 : used memory is 365 MB, reserved memory is 346 MB, peak memory is 367 MB
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |       -28425                |
+|     Setup TNS             |     -1976862                |
+|     Num of violated S-EP  |          310                |
+|     Hold WNS              |          471                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |         2379                |
+|     #luts                 |         7440                |
+|     #lut1                 |           12                |
+|     #lut1(~A)             |           12                |
+|     #slices               |         1139                |
+|     slices percentage     |       11.62%                |
+|     #RAMs                 |           26                |
+|     #DSPs                 |            9                |
+|     #f7mux                |        0.00%                |
+|     #MACROs               |          191                |
+|     #insts in MACRO       |         1139                |
+-----------------------------------------------------------
+| kept_net                  |                             |
+|     #syn_keep             |            0                |
+|     #keep_hier            |            0                |
+|     #dont_touch           |            0                |
+|     #mark_debug           |            0                |
+|     #max_fanout_keep      |            0                |
+|     #async_reg            |            0                |
+-----------------------------------------------------------
+| Top 10% datanet fanout#   |        86.10                |
+| dff(single fanout)->dff   |           30                |
+| dff(single fanout)->dram  |            0                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     DeriveClock           |           17                |
+|     Total                 |           17                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+-----------------------------------------------------------
+Note*: Over-quota path shows the over-path-level-threshold path number of each clock.
+       The clock will not be shown if no path is with path level over the threshold.
+       The threshold is defined as worst path_margin / 800ps.
+Note**: Rent shows the rent exponent value of the modules whose rent value exceeds the threshold.
+        Only modules under top are reported, and the threshold is defined as 0.7.
+
+Over-quota Path Details
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     Clock     |  Index  |  Budget(Period)  |  Level(Quota)  |                                                                                                                              Cell Type List                                                                                                                               |  Reason  |  Slack   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  DeriveClock  |    1    |   19854(20000)   |     46(25)     |  SEQ,LUT6,LUT3,LUT4,LUT4,LUT3,LUT5,LUT5,LUT5,LUT4,ADDER,ADDER,ADDER,ADDER,LUT4,LUT4,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,LUT5,ADDER,ADDER,MULT18,ADDER,ADDER,ADDER,ADDER,LUT5,LUT4,SEQ  |  normal  |  -27121  
+               |    2    |   19854(20000)   |     45(25)     |     SEQ,LUT6,LUT3,LUT4,LUT4,LUT3,LUT5,LUT5,LUT5,LUT4,ADDER,ADDER,ADDER,ADDER,LUT4,LUT4,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,LUT5,ADDER,ADDER,MULT18,ADDER,ADDER,ADDER,LUT2,LUT5,SEQ     |  normal  |  -26978  
+               |    3    |   19854(20000)   |     45(25)     |     SEQ,LUT2,LUT4,LUT4,LUT5,LUT6,LUT3,LUT4,LUT4,LUT3,ADDER,ADDER,ADDER,ADDER,LUT4,LUT4,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,LUT5,ADDER,MULT18,ADDER,ADDER,ADDER,ADDER,LUT4,LUT3,SEQ     |  normal  |  -26922  
+               |    4    |   19854(20000)   |     45(25)     |     SEQ,LUT6,LUT3,LUT4,LUT4,LUT3,LUT5,LUT5,LUT5,LUT4,ADDER,ADDER,ADDER,ADDER,LUT4,LUT4,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,LUT5,ADDER,MULT18,ADDER,ADDER,ADDER,ADDER,LUT2,LUT5,SEQ     |  normal  |  -26801  
+               |    5    |   19854(20000)   |     45(25)     |     SEQ,LUT6,LUT3,LUT4,LUT4,LUT3,LUT5,LUT5,LUT5,LUT4,ADDER,ADDER,ADDER,ADDER,LUT4,LUT4,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,LUT5,ADDER,ADDER,MULT18,ADDER,ADDER,ADDER,LUT5,LUT4,SEQ     |  normal  |  -26659  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Note: Table only show top 5 paths for each clock group in default
+
+Logic Level Distribution
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Clock        |  Period            |  0    |  1    |  2    |  3     |  4    |  5    |  6   |  7    |  8    |  9    |  10   |  11   |  12  |  13  |  14  |  15  |  16  |  17  |  18  |  19  |  20  |  21  |  23  |  24   |  25  |  >=30
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  DeriveClock  |  20.000ns (50MHz)  |  443  |  400  |  143  |  1948  |  790  |  366  |  85  |  120  |  611  |  251  |  275  |  119  |  4   |  32  |  12  |  27  |  5   |  74  |  6   |  31  |  12  |  8   |  1   |  145  |  1   |  272
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Note: The table count the worst 100000 paths, each endpoint count only one time.(6181 paths analyzed)
+
+Hierarchical Rent Exponent Report
++-------------------------------------------------------------------+
+|Inst     |Model             |Rent     |Cell     |Pin     |Term     |
++-------------------------------------------------------------------+
+|top      |pcb_frame_updater |0.17     |12126    |58981   |23       |
++-------------------------------------------------------------------+
+Note: Cell represents total number of cells inside module; Pin represents total number of pins
+      which have net connection inside module; Term represents total number of PIs and POs of module.
+      Rent represents the relationship between number of terms and number of cells in module.
+      A module with higher rent corresponds to highly connected logic and strong connectivity with others.
+Report gate stage QoR done.
+
+RUN-1003 : finish command "report_qor -step gate -file gate.qor" in  3.666557s wall, 3.625000s user + 0.015625s system = 3.640625s CPU (99.3%)
+
+RUN-1004 : used memory is 367 MB, reserved memory is 347 MB, peak memory is 367 MB
+SYN-1001 : End Stage 2 | Optimize Gate; Time: 22.897358s wall, 22.484375s user + 0.265625s system = 22.750000s CPU (99.4%); Memory(MB): used = 367, reserved = 347, peak = 367;
+
+RUN-1003 : finish command "optimize_gate" in  22.912436s wall, 22.500000s user + 0.265625s system = 22.765625s CPU (99.4%)
+
+RUN-1004 : used memory is 367 MB, reserved memory is 347 MB, peak memory is 367 MB
+RUN-1002 : start command "report_area -file w2_gate.area"
+RUN-1001 : standard
+***Report Model: pcb_frame_updater Device: EG4S20BG256***
+
+IO Statistics
+#IO                      1133   out of    188  602.66%
+  #input                 1051
+  #output                  82
+  #inout                    0
+
+LUT Statistics
+#Total_luts              7440
+  #lut4                  6085
+  #lut5                  1285
+  #lut6                    70
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                     9788   out of  19600   49.94%
+#reg                     2385   out of  19600   12.17%
+#bram                      26   out of     64   40.62%
+  #bram9k                  26
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                        9   out of     29   31.03%
+#pad                     1133   out of    188  602.66%
+  #ireg                  1025
+  #oreg                    80
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+RUN-1003 : finish command "report_area -file w2_gate.area" in  2.624424s wall, 2.593750s user + 0.015625s system = 2.609375s CPU (99.4%)
+
+RUN-1004 : used memory is 367 MB, reserved memory is 347 MB, peak memory is 367 MB

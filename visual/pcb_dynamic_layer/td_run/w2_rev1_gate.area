@@ -1,0 +1,38 @@
+standard
+***Report Model: pcb_frame_updater Device: EG4S20BG256***
+
+IO Statistics
+#IO                      1133   out of    188  602.66%
+  #input                 1051
+  #output                  82
+  #inout                    0
+
+LUT Statistics
+#Total_luts              7217
+  #lut4                  6106
+  #lut5                  1041
+  #lut6                    70
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                     9331   out of  19600   47.61%
+#reg                     2263   out of  19600   11.55%
+#bram                      26   out of     64   40.62%
+  #bram9k                  26
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                        1   out of     29    3.45%
+#pad                     1133   out of    188  602.66%
+  #ireg                  1025
+  #oreg                    80
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+Report Hierarchy Area:
++-------------------------------------------------------------------------+
+|Instance |Module            |lut     |ripple  |seq     |bram    |dsp     |
++-------------------------------------------------------------------------+
+|top      |pcb_frame_updater |8357    |974     |3368    |26      |1       |
++-------------------------------------------------------------------------+

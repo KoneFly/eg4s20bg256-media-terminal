@@ -1,0 +1,23 @@
+{
+  "status": "USER_CONFIRMED_TEN_MINUTE_STABILITY_AND_RESET_REPEATABILITY",
+  "prior_index_sha256": "7e6bcf75433224bba83ca7f1acd5a0210c814c17351df6dfffb3110e5fc40ea2",
+  "verified_prior_entries": 284,
+  "bit_sha256": "685bc8d3f94658f30817e5696930cf9bbfd69506cbdcdbaaea4719f44d4f95ce",
+  "files": [
+    {
+      "path": "doc/output/M1R_STABILITY_BOARD_RESULT_20261006.json",
+      "bytes": 959,
+      "sha256": "c626c2b820ffa3524bf5cf8387b0541b0f6bbc8672aaa9c52b1d642cc1a32770"
+    },
+    {
+      "path": "scripts/seal_m1r_stability_result.py",
+      "bytes": 2362,
+      "sha256": "d974727e6e05efddefa705887a76ae8f095da4020b9cb137f8868f8ddf0b18b3"
+    },
+    {
+      "path": "doc/output/M1R_INITIAL_BOARD_RESULT_20261006.json",
+      "bytes": 1033,
+      "sha256": "adba1b2745f482aebb47528778d63fe3038980aded981f1de27d77164a90047c"
+    }
+  ]
+}

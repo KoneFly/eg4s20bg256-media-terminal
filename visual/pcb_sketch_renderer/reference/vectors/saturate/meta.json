@@ -1,0 +1,13 @@
+{
+ "name": "saturate",
+ "desc": "饱和：全段能量 255、柱顶、节点/片内全亮（边界）",
+ "ov_on": 0,
+ "core_q8": 256,
+ "gain_q8": 255,
+ "pixels": 307200,
+ "non_zero_pixels": 83226,
+ "label": "../label.bin",
+ "state_trace": "state_trace.hex（128 行×32hex，行为走线号 0..127，字段序 = 4×32bit 小端段）",
+ "state_misc": "state_misc.hex（256 行×8hex，字地址 0..255）",
+ "expect": "expect.bin（640×480×16bit LE，行主序）"
+}
