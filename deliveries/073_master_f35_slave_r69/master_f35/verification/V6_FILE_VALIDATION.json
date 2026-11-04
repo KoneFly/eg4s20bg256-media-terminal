@@ -1,0 +1,82 @@
+{
+  "scope": "file format, exact length and audio count bounds only; not board acceptance",
+  "results": [
+    {
+      "file": "board_media\\cockpit_v6\\VID00000.V29",
+      "passed": true,
+      "version": 2,
+      "pixel_format": "RGB332",
+      "frames": 600,
+      "fps": 30,
+      "bytes": 186470912,
+      "audio_records": 600,
+      "audio_samples": 961538
+    },
+    {
+      "file": "board_media\\cockpit_v6\\VID00001.V29",
+      "passed": true,
+      "version": 2,
+      "pixel_format": "RGB332",
+      "frames": 600,
+      "fps": 30,
+      "bytes": 186470912,
+      "audio_records": 600,
+      "audio_samples": 961538
+    },
+    {
+      "file": "board_media\\cockpit_v6\\VID00002.V29",
+      "passed": true,
+      "version": 2,
+      "pixel_format": "RGB332",
+      "frames": 600,
+      "fps": 30,
+      "bytes": 186470912,
+      "audio_records": 600,
+      "audio_samples": 961538
+    },
+    {
+      "file": "board_media\\cockpit_v6\\full_rgb565\\VID00000.V29",
+      "passed": true,
+      "version": 2,
+      "pixel_format": "RGB565",
+      "frames": 600,
+      "fps": 30,
+      "bytes": 370790912,
+      "audio_records": 600,
+      "audio_samples": 961538
+    },
+    {
+      "file": "board_media\\cockpit_v6\\full_rgb565\\VID00001.V29",
+      "passed": true,
+      "version": 2,
+      "pixel_format": "RGB565",
+      "frames": 600,
+      "fps": 30,
+      "bytes": 370790912,
+      "audio_records": 600,
+      "audio_samples": 961538
+    },
+    {
+      "file": "board_media\\cockpit_v6\\full_rgb565\\VID00002.V29",
+      "passed": true,
+      "version": 2,
+      "pixel_format": "RGB565",
+      "frames": 600,
+      "fps": 30,
+      "bytes": 370790912,
+      "audio_records": 600,
+      "audio_samples": 961538
+    },
+    {
+      "file": "board_media\\cockpit_v6\\boot_assets\\BOOT.V29",
+      "passed": true,
+      "version": 2,
+      "pixel_format": "RGB565",
+      "frames": 360,
+      "fps": 30,
+      "bytes": 222474752,
+      "audio_records": 360,
+      "audio_samples": 576923
+    }
+  ]
+}

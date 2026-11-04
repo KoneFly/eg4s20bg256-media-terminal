@@ -1,0 +1,8 @@
+STEP C1 paths=1 epoch=101 reads=128
+STEP C1 paths=2 epoch=102 reads=384
+STEP C1 paths=3 epoch=103 reads=768
+RESULT PASS optional LED observation equivalence reads=768 tx_edges=31836 cycles=1463070
+- work/f35_keymap_r04/tb/tb_link_diag_equiv.sv:59: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 29ms; walltime 1.351 s; speed 21.685 ms/s
+- Verilator: cpu 1.349 s on 1 threads; alloced 121 MB

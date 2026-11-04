@@ -1,0 +1,6 @@
+#include "Vcompare_r07_tb.h"
+#include "verilated.h"
+#include <cstdint>
+#include <iostream>
+#include <stdexcept>
+int main(int argc,char**argv){Verilated::commandArgs(argc,argv);try{Vcompare_r07_tb d;uint64_t count=0,r=9371;auto check=[&](uint64_t a,uint64_t b){d.a=a&((uint64_t(1)<<48)-1);d.b=b&((uint64_t(1)<<48)-1);d.eval();unsigned f=0;int widths[]={8,16,32,48};for(unsigned i=0;i<4;i++){uint64_t m=(uint64_t(1)<<widths[i])-1;f|=(__uint128_t(a&m)*256>__uint128_t(b&m)*322)<<i;}if(d.old_flags!=f||d.new_flags!=f){std::cerr<<"a="<<a<<" b="<<b<<" old="<<unsigned(d.old_flags)<<" new="<<unsigned(d.new_flags)<<" expected="<<f<<" count="<<count<<std::endl;throw std::runtime_error("COMPARE_INDEPENDENT_INTEGER_MISMATCH");}count++;};for(unsigned a=0;a<256;a++)for(unsigned b=0;b<256;b++)check(a,b);for(unsigned n=0;n<1000000;n++){r^=r<<13;r^=r>>7;r^=r<<17;uint64_t b=r&((uint64_t(1)<<48)-1),a=r>>16;check(a,b);uint64_t t=uint64_t((__uint128_t(b)*161)>>7);check(t,b);check(t+1,b);if(t)check(t-1,b);}std::cout<<"PASS_R08_COMPARE_EXACT pairs="<<count<<" widths=8,16,32,48 exhaustive8=65536 threshold_edges=1 old_RTL_and_uint128=1"<<std::endl;return 0;}catch(const std::exception&e){std::cerr<<e.what()<<std::endl;return 1;}}

@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-03",
+  "scope": "两个历史封存目录中已不存在的 TD 中间产物登记",
+  "finding": "old_seal 逐项核对时发现 13 条记录对应文件已不存在；本地无同 SHA 副本",
+  "consequence": "其余 216-9 与 55-4 条记录仍逐字节核对；本登记只用于说明缺失项，不改变任何历史 SHA 或封存结论",
+  "entries": {
+    "ANC_SOURCE_RECHECK_R64_20261101:work/anc_source_recheck_r64_20261101/research/td_run/combined.before_fix.timing": {
+      "sealed_path": "work/anc_source_recheck_r64_20261101/research/td_run/combined.before_fix.timing",
+      "expected_sha256": "c2d97e0b49e60193ba11a837653e7a242ea40d7bba60d3c7d99b4d627c731f9f",
+      "reason": "TD 中间产物(.db/.timing/.logw)，2026-11-03 磁盘空间回收后不存在，内容无法恢复；封存清单本身未修改"
+    },
+    "ANC_SOURCE_RECHECK_R64_20261101:work/anc_source_recheck_r64_20261101/research/td_run/combined.place.db": {
+      "sealed_path": "work/anc_source_recheck_r64_20261101/research/td_run/combined.place.db",
+      "expected_sha256": "4ddda408ce0f12a7bf96caa12dcf3824eeb36712b09df3869bca0f392b730412",
+      "reason": "TD 中间产物(.db/.timing/.logw)，2026-11-03 磁盘空间回收后不存在，内容无法恢复；封存清单本身未修改"
+    },
+    "ANC_SOURCE_RECHECK_R64_20261101:work/anc_source_recheck_r64_20261101/research/td_run/gate.db": {
+      "sealed_path": "work/anc_source_recheck_r64_20261101/research/td_run/gate.db",
+      "expected_sha256": "a1cfbd221071ecab548df8db241adf2f0a8c67d1d838910dd37730a7b49e3526",
+      "reason": "TD 中间产物(.db/.timing/.logw)，2026-11-03 磁盘空间回收后不存在，内容无法恢复；封存清单本身未修改"
+    },
+    "ANC_SOURCE_RECHECK_R64_20261101:work/anc_source_recheck_r64_20261101/research/td_run/td_20261101_221131.logw": {
+      "sealed_path": "work/anc_source_recheck_r64_20261101/research/td_run/td_20261101_221131.logw",
+      "expected_sha256": "8d28eaf292ded674d2d8f7f04d7e30757ee6c96e242f1f88aa664199b3c58e75",
+      "reason": "TD 中间产物(.db/.timing/.logw)，2026-11-03 磁盘空间回收后不存在，内容无法恢复；封存清单本身未修改"
+    },
+    "ANC_SOURCE_RECHECK_R64_20261101:work/anc_source_recheck_r64_20261101/research/td_run/td_20261101_221422.logw": {
+      "sealed_path": "work/anc_source_recheck_r64_20261101/research/td_run/td_20261101_221422.logw",
+      "expected_sha256": "911204a853fa79739fdc610e14328e87fb24be254c92e0c554c23c8f0b8419a6",
+      "reason": "TD 中间产物(.db/.timing/.logw)，2026-11-03 磁盘空间回收后不存在，内容无法恢复；封存清单本身未修改"
+    },
+    "ANC_SOURCE_RECHECK_R64_20261101:work/anc_source_recheck_r64_20261101/research/td_run/td_20261101_221517.logw": {
+      "sealed_path": "work/anc_source_recheck_r64_20261101/research/td_run/td_20261101_221517.logw",
+      "expected_sha256": "bcf1e86931aa0fb96d90b54e046d64b6720e705278a93d38f9fc58537986a5c8",
+      "reason": "TD 中间产物(.db/.timing/.logw)，2026-11-03 磁盘空间回收后不存在，内容无法恢复；封存清单本身未修改"
+    },
+    "ANC_SOURCE_RECHECK_R64_20261101:work/anc_source_recheck_r64_20261101/research/td_run/verified.db": {
+      "sealed_path": "work/anc_source_recheck_r64_20261101/research/td_run/verified.db",
+      "expected_sha256": "e02190f235e616563be19c22fffc16c325c3cee3de31446dbbdbaefb3cdda63d",
+      "reason": "TD 中间产物(.db/.timing/.logw)，2026-11-03 磁盘空间回收后不存在，内容无法恢复；封存清单本身未修改"
+    },
+    "ANC_SOURCE_RECHECK_R64_20261101:work/anc_source_recheck_r64_20261101/research/td_run/verified.timing": {
+      "sealed_path": "work/anc_source_recheck_r64_20261101/research/td_run/verified.timing",
+      "expected_sha256": "debae65edf5965ee4176c3901c3b86a886f05624253f2454f66c0871fe7588e1",
+      "reason": "TD 中间产物(.db/.timing/.logw)，2026-11-03 磁盘空间回收后不存在，内容无法恢复；封存清单本身未修改"
+    },
+    "ANC_SOURCE_RECHECK_R64_20261101:work/anc_source_recheck_r64_20261101/research/td_run/bitgen_check.timing": {
+      "sealed_path": "work/anc_source_recheck_r64_20261101/research/td_run/bitgen_check.timing",
+      "expected_sha256": "995caa5f8efaba144d44c5b194c443cd474c3a6e126aaf9253fb1f3f8371551f",
+      "reason": "TD 中间产物(.db/.timing/.logw)，2026-11-03 磁盘空间回收后不存在，内容无法恢复；封存清单本身未修改"
+    },
+    "slave_reference_status_prebit_r54:td_run/bitgen_check.timing": {
+      "sealed_path": "td_run/bitgen_check.timing",
+      "expected_sha256": "0efd389d43c07af15acb112812c6197c95af7c3b617ee13c905d6c6015456a3f",
+      "reason": "TD 中间产物(.db/.timing/.logw)，2026-11-03 磁盘空间回收后不存在，内容无法恢复；封存清单本身未修改"
+    },
+    "slave_reference_status_prebit_r54:td_run/td_20261031_010342.logw": {
+      "sealed_path": "td_run/td_20261031_010342.logw",
+      "expected_sha256": "a230185bd853083d0f32d643e97ef2c11ea0cd131a3d183ea73e3f29536ea686",
+      "reason": "TD 中间产物(.db/.timing/.logw)，2026-11-03 磁盘空间回收后不存在，内容无法恢复；封存清单本身未修改"
+    },
+    "slave_reference_status_prebit_r54:td_run/verified.db": {
+      "sealed_path": "td_run/verified.db",
+      "expected_sha256": "1e8c0dec59d15699a9cd56908b4d959dc193f5ea72d9a6442ae28b7f15835a70",
+      "reason": "TD 中间产物(.db/.timing/.logw)，2026-11-03 磁盘空间回收后不存在，内容无法恢复；封存清单本身未修改"
+    },
+    "slave_reference_status_prebit_r54:td_run/verified.timing": {
+      "sealed_path": "td_run/verified.timing",
+      "expected_sha256": "bea04f1ccc8dbd3c5c664b042daaed582a537382ed8841d71f19cae57c0a6e8e",
+      "reason": "TD 中间产物(.db/.timing/.logw)，2026-11-03 磁盘空间回收后不存在，内容无法恢复；封存清单本身未修改"
+    }
+  }
+}

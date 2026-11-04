@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "status": "PASS",
+  "reasons": [],
+  "full_reset_diagnostics": [],
+  "scope": "KEY1 and authorized KEY3 full restart destroy old media/memory; normal switches receive no exception",
+  "execution_snapshot": "topic1_media_terminal\\work\\f35_keymap_r01",
+  "reuse_scope": "ADC and restart guard code identical; R04 full system and hot reload separately rerun"
+}

@@ -1,0 +1,96 @@
+standard
+***Report Model: slave_demo_physical_wrapper Device: EG4S20BG256***
+
+IO Statistics
+#IO                        41   out of    188   21.81%
+  #input                   14
+  #output                  27
+  #inout                    0
+
+LUT Statistics
+#Total_luts             13126
+  #lut4                 10924
+  #lut5                  2085
+  #lut6                   117
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#mslice                  1343   out of   4900   27.41%
+  #mreg                   339
+  #mle                   2686
+#lslice                   686   out of   4900   14.00%
+  #lreg                     0
+  #lle                   1372
+#plb                        0   out of   2450    0.00%
+#lut                    17301   out of  19600   88.27%
+#reg                     9827   out of  19600   50.14%
+#bram                      25   out of     64   39.06%
+  #bram9k                  25
+  #fifo9k                   0
+#bram32k                   12   out of     16   75.00%
+#dsp                       13   out of     29   44.83%
+#pad                       41   out of    188   21.81%
+#pll                        0   out of      4    0.00%
+#gclk                       1   out of     16    6.25%
+
+Report Hierarchy Area:
++----------------------------------------------------------------------------------------------------------+
+|Instance                   |Module                           |lut     |ripple  |seq     |bram    |dsp     |
++----------------------------------------------------------------------------------------------------------+
+|top                        |slave_demo_physical_wrapper      |15272   |2029    |9827    |37      |13      |
+|  actuator                 |anc_native_actuator_r61          |516     |43      |355     |0       |0       |
+|  core                     |anc_fxn_core_r61                 |5343    |532     |2963    |10      |7       |
+|    actuator_history       |anc_work_ram_r61                 |69      |5       |11      |2       |0       |
+|    arithmetic             |anc_core_arithmetic_r61          |1285    |88      |689     |0       |4       |
+|      common_multiplier    |anc_mul32x18_r61                 |286     |10      |129     |0       |2       |
+|        m_high             |anc_mul18_pipe_r61               |32      |0       |0       |0       |1       |
+|        m_low              |anc_mul18_pipe_r61               |47      |0       |8       |0       |1       |
+|      sos                  |anc_biquad_shared_r61            |616     |23      |335     |0       |0       |
+|      weights              |anc_weight_update_r61            |244     |55      |109     |0       |2       |
+|        decay_multiplier   |anc_decay_dsp65                  |14      |14      |0       |0       |2       |
+|    dotter                 |anc_dot18_engine_r61             |199     |17      |117     |0       |1       |
+|      m                    |anc_mul18_pipe_r61               |57      |0       |2       |0       |1       |
+|    gradient_history       |anc_work_ram_r61                 |47      |0       |2       |1       |0       |
+|    guard                  |anc_stability_guard_r61          |1042    |150     |361     |0       |0       |
+|      ratio_check          |anc_rise_compare_r62             |17      |17      |0       |0       |0       |
+|      target_check         |anc_rise_compare_r62             |25      |25      |0       |0       |0       |
+|      verified_error_check |anc_rise_compare_r62             |25      |25      |0       |0       |0       |
+|      verified_ratio_check |anc_rise_compare_r62             |25      |25      |0       |0       |0       |
+|    model_coefficients     |anc_sf_rom_r65                   |1       |0       |0       |2       |0       |
+|    monitor                |anc_ratio_monitor_r65            |157     |0       |230     |0       |0       |
+|    numerator              |anc_gain_numerator_r62           |39      |20      |0       |0       |2       |
+|      exact_numerator      |anc_numerator_dsp65              |28      |9       |0       |0       |2       |
+|    reference_history      |anc_work_ram_r61                 |14      |0       |2       |1       |0       |
+|    shared_divider         |anc_divider_compact_r65          |339     |21      |186     |0       |0       |
+|    sos_states             |anc_work_ram_r61                 |58      |4       |9       |2       |0       |
+|    weights                |anc_work_ram_r61                 |68      |0       |2       |2       |0       |
+|  diagnostic_uart          |anc_uart_snapshot_r68            |407     |30      |221     |0       |0       |
+|    transmitter            |r58_uart_tx                      |35      |4       |20      |0       |0       |
+|  first_fault_recorder     |anc_first_fault_snapshot_r68     |131     |0       |111     |0       |0       |
+|  frontend                 |anc_ram_decimator_r61            |354     |91      |161     |2       |1       |
+|    engine                 |anc_dot18_engine_r61             |143     |16      |104     |0       |1       |
+|      m                    |anc_mul18_pipe_r61               |18      |0       |2       |0       |1       |
+|    history                |anc_work_ram_r61                 |23      |4       |9       |2       |0       |
+|  u_anc                    |anc_weak_path_frequency          |1608    |258     |656     |0       |2       |
+|  u_audio_output           |audio_i2s_stereo_tx_r12          |126     |4       |58      |0       |0       |
+|  u_demo                   |slave_audio_demo_top             |5058    |756     |4419    |19      |3       |
+|    u_fft_scheduler        |fft_three_path_scheduler_r06     |3144    |548     |2135    |16      |1       |
+|      u_fft                |pcf_fft_frontend                 |2249    |311     |1621    |10      |1       |
+|        u_frame            |pcf_fft_frame_ram                |132     |0       |0       |4       |0       |
+|    u_mic_capture          |i2s_mic4_rx_50m                  |50      |4       |148     |0       |0       |
+|    u_mic_mean             |mic_three_mean_t16               |20      |20      |2       |0       |1       |
+|    u_pcm_rx               |link062_pcm_rx                   |805     |94      |683     |2       |0       |
+|      u_transport          |interboard_rx                    |329     |43      |374     |0       |0       |
+|    u_spectrum_tx          |multi_spectrum_group_tx_r03_bram |960     |74      |1171    |1       |1       |
+|      u_packet             |link062_packet_tx                |587     |24      |543     |0       |0       |
+|        u_transport        |interboard_tx                    |270     |10      |268     |0       |0       |
+|  u_frequency_display      |seg6_hz_display_r66              |138     |9       |95      |0       |0       |
+|  u_frequency_measure      |mic2_frequency_display_r66       |947     |160     |391     |2       |0       |
+|  u_key2_debounce          |key_press_debounce               |39      |11      |23      |0       |0       |
+|  u_key3_debounce          |key_press_debounce               |39      |11      |23      |0       |0       |
+|  u_key4_debounce          |key_press_debounce               |39      |11      |23      |0       |0       |
+|  u_panel                  |slave_panel_ctrl                 |154     |25      |88      |0       |0       |
+|  u_run_guard              |anc_run_guard_r56                |122     |31      |69      |0       |0       |
+|  u_tf_player              |tf_pcm_player                    |132     |26      |79      |4       |0       |
++----------------------------------------------------------------------------------------------------------+

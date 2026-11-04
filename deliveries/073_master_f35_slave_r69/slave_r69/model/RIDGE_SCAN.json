@@ -1,0 +1,126 @@
+{
+  "selection": "strongest regularizer satisfying original<0.20 plus normal-frequency holdout and independent half-amplitude checks; no quality gate relaxation",
+  "channels": [
+    [
+      {
+        "channel": 0,
+        "ridge_trace_factor": 0.001,
+        "relative_complex_RMS": {
+          "normal_fit": 0.2195641986252856,
+          "half_fit": 0.23644061032278996,
+          "normal_20pct_heldout": 0.21905192780188298,
+          "normal_model_on_independent_half": 0.29590749777585845,
+          "half_model_on_normal": 0.2740041504615823
+        },
+        "qualified_normal_bins": 512,
+        "qualified_half_bins": 410,
+        "heldout_bins": 103,
+        "normal_effective_q15_max_abs": 557,
+        "signed16_ok": true,
+        "passes_unchanged_0p20_and_independent_checks": false
+      },
+      {
+        "channel": 0,
+        "ridge_trace_factor": 0.0005,
+        "relative_complex_RMS": {
+          "normal_fit": 0.21856305863142314,
+          "half_fit": 0.2356724792430615,
+          "normal_20pct_heldout": 0.21800274317246157,
+          "normal_model_on_independent_half": 0.2953236034105804,
+          "half_model_on_normal": 0.27324299979196726
+        },
+        "qualified_normal_bins": 512,
+        "qualified_half_bins": 410,
+        "heldout_bins": 103,
+        "normal_effective_q15_max_abs": 803,
+        "signed16_ok": true,
+        "passes_unchanged_0p20_and_independent_checks": false
+      },
+      {
+        "channel": 0,
+        "ridge_trace_factor": 0.0003,
+        "relative_complex_RMS": {
+          "normal_fit": 0.21792117601357175,
+          "half_fit": 0.2351090000139502,
+          "normal_20pct_heldout": 0.2172916487272075,
+          "normal_model_on_independent_half": 0.2949512768582853,
+          "half_model_on_normal": 0.2726615548630839
+        },
+        "qualified_normal_bins": 512,
+        "qualified_half_bins": 410,
+        "heldout_bins": 103,
+        "normal_effective_q15_max_abs": 1031,
+        "signed16_ok": true,
+        "passes_unchanged_0p20_and_independent_checks": false
+      },
+      {
+        "channel": 0,
+        "ridge_trace_factor": 0.0001,
+        "relative_complex_RMS": {
+          "normal_fit": 0.21680862343038285,
+          "half_fit": 0.23391093715321204,
+          "normal_20pct_heldout": 0.21595508791935883,
+          "normal_model_on_independent_half": 0.2942482171875913,
+          "half_model_on_normal": 0.2715608315100962
+        },
+        "qualified_normal_bins": 512,
+        "qualified_half_bins": 410,
+        "heldout_bins": 103,
+        "normal_effective_q15_max_abs": 1701,
+        "signed16_ok": true,
+        "passes_unchanged_0p20_and_independent_checks": false
+      },
+      {
+        "channel": 0,
+        "ridge_trace_factor": 5e-05,
+        "relative_complex_RMS": {
+          "normal_fit": 0.21617556475411182,
+          "half_fit": 0.23312550344519808,
+          "normal_20pct_heldout": 0.21512362865084325,
+          "normal_model_on_independent_half": 0.29378712818206965,
+          "half_model_on_normal": 0.27098918240765135
+        },
+        "qualified_normal_bins": 512,
+        "qualified_half_bins": 410,
+        "heldout_bins": 103,
+        "normal_effective_q15_max_abs": 2292,
+        "signed16_ok": true,
+        "passes_unchanged_0p20_and_independent_checks": false
+      },
+      {
+        "channel": 0,
+        "ridge_trace_factor": 3e-05,
+        "relative_complex_RMS": {
+          "normal_fit": 0.21572775116250625,
+          "half_fit": 0.23254924664514043,
+          "normal_20pct_heldout": 0.21450463384785134,
+          "normal_model_on_independent_half": 0.29344043261391806,
+          "half_model_on_normal": 0.270631898717177
+        },
+        "qualified_normal_bins": 512,
+        "qualified_half_bins": 410,
+        "heldout_bins": 103,
+        "normal_effective_q15_max_abs": 2820,
+        "signed16_ok": true,
+        "passes_unchanged_0p20_and_independent_checks": false
+      },
+      {
+        "channel": 0,
+        "ridge_trace_factor": 1e-05,
+        "relative_complex_RMS": {
+          "normal_fit": 0.21497043007175043,
+          "half_fit": 0.2315687021180628,
+          "normal_20pct_heldout": 0.21339181371900282,
+          "normal_model_on_independent_half": 0.29282981745771713,
+          "half_model_on_normal": 0.2701552246968095
+        },
+        "qualified_normal_bins": 512,
+        "qualified_half_bins": 410,
+        "heldout_bins": 103,
+        "normal_effective_q15_max_abs": 4147,
+        "signed16_ok": true,
+        "passes_unchanged_0p20_and_independent_checks": false
+      }
+    ]
+  ]
+}

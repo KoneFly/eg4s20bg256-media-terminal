@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "status": "PASS_WITH_FULL_RESET_DIAGNOSTICS",
+  "reasons": [],
+  "full_reset_diagnostics": [
+    "MODEL ERROR @3710028700000 now=185501435: refresh interval exceeded",
+    "MODEL ERROR @3731193800000 now=186559690: tRAS max",
+    "MODEL ERROR @3914015260000 now=195700763: refresh interval exceeded",
+    "MODEL ERROR @3916208040000 now=195810402: tRAS max",
+    "MODEL ERROR @3916208040000 now=195810402: tRAS max",
+    "MODEL ERROR @3916208040000 now=195810402: tRAS max",
+    "MODEL ERROR @3916208040000 now=195810402: tRAS max"
+  ],
+  "scope": "KEY1 and authorized KEY3 full restart destroy old media/memory; normal switches receive no exception"
+}

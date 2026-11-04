@@ -1,0 +1,12 @@
+{
+  "candidate_manifest_sha256": "1ac8ec9c88da87348e44e20b089875f367836d87252f3068753fd2a2af3c094c",
+  "testbenches": {
+    "review\\f35_full_audit\\tb_gain_all.sv": "31ee5bf1d4f4bee65bd8cc009e8d130b7790a127150fc29be12a74676df19676",
+    "review\\f35_full_audit\\tb_menu_board.sv": "37cfb3c4424d9d9e437044410155724bb120e3cc60c9557fe6ff05f8df7a46fe",
+    "review\\f35_full_audit\\tb_output_route.sv": "76806409027272041bd7ea906bbb33924091d6c92e6faab9d87baf54b139cf36",
+    "review\\f31_smoothing_init\\tb_spectrum_init.sv": "4c51817a7da77d393f8abd659e8fc50f98bbf7dc70b9a7342da16e76e1bc54d2"
+  },
+  "rtl_source": "work\\f35_keymap_r04",
+  "pin_adc": "work\\f35_keymap_r04\\constraints\\t073_master_top.adc",
+  "all_extra_cases_new_execution": true
+}

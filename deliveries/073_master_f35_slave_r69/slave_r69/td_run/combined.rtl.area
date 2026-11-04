@@ -1,0 +1,90 @@
+standard
+***Report Model: slave_demo_physical_wrapper Device: EG4S20BG256***
+
+IO Statistics
+#IO                        41
+  #input                   14
+  #output                  27
+  #inout                    0
+
+Gate Statistics
+#Basic gates            40703
+  #and                  12635
+  #nand                     0
+  #or                   10907
+  #nor                      0
+  #xor                    623
+  #xnor                     0
+  #buf                      0
+  #not                   1726
+  #bufif1                   0
+  #MX21                  4737
+  #FADD                     0
+  #DFF                  10075
+  #LATCH                    0
+#MACRO_ADD                446
+#MACRO_EQ                 239
+#MACRO_MULT                 8
+#MACRO_MUX               7196
+#MACRO_OTHERS              13
+
+Report Hierarchy Area:
++-------------------------------------------------------------------------------------+
+|Instance                   |Module                           |gates  |seq    |macros |
++-------------------------------------------------------------------------------------+
+|top                        |slave_demo_physical_wrapper      |30628  |10075  |706    |
+|  actuator                 |anc_native_actuator_r61          |276    |355    |16     |
+|  core                     |anc_fxn_core_r61                 |3111   |3072   |234    |
+|    actuator_history       |anc_work_ram_r61                 |77     |11     |3      |
+|    arithmetic             |anc_core_arithmetic_r61          |649    |762    |31     |
+|      common_multiplier    |anc_mul32x18_r61                 |12     |202    |4      |
+|        m_high             |anc_mul18_pipe_r61               |1      |36     |1      |
+|        m_low              |anc_mul18_pipe_r61               |6      |44     |1      |
+|      sos                  |anc_biquad_shared_r61            |353    |335    |11     |
+|      weights              |anc_weight_update_r61            |227    |109    |12     |
+|        decay_multiplier   |anc_decay_dsp65                  |0      |0      |1      |
+|    dotter                 |anc_dot18_engine_r61             |127    |153    |7      |
+|      m                    |anc_mul18_pipe_r61               |1      |38     |1      |
+|    gradient_history       |anc_work_ram_r61                 |15     |2      |2      |
+|    guard                  |anc_stability_guard_r61          |492    |361    |43     |
+|      ratio_check          |anc_rise_compare_r62             |0      |0      |3      |
+|      target_check         |anc_rise_compare_r62             |0      |0      |3      |
+|      verified_error_check |anc_rise_compare_r62             |0      |0      |3      |
+|      verified_ratio_check |anc_rise_compare_r62             |0      |0      |3      |
+|    model_coefficients     |anc_sf_rom_r65                   |0      |0      |0      |
+|    monitor                |anc_ratio_monitor_r65            |81     |230    |1      |
+|    numerator              |anc_gain_numerator_r62           |2      |0      |3      |
+|      exact_numerator      |anc_numerator_dsp65              |0      |0      |1      |
+|    reference_history      |anc_work_ram_r61                 |21     |2      |1      |
+|    shared_divider         |anc_divider_compact_r65          |32     |186    |4      |
+|    sos_states             |anc_work_ram_r61                 |68     |9      |2      |
+|    weights                |anc_work_ram_r61                 |43     |2      |2      |
+|  diagnostic_uart          |anc_uart_snapshot_r68            |368    |221    |10     |
+|    transmitter            |r58_uart_tx                      |14     |20     |4      |
+|  first_fault_recorder     |anc_first_fault_snapshot_r68     |30     |111    |0      |
+|  frontend                 |anc_ram_decimator_r61            |174    |210    |17     |
+|    engine                 |anc_dot18_engine_r61             |115    |140    |5      |
+|      m                    |anc_mul18_pipe_r61               |1      |38     |1      |
+|    history                |anc_work_ram_r61                 |30     |9      |2      |
+|  u_anc                    |anc_weak_path_frequency          |12274  |696    |61     |
+|  u_audio_output           |audio_i2s_stereo_tx_r12          |36     |58     |3      |
+|  u_demo                   |slave_audio_demo_top             |11316  |4466   |234    |
+|    u_fft_scheduler        |fft_three_path_scheduler_r06     |7833   |2138   |134    |
+|      u_fft                |pcf_fft_frontend                 |7202   |1624   |78     |
+|        u_frame            |pcf_fft_frame_ram                |0      |0      |1      |
+|    u_mic_capture          |i2s_mic4_rx_50m                  |29     |148    |8      |
+|    u_mic_mean             |mic_three_mean_t16               |0      |38     |5      |
+|    u_pcm_rx               |link062_pcm_rx                   |1416   |691    |43     |
+|      u_transport          |interboard_rx                    |738    |382    |19     |
+|    u_spectrum_tx          |multi_spectrum_group_tx_r03_bram |2016   |1171   |41     |
+|      u_packet             |link062_packet_tx                |1600   |543    |15     |
+|        u_transport        |interboard_tx                    |723    |268    |6      |
+|  u_frequency_display      |seg6_hz_display_r66              |80     |95     |17     |
+|  u_frequency_measure      |mic2_frequency_display_r66       |2238   |391    |45     |
+|  u_key2_debounce          |key_press_debounce               |24     |23     |2      |
+|  u_key3_debounce          |key_press_debounce               |24     |23     |2      |
+|  u_key4_debounce          |key_press_debounce               |24     |23     |2      |
+|  u_panel                  |slave_panel_ctrl                 |155    |88     |21     |
+|  u_run_guard              |anc_run_guard_r56                |26     |72     |12     |
+|  u_tf_player              |tf_pcm_player                    |132    |79     |10     |
++-------------------------------------------------------------------------------------+

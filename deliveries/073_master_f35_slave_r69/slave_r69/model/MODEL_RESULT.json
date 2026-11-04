@@ -1,0 +1,231 @@
+{
+  "status": "PASS",
+  "gate_scheme": "WORKBAND_240_760_PHASE_AND_GAIN",
+  "scope": "measured room coefficients only; controller, protection thresholds, SOS and digital G unchanged; no acoustic ANC success claim",
+  "sample_rate_hz": 12019.23076923077,
+  "fit_band_Hz": [
+    180,
+    1000
+  ],
+  "original_gate_result": {
+    "gate": "relative_complex_RMS_180_1000 < 0.20",
+    "passes": false,
+    "values": [
+      {
+        "channel": "secondary",
+        "level": "full",
+        "relative_complex_RMS_180_1000": 0.2690238516885466
+      },
+      {
+        "channel": "secondary",
+        "level": "half",
+        "relative_complex_RMS_180_1000": 0.2738828753413922
+      },
+      {
+        "channel": "feedback",
+        "level": "full",
+        "relative_complex_RMS_180_1000": 0.08687129530537559
+      },
+      {
+        "channel": "feedback",
+        "level": "half",
+        "relative_complex_RMS_180_1000": 0.09243509402216932
+      }
+    ],
+    "note": "原 0.20 门槛在本场景不达标，项目组在知情下改判为工作频段判据；未放宽任何控制器/保护参数"
+  },
+  "observed_worst_phase_points": [
+    {
+      "channel": "secondary",
+      "level": "full",
+      "max_phase_deg": 43.48236406030028,
+      "at_Hz": 673.4407865084135
+    },
+    {
+      "channel": "secondary",
+      "level": "half",
+      "max_phase_deg": 49.300485658503334,
+      "at_Hz": 673.4407865084135
+    },
+    {
+      "channel": "feedback",
+      "level": "full",
+      "max_phase_deg": 12.315570022122083,
+      "at_Hz": 724.79248046875
+    },
+    {
+      "channel": "feedback",
+      "level": "half",
+      "max_phase_deg": 13.016739833404202,
+      "at_Hz": 460.6980543870192
+    }
+  ],
+  "workband_gate": {
+    "work_band_Hz": [
+      240.0,
+      760.0
+    ],
+    "targets": {
+      "median_phase_deg": 15.0,
+      "p95_phase_deg": 45.0,
+      "median_gain_db": 3.0
+    },
+    "pass": true,
+    "target_band_rule": "new median phase <= deployed + 3 deg (identification/quantisation noise floor)",
+    "gate_change_approved": "max->p95 2026-11-03; max value still recorded for board test",
+    "better_than_deployed": true,
+    "evidence": "WORKBAND_GATE.json"
+  },
+  "records": [
+    {
+      "raw_path": "D:\\Download\\ANC_R60\\large_room_probe01.r58raw",
+      "raw_sha256": "9ce49788ea20a012c0e55ec1ec5b9d2b369efb4a38db990119f93e9791203250",
+      "metadata": {
+        "session": 1,
+        "flags": 2,
+        "frames": 57344,
+        "mode": 2,
+        "sample_rate_hz": 12019.23076923077,
+        "transport_continuity_verified": true,
+        "input_warning": false,
+        "acoustic_analysis_usable": true
+      },
+      "identification": [
+        {
+          "channel": 0,
+          "path": "S_speaker_to_MIC1",
+          "correlation_peak_lag_samples": 28,
+          "correlation_peak_lag_ms": 2.3295999999999997,
+          "peak_to_other_lags_ratio": 2.599271193036276,
+          "qualified_frequency_bins": 522,
+          "examined_frequency_bins": 654,
+          "median_excited_band_coherence": 0.9823562861100907,
+          "identification_has_qualified_bins": true,
+          "usable_frequency_bins_only_no_fullband_claim": true
+        },
+        {
+          "channel": 1,
+          "path": "F_speaker_to_MIC2",
+          "correlation_peak_lag_samples": 11,
+          "correlation_peak_lag_ms": 0.9152,
+          "peak_to_other_lags_ratio": 2.674167056047041,
+          "qualified_frequency_bins": 538,
+          "examined_frequency_bins": 654,
+          "median_excited_band_coherence": 0.9883202519160544,
+          "identification_has_qualified_bins": true,
+          "usable_frequency_bins_only_no_fullband_claim": true
+        }
+      ]
+    },
+    {
+      "raw_path": "D:\\Download\\ANC_R60\\large_room_half01.r58raw",
+      "raw_sha256": "00262b0945c32f13da2551f78967fc1251f74ae2b6cdb80b889b58efe02b4ee2",
+      "metadata": {
+        "session": 2,
+        "flags": 6,
+        "frames": 57344,
+        "mode": 2,
+        "sample_rate_hz": 12019.23076923077,
+        "transport_continuity_verified": true,
+        "input_warning": false,
+        "acoustic_analysis_usable": true
+      },
+      "identification": [
+        {
+          "channel": 0,
+          "path": "S_speaker_to_MIC1",
+          "correlation_peak_lag_samples": 20,
+          "correlation_peak_lag_ms": 1.664,
+          "peak_to_other_lags_ratio": 2.582568278143273,
+          "qualified_frequency_bins": 412,
+          "examined_frequency_bins": 654,
+          "median_excited_band_coherence": 0.9405337281098818,
+          "identification_has_qualified_bins": true,
+          "usable_frequency_bins_only_no_fullband_claim": true
+        },
+        {
+          "channel": 1,
+          "path": "F_speaker_to_MIC2",
+          "correlation_peak_lag_samples": 11,
+          "correlation_peak_lag_ms": 0.9152,
+          "peak_to_other_lags_ratio": 2.6604024158428254,
+          "qualified_frequency_bins": 392,
+          "examined_frequency_bins": 654,
+          "median_excited_band_coherence": 0.9316696571821252,
+          "identification_has_qualified_bins": true,
+          "usable_frequency_bins_only_no_fullband_claim": true
+        }
+      ]
+    }
+  ],
+  "fits": [
+    {
+      "channel": 0,
+      "fits": [
+        {
+          "label": "full",
+          "relative_complex_RMS_error": 0.2690238516885466,
+          "relative_complex_RMS_180_1000": 0.2690238516885466,
+          "median_phase_deg": 7.440054852351719,
+          "p95_phase_deg": 25.17480526818404,
+          "max_phase_deg": 43.48236406030028,
+          "median_gain_db": 1.3444283047932313
+        },
+        {
+          "label": "half",
+          "relative_complex_RMS_error": 0.2738828753413922,
+          "relative_complex_RMS_180_1000": 0.2738828753413922,
+          "median_phase_deg": 8.067535830867051,
+          "p95_phase_deg": 27.529253821925995,
+          "max_phase_deg": 49.300485658503334,
+          "median_gain_db": 1.2136260281614886
+        }
+      ]
+    },
+    {
+      "channel": 1,
+      "fits": [
+        {
+          "label": "full",
+          "relative_complex_RMS_error": 0.08687129530537559,
+          "relative_complex_RMS_180_1000": 0.08687129530537559,
+          "median_phase_deg": 2.35202455469066,
+          "p95_phase_deg": 7.158547355735785,
+          "max_phase_deg": 12.315570022122083,
+          "median_gain_db": 0.36328044774744433
+        },
+        {
+          "label": "half",
+          "relative_complex_RMS_error": 0.09243509402216932,
+          "relative_complex_RMS_180_1000": 0.09243509402216932,
+          "median_phase_deg": 2.3442579024272767,
+          "p95_phase_deg": 9.417358878513893,
+          "max_phase_deg": 13.016739833404202,
+          "median_gain_db": 0.36648212120187845
+        }
+      ]
+    }
+  ],
+  "SOS_preserved_verbatim": true,
+  "G_preserved": true,
+  "effective_taps": 152,
+  "source_sha256": {
+    "work\\measure_r60_20261031\\host\\analyze_r60.py": "f4b3da6448efb2f5d132a0cc0d6079628a855300ec51fbb634a5fa4e568f0bfe",
+    "work\\measure_r60_20261031\\host\\r60_codec.py": "5ea2c3920de625c19e4f143f13f108d7a8bf77a8192eadcc2e1583e86792e3cb",
+    "work\\measure_r60_20261031\\host\\probe_r58.npy": "863cd9ea34829fc38ce821aa24db647a662827d27f7ec4ebdc222012f365394f",
+    "work\\measure_r60_20261031\\host\\probe_r58.json": "e47216ab0eeb159959ba806062106d09ba378df667a14ed2c79b4e1920228427",
+    "work\\measure_r60_20261031\\host\\decimator_q15.npy": "5e8f2dfc3177888a52c75f4395bc696edaa9c93ac85893bae0e3d580cd5f7d8f",
+    "work\\anc_stability_r61_20261031\\tb\\native_effective_kernel.f64": "02144456b83175efd3bc9470a85e33fd98523d6b8682abf3d09ee5f4c0e19786",
+    "work\\anc_uart_quick_r68e_20261103\\rtl\\anc_core_constants_r61.vh": "30ed7b8d246dd12b7eb374ee28481e2ed0f98f6cdc56d117406751d907653937",
+    "work\\anc_uart_quick_r68e_20261103\\rtl\\anc_sf_rom_r65.v": "40e58da545aa35bec486f544fdb8c2e4725e6e0e72773735cc65deb7a38b3453",
+    "work\\anc_room_model_r69_20261103\\model\\build_room_model.py": "28a44095993bc354c8bd85bbc7d12c49d3b2fd3e1d2c0c3481ec5cd1c66ff998",
+    "work\\anc_room_model_r69_20261103\\model\\build_room_model_r03.py": "35157f7fb2314b18511ba38b52371e39a48bc3e1fc96fd91b3e482470130efd2"
+  },
+  "rtl_sha256": {
+    "anc_core_constants_r61.vh": "601e2759ca97dce8808001ec401e869e22f9cb49b687fe2297d7a6a645b8fa0a",
+    "anc_sf_rom_r65.v": "2659bc4d1739a3328288dae5cf6aec58e0fc62d558e3caea36a289ad0b5cadc4"
+  },
+  "expected_words_sha256": "b4a880021e478bccca058adb8159e29893bbfde7d15dde291847543fb101333a",
+  "frequency_response_npz_sha256": "8bcd554817c1e2809eb8158f24708405276b71e40b81a50c82b6bd141cc58848",
+  "new_acoustic_ANC_acceptance": false
+}

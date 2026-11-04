@@ -1,0 +1,5 @@
+RESULT PASS scenario=header_only frames=5 PIC1=2 boot0=0 boot1=0
+- review/f31_smoothing_init/tb_boot_fallback.sv:58: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 83ms; walltime 9.513 s; speed 8.747 ms/s
+- Verilator: cpu 9.513 s on 1 threads; alloced 135 MB

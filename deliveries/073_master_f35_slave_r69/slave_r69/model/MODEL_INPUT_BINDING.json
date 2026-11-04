@@ -1,0 +1,95 @@
+{
+  "status": "CAPTURES_VALID_MODEL_NOT_ADMITTED",
+  "records": [
+    {
+      "raw_path": "D:\\Download\\ANC_R60\\large_room_probe01.r58raw",
+      "raw_sha256": "9ce49788ea20a012c0e55ec1ec5b9d2b369efb4a38db990119f93e9791203250",
+      "metadata": {
+        "session": 1,
+        "flags": 2,
+        "frames": 57344,
+        "mode": 2,
+        "sample_rate_hz": 12019.23076923077,
+        "transport_continuity_verified": true,
+        "input_warning": false,
+        "acoustic_analysis_usable": true
+      },
+      "identification": [
+        {
+          "channel": 0,
+          "path": "S_speaker_to_MIC1",
+          "correlation_peak_lag_samples": 28,
+          "correlation_peak_lag_ms": 2.3295999999999997,
+          "peak_to_other_lags_ratio": 2.599271193036276,
+          "qualified_frequency_bins": 522,
+          "examined_frequency_bins": 654,
+          "median_excited_band_coherence": 0.9823562861100907,
+          "identification_has_qualified_bins": true,
+          "usable_frequency_bins_only_no_fullband_claim": true
+        },
+        {
+          "channel": 1,
+          "path": "F_speaker_to_MIC2",
+          "correlation_peak_lag_samples": 11,
+          "correlation_peak_lag_ms": 0.9152,
+          "peak_to_other_lags_ratio": 2.674167056047041,
+          "qualified_frequency_bins": 538,
+          "examined_frequency_bins": 654,
+          "median_excited_band_coherence": 0.9883202519160544,
+          "identification_has_qualified_bins": true,
+          "usable_frequency_bins_only_no_fullband_claim": true
+        }
+      ]
+    },
+    {
+      "raw_path": "D:\\Download\\ANC_R60\\large_room_half01.r58raw",
+      "raw_sha256": "00262b0945c32f13da2551f78967fc1251f74ae2b6cdb80b889b58efe02b4ee2",
+      "metadata": {
+        "session": 2,
+        "flags": 6,
+        "frames": 57344,
+        "mode": 2,
+        "sample_rate_hz": 12019.23076923077,
+        "transport_continuity_verified": true,
+        "input_warning": false,
+        "acoustic_analysis_usable": true
+      },
+      "identification": [
+        {
+          "channel": 0,
+          "path": "S_speaker_to_MIC1",
+          "correlation_peak_lag_samples": 20,
+          "correlation_peak_lag_ms": 1.664,
+          "peak_to_other_lags_ratio": 2.582568278143273,
+          "qualified_frequency_bins": 412,
+          "examined_frequency_bins": 654,
+          "median_excited_band_coherence": 0.9405337281098818,
+          "identification_has_qualified_bins": true,
+          "usable_frequency_bins_only_no_fullband_claim": true
+        },
+        {
+          "channel": 1,
+          "path": "F_speaker_to_MIC2",
+          "correlation_peak_lag_samples": 11,
+          "correlation_peak_lag_ms": 0.9152,
+          "peak_to_other_lags_ratio": 2.6604024158428254,
+          "qualified_frequency_bins": 392,
+          "examined_frequency_bins": 654,
+          "median_excited_band_coherence": 0.9316696571821252,
+          "identification_has_qualified_bins": true,
+          "usable_frequency_bins_only_no_fullband_claim": true
+        }
+      ]
+    }
+  ],
+  "response_npz_sha256": "8bcd554817c1e2809eb8158f24708405276b71e40b81a50c82b6bd141cc58848",
+  "baseline_regen_check": {
+    "status": "PASS_BASELINE_REGEN_EXACT",
+    "constants_sha256": "30ed7b8d246dd12b7eb374ee28481e2ed0f98f6cdc56d117406751d907653937",
+    "ROM_sha256": "40e58da545aa35bec486f544fdb8c2e4725e6e0e72773735cc65deb7a38b3453",
+    "G_sha256": "02144456b83175efd3bc9470a85e33fd98523d6b8682abf3d09ee5f4c0e19786"
+  },
+  "current_model_status": "FAIL",
+  "new_RTL_emitted": false,
+  "TD_started": false
+}

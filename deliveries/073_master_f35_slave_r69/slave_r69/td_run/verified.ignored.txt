@@ -1,0 +1,806 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Tue Nov  3 16:26:14 2026
+
+Top Model           : slave_demo_physical_wrapper
+Device              : EG4S20BG256
+Speed               : NA
+STA coverage        : 100.00%
+Constraint File     : D:/task068_audio_demo/anc_room_model_r69_20261103/integration_r01/constraints/slave_demo_physical.sdc;
+Confidence          : Routed
+Check Corner        : Both (Slow and Fast)
+CRPR Enabled        : Yes
+Report Scheme       : 10 end point(s) per path group, 1 path(s) per end point
+
+
+Check Status
+-------------
+
+Corner   | Max      Min     
+------------------------------------
+Slow     | yes      yes     
+Fast     | yes      yes     
+
+Async/Exclusive Summary
+--------------------
+
+SFP Summary
+--------------------
+
+		Max Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		         1            1            0            0   set_false_path -from [get_ports {key1}] -to [get_regs {key1_meta}]
+		         1            1            0            0   set_false_path -from [get_ports {key2}] -to [get_regs {u_key2_debounce/button_sync0}]
+		         1            1            0            0   set_false_path -from [get_ports {link_rx_data}] -to [get_regs {u_demo/u_pcm_rx/u_transport/s0}]
+		         1            1            0            0   set_false_path -from [get_ports {mic_sd[0]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[0]}]
+		         1            1            0            0   set_false_path -from [get_ports {mic_sd[1]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[1]}]
+		         1            1            0            0   set_false_path -from [get_ports {mic_sd[2]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[2]}]
+		         1            1            0            0   set_false_path -from [get_ports {mic_sd[3]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[3]}]
+		         1            1            0            0   set_false_path -from [get_ports {key3}] -to [get_regs {u_key3_debounce/button_sync0}]
+		         1            1            0            0   set_false_path -from [get_ports {key4}] -to [get_regs {u_key4_debounce/button_sync0}]
+		         1            1            0            0   set_false_path -from [get_ports {sw[0]}] -to [get_regs {u_panel/sw_meta[0]}]
+		         1            1            0            0   set_false_path -from [get_ports {sw[1]}] -to [get_regs {u_panel/sw_meta[1]}]
+		         1            1            0            0   set_false_path -from [get_ports {sw[2]}] -to [get_regs {u_panel/sw_meta[2]}]
+		         1            1            0            0   set_false_path -from [get_ports {sw[3]}] -to [get_regs {u_panel/sw_meta[3]}]
+
+		Min Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		         1            1            0            0   set_false_path -from [get_ports {key1}] -to [get_regs {key1_meta}]
+		         1            1            0            0   set_false_path -from [get_ports {key2}] -to [get_regs {u_key2_debounce/button_sync0}]
+		         1            1            0            0   set_false_path -from [get_ports {link_rx_data}] -to [get_regs {u_demo/u_pcm_rx/u_transport/s0}]
+		         1            1            0            0   set_false_path -from [get_ports {mic_sd[0]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[0]}]
+		         1            1            0            0   set_false_path -from [get_ports {mic_sd[1]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[1]}]
+		         1            1            0            0   set_false_path -from [get_ports {mic_sd[2]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[2]}]
+		         1            1            0            0   set_false_path -from [get_ports {mic_sd[3]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[3]}]
+		         1            1            0            0   set_false_path -from [get_ports {key3}] -to [get_regs {u_key3_debounce/button_sync0}]
+		         1            1            0            0   set_false_path -from [get_ports {key4}] -to [get_regs {u_key4_debounce/button_sync0}]
+		         1            1            0            0   set_false_path -from [get_ports {sw[0]}] -to [get_regs {u_panel/sw_meta[0]}]
+		         1            1            0            0   set_false_path -from [get_ports {sw[1]}] -to [get_regs {u_panel/sw_meta[1]}]
+		         1            1            0            0   set_false_path -from [get_ports {sw[2]}] -to [get_regs {u_panel/sw_meta[2]}]
+		         1            1            0            0   set_false_path -from [get_ports {sw[3]}] -to [get_regs {u_panel/sw_meta[3]}]
+
+
+SFP Details
+--------------------
+
+
+Constraint     :   set_false_path -from [get_ports {key1}] -to [get_regs {key1_meta}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {key1}] -to [get_regs {key1_meta}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {key2}] -to [get_regs {u_key2_debounce/button_sync0}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {key2}] -to [get_regs {u_key2_debounce/button_sync0}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {link_rx_data}] -to [get_regs {u_demo/u_pcm_rx/u_transport/s0}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {link_rx_data}] -to [get_regs {u_demo/u_pcm_rx/u_transport/s0}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {mic_sd[0]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[0]}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {mic_sd[0]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[0]}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {mic_sd[1]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[1]}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {mic_sd[1]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[1]}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {mic_sd[2]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[2]}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {mic_sd[2]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[2]}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {mic_sd[3]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[3]}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {mic_sd[3]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[3]}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {key3}] -to [get_regs {u_key3_debounce/button_sync0}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {key3}] -to [get_regs {u_key3_debounce/button_sync0}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {key4}] -to [get_regs {u_key4_debounce/button_sync0}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {key4}] -to [get_regs {u_key4_debounce/button_sync0}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {sw[0]}] -to [get_regs {u_panel/sw_meta[0]}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {sw[0]}] -to [get_regs {u_panel/sw_meta[0]}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {sw[1]}] -to [get_regs {u_panel/sw_meta[1]}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {sw[1]}] -to [get_regs {u_panel/sw_meta[1]}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {sw[2]}] -to [get_regs {u_panel/sw_meta[2]}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {sw[2]}] -to [get_regs {u_panel/sw_meta[2]}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {sw[3]}] -to [get_regs {u_panel/sw_meta[3]}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_false_path -from [get_ports {sw[3]}] -to [get_regs {u_panel/sw_meta[3]}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+
+Path Details of Ignored Path Groups
+--------------------------------------------------
+
+
+Set False Path
+--------------------
+
+From flow sdc
+--------------------
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -from [get_ports {key1}] -to [get_regs {key1_meta}]
+
+Statistics:
+	Setup Check    :              1   end points,               1   paths
+	Setup Check    :              1   end points,               1   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : key1(triggered by clock )
+End Point           : u_demo/u_pcm_rx/block_crc_b8[6]_syn_51.mi[0](triggered by clock clk_50)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: key1,  ../rtl/slave_demo_physical_wrapper.v(10)
+                                                                      pin: key1_syn_4.ipad
+PAD                 x040y011                                          pin: key1_syn_4.di
+net (fo=1)                                                            net: key1_dup_3,  ../rtl/slave_demo_physical_wrapper.v(10)
+                                                                      pin: u_demo/u_pcm_rx/block_crc_b8[6]_syn_51.mi[0]
+reg                 x039y061z1                                        net: key1_meta,  ../rtl/slave_demo_physical_wrapper.v(108)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : key1(triggered by clock )
+End Point           : u_demo/u_pcm_rx/block_crc_b8[6]_syn_51.mi[0](triggered by clock clk_50)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: key1,  ../rtl/slave_demo_physical_wrapper.v(10)
+                                                                      pin: key1_syn_4.ipad
+PAD                 x040y011                                          pin: key1_syn_4.di
+net (fo=1)                                                            net: key1_dup_3,  ../rtl/slave_demo_physical_wrapper.v(10)
+                                                                      pin: u_demo/u_pcm_rx/block_crc_b8[6]_syn_51.mi[0]
+reg                 x039y061z1                                        net: key1_meta,  ../rtl/slave_demo_physical_wrapper.v(108)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -from [get_ports {key2}] -to [get_regs {u_key2_debounce/button_sync0}]
+
+Statistics:
+	Setup Check    :              1   end points,               1   paths
+	Setup Check    :              1   end points,               1   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : key2(triggered by clock )
+End Point           : u_key2_debounce/button_sync0_reg_syn_5.mi[0](triggered by clock clk_50)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: key2,  ../rtl/slave_demo_physical_wrapper.v(11)
+                                                                      pin: key2_syn_4.ipad
+PAD                 x040y011                                          pin: key2_syn_4.di
+net (fo=1)                                                            net: key2_dup_3,  ../rtl/slave_demo_physical_wrapper.v(11)
+                                                                      pin: u_key2_debounce/button_sync0_reg_syn_5.mi[0]
+reg                 x027y044z0                                        net: u_key2_debounce/button_sync0,  ../rtl/key_press_debounce.v(33)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : key2(triggered by clock )
+End Point           : u_key2_debounce/button_sync0_reg_syn_5.mi[0](triggered by clock clk_50)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: key2,  ../rtl/slave_demo_physical_wrapper.v(11)
+                                                                      pin: key2_syn_4.ipad
+PAD                 x040y011                                          pin: key2_syn_4.di
+net (fo=1)                                                            net: key2_dup_3,  ../rtl/slave_demo_physical_wrapper.v(11)
+                                                                      pin: u_key2_debounce/button_sync0_reg_syn_5.mi[0]
+reg                 x027y044z0                                        net: u_key2_debounce/button_sync0,  ../rtl/key_press_debounce.v(33)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -from [get_ports {key3}] -to [get_regs {u_key3_debounce/button_sync0}]
+
+Statistics:
+	Setup Check    :              1   end points,               1   paths
+	Setup Check    :              1   end points,               1   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : key3(triggered by clock )
+End Point           : u_demo/u_pcm_rx/block_crc_b23_n_syn_21.mi[0](triggered by clock clk_50)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: key3,  ../rtl/slave_demo_physical_wrapper.v(12)
+                                                                      pin: key3_syn_4.ipad
+PAD                 x040y011                                          pin: key3_syn_4.di
+net (fo=1)                                                            net: key3_dup_3,  ../rtl/slave_demo_physical_wrapper.v(12)
+                                                                      pin: u_demo/u_pcm_rx/block_crc_b23_n_syn_21.mi[0]
+reg                 x038y060z0                                        net: u_key3_debounce/button_sync0,  ../rtl/key_press_debounce.v(33)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : key3(triggered by clock )
+End Point           : u_demo/u_pcm_rx/block_crc_b23_n_syn_21.mi[0](triggered by clock clk_50)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: key3,  ../rtl/slave_demo_physical_wrapper.v(12)
+                                                                      pin: key3_syn_4.ipad
+PAD                 x040y011                                          pin: key3_syn_4.di
+net (fo=1)                                                            net: key3_dup_3,  ../rtl/slave_demo_physical_wrapper.v(12)
+                                                                      pin: u_demo/u_pcm_rx/block_crc_b23_n_syn_21.mi[0]
+reg                 x038y060z0                                        net: u_key3_debounce/button_sync0,  ../rtl/key_press_debounce.v(33)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -from [get_ports {key4}] -to [get_regs {u_key4_debounce/button_sync0}]
+
+Statistics:
+	Setup Check    :              1   end points,               1   paths
+	Setup Check    :              1   end points,               1   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : key4(triggered by clock )
+End Point           : core/sel23_syn_2916.mi[0](triggered by clock clk_50)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: key4,  ../rtl/slave_demo_physical_wrapper.v(12)
+                                                                      pin: key4_syn_4.ipad
+PAD                 x040y017                                          pin: key4_syn_4.di
+net (fo=1)                                                            net: key4_dup_3,  ../rtl/slave_demo_physical_wrapper.v(12)
+                                                                      pin: core/sel23_syn_2916.mi[0]
+reg                 x038y029z1                                        net: u_key4_debounce/button_sync0,  ../rtl/key_press_debounce.v(33)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : key4(triggered by clock )
+End Point           : core/sel23_syn_2916.mi[0](triggered by clock clk_50)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: key4,  ../rtl/slave_demo_physical_wrapper.v(12)
+                                                                      pin: key4_syn_4.ipad
+PAD                 x040y017                                          pin: key4_syn_4.di
+net (fo=1)                                                            net: key4_dup_3,  ../rtl/slave_demo_physical_wrapper.v(12)
+                                                                      pin: core/sel23_syn_2916.mi[0]
+reg                 x038y029z1                                        net: u_key4_debounce/button_sync0,  ../rtl/key_press_debounce.v(33)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -from [get_ports {link_rx_data}] -to [get_regs {u_demo/u_pcm_rx/u_transport/s0}]
+
+Statistics:
+	Setup Check    :              1   end points,               1   paths
+	Setup Check    :              1   end points,               1   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : link_rx_data(triggered by clock )
+End Point           : core/arithmetic/sos/mux36_syn_1720.mi[0](triggered by clock clk_50)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: link_rx_data,  ../rtl/slave_demo_physical_wrapper.v(16)
+                                                                      pin: link_rx_data_syn_4.ipad
+PAD                 x040y002                                          pin: link_rx_data_syn_4.di
+net (fo=1)                                                            net: link_rx_data_dup_3,  ../rtl/slave_demo_physical_wrapper.v(16)
+                                                                      pin: core/arithmetic/sos/mux36_syn_1720.mi[0]
+reg                 x038y015z0                                        net: u_demo/u_pcm_rx/u_transport/s0,  ../rtl/interboard_rx.v(40)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : link_rx_data(triggered by clock )
+End Point           : core/arithmetic/sos/mux36_syn_1720.mi[0](triggered by clock clk_50)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: link_rx_data,  ../rtl/slave_demo_physical_wrapper.v(16)
+                                                                      pin: link_rx_data_syn_4.ipad
+PAD                 x040y002                                          pin: link_rx_data_syn_4.di
+net (fo=1)                                                            net: link_rx_data_dup_3,  ../rtl/slave_demo_physical_wrapper.v(16)
+                                                                      pin: core/arithmetic/sos/mux36_syn_1720.mi[0]
+reg                 x038y015z0                                        net: u_demo/u_pcm_rx/u_transport/s0,  ../rtl/interboard_rx.v(40)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -from [get_ports {mic_sd[0]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[0]}]
+
+Statistics:
+	Setup Check    :              1   end points,               1   paths
+	Setup Check    :              1   end points,               1   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : mic_sd[0](triggered by clock )
+End Point           : u_anc/add15_syn_209.mi[0](triggered by clock clk_50)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: mic_sd[0],  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: mic_sd[0]_syn_4.ipad
+PAD                 x000y029                                          pin: mic_sd[0]_syn_4.di
+net (fo=1)                                                            net: mic_sd[0]_dup_3,  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: u_anc/add15_syn_209.mi[0]
+ADDER (reg)         x003y021z2                                        net: u_demo/u_mic_capture/mic_sd_meta[0],  ../rtl/i2s_mic4_rx_50m.v(17)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : mic_sd[0](triggered by clock )
+End Point           : u_anc/add15_syn_209.mi[0](triggered by clock clk_50)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: mic_sd[0],  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: mic_sd[0]_syn_4.ipad
+PAD                 x000y029                                          pin: mic_sd[0]_syn_4.di
+net (fo=1)                                                            net: mic_sd[0]_dup_3,  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: u_anc/add15_syn_209.mi[0]
+ADDER (reg)         x003y021z2                                        net: u_demo/u_mic_capture/mic_sd_meta[0],  ../rtl/i2s_mic4_rx_50m.v(17)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -from [get_ports {mic_sd[1]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[1]}]
+
+Statistics:
+	Setup Check    :              1   end points,               1   paths
+	Setup Check    :              1   end points,               1   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : mic_sd[1](triggered by clock )
+End Point           : u_anc/mul_a_b3[12]_syn_19.mi[0](triggered by clock clk_50)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: mic_sd[1],  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: mic_sd[1]_syn_2.ipad
+PAD                 x000y032                                          pin: mic_sd[1]_syn_2.di
+net (fo=1)                                                            net: mic_sd[1]_dup_1,  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: u_anc/mul_a_b3[12]_syn_19.mi[0]
+reg                 x005y022z2                                        net: u_demo/u_mic_capture/mic_sd_meta[1],  ../rtl/i2s_mic4_rx_50m.v(17)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : mic_sd[1](triggered by clock )
+End Point           : u_anc/mul_a_b3[12]_syn_19.mi[0](triggered by clock clk_50)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: mic_sd[1],  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: mic_sd[1]_syn_2.ipad
+PAD                 x000y032                                          pin: mic_sd[1]_syn_2.di
+net (fo=1)                                                            net: mic_sd[1]_dup_1,  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: u_anc/mul_a_b3[12]_syn_19.mi[0]
+reg                 x005y022z2                                        net: u_demo/u_mic_capture/mic_sd_meta[1],  ../rtl/i2s_mic4_rx_50m.v(17)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -from [get_ports {mic_sd[2]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[2]}]
+
+Statistics:
+	Setup Check    :              1   end points,               1   paths
+	Setup Check    :              1   end points,               1   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : mic_sd[2](triggered by clock )
+End Point           : u_anc/add9_syn_252.mi[0](triggered by clock clk_50)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: mic_sd[2],  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: mic_sd[2]_syn_2.ipad
+PAD                 x000y041                                          pin: mic_sd[2]_syn_2.di
+net (fo=1)                                                            net: mic_sd[2]_dup_1,  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: u_anc/add9_syn_252.mi[0]
+ADDER (reg)         x005y027z2                                        net: u_demo/u_mic_capture/mic_sd_meta[2],  ../rtl/i2s_mic4_rx_50m.v(17)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : mic_sd[2](triggered by clock )
+End Point           : u_anc/add9_syn_252.mi[0](triggered by clock clk_50)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: mic_sd[2],  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: mic_sd[2]_syn_2.ipad
+PAD                 x000y041                                          pin: mic_sd[2]_syn_2.di
+net (fo=1)                                                            net: mic_sd[2]_dup_1,  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: u_anc/add9_syn_252.mi[0]
+ADDER (reg)         x005y027z2                                        net: u_demo/u_mic_capture/mic_sd_meta[2],  ../rtl/i2s_mic4_rx_50m.v(17)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -from [get_ports {mic_sd[3]}] -to [get_regs {u_demo/u_mic_capture/mic_sd_meta[3]}]
+
+Statistics:
+	Setup Check    :              1   end points,               1   paths
+	Setup Check    :              1   end points,               1   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : mic_sd[3](triggered by clock )
+End Point           : u_demo/u_mic_capture/mic_sd_meta_reg[3]_syn_4.mi[1](triggered by clock clk_50)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: mic_sd[3],  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: mic_sd[3]_syn_2.ipad
+PAD                 x000y044                                          pin: mic_sd[3]_syn_2.di
+net (fo=1)                                                            net: mic_sd[3]_dup_1,  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: u_demo/u_mic_capture/mic_sd_meta_reg[3]_syn_4.mi[1]
+reg                 x003y033z3                                        net: u_demo/u_mic_capture/mic_sd_meta[3],  ../rtl/i2s_mic4_rx_50m.v(17)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : mic_sd[3](triggered by clock )
+End Point           : u_demo/u_mic_capture/mic_sd_meta_reg[3]_syn_4.mi[1](triggered by clock clk_50)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: mic_sd[3],  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: mic_sd[3]_syn_2.ipad
+PAD                 x000y044                                          pin: mic_sd[3]_syn_2.di
+net (fo=1)                                                            net: mic_sd[3]_dup_1,  ../rtl/slave_demo_physical_wrapper.v(17)
+                                                                      pin: u_demo/u_mic_capture/mic_sd_meta_reg[3]_syn_4.mi[1]
+reg                 x003y033z3                                        net: u_demo/u_mic_capture/mic_sd_meta[3],  ../rtl/i2s_mic4_rx_50m.v(17)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -from [get_ports {sw[0]}] -to [get_regs {u_panel/sw_meta[0]}]
+
+Statistics:
+	Setup Check    :              1   end points,               1   paths
+	Setup Check    :              1   end points,               1   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : sw[0](triggered by clock )
+End Point           : u_panel/sw_meta_reg[3]_syn_4.mi[0](triggered by clock clk_50)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: sw[0],  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: sw[0]_syn_6.ipad
+PAD                 x025y000                                          pin: sw[0]_syn_6.di
+net (fo=3)                                                            net: sw[0]_dup_5,  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: u_panel/sw_meta_reg[3]_syn_4.mi[0]
+reg                 x017y023z3                                        net: u_panel/sw_meta[0],  ../rtl/slave_panel_ctrl.v(18)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : sw[0](triggered by clock )
+End Point           : u_panel/sw_meta_reg[3]_syn_4.mi[0](triggered by clock clk_50)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: sw[0],  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: sw[0]_syn_6.ipad
+PAD                 x025y000                                          pin: sw[0]_syn_6.di
+net (fo=3)                                                            net: sw[0]_dup_5,  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: u_panel/sw_meta_reg[3]_syn_4.mi[0]
+reg                 x017y023z3                                        net: u_panel/sw_meta[0],  ../rtl/slave_panel_ctrl.v(18)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -from [get_ports {sw[1]}] -to [get_regs {u_panel/sw_meta[1]}]
+
+Statistics:
+	Setup Check    :              1   end points,               1   paths
+	Setup Check    :              1   end points,               1   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : sw[1](triggered by clock )
+End Point           : core/guard/mux201_syn_269.mi[0](triggered by clock clk_50)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: sw[1],  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: sw[1]_syn_4.ipad
+PAD                 x028y000                                          pin: sw[1]_syn_4.di
+net (fo=3)                                                            net: sw[1]_dup_3,  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: core/guard/mux201_syn_269.mi[0]
+reg                 x019y026z1                                        net: u_panel/sw_meta[1],  ../rtl/slave_panel_ctrl.v(18)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : sw[1](triggered by clock )
+End Point           : core/guard/mux201_syn_269.mi[0](triggered by clock clk_50)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: sw[1],  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: sw[1]_syn_4.ipad
+PAD                 x028y000                                          pin: sw[1]_syn_4.di
+net (fo=3)                                                            net: sw[1]_dup_3,  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: core/guard/mux201_syn_269.mi[0]
+reg                 x019y026z1                                        net: u_panel/sw_meta[1],  ../rtl/slave_panel_ctrl.v(18)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -from [get_ports {sw[2]}] -to [get_regs {u_panel/sw_meta[2]}]
+
+Statistics:
+	Setup Check    :              1   end points,               1   paths
+	Setup Check    :              1   end points,               1   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : sw[2](triggered by clock )
+End Point           : u_panel/sw_meta_reg[2]_syn_4.mi[1](triggered by clock clk_50)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: sw[2],  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: sw[2]_syn_4.ipad
+PAD                 x028y000                                          pin: sw[2]_syn_4.di
+net (fo=3)                                                            net: sw[2]_dup_3,  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: u_panel/sw_meta_reg[2]_syn_4.mi[1]
+reg                 x017y025z2                                        net: u_panel/sw_meta[2],  ../rtl/slave_panel_ctrl.v(18)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : sw[2](triggered by clock )
+End Point           : u_panel/sw_meta_reg[2]_syn_4.mi[1](triggered by clock clk_50)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: sw[2],  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: sw[2]_syn_4.ipad
+PAD                 x028y000                                          pin: sw[2]_syn_4.di
+net (fo=3)                                                            net: sw[2]_dup_3,  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: u_panel/sw_meta_reg[2]_syn_4.mi[1]
+reg                 x017y025z2                                        net: u_panel/sw_meta[2],  ../rtl/slave_panel_ctrl.v(18)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -from [get_ports {sw[3]}] -to [get_regs {u_panel/sw_meta[3]}]
+
+Statistics:
+	Setup Check    :              1   end points,               1   paths
+	Setup Check    :              1   end points,               1   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : sw[3](triggered by clock )
+End Point           : u_panel/sw_meta_reg[3]_syn_4.mi[1](triggered by clock clk_50)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: sw[3],  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: sw[3]_syn_4.ipad
+PAD                 x030y000                                          pin: sw[3]_syn_4.di
+net (fo=3)                                                            net: sw[3]_dup_3,  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: u_panel/sw_meta_reg[3]_syn_4.mi[1]
+reg                 x017y023z3                                        net: u_panel/sw_meta[3],  ../rtl/slave_panel_ctrl.v(18)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : sw[3](triggered by clock )
+End Point           : u_panel/sw_meta_reg[3]_syn_4.mi[1](triggered by clock clk_50)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+net (fo=1)                                                            net: sw[3],  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: sw[3]_syn_4.ipad
+PAD                 x030y000                                          pin: sw[3]_syn_4.di
+net (fo=3)                                                            net: sw[3]_dup_3,  ../rtl/slave_demo_physical_wrapper.v(13)
+                                                                      pin: u_panel/sw_meta_reg[3]_syn_4.mi[1]
+reg                 x017y023z3                                        net: u_panel/sw_meta[3],  ../rtl/slave_panel_ctrl.v(18)
+
+

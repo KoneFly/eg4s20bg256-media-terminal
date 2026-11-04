@@ -1,0 +1,2 @@
+#define EXPECTED_S_CRC 30737
+#define EXPECTED_F_CRC 62071

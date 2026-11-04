@@ -1,0 +1,20 @@
+{
+  "status": "PASS_SF_512_WORDS_72_SEGMENTS_BOUND_TO_ORIGINAL_FUNCTION",
+  "netlist": "work\\anc_room_model_r69_20261103\\rtl\\anc_sf_rom_r65.v",
+  "netlist_sha256": "2659bc4d1739a3328288dae5cf6aec58e0fc62d558e3caea36a289ad0b5cadc4",
+  "source_function_sha256": "601e2759ca97dce8808001ec401e869e22f9cb49b687fe2297d7a6a645b8fa0a",
+  "source_ROM_sha256": "2659bc4d1739a3328288dae5cf6aec58e0fc62d558e3caea36a289ad0b5cadc4",
+  "lanes": [
+    {
+      "lane": "u_sf_lo",
+      "instance": "u_sf_lo",
+      "matched_segments": 36
+    },
+    {
+      "lane": "u_sf_hi",
+      "instance": "u_sf_hi",
+      "matched_segments": 36
+    }
+  ],
+  "limitation": "static initialization/configuration retention, not encrypted vendor simulation or board acceptance"
+}

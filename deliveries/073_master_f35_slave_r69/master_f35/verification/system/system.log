@@ -1,0 +1,91 @@
+TRACE pic_idx 0 -> 1 ms=0 nav=0 per=3 page=0 @30 ns
+STEP boot animation frame 0         label=60 frames=4 @66549154 ns
+STEP boot animation frame 1         label=61 frames=6 @99882034 ns
+STEP boot -> PIC1 seamless          label=1 frames=8 @133214914 ns
+STEP SILENCE power-on default samples=2404 nonzero=0
+TRACE pic_idx 1 -> 2 ms=4 nav=0 per=3 page=0 @311065230 ns
+STEP auto 3s -> PIC2 (direct cut)   label=2 frames=21 @349878634 ns
+OSD   row 3 [ SETTINGS                 ]
+OSD   row 5 [ MUSIC      < OFF      >  ]
+TRACE pic_idx 2 -> 3 ms=4 nav=0 per=1 page=3 @391611110 ns
+OSD   row 8 [ PERIOD     < OFF      >  ]
+TRACE pic_idx 3 -> 4 ms=4 nav=0 per=0 page=0 @601071110 ns
+TRACE pic_idx 4 -> 1 ms=4 nav=0 per=0 page=0 @601199430 ns
+STEP goto_pic step                  label=1 frames=44 @733206754 ns
+TRACE pic_idx 1 -> 2 ms=4 nav=0 per=0 page=0 @784401110 ns
+STEP goto_pic step                  label=2 frames=55 @916537594 ns
+OSD   row 0 [ PHOTO PIC 2/8 SRC 200X150 OUT 640X480 MUSIC STOP               ]
+TRACE pic_idx 2 -> 3 ms=4 nav=0 per=0 page=0 @1067731110 ns
+STEP K2 next -> PIC3 (transition)   label=3 frames=74 @1233199954 ns
+TRACE pic_idx 3 -> 2 ms=4 nav=0 per=0 page=0 @1284391110 ns
+STEP K3 prev -> PIC2 (transition)   label=2 frames=85 @1416530794 ns
+STEP music on (WAV1)                wav_n=2000 trk=0 pos=1999 segs=1 @1511638270 ns
+TRACE pic_idx 2 -> 3 ms=4 nav=0 per=0 page=0 @1551061110 ns
+STEP K2 next -> PIC3 with music     label=3 frames=103 @1716526714 ns
+TRACE pic_idx 3 -> 4 ms=4 nav=0 per=0 page=0 @1767721110 ns
+TRACE pic_idx 4 -> 1 ms=4 nav=0 per=0 page=0 @1767849390 ns
+STEP K2 next -> PIC1 with music     label=1 frames=114 @1899857554 ns
+STEP music continues after page turns wav_n=21664 trk=0 pos=21663 segs=1 @1920643554 ns
+STEP music segments across page turns: 0 (skip 0 samples)
+AVDEV frame 0 audio_idx 69 dev 69 @1983189754 ns
+AVDEV frame 1 audio_idx 1671 dev 68 @2016522634 ns
+AVDEV frame 2 audio_idx 3274 dev 69 @2049855514 ns
+STEP SW3 video V3                   label=13 frames=125 @2083188394 ns
+STEP video loops V0                 label=10 frames=127 @2116521274 ns
+OSD   row 0 [ VIDEO RES 640X480 FPS 30 RGB332 TIME 00:03 PLAY                ]
+STEP K2 pause 5 frames frozen       label=10
+AVDEV frame 0 audio_idx 69 dev 69 @2399850754 ns
+STEP K3 next video -> VID00002 U0   label=40 frames=144 @2399850754 ns
+AVDEV frame 1 audio_idx 1672 dev 69 @2433183634 ns
+AVDEV frame 2 audio_idx 3274 dev 69 @2466516514 ns
+STEP VID00002 U2                    label=42 frames=148 @2466516514 ns
+AVDEV frame 0 audio_idx 69 dev 69 @2516515834 ns
+STEP K4 prev video -> VID00000 V0   label=10 frames=151 @2516515834 ns
+AVDEV frame 1 audio_idx 1671 dev 68 @2549848714 ns
+AVDEV frame 2 audio_idx 3274 dev 69 @2583181594 ns
+STEP VID00000 V2                    label=12 frames=155 @2583181594 ns
+STEP SW3 off -> picture kept        label=1 frames=158 @2633180914 ns
+STEP music resumes after video      wav_n=22673 trk=0 pos=27623 segs=2 @2655307914 ns
+STEP SW2 player page (plain picture) label=1 frames=163 @2716513114 ns
+OSD   row 4 [ MUSIC WAV1/4    ]
+OSD   row 5 [PLAY  00:00/00:00]
+TRACE pic_idx 1 -> 2 ms=4 nav=0 per=0 page=1 @2751041130 ns
+STEP K3 next track (skip missing)   wav_n=28275 trk=2 pos=999 segs=3 @2820259210 ns
+OSD   row 4 [ MUSIC WAV3/4    ]
+STEP K3 next track -> next picture  pic 1 -> 2 (track steps 1)
+TRACE pic_idx 2 -> 1 ms=4 nav=0 per=0 page=1 @2884371130 ns
+STEP K4 prev track                  wav_n=31857 trk=0 pos=499 segs=4 @2943256030 ns
+STEP K4 prev track -> prev picture  pic 2 -> 1 (track steps -1)
+STEP SILENCE KEY2 music stop samples=2404 nonzero=0
+OSD   row 9 [ SPECTRUM   < PLAY-RAW >  ]
+STEP SILENCE menu defaults MUSIC OFF samples=2404 nonzero=0
+TRACE pic_idx 1 -> 2 ms=4 nav=0 per=2 page=3 @3306631110 ns
+STEP K4 zoom /2 (PIC2)              label=22 frames=210 @3499835794 ns
+STEP K4 zoom /4 (PIC2)              label=24 frames=212 @3533168674 ns
+STEP K4 zoom back /1                label=2 frames=214 @3566501554 ns
+STEP K2 long -> wall focus 2        label=32 frames=216 @3599834434 ns
+STEP wall focus 3                   label=33 frames=218 @3633167314 ns
+TRACE pic_idx 2 -> 3 ms=4 nav=0 per=0 page=0 @3643351130 ns
+STEP K2 long -> fullscreen PIC3     label=3 frames=222 @3699833074 ns
+PHASE FULL_RESET_BEGIN cause=KEY3
+TRACE pic_idx 3 -> 1 ms=0 nav=0 per=3 page=0 @3710021170 ns
+MODEL ERROR @3710028700000 now=185501435: refresh interval exceeded
+MODEL ERROR @3731193800000 now=186559690: tRAS max
+PHASE FULL_RESET_REINITIALIZED cause=KEY3
+STEP K3 long reload -> PIC1         label=1 frames=230 @3864007587 ns
+PHASE FULL_RESET_BEGIN cause=KEY1
+MODEL ERROR @3914015260000 now=195700763: refresh interval exceeded
+MODEL ERROR @3916208040000 now=195810402: tRAS max
+MODEL ERROR @3916208040000 now=195810402: tRAS max
+MODEL ERROR @3916208040000 now=195810402: tRAS max
+MODEL ERROR @3916208040000 now=195810402: tRAS max
+PHASE FULL_RESET_REINITIALIZED cause=KEY1
+STEP after KEY1: boot frame 0       label=60 frames=237 @3982356057 ns
+STEP K2 skip boot -> PIC1           label=1 frames=240 @4032355377 ns
+STEP skip consumed, PIC1 stays      label=1
+SUMMARY frames=245 vframes=33 vseq_err=0 vtear=0 vaud_n=20958 vaud_err=0 av_dev_max=69 wav_n=35436 wav_err=0 wav_segs=4 wav_skip=4951 wav_stall=0 pause_nz=0
+RESULT PASS errors=0 @4115687577 ns
+- work/f35_keymap_r04/tb/tb_f3_system.sv:519: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 4s; walltime 785.028 s; speed 5.243 ms/s
+- Verilator: cpu 785.010 s on 1 threads; alloced 137 MB

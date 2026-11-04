@@ -1,0 +1,10 @@
+{
+  "baseline": "board-display-confirmed F3-pre baabd51bb1d4e33f7dca82b73aed95d66a57918e47633e0a14d747049f90adff",
+  "candidate": "f31_trim_init_r01/td_run_r02",
+  "new_warnings": [
+    "HDL-7225 CRITICAL-WARNING: 'v_frames' is already implicitly declared on line 187 in ../rtl/t073_media_ctrl.v(LINE)"
+  ],
+  "removed_warnings": [],
+  "baseline_count": 28,
+  "candidate_count": 29
+}

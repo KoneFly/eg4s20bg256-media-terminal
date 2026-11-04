@@ -1,0 +1,14 @@
+%Error: work/f35_keymap_r01/rtl/pixel_switch_sync.v:17:5: Cannot find file containing module: 'EG_PHY_MSLICE'
+   17 |     EG_PHY_MSLICE #(
+      |     ^~~~~~~~~~~~~
+%Error: work/f35_keymap_r01/rtl/pixel_switch_sync.v:17:5: This may be because there's no search path specified with -I<dir>.
+   17 |     EG_PHY_MSLICE #(
+      |     ^~~~~~~~~~~~~
+        ... Looked in:
+             EG_PHY_MSLICE
+             EG_PHY_MSLICE.v
+             EG_PHY_MSLICE.sv
+             /tmp/t073_full_audit.3zEDdX/spec/EG_PHY_MSLICE
+             /tmp/t073_full_audit.3zEDdX/spec/EG_PHY_MSLICE.v
+             /tmp/t073_full_audit.3zEDdX/spec/EG_PHY_MSLICE.sv
+%Error: Exiting due to 2 error(s)

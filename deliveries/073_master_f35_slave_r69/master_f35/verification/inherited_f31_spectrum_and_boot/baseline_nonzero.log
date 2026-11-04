@@ -1,0 +1,14 @@
+ERROR f=3 x=64 y=408 got fd20 exp 3218
+ERROR f=3 x=65 y=408 got fd20 exp 3a18
+ERROR f=3 x=66 y=408 got fd20 exp 2218
+ERROR f=3 x=68 y=408 got fd20 exp 1238
+ERROR f=3 x=69 y=408 got fd20 exp 1a38
+ERROR f=3 x=70 y=408 got fd20 exp 0238
+ERROR f=3 x=72 y=408 got fd20 exp 7258
+ERROR f=3 x=73 y=408 got fd20 exp 7a58
+SUMMARY frames=60 pixels_checked=5315200 errors=139436 bar_only=185659 wave_only=132468 bar_over_wave=342839 spike_raw=63 spike_shown_max=33
+RESULT FAIL
+- review/f31_smoothing_init/tb_spectrum_init.sv:155: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 1s; walltime 5.901 s; speed 170.766 ms/s
+- Verilator: cpu 5.901 s on 1 threads; alloced 121 MB

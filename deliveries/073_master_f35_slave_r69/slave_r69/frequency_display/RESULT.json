@@ -1,0 +1,48 @@
+{
+  "status": "PASS_REAL_FFT_DISPLAY_MODULE_TESTS",
+  "source": "MIC2 native PCM",
+  "sample_rate_numerator": 50000000,
+  "sample_rate_denominator": 1040,
+  "window_samples": 4096,
+  "gap_samples": 4096,
+  "range_hz": [
+    40,
+    999
+  ],
+  "invalid_display": "----",
+  "display_drives_ANC": false,
+  "public_CRC8_frames": 467,
+  "public_CRC16_three_spectrum_groups": 14,
+  "no_PCM_first_estimate_clocks": [
+    4484234,
+    4484243
+  ],
+  "final_source_mean_shift_equivalence": {
+    "before_sha256": "033f6878ee570d668c9bb4c4b4f5002126a6edcee5c8643bdf5adc8894ad338a",
+    "after_sha256": "f0f8000357169c426bcd2c931ff0e50b05f8ec9314af535853b2a6ba8293dadd",
+    "proof": "signed28 >>>12 then truncate16 equals bits[27:12] for all inputs"
+  },
+  "real_TD_or_board_pass": false,
+  "files": {
+    "mic2_frequency_display_r66.v": "f0f8000357169c426bcd2c931ff0e50b05f8ec9314af535853b2a6ba8293dadd",
+    "seg6_hz_display_r66.v": "720d7afb27c67adaa05959cf2edba3466fcc8a3d70d1b3f11a71d597597ae912",
+    "frequency66_tb.v": "41f7c01971853ef763ba5611a20f9861999ff95c95515b889ecce38447cad176",
+    "check_frequency66.cpp": "242dc24729a0aa32e54a5fd494344b4adce63712421628511883a6e4aa4124b8",
+    "check_frequency66_extra.cpp": "40a5fa2ad65ec2e2e8ebf9e1ee7777f5eb827730c682e927d3d962bda1f46e99",
+    "run_tests.py": "29bc3c9c66ad565563f6e1890e64151c0eace60d7ce4741c00b3b8b71ceb31e4",
+    "run_extra.py": "c1f4b100f4be2cd6ff5a6ce6b232a59e9996043e9c3aff58dfe5c181fb3efad2",
+    "run_r03.log": "df7292086b35d9963d0415025dd9c4f1c382148d095b8341445ef982f2c23ffb",
+    "extra.log": "22737336b31bc35620196415fbbec295d347cd90e0d52bcad707751d3ec91f83",
+    "README.md": "b2a25a2c87e07f5621960b321eebafe1eb246fc6493f4d117544a37a7f781387",
+    "work/slave_slim_r66_20261103/rtl/fft_three_path_scheduler_r06.v": "5ed11e05cb66a11c5961e0d3df97fc90bddaa1fd13eb742beb24219c316baccf",
+    "work/slave_slim_r66_20261103/rtl/pcf_fft_frontend.v": "5a37ce097703a3390fefbef4e731c6949b689ee41aae0bee4911933d0d813204",
+    "work/slave_slim_r66_20261103/rtl/fft_tables.vh": "c3923af86aafc1d436ad694d38d04ac335875384b78394e1e697792ed9b7f8cb",
+    "work/slave_slim_r66_20261103/rtl/fft_fixed_rom_instances.vh": "25688c1e2797e4583c16bfec7e69cad29c45be6c8b1d3d809d998799e59cfc97",
+    "work/slave_slim_r66_20261103/rtl/multi_spectrum_group_tx_r03_bram.v": "37443b70ff9c97a2479b9c29021354c29a839aa05e4346e2473b7fab4bdb6fa8",
+    "work/slave_slim_r66_20261103/rtl/link062_packet_tx.v": "c7f915937499977629231b574b29bb9dc04c6c5c890dd666c08044f03a59d36a",
+    "work/slave_slim_r66_20261103/rtl/interboard_tx.v": "61e6ef80a9a1078c633c13591cc2a244ec59d750a12abc2928d5c1361e0fd238",
+    "work/slave_slim_r66_20261103/rtl/multi_spectrum_crc_r03.vh": "f95ffb7acefb467f117dc8177dc40fa44fd2b98482339f0edd078bc27ebdb3f3",
+    "work/slave_slim_r66_20261103/rtl/link062_crc.vh": "766caebc6971f1c08fe10444149000f2690dc8a48102e279a7cc706d08dead4d",
+    "work/slave_slim_r66_20261103/models/custom_EG_PHY_BRAM.v": "a706ffb0f20173fe555469fb2677ce99ea2b8b2b5be57ec666b947d8d63cc67d"
+  }
+}

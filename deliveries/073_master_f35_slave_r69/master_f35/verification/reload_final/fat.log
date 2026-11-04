@@ -1,0 +1,13 @@
+STEP REMOVE fault=fat ms=4 fx=2 wptr=0
+PHASE FULL_RESET_BEGIN cause=KEY3
+MODEL ERROR @328416120000 now=16420806: refresh interval exceeded
+MODEL ERROR @349573800000 now=17478690: tRAS max
+PHASE FULL_RESET_REINITIALIZED cause=KEY3
+CARD_INSERT_FRAGMENT 350378811000 idx=12
+STEP recovered PIC1 label=1 frames=25
+STEP navigation after recovery label=2 frames=28
+RESULT PASS hot_reload fault=fat frames=28 init_count=2 interrupted_state=4
+- work/f35_keymap_r04/tb/tb_hot_reload.sv:169: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 499ms; walltime 77.493 s; speed 6.440 ms/s
+- Verilator: cpu 77.492 s on 1 threads; alloced 135 MB

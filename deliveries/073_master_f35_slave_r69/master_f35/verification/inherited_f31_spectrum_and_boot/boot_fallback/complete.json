@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "status": "PASS",
+  "reasons": [],
+  "key1_reset_diagnostics": [],
+  "scope": "KEY1 destroys the previous media/memory session; soft media switches receive no exception"
+}

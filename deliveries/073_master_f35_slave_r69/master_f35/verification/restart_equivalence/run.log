@@ -1,0 +1,5 @@
+RESULT PASS exhaustive guard transition equivalence cases=16777216
+- work/f34_restart_r04/tb/tb_restart_equivalence.sv:25: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 336ms; walltime 18.090 s; speed 18.548 ms/s
+- Verilator: cpu 18.090 s on 1 threads; alloced 121 MB

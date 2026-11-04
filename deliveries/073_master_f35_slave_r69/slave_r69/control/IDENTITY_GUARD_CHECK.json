@@ -1,0 +1,12 @@
+{
+  "status": "PASS_FROZEN_B0_AND_RELEASE_IDENTITY_GUARDS",
+  "same_B0_and_source_accepted": true,
+  "changed_live_B0_rejected": true,
+  "changed_live_source_rejected": true,
+  "same_sealed_bit_accepted": true,
+  "different_sealed_SHA_rejected_before_success": true,
+  "different_sealed_path_rejected_before_success": true,
+  "TD_or_bitgen_started": false,
+  "fixtures": "mocked inputs to real guard functions; no production files mutated",
+  "flow_sha256": "86f1cdc22e191f4a2280fe02eaef6b207c1191383e57253978a64c48042de627"
+}

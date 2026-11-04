@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "status": "PASS",
+  "reasons": [],
+  "full_reset_diagnostics": [],
+  "scope": "KEY1 and authorized KEY3 full restart destroy old media/memory; normal switches receive no exception"
+}

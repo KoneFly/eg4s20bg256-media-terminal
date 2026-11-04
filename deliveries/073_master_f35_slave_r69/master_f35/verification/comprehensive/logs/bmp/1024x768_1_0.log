@@ -1,0 +1,7 @@
+BLACKROWS
+SUMMARY img=1024x768 err=0 rows=480 dup=0 words=589840/589840 pix_err=0
+RESULT PASS
+- tb/tb_bmp_loader.sv:79: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 59ms; walltime 0.970 s; speed 60.782 ms/s
+- Verilator: cpu 0.971 s on 1 threads; alloced 138 MB

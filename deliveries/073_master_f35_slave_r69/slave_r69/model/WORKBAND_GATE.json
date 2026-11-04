@@ -1,0 +1,526 @@
+{
+  "gate": {
+    "median_phase_deg": 15.0,
+    "p95_phase_deg": 45.0,
+    "median_gain_db": 3.0
+  },
+  "gate_change": {
+    "from": "max_phase_deg <= 45",
+    "to": "p95_phase_deg <= 45",
+    "observed_max": [
+      {
+        "channel": "secondary",
+        "level": "full",
+        "max_phase_deg": 43.48236406030028,
+        "at_Hz": 673.4407865084135
+      },
+      {
+        "channel": "secondary",
+        "level": "half",
+        "max_phase_deg": 49.300485658503334,
+        "at_Hz": 673.4407865084135
+      },
+      {
+        "channel": "feedback",
+        "level": "full",
+        "max_phase_deg": 12.315570022122083,
+        "at_Hz": 724.79248046875
+      },
+      {
+        "channel": "feedback",
+        "level": "half",
+        "max_phase_deg": 13.016739833404202,
+        "at_Hz": 460.6980543870192
+      }
+    ],
+    "why": "128 tap 结构下 S 半幅最差点 49.3°@673 Hz；ridge/频段加权/IRLS/能量加权均变差，收窄拟合带使 760-1000 Hz 误差崩至 ~180°",
+    "approved_by": "user 2026-11-03"
+  },
+  "work_band_Hz": [
+    240.0,
+    760.0
+  ],
+  "target_bands_Hz": [
+    [
+      240.0,
+      260.0
+    ],
+    [
+      490.0,
+      510.0
+    ],
+    [
+      740.0,
+      760.0
+    ]
+  ],
+  "checks": [
+    {
+      "channel": "secondary",
+      "level": "full",
+      "band_Hz": [
+        240.0,
+        760.0
+      ],
+      "new": {
+        "bins": 308,
+        "median_phase_deg": 7.440054852351719,
+        "p95_phase_deg": 25.17480526818404,
+        "max_phase_deg": 43.48236406030028,
+        "max_phase_at_Hz": 673.4407865084135,
+        "median_gain_db": 1.3444283047932313,
+        "relative_complex_RMS": 0.2690238516885466
+      },
+      "deployed": {
+        "bins": 308,
+        "median_phase_deg": 62.61136407351293,
+        "p95_phase_deg": 121.37439975568277,
+        "max_phase_deg": 155.29003095083272,
+        "max_phase_at_Hz": 595.6796499399038,
+        "median_gain_db": 5.429903913971282,
+        "relative_complex_RMS": 1.8425245343391112
+      },
+      "gate": {
+        "median_phase_deg": 15.0,
+        "p95_phase_deg": 45.0,
+        "median_gain_db": 3.0
+      },
+      "passes_workband_gate": true
+    },
+    {
+      "channel": "secondary",
+      "level": "half",
+      "band_Hz": [
+        240.0,
+        760.0
+      ],
+      "new": {
+        "bins": 244,
+        "median_phase_deg": 8.067535830867051,
+        "p95_phase_deg": 27.529253821925995,
+        "max_phase_deg": 49.300485658503334,
+        "max_phase_at_Hz": 673.4407865084135,
+        "median_gain_db": 1.2136260281614886,
+        "relative_complex_RMS": 0.2738828753413922
+      },
+      "deployed": {
+        "bins": 244,
+        "median_phase_deg": 65.58747187310647,
+        "p95_phase_deg": 126.65359972857895,
+        "max_phase_deg": 164.74376843581965,
+        "max_phase_at_Hz": 595.6796499399038,
+        "median_gain_db": 4.476052201836727,
+        "relative_complex_RMS": 1.74708900893195
+      },
+      "gate": {
+        "median_phase_deg": 15.0,
+        "p95_phase_deg": 45.0,
+        "median_gain_db": 3.0
+      },
+      "passes_workband_gate": true
+    },
+    {
+      "channel": "secondary",
+      "level": "full",
+      "band_Hz": [
+        240.0,
+        260.0
+      ],
+      "new": {
+        "bins": 10,
+        "median_phase_deg": 3.5832492876578623,
+        "p95_phase_deg": 9.38868157657016,
+        "max_phase_deg": 11.420669358243677,
+        "max_phase_at_Hz": 252.35689603365384,
+        "median_gain_db": 0.9159052177869837,
+        "relative_complex_RMS": 0.1524878571108504
+      },
+      "deployed": {
+        "bins": 10,
+        "median_phase_deg": 40.13458837685575,
+        "p95_phase_deg": 43.33633296468463,
+        "max_phase_deg": 43.52046831972368,
+        "max_phase_at_Hz": 256.7584698016827,
+        "median_gain_db": 5.892689823645739,
+        "relative_complex_RMS": 1.3161957038149146
+      },
+      "no_regression_tol_deg": 3.0,
+      "new_better_than_deployed": true
+    },
+    {
+      "channel": "secondary",
+      "level": "half",
+      "band_Hz": [
+        240.0,
+        260.0
+      ],
+      "new": {
+        "bins": 3,
+        "median_phase_deg": 7.240371605959924,
+        "p95_phase_deg": 8.22966469251541,
+        "max_phase_deg": 8.339586146577131,
+        "max_phase_at_Hz": 253.82408728966348,
+        "median_gain_db": 0.46933900544299045,
+        "relative_complex_RMS": 0.12329717879789057
+      },
+      "deployed": {
+        "bins": 3,
+        "median_phase_deg": 36.0827532969992,
+        "p95_phase_deg": 42.572265136180775,
+        "max_phase_deg": 43.29332200720095,
+        "max_phase_at_Hz": 250.88970477764423,
+        "median_gain_db": 4.746091614097657,
+        "relative_complex_RMS": 1.141507854825245
+      },
+      "no_regression_tol_deg": 3.0,
+      "new_better_than_deployed": true
+    },
+    {
+      "channel": "secondary",
+      "level": "full",
+      "band_Hz": [
+        490.0,
+        510.0
+      ],
+      "new": {
+        "bins": 6,
+        "median_phase_deg": 3.875872528956249,
+        "p95_phase_deg": 8.906980820458113,
+        "max_phase_deg": 9.210398905394293,
+        "max_phase_at_Hz": 494.4434532752404,
+        "median_gain_db": 0.4206543385971392,
+        "relative_complex_RMS": 0.11795915618311142
+      },
+      "deployed": {
+        "bins": 6,
+        "median_phase_deg": 80.20750048169444,
+        "p95_phase_deg": 85.72192994041528,
+        "max_phase_deg": 86.0858172456067,
+        "max_phase_at_Hz": 494.4434532752404,
+        "median_gain_db": 3.968089280013059,
+        "relative_complex_RMS": 1.7157940244129755
+      },
+      "no_regression_tol_deg": 3.0,
+      "new_better_than_deployed": true
+    },
+    {
+      "channel": "secondary",
+      "level": "half",
+      "band_Hz": [
+        490.0,
+        510.0
+      ],
+      "new": {
+        "bins": 4,
+        "median_phase_deg": 7.449343771586216,
+        "p95_phase_deg": 8.8437400508452,
+        "max_phase_deg": 8.984340898141761,
+        "max_phase_at_Hz": 492.9762620192308,
+        "median_gain_db": 0.3862719037472193,
+        "relative_complex_RMS": 0.1353531267160011
+      },
+      "deployed": {
+        "bins": 4,
+        "median_phase_deg": 83.78097172432439,
+        "p95_phase_deg": 85.41837920274989,
+        "max_phase_deg": 85.6178823573332,
+        "max_phase_at_Hz": 492.9762620192308,
+        "median_gain_db": 3.775399969466676,
+        "relative_complex_RMS": 1.7206844745399217
+      },
+      "no_regression_tol_deg": 3.0,
+      "new_better_than_deployed": true
+    },
+    {
+      "channel": "secondary",
+      "level": "full",
+      "band_Hz": [
+        740.0,
+        760.0
+      ],
+      "new": {
+        "bins": 13,
+        "median_phase_deg": 15.402106498692556,
+        "p95_phase_deg": 28.796068069235158,
+        "max_phase_deg": 34.47356140824736,
+        "max_phase_at_Hz": 757.0706881009615,
+        "median_gain_db": 2.3514124567671413,
+        "relative_complex_RMS": 0.3780915094182369
+      },
+      "deployed": {
+        "bins": 13,
+        "median_phase_deg": 60.023917039734755,
+        "p95_phase_deg": 69.30440447573137,
+        "max_phase_deg": 74.68456474232747,
+        "max_phase_at_Hz": 757.0706881009615,
+        "median_gain_db": 7.994025249157407,
+        "relative_complex_RMS": 2.2075672244207665
+      },
+      "no_regression_tol_deg": 3.0,
+      "new_better_than_deployed": true
+    },
+    {
+      "channel": "secondary",
+      "level": "half",
+      "band_Hz": [
+        740.0,
+        760.0
+      ],
+      "new": {
+        "bins": 11,
+        "median_phase_deg": 24.565151061040314,
+        "p95_phase_deg": 35.868294565351874,
+        "max_phase_deg": 38.69713156518322,
+        "max_phase_at_Hz": 758.5378793569712,
+        "median_gain_db": 1.8373790553611704,
+        "relative_complex_RMS": 0.44643683015391533
+      },
+      "deployed": {
+        "bins": 11,
+        "median_phase_deg": 69.47121325756423,
+        "p95_phase_deg": 76.52813619338326,
+        "max_phase_deg": 78.19407045633004,
+        "max_phase_at_Hz": 758.5378793569712,
+        "median_gain_db": 8.63373992971448,
+        "relative_complex_RMS": 2.5089830057879925
+      },
+      "no_regression_tol_deg": 3.0,
+      "new_better_than_deployed": true
+    },
+    {
+      "channel": "feedback",
+      "level": "full",
+      "band_Hz": [
+        240.0,
+        760.0
+      ],
+      "new": {
+        "bins": 329,
+        "median_phase_deg": 2.35202455469066,
+        "p95_phase_deg": 7.158547355735785,
+        "max_phase_deg": 12.315570022122083,
+        "max_phase_at_Hz": 724.79248046875,
+        "median_gain_db": 0.36328044774744433,
+        "relative_complex_RMS": 0.08687129530537559
+      },
+      "deployed": {
+        "bins": 329,
+        "median_phase_deg": 14.304192639864517,
+        "p95_phase_deg": 27.162228743361165,
+        "max_phase_deg": 33.70987695687386,
+        "max_phase_at_Hz": 688.1126990685096,
+        "median_gain_db": 1.2809004135075899,
+        "relative_complex_RMS": 0.3483495273928567
+      },
+      "gate": {
+        "median_phase_deg": 15.0,
+        "p95_phase_deg": 45.0,
+        "median_gain_db": 3.0
+      },
+      "passes_workband_gate": true
+    },
+    {
+      "channel": "feedback",
+      "level": "half",
+      "band_Hz": [
+        240.0,
+        760.0
+      ],
+      "new": {
+        "bins": 262,
+        "median_phase_deg": 2.3442579024272767,
+        "p95_phase_deg": 9.417358878513893,
+        "max_phase_deg": 13.016739833404202,
+        "max_phase_at_Hz": 460.6980543870192,
+        "median_gain_db": 0.36648212120187845,
+        "relative_complex_RMS": 0.09243509402216932
+      },
+      "deployed": {
+        "bins": 262,
+        "median_phase_deg": 14.125509942490194,
+        "p95_phase_deg": 26.00735185508363,
+        "max_phase_deg": 31.314683679756765,
+        "max_phase_at_Hz": 611.8187537560096,
+        "median_gain_db": 1.3216169619286484,
+        "relative_complex_RMS": 0.3378242061049766
+      },
+      "gate": {
+        "median_phase_deg": 15.0,
+        "p95_phase_deg": 45.0,
+        "median_gain_db": 3.0
+      },
+      "passes_workband_gate": true
+    },
+    {
+      "channel": "feedback",
+      "level": "full",
+      "band_Hz": [
+        240.0,
+        260.0
+      ],
+      "new": {
+        "bins": 12,
+        "median_phase_deg": 2.511788059652468,
+        "p95_phase_deg": 5.11550555594296,
+        "max_phase_deg": 6.82081162292084,
+        "max_phase_at_Hz": 243.55374849759616,
+        "median_gain_db": 0.24369906709050393,
+        "relative_complex_RMS": 0.06523260976055366
+      },
+      "deployed": {
+        "bins": 12,
+        "median_phase_deg": 13.150296808278966,
+        "p95_phase_deg": 15.652714967250235,
+        "max_phase_deg": 16.243209340651124,
+        "max_phase_at_Hz": 243.55374849759616,
+        "median_gain_db": 1.3545618747014552,
+        "relative_complex_RMS": 0.2992122700758754
+      },
+      "no_regression_tol_deg": 3.0,
+      "new_better_than_deployed": true
+    },
+    {
+      "channel": "feedback",
+      "level": "half",
+      "band_Hz": [
+        240.0,
+        260.0
+      ],
+      "new": {
+        "bins": 1,
+        "median_phase_deg": 2.176259593452185,
+        "p95_phase_deg": 2.176259593452185,
+        "max_phase_deg": 2.176259593452185,
+        "max_phase_at_Hz": 255.2912785456731,
+        "median_gain_db": 0.679485610504525,
+        "relative_complex_RMS": 0.0836427009184658
+      },
+      "deployed": {
+        "bins": 1,
+        "median_phase_deg": 14.23283317075606,
+        "p95_phase_deg": 14.23283317075606,
+        "max_phase_deg": 14.23283317075606,
+        "max_phase_at_Hz": 255.2912785456731,
+        "median_gain_db": 0.7967547206509583,
+        "relative_complex_RMS": 0.27661826455470606
+      },
+      "no_regression_tol_deg": 3.0,
+      "new_better_than_deployed": true
+    },
+    {
+      "channel": "feedback",
+      "level": "full",
+      "band_Hz": [
+        490.0,
+        510.0
+      ],
+      "new": {
+        "bins": 7,
+        "median_phase_deg": 1.134086565347016,
+        "p95_phase_deg": 6.071703055080033,
+        "max_phase_deg": 6.743144368513981,
+        "max_phase_at_Hz": 498.8450270432692,
+        "median_gain_db": 0.40243158513174837,
+        "relative_complex_RMS": 0.08253677604938083
+      },
+      "deployed": {
+        "bins": 7,
+        "median_phase_deg": 6.125789931855567,
+        "p95_phase_deg": 8.889641140417885,
+        "max_phase_deg": 9.153190668619418,
+        "max_phase_at_Hz": 492.9762620192308,
+        "median_gain_db": 2.7764511128707277,
+        "relative_complex_RMS": 0.40416225391985866
+      },
+      "no_regression_tol_deg": 3.0,
+      "new_better_than_deployed": true
+    },
+    {
+      "channel": "feedback",
+      "level": "half",
+      "band_Hz": [
+        490.0,
+        510.0
+      ],
+      "new": {
+        "bins": 4,
+        "median_phase_deg": 1.61484316193125,
+        "p95_phase_deg": 5.542071537494696,
+        "max_phase_deg": 6.2226301323036655,
+        "max_phase_at_Hz": 495.91064453125,
+        "median_gain_db": 0.5418284688472041,
+        "relative_complex_RMS": 0.10202840181398343
+      },
+      "deployed": {
+        "bins": 4,
+        "median_phase_deg": 5.844790705039187,
+        "p95_phase_deg": 8.006355129197644,
+        "max_phase_deg": 8.333457591830857,
+        "max_phase_at_Hz": 492.9762620192308,
+        "median_gain_db": 2.6460423206131884,
+        "relative_complex_RMS": 0.35629575744260844
+      },
+      "no_regression_tol_deg": 3.0,
+      "new_better_than_deployed": true
+    },
+    {
+      "channel": "feedback",
+      "level": "full",
+      "band_Hz": [
+        740.0,
+        760.0
+      ],
+      "new": {
+        "bins": 13,
+        "median_phase_deg": 3.5580907039271965,
+        "p95_phase_deg": 7.948045512784106,
+        "max_phase_deg": 7.976422909597555,
+        "max_phase_at_Hz": 757.0706881009615,
+        "median_gain_db": 1.324328383508975,
+        "relative_complex_RMS": 0.1862520746643661
+      },
+      "deployed": {
+        "bins": 13,
+        "median_phase_deg": 14.448554277869414,
+        "p95_phase_deg": 20.321658404716498,
+        "max_phase_deg": 21.276476194688566,
+        "max_phase_at_Hz": 757.0706881009615,
+        "median_gain_db": 2.875338307368651,
+        "relative_complex_RMS": 0.5069770498150004
+      },
+      "no_regression_tol_deg": 3.0,
+      "new_better_than_deployed": true
+    },
+    {
+      "channel": "feedback",
+      "level": "half",
+      "band_Hz": [
+        740.0,
+        760.0
+      ],
+      "new": {
+        "bins": 7,
+        "median_phase_deg": 9.681118929563608,
+        "p95_phase_deg": 11.602036820209799,
+        "max_phase_deg": 12.169978387583594,
+        "max_phase_at_Hz": 740.9315842848558,
+        "median_gain_db": 0.7892513896924671,
+        "relative_complex_RMS": 0.19494752741187993
+      },
+      "deployed": {
+        "bins": 7,
+        "median_phase_deg": 8.356801796629984,
+        "p95_phase_deg": 12.368924280542524,
+        "max_phase_deg": 13.376361965290384,
+        "max_phase_at_Hz": 751.2019230769231,
+        "median_gain_db": 2.2166198953831415,
+        "relative_complex_RMS": 0.3463711239637746
+      },
+      "no_regression_tol_deg": 3.0,
+      "new_better_than_deployed": true
+    }
+  ],
+  "workband_pass": true,
+  "better_than_deployed_in_all_target_bands": true,
+  "approved_by": "user 2026-11-03: 换成频段判据，出 R69"
+}

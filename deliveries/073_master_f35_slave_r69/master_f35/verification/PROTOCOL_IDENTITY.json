@@ -1,0 +1,87 @@
+[
+  {
+    "name": "demo_main_link.v",
+    "equal": true,
+    "sha256": "6259B85C1375CC0985070F439DF36540270770CA0A9C133ED7D84E502C7205C9"
+  },
+  {
+    "name": "c1_audio_cdc.v",
+    "equal": true,
+    "sha256": "F35250F560702AB249A33925AA13AC53F63EF3142B6D2C1F6B554031F66A68E5"
+  },
+  {
+    "name": "wm_c1_pcm_tx.v",
+    "equal": true,
+    "sha256": "3AC324341515DFC29DB2C2B386B76C15AE25EBC9E7C689138E79A2F89E400518"
+  },
+  {
+    "name": "link062_packet_tx.v",
+    "equal": true,
+    "sha256": "C7F915937499977629231B574B29BB9DC04C6C5C890DD666C08044F03A59D36A"
+  },
+  {
+    "name": "interboard_tx.v",
+    "equal": true,
+    "sha256": "9AB141529D2516E4158DC71154B6C825A0BD8A573A379F56408DE564178A5EC9"
+  },
+  {
+    "name": "demo_spectrum_rx.v",
+    "equal": true,
+    "sha256": "09A3D89C9AD8E2E8055A59A44E934497AD7C60BB0C60EF7F36945550BC80CB41"
+  },
+  {
+    "name": "demo_interboard_rx.v",
+    "equal": true,
+    "sha256": "327E2C071FC76259018E3EC3F155357BA9E2358A3D5C2CA6DF9B6AD448106383"
+  },
+  {
+    "name": "multi_spectrum_group_rx_shiftadd_r03.v",
+    "equal": true,
+    "sha256": "F8E7DD8815E306D2EF40FC1DB4CE44A270D245BB1D958D77259B1DE5F86B612F"
+  },
+  {
+    "name": "multi_snapshot_table.v",
+    "equal": true,
+    "sha256": "72ED6FB33941AFD96399C71AAC79B82378B9B79867BE078A6B332CB635471857"
+  },
+  {
+    "name": "multi_snapshot_observer.v",
+    "equal": true,
+    "sha256": "A0DE99AC0BF36B84214D35BBECFE9D0B9D3148EE30DA9B10F3C4E7691C56E1BF"
+  },
+  {
+    "name": "link062_crc.vh",
+    "equal": true,
+    "sha256": "766CAEBC6971F1C08FE10444149000F2690DC8A48102E279A7CC706D08DEAD4D"
+  },
+  {
+    "name": "multi_spectrum_crc_r02.vh",
+    "equal": true,
+    "sha256": "F95FFB7ACEFB467F117DC8177DC40FA44FD2B98482339F0EDD078BC27EBDB3F3"
+  },
+  {
+    "name": "audio_i2s_bridge.v",
+    "equal": true,
+    "sha256": "F1BCC71F638BBB0A0B9FE497D9B2C014DB58D860F4B699BD8DE1E60C0298E793"
+  },
+  {
+    "name": "audio_frame_fifo.v",
+    "equal": true,
+    "sha256": "3AB107F5CD124FC4343B2B0D0B985D9C6F7A0A568B385A98D975C447283E704F"
+  },
+  {
+    "name": "i2s_master.v",
+    "equal": true,
+    "sha256": "9D1AA71FA7F9C1EAE9B0D15060CFC840405DEDE61A6D6402C20AF8C686B56C01"
+  },
+  {
+    "name": "I2S_receiver.v",
+    "equal": true,
+    "sha256": "08904598B42C2E1A4836CD9FB3293BC6C791EA2F79E35C7663A33127DC97F47B"
+  },
+  {
+    "name": "audio_arc_calculate.v",
+    "equal": true,
+    "sha256": "552D8D86AFD237666B30AE08F31247808E89EB024EFDE5EFC670B82EB617A7DC"
+  }
+]

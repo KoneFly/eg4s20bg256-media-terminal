@@ -1,0 +1,1566 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Tue Nov  3 16:25:56 2026
+
+Top Model           : slave_demo_physical_wrapper
+Device              : EG4S20BG256
+Speed               : NA
+STA coverage        : 100.00%
+Constraint File     : D:/task068_audio_demo/anc_room_model_r69_20261103/integration_r01/constraints/slave_demo_physical.sdc;
+Confidence          : Routed
+Check Corner        : Both (Slow and Fast)
+CRPR Enabled        : Yes
+Report Scheme       : 10 end point(s) per path group, 1 path(s) per end point
+
+
+Check Status
+-------------
+
+Corner   | Max      Min     
+------------------------------------
+Slow     | yes      yes     
+Fast     | yes      yes     
+
+
+Timing Status
+--------------------
+	SWNS: -1.264ns, STNS: -70.120ns
+	HWNS: -0.075ns, HTNS: -0.231ns
+	Period Check WNS: 16.586ns
+
+
+Clock Summary
+--------------------
+
+       Clock-Id:       C-Freq       Fanout   Clock-Name
+--------------------------------------------------------------------------------
+           clk0:       50.000         6269   clk_50
+--------------------------------------------------------------------------------
+
+       Name            Type         Rise(ns)   Fall(ns)          C-Period(ns)     C-Freq(MHz)          R-Period(ns)     R-Freq(MHz)         SWNS(ns)   STNS(ns)         HWNS(ns)   HTNS(ns)         Skew(ns)           Fanout        Max-Level        CC-From    CC-To
+       clk0           local            0.000     10.000                20.000          50.000                21.264          47.028           -1.264    -70.120           -0.075     -0.231            0.326             6269               16             no       no
+
+Notes
+----------
+C-Period  :  constraint period
+C-Freq    :  constraint freq
+R-Period  :  report min period
+R-Freq    :  report fmax
+CC-From   :  has path(s) from cross-domain clock
+CC-To     :  has path(s) to cross-domain clock
+
+
+*   Clock R-Period data only takes intra-clock timing. SWNS/STNS/HWNS/HTNS take both intra-clock and inter-clock timing.
+*   If there is mismatch between R-Period and SWNS, check inter-clock timing of this clock as capture clock.
+*   SWNS/STNS/HWNS/HTNS of timing exception (SMCP/SMD) only counted in global Timing Status, not counted in Clock Summary.
+
+Intra clock domain timing
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     clk_50 -> clk_50
+Type           :     Self
+From Clock     :     clk_50
+To Clock       :     clk_50
+Min Period     :     21.264ns
+Fmax           :     47.028MHz
+
+Statistics:
+Max            : SWNS     -1.264ns, STNS    -70.120ns,       141 Viol Endpoints,     20716 Total Endpoints,    313975 Paths Analyzed
+Min            : HWNS     -0.075ns, HTNS     -0.231ns,        15 Viol Endpoints,     20716 Total Endpoints,    313975 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : -1.264ns
+Begin Point         : core/weights/ramread0_syn_88.clkb (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/arithmetic/weights/leaked_weight_reg[28]_syn_4.d[0] (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk_50 rising@20.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 16.984ns (cell 11.646ns (68%), net 5.338ns (32%))
+Clock Skew          : 0.064ns
+Logic Level         : 10 ( ADDER=4  LUT5=2  LUT2=2  MULT18=1  LUT4=1 )
+Max Fanout          : 4
+Clock Uncertainty   : 4.100ns (sdc uncertainty: 4.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.660          1.660          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.660          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.660          pin: u_clock.clko
+net (fo=6271)                           2.062          3.722          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/weights/ramread0_syn_88.clkb
+launch edge                             0.000    r     3.722               
+--------------------------------------------------------------------  ---------------
+EMB (clk2q)         x024y009            3.245    f     6.967          pin: core/weights/ramread0_syn_88.dob[7]
+net (fo=1)                              0.503          7.470          net: core/weights/memory_read[16],  ../rtl/anc_work_ram_r61.v(13)
+                                                                      pin: core/arithmetic/weights/leak_base[6]_syn_6.d[1]
+LUT2                x021y014z3          0.262    r     7.732       1  pin: core/arithmetic/weights/leak_base[6]_syn_6.f[1]
+net (fo=4)                              0.819          8.551          net: core/arithmetic/weights/weight[16],  ../rtl/anc_weight_update_r61.v(12)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.a[0]
+MULT18              x016y009            3.563    f    12.114       2  pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.p[0]
+net (fo=1)                              0.765         12.879          net: core/arithmetic/weights/decay_multiplier/ph[0],  ../rtl/anc_decay_dsp65.v(5)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.a[1]
+ADDER               x015y008z0          0.627    f    13.506       3  pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.fco
+net (fo=1)                              0.000         13.506          net: core/arithmetic/weights/decay_multiplier/add0_syn_120,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fci
+ADDER               x015y008z1          0.073    f    13.579          pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fco
+net (fo=1)                              0.000         13.579          net: core/arithmetic/weights/decay_multiplier/add0_syn_122,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.fci
+ADDER               x015y009z0          0.355    f    13.934       4  pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.f[1]
+net (fo=1)                              0.651         14.585          net: core/arithmetic/weights/drift_product[20],  ../rtl/anc_weight_update_r61.v(28)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.b[0]
+LUT4                x017y009z1          0.333    f    14.918       5  pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.f[0]
+net (fo=1)                              0.717         15.635          net: core/arithmetic/weights/leak_carry_syn_13,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.a[0]
+LUT5                x015y014z3          0.424    f    16.059       6  pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.f[0]
+net (fo=1)                              0.603         16.662          net: core/arithmetic/weights/leak_carry_syn_21,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.a[0]
+LUT5                x015y015z3          0.424    f    17.086       7  pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.f[0]
+net (fo=1)                              0.615         17.701          net: core/arithmetic/weights/leak_carry,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: core/arithmetic/weights/add3_syn_182.e[0]
+ADDER               x015y010z2          0.781    f    18.482       8  pin: core/arithmetic/weights/add3_syn_182.fco
+net (fo=1)                              0.000         18.482          net: core/arithmetic/weights/add3_syn_151,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_183.fci
+ADDER               x015y010z3          0.132    f    18.614          pin: core/arithmetic/weights/add3_syn_183.fco
+net (fo=1)                              0.000         18.614          net: core/arithmetic/weights/add3_syn_155,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_184.fci
+ADDER               x015y011z2          0.132    f    18.746          pin: core/arithmetic/weights/add3_syn_184.fco
+net (fo=1)                              0.000         18.746          net: core/arithmetic/weights/add3_syn_159,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_185.fci
+ADDER               x015y011z3          0.132    f    18.878          pin: core/arithmetic/weights/add3_syn_185.fco
+net (fo=1)                              0.000         18.878          net: core/arithmetic/weights/add3_syn_163,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_186.fci
+ADDER               x015y012z2          0.132    f    19.010          pin: core/arithmetic/weights/add3_syn_186.fco
+net (fo=1)                              0.000         19.010          net: core/arithmetic/weights/add3_syn_167,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_187.fci
+ADDER               x015y012z3          0.132    f    19.142          pin: core/arithmetic/weights/add3_syn_187.fco
+net (fo=1)                              0.000         19.142          net: core/arithmetic/weights/add3_syn_171,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_188.fci
+ADDER               x015y013z2          0.132    f    19.274          pin: core/arithmetic/weights/add3_syn_188.fco
+net (fo=1)                              0.000         19.274          net: core/arithmetic/weights/add3_syn_175,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_189.fci
+ADDER               x015y013z3          0.453    f    19.727       9  pin: core/arithmetic/weights/add3_syn_189.fx[1]
+net (fo=1)                              0.665         20.392          net: core/arithmetic/weights/leaked[29],  ../rtl/anc_weight_update_r61.v(41)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[28]_syn_4.d[0]
+LUT2 (reg)          x017y015z1          0.314    r    20.706      10  net: core/arithmetic/weights/leaked_weight[29],  ../rtl/anc_weight_update_r61.v(24)
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.706               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.493          1.493          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.493          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.493          pin: u_clock.clko
+net (fo=6271)                           1.853          3.346          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[28]_syn_4.clk
+capture edge                           20.000    r    23.346               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         23.230               
+clock uncertainty                      -4.100         19.130               
+clock pessimism                         0.312         19.442               
+--------------------------------------------------------------------  ---------------
+Required                                              19.442               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -1.264               
+
+Slack               : -1.212ns
+Begin Point         : core/weights/ramread0_syn_88.clkb (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/arithmetic/weights/leaked_weight_reg[22]_syn_4.d[0] (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk_50 rising@20.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 16.932ns (cell 11.448ns (67%), net 5.484ns (33%))
+Clock Skew          : 0.064ns
+Logic Level         : 10 ( ADDER=4  LUT5=2  LUT2=2  MULT18=1  LUT4=1 )
+Max Fanout          : 4
+Clock Uncertainty   : 4.100ns (sdc uncertainty: 4.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.660          1.660          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.660          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.660          pin: u_clock.clko
+net (fo=6271)                           2.062          3.722          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/weights/ramread0_syn_88.clkb
+launch edge                             0.000    r     3.722               
+--------------------------------------------------------------------  ---------------
+EMB (clk2q)         x024y009            3.245    f     6.967          pin: core/weights/ramread0_syn_88.dob[7]
+net (fo=1)                              0.503          7.470          net: core/weights/memory_read[16],  ../rtl/anc_work_ram_r61.v(13)
+                                                                      pin: core/arithmetic/weights/leak_base[6]_syn_6.d[1]
+LUT2                x021y014z3          0.262    r     7.732       1  pin: core/arithmetic/weights/leak_base[6]_syn_6.f[1]
+net (fo=4)                              0.819          8.551          net: core/arithmetic/weights/weight[16],  ../rtl/anc_weight_update_r61.v(12)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.a[0]
+MULT18              x016y009            3.563    f    12.114       2  pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.p[0]
+net (fo=1)                              0.765         12.879          net: core/arithmetic/weights/decay_multiplier/ph[0],  ../rtl/anc_decay_dsp65.v(5)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.a[1]
+ADDER               x015y008z0          0.627    f    13.506       3  pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.fco
+net (fo=1)                              0.000         13.506          net: core/arithmetic/weights/decay_multiplier/add0_syn_120,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fci
+ADDER               x015y008z1          0.073    f    13.579          pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fco
+net (fo=1)                              0.000         13.579          net: core/arithmetic/weights/decay_multiplier/add0_syn_122,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.fci
+ADDER               x015y009z0          0.355    f    13.934       4  pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.f[1]
+net (fo=1)                              0.651         14.585          net: core/arithmetic/weights/drift_product[20],  ../rtl/anc_weight_update_r61.v(28)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.b[0]
+LUT4                x017y009z1          0.333    f    14.918       5  pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.f[0]
+net (fo=1)                              0.717         15.635          net: core/arithmetic/weights/leak_carry_syn_13,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.a[0]
+LUT5                x015y014z3          0.424    f    16.059       6  pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.f[0]
+net (fo=1)                              0.603         16.662          net: core/arithmetic/weights/leak_carry_syn_21,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.a[0]
+LUT5                x015y015z3          0.424    f    17.086       7  pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.f[0]
+net (fo=1)                              0.615         17.701          net: core/arithmetic/weights/leak_carry,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: core/arithmetic/weights/add3_syn_182.e[0]
+ADDER               x015y010z2          0.781    f    18.482       8  pin: core/arithmetic/weights/add3_syn_182.fco
+net (fo=1)                              0.000         18.482          net: core/arithmetic/weights/add3_syn_151,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_183.fci
+ADDER               x015y010z3          0.132    f    18.614          pin: core/arithmetic/weights/add3_syn_183.fco
+net (fo=1)                              0.000         18.614          net: core/arithmetic/weights/add3_syn_155,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_184.fci
+ADDER               x015y011z2          0.132    f    18.746          pin: core/arithmetic/weights/add3_syn_184.fco
+net (fo=1)                              0.000         18.746          net: core/arithmetic/weights/add3_syn_159,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_185.fci
+ADDER               x015y011z3          0.132    f    18.878          pin: core/arithmetic/weights/add3_syn_185.fco
+net (fo=1)                              0.000         18.878          net: core/arithmetic/weights/add3_syn_163,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_186.fci
+ADDER               x015y012z2          0.132    f    19.010          pin: core/arithmetic/weights/add3_syn_186.fco
+net (fo=1)                              0.000         19.010          net: core/arithmetic/weights/add3_syn_167,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_187.fci
+ADDER               x015y012z3          0.132    f    19.142          pin: core/arithmetic/weights/add3_syn_187.fco
+net (fo=1)                              0.000         19.142          net: core/arithmetic/weights/add3_syn_171,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_188.fci
+ADDER               x015y013z2          0.387    f    19.529       9  pin: core/arithmetic/weights/add3_syn_188.fx[0]
+net (fo=1)                              0.811         20.340          net: core/arithmetic/weights/leaked[23],  ../rtl/anc_weight_update_r61.v(41)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[22]_syn_4.d[0]
+LUT2 (reg)          x017y015z0          0.314    r    20.654      10  net: core/arithmetic/weights/leaked_weight[23],  ../rtl/anc_weight_update_r61.v(24)
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.654               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.493          1.493          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.493          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.493          pin: u_clock.clko
+net (fo=6271)                           1.853          3.346          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[22]_syn_4.clk
+capture edge                           20.000    r    23.346               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         23.230               
+clock uncertainty                      -4.100         19.130               
+clock pessimism                         0.312         19.442               
+--------------------------------------------------------------------  ---------------
+Required                                              19.442               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -1.212               
+
+Slack               : -1.182ns
+Begin Point         : core/weights/ramread0_syn_88.clkb (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/arithmetic/weights/leaked_weight_reg[30]_syn_4.d[0] (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk_50 rising@20.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 16.902ns (cell 11.769ns (69%), net 5.133ns (31%))
+Clock Skew          : 0.064ns
+Logic Level         : 10 ( ADDER=4  LUT5=2  LUT2=2  MULT18=1  LUT4=1 )
+Max Fanout          : 4
+Clock Uncertainty   : 4.100ns (sdc uncertainty: 4.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.660          1.660          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.660          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.660          pin: u_clock.clko
+net (fo=6271)                           2.062          3.722          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/weights/ramread0_syn_88.clkb
+launch edge                             0.000    r     3.722               
+--------------------------------------------------------------------  ---------------
+EMB (clk2q)         x024y009            3.245    f     6.967          pin: core/weights/ramread0_syn_88.dob[7]
+net (fo=1)                              0.503          7.470          net: core/weights/memory_read[16],  ../rtl/anc_work_ram_r61.v(13)
+                                                                      pin: core/arithmetic/weights/leak_base[6]_syn_6.d[1]
+LUT2                x021y014z3          0.262    r     7.732       1  pin: core/arithmetic/weights/leak_base[6]_syn_6.f[1]
+net (fo=4)                              0.819          8.551          net: core/arithmetic/weights/weight[16],  ../rtl/anc_weight_update_r61.v(12)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.a[0]
+MULT18              x016y009            3.563    f    12.114       2  pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.p[0]
+net (fo=1)                              0.765         12.879          net: core/arithmetic/weights/decay_multiplier/ph[0],  ../rtl/anc_decay_dsp65.v(5)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.a[1]
+ADDER               x015y008z0          0.627    f    13.506       3  pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.fco
+net (fo=1)                              0.000         13.506          net: core/arithmetic/weights/decay_multiplier/add0_syn_120,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fci
+ADDER               x015y008z1          0.073    f    13.579          pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fco
+net (fo=1)                              0.000         13.579          net: core/arithmetic/weights/decay_multiplier/add0_syn_122,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.fci
+ADDER               x015y009z0          0.355    f    13.934       4  pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.f[1]
+net (fo=1)                              0.651         14.585          net: core/arithmetic/weights/drift_product[20],  ../rtl/anc_weight_update_r61.v(28)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.b[0]
+LUT4                x017y009z1          0.333    f    14.918       5  pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.f[0]
+net (fo=1)                              0.717         15.635          net: core/arithmetic/weights/leak_carry_syn_13,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.a[0]
+LUT5                x015y014z3          0.424    f    16.059       6  pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.f[0]
+net (fo=1)                              0.603         16.662          net: core/arithmetic/weights/leak_carry_syn_21,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.a[0]
+LUT5                x015y015z3          0.424    f    17.086       7  pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.f[0]
+net (fo=1)                              0.615         17.701          net: core/arithmetic/weights/leak_carry,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: core/arithmetic/weights/add3_syn_182.e[0]
+ADDER               x015y010z2          0.781    f    18.482       8  pin: core/arithmetic/weights/add3_syn_182.fco
+net (fo=1)                              0.000         18.482          net: core/arithmetic/weights/add3_syn_151,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_183.fci
+ADDER               x015y010z3          0.132    f    18.614          pin: core/arithmetic/weights/add3_syn_183.fco
+net (fo=1)                              0.000         18.614          net: core/arithmetic/weights/add3_syn_155,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_184.fci
+ADDER               x015y011z2          0.132    f    18.746          pin: core/arithmetic/weights/add3_syn_184.fco
+net (fo=1)                              0.000         18.746          net: core/arithmetic/weights/add3_syn_159,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_185.fci
+ADDER               x015y011z3          0.132    f    18.878          pin: core/arithmetic/weights/add3_syn_185.fco
+net (fo=1)                              0.000         18.878          net: core/arithmetic/weights/add3_syn_163,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_186.fci
+ADDER               x015y012z2          0.132    f    19.010          pin: core/arithmetic/weights/add3_syn_186.fco
+net (fo=1)                              0.000         19.010          net: core/arithmetic/weights/add3_syn_167,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_187.fci
+ADDER               x015y012z3          0.132    f    19.142          pin: core/arithmetic/weights/add3_syn_187.fco
+net (fo=1)                              0.000         19.142          net: core/arithmetic/weights/add3_syn_171,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_188.fci
+ADDER               x015y013z2          0.132    f    19.274          pin: core/arithmetic/weights/add3_syn_188.fco
+net (fo=1)                              0.000         19.274          net: core/arithmetic/weights/add3_syn_175,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_189.fci
+ADDER               x015y013z3          0.132    f    19.406          pin: core/arithmetic/weights/add3_syn_189.fco
+net (fo=1)                              0.000         19.406          net: core/arithmetic/weights/add3_syn_179,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_190.fci
+ADDER               x015y014z2          0.387    f    19.793       9  pin: core/arithmetic/weights/add3_syn_190.fx[0]
+net (fo=1)                              0.460         20.253          net: core/arithmetic/weights/leaked[31],  ../rtl/anc_weight_update_r61.v(41)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[30]_syn_4.d[0]
+LUT2 (reg)          x014y015z2          0.371    r    20.624      10  net: core/arithmetic/weights/leaked_weight[31],  ../rtl/anc_weight_update_r61.v(24)
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.624               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.493          1.493          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.493          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.493          pin: u_clock.clko
+net (fo=6271)                           1.853          3.346          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[30]_syn_4.clk
+capture edge                           20.000    r    23.346               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         23.230               
+clock uncertainty                      -4.100         19.130               
+clock pessimism                         0.312         19.442               
+--------------------------------------------------------------------  ---------------
+Required                                              19.442               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -1.182               
+
+Slack               : -1.166ns
+Begin Point         : core/guard/baseline_error_reg[5]_syn_4.clk (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/guard/state_reg[0]_syn_299.b[1] (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk_50 rising@20.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 16.886ns (cell 7.667ns (45%), net 9.219ns (55%))
+Clock Skew          : 0.064ns
+Logic Level         : 16 ( LUT5=7  ADDER=4  LUT4=3  LUT3=2 )
+Max Fanout          : 27
+Clock Uncertainty   : 4.100ns (sdc uncertainty: 4.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.660          1.660          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.660          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.660          pin: u_clock.clko
+net (fo=6271)                           2.062          3.722          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/baseline_error_reg[5]_syn_4.clk
+launch edge                             0.000    r     3.722               
+--------------------------------------------------------------------  ---------------
+clk2q               x028y030z2          0.146    r     3.868          pin: core/guard/baseline_error_reg[5]_syn_4.q[0]
+net (fo=7)                              1.291          5.159          net: core/guard/baseline_error[8],  ../rtl/anc_stability_guard_r61.v(42)
+                                                                      pin: core/guard/target_check/add0_syn_605.a[1]
+ADDER               x023y032z2          0.881    r     6.040       1  pin: core/guard/target_check/add0_syn_605.fco
+net (fo=1)                              0.000          6.040          net: core/guard/target_check/add0_syn_287,  ../rtl/anc_rise_compare_r62.v(6)
+                                                                      pin: core/guard/target_check/add0_syn_606.fci
+ADDER               x023y032z3          0.132    f     6.172          pin: core/guard/target_check/add0_syn_606.fco
+net (fo=1)                              0.000          6.172          net: core/guard/target_check/add0_syn_291,  ../rtl/anc_rise_compare_r62.v(6)
+                                                                      pin: core/guard/target_check/add0_syn_607.fci
+ADDER               x023y033z2          0.132    f     6.304          pin: core/guard/target_check/add0_syn_607.fco
+net (fo=1)                              0.000          6.304          net: core/guard/target_check/add0_syn_295,  ../rtl/anc_rise_compare_r62.v(6)
+                                                                      pin: core/guard/target_check/add0_syn_608.fci
+ADDER               x023y033z3          0.198    r     6.502       2  pin: core/guard/target_check/add0_syn_608.f[0]
+net (fo=1)                              0.795          7.297          net: core/guard/target_check/add0_syn_3[11],  ../rtl/anc_rise_compare_r62.v(6)
+                                                                      pin: core/guard/target_check/add0_syn_595.a[1]
+ADDER               x025y033z3          0.881    r     8.178       3  pin: core/guard/target_check/add0_syn_595.fco
+net (fo=1)                              0.000          8.178          net: core/guard/target_check/add0_syn_555,  ../rtl/anc_rise_compare_r62.v(6)
+                                                                      pin: core/guard/target_check/add0_syn_596.fci
+ADDER               x025y034z2          0.132    f     8.310          pin: core/guard/target_check/add0_syn_596.fco
+net (fo=1)                              0.000          8.310          net: core/guard/target_check/add0_syn_559,  ../rtl/anc_rise_compare_r62.v(6)
+                                                                      pin: core/guard/target_check/add0_syn_597.fci
+ADDER               x025y034z3          0.453    f     8.763       4  pin: core/guard/target_check/add0_syn_597.fx[1]
+net (fo=2)                              0.610          9.373          net: core/guard/target_check/scaled[27],  ../rtl/anc_rise_compare_r62.v(7)
+                                                                      pin: core/guard/state_reg[2]_syn_1171.b[0]
+LUT5                x028y035z3          0.431    f     9.804       5  pin: core/guard/state_reg[2]_syn_1171.f[0]
+net (fo=1)                              0.603         10.407          net: core/guard/state_reg[2]_syn_333,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/state_reg[2]_syn_1273.d[0]
+LUT3                x028y036z0          0.205    r    10.612       6  pin: core/guard/state_reg[2]_syn_1273.f[0]
+net (fo=3)                              0.459         11.071          net: core/guard/state_reg[2]_syn_335,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/state_reg[2]_syn_1239.a[1]
+LUT4                x028y036z2          0.424    f    11.495       7  pin: core/guard/state_reg[2]_syn_1239.f[1]
+net (fo=1)                              0.309         11.804          net: core/guard/state_reg[2]_syn_337,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/state_reg[2]_syn_1165.d[1]
+LUT5                x028y037z3          0.262    r    12.066       8  pin: core/guard/state_reg[2]_syn_1165.f[1]
+net (fo=1)                              0.603         12.669          net: core/guard/state_reg[2]_syn_339,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/state_reg[2]_syn_1165.a[0]
+LUT5                x028y037z3          0.424    f    13.093       9  pin: core/guard/state_reg[2]_syn_1165.f[0]
+net (fo=1)                              0.603         13.696          net: core/guard/state_reg[2]_syn_357,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/error_power_reg[0]_syn_4.a[1]
+LUT5                x028y036z3          0.424    f    14.120      10  pin: core/error_power_reg[0]_syn_4.f[1]
+net (fo=1)                              0.468         14.588          net: core/guard/state_reg[2]_syn_399,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/latest_error_reg[39]_syn_4.a[1]
+LUT4                x026y038z2          0.424    f    15.012      11  pin: core/guard/latest_error_reg[39]_syn_4.f[1]
+net (fo=1)                              0.662         15.674          net: core/guard/state_reg[2]_syn_433,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: u_demo/capture_rst_n_reg_syn_385.a[0]
+LUT5                x023y039z2          0.424    f    16.098      12  pin: u_demo/capture_rst_n_reg_syn_385.f[0]
+net (fo=3)                              0.851         16.949          net: core/guard/state_reg[2]_syn_504,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/state_reg[2]_syn_1185.d[1]
+LUT3                x025y033z1          0.205    r    17.154      13  pin: core/guard/state_reg[2]_syn_1185.f[1]
+net (fo=27)                             0.903         18.057          net: core/guard/state_reg[2]_syn_508,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/state_reg[1]_syn_28.a[0]
+LUT5                x020y028z2          0.424    f    18.481      14  pin: core/guard/state_reg[1]_syn_28.f[0]
+net (fo=3)                              0.459         18.940          net: core/guard/state_reg[2]_syn_943,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/mux201_syn_253.a[0]
+LUT4                x022y029z0          0.408    f    19.348      15  pin: core/guard/mux201_syn_253.f[0]
+net (fo=2)                              0.603         19.951          net: core/guard/state_reg[0]_syn_210,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/state_reg[0]_syn_299.b[1]
+LUT5 (reg)          x022y030z1          0.657    f    20.608      16  net: core/guard/state[0],  ../rtl/anc_stability_guard_r61.v(11)
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.608               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.493          1.493          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.493          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.493          pin: u_clock.clko
+net (fo=6271)                           1.853          3.346          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/state_reg[0]_syn_299.clk
+capture edge                           20.000    r    23.346               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         23.230               
+clock uncertainty                      -4.100         19.130               
+clock pessimism                         0.312         19.442               
+--------------------------------------------------------------------  ---------------
+Required                                              19.442               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -1.166               
+
+Slack               : -1.078ns
+Begin Point         : u_demo/u_fft_scheduler/core_reset_hold_reg[0]_syn_7.clk (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_demo/u_fft_scheduler/expected_channel_reg[7]_syn_4.ce (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk_50 rising@20.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 16.798ns (cell 2.392ns (14%), net 14.406ns (86%))
+Clock Skew          : 0.064ns
+Logic Level         : 9 ( LUT3=4  LUT2=3  LUT4=2 )
+Max Fanout          : 74
+Clock Uncertainty   : 4.100ns (sdc uncertainty: 4.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.660          1.660          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.660          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.660          pin: u_clock.clko
+net (fo=6271)                           2.062          3.722          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: u_demo/u_fft_scheduler/core_reset_hold_reg[0]_syn_7.clk
+launch edge                             0.000    r     3.722               
+--------------------------------------------------------------------  ---------------
+clk2q               x018y058z2          0.146    r     3.868          pin: u_demo/u_fft_scheduler/core_reset_hold_reg[0]_syn_7.q[1]
+net (fo=5)                              0.945          4.813          net: u_demo/u_fft_scheduler/core_reset_hold[0],  ../rtl/fft_three_path_scheduler_r06.v(77)
+                                                                      pin: u_demo/u_spectrum_tx/capture_sequence_reg[2]_syn_4.d[1]
+LUT2                x020y060z1          0.205    r     5.018       1  pin: u_demo/u_spectrum_tx/capture_sequence_reg[2]_syn_4.f[1]
+net (fo=2)                              0.920          5.938          net: u_demo/u_fft_scheduler/mux138_syn_639,  ../rtl/fft_three_path_scheduler_r06.v(376)
+                                                                      pin: u_demo/u_spectrum_tx/capture_sequence_reg[5]_syn_4.d[1]
+LUT4                x018y059z2          0.262    r     6.200       2  pin: u_demo/u_spectrum_tx/capture_sequence_reg[5]_syn_4.f[1]
+net (fo=2)                              0.456          6.656          net: u_demo/u_fft_scheduler/mux138_syn_641,  ../rtl/fft_three_path_scheduler_r06.v(376)
+                                                                      pin: u_demo/u_spectrum_tx/capture_sequence_reg[2]_syn_4.d[0]
+LUT2                x020y060z1          0.205    r     6.861       3  pin: u_demo/u_spectrum_tx/capture_sequence_reg[2]_syn_4.f[0]
+net (fo=23)                             4.976         11.837          net: u_demo/u_fft_scheduler/mux138_syn_643,  ../rtl/fft_three_path_scheduler_r06.v(376)
+                                                                      pin: u_demo/u_fft_scheduler/mic_next_index_reg[24]_syn_4.d[0]
+LUT2                x013y051z3          0.262    r    12.099       4  pin: u_demo/u_fft_scheduler/mic_next_index_reg[24]_syn_4.f[0]
+net (fo=6)                              1.293         13.392          net: u_demo/u_fft_scheduler/mux138_syn_645,  ../rtl/fft_three_path_scheduler_r06.v(376)
+                                                                      pin: u_demo/u_fft_scheduler/mux138_syn_729.c[1]
+LUT3                x017y054z3          0.348    f    13.740       5  pin: u_demo/u_fft_scheduler/mux138_syn_729.f[1]
+net (fo=5)                              1.088         14.828          net: u_demo/u_fft_scheduler/mux138_syn_698,  ../rtl/fft_three_path_scheduler_r06.v(376)
+                                                                      pin: u_demo/u_fft_scheduler/group_start_reg_syn_5.d[1]
+LUT4                x021y057z1          0.205    r    15.033       6  pin: u_demo/u_fft_scheduler/group_start_reg_syn_5.f[1]
+net (fo=74)                             1.785         16.818          net: u_demo/u_fft_scheduler/mux133_syn_35,  ../rtl/fft_three_path_scheduler_r06.v(376)
+                                                                      pin: u_demo/u_fft_scheduler/u_fft/ch_index_reg[5]_syn_4.d[0]
+LUT3                x011y057z1          0.205    r    17.023       7  pin: u_demo/u_fft_scheduler/u_fft/ch_index_reg[5]_syn_4.f[0]
+net (fo=3)                              0.474         17.497          net: u_demo/u_fft_scheduler/mux138_syn_701,  ../rtl/fft_three_path_scheduler_r06.v(376)
+                                                                      pin: u_demo/u_fft_scheduler/u_fft/ch_index_reg[5]_syn_4.d[1]
+LUT3                x011y057z1          0.205    r    17.702       8  pin: u_demo/u_fft_scheduler/u_fft/ch_index_reg[5]_syn_4.f[1]
+net (fo=4)                              0.901         18.603          net: u_demo/u_fft_scheduler/mux138_syn_703,  ../rtl/fft_three_path_scheduler_r06.v(376)
+                                                                      pin: u_demo/u_fft_scheduler/u_fft/energy_mem_reg[26]_syn_4.d[0]
+LUT3                x012y058z2          0.262    r    18.865       9  pin: u_demo/u_fft_scheduler/u_fft/energy_mem_reg[26]_syn_4.f[0]
+net (fo=7)                              1.568         20.433          net: u_demo/u_fft_scheduler/mux136_syn_285,  ../rtl/fft_three_path_scheduler_r06.v(376)
+                                                                      pin: u_demo/u_fft_scheduler/expected_channel_reg[7]_syn_4.ce
+reg                 x013y064z0          0.087    r    20.520               
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.520               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.493          1.493          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.493          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.493          pin: u_clock.clko
+net (fo=6271)                           1.853          3.346          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: u_demo/u_fft_scheduler/expected_channel_reg[7]_syn_4.clk
+capture edge                           20.000    r    23.346               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         23.230               
+clock uncertainty                      -4.100         19.130               
+clock pessimism                         0.312         19.442               
+--------------------------------------------------------------------  ---------------
+Required                                              19.442               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -1.078               
+
+Slack               : -1.053ns
+Begin Point         : core/weights/ramread0_syn_88.clkb (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/arithmetic/weights/leaked_weight_reg[20]_syn_4.d[0] (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk_50 rising@20.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 16.773ns (cell 11.382ns (67%), net 5.391ns (33%))
+Clock Skew          : 0.064ns
+Logic Level         : 10 ( ADDER=4  LUT5=2  LUT2=2  MULT18=1  LUT4=1 )
+Max Fanout          : 4
+Clock Uncertainty   : 4.100ns (sdc uncertainty: 4.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.660          1.660          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.660          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.660          pin: u_clock.clko
+net (fo=6271)                           2.062          3.722          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/weights/ramread0_syn_88.clkb
+launch edge                             0.000    r     3.722               
+--------------------------------------------------------------------  ---------------
+EMB (clk2q)         x024y009            3.245    f     6.967          pin: core/weights/ramread0_syn_88.dob[7]
+net (fo=1)                              0.503          7.470          net: core/weights/memory_read[16],  ../rtl/anc_work_ram_r61.v(13)
+                                                                      pin: core/arithmetic/weights/leak_base[6]_syn_6.d[1]
+LUT2                x021y014z3          0.262    r     7.732       1  pin: core/arithmetic/weights/leak_base[6]_syn_6.f[1]
+net (fo=4)                              0.819          8.551          net: core/arithmetic/weights/weight[16],  ../rtl/anc_weight_update_r61.v(12)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.a[0]
+MULT18              x016y009            3.563    f    12.114       2  pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.p[0]
+net (fo=1)                              0.765         12.879          net: core/arithmetic/weights/decay_multiplier/ph[0],  ../rtl/anc_decay_dsp65.v(5)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.a[1]
+ADDER               x015y008z0          0.627    f    13.506       3  pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.fco
+net (fo=1)                              0.000         13.506          net: core/arithmetic/weights/decay_multiplier/add0_syn_120,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fci
+ADDER               x015y008z1          0.073    f    13.579          pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fco
+net (fo=1)                              0.000         13.579          net: core/arithmetic/weights/decay_multiplier/add0_syn_122,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.fci
+ADDER               x015y009z0          0.355    f    13.934       4  pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.f[1]
+net (fo=1)                              0.651         14.585          net: core/arithmetic/weights/drift_product[20],  ../rtl/anc_weight_update_r61.v(28)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.b[0]
+LUT4                x017y009z1          0.333    f    14.918       5  pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.f[0]
+net (fo=1)                              0.717         15.635          net: core/arithmetic/weights/leak_carry_syn_13,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.a[0]
+LUT5                x015y014z3          0.424    f    16.059       6  pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.f[0]
+net (fo=1)                              0.603         16.662          net: core/arithmetic/weights/leak_carry_syn_21,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.a[0]
+LUT5                x015y015z3          0.424    f    17.086       7  pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.f[0]
+net (fo=1)                              0.615         17.701          net: core/arithmetic/weights/leak_carry,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: core/arithmetic/weights/add3_syn_182.e[0]
+ADDER               x015y010z2          0.781    f    18.482       8  pin: core/arithmetic/weights/add3_syn_182.fco
+net (fo=1)                              0.000         18.482          net: core/arithmetic/weights/add3_syn_151,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_183.fci
+ADDER               x015y010z3          0.132    f    18.614          pin: core/arithmetic/weights/add3_syn_183.fco
+net (fo=1)                              0.000         18.614          net: core/arithmetic/weights/add3_syn_155,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_184.fci
+ADDER               x015y011z2          0.132    f    18.746          pin: core/arithmetic/weights/add3_syn_184.fco
+net (fo=1)                              0.000         18.746          net: core/arithmetic/weights/add3_syn_159,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_185.fci
+ADDER               x015y011z3          0.132    f    18.878          pin: core/arithmetic/weights/add3_syn_185.fco
+net (fo=1)                              0.000         18.878          net: core/arithmetic/weights/add3_syn_163,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_186.fci
+ADDER               x015y012z2          0.132    f    19.010          pin: core/arithmetic/weights/add3_syn_186.fco
+net (fo=1)                              0.000         19.010          net: core/arithmetic/weights/add3_syn_167,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_187.fci
+ADDER               x015y012z3          0.453    f    19.463       9  pin: core/arithmetic/weights/add3_syn_187.fx[1]
+net (fo=1)                              0.718         20.181          net: core/arithmetic/weights/leaked[21],  ../rtl/anc_weight_update_r61.v(41)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[20]_syn_4.d[0]
+LUT2 (reg)          x019y014z1          0.314    r    20.495      10  net: core/arithmetic/weights/leaked_weight[21],  ../rtl/anc_weight_update_r61.v(24)
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.495               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.493          1.493          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.493          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.493          pin: u_clock.clko
+net (fo=6271)                           1.853          3.346          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[20]_syn_4.clk
+capture edge                           20.000    r    23.346               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         23.230               
+clock uncertainty                      -4.100         19.130               
+clock pessimism                         0.312         19.442               
+--------------------------------------------------------------------  ---------------
+Required                                              19.442               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -1.053               
+
+Slack               : -1.053ns
+Begin Point         : core/weights/ramread0_syn_88.clkb (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/arithmetic/weights/leaked_weight_reg[26]_syn_4.d[0] (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk_50 rising@20.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 16.773ns (cell 11.637ns (69%), net 5.136ns (31%))
+Clock Skew          : 0.064ns
+Logic Level         : 10 ( ADDER=4  LUT5=2  LUT2=2  MULT18=1  LUT4=1 )
+Max Fanout          : 4
+Clock Uncertainty   : 4.100ns (sdc uncertainty: 4.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.660          1.660          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.660          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.660          pin: u_clock.clko
+net (fo=6271)                           2.062          3.722          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/weights/ramread0_syn_88.clkb
+launch edge                             0.000    r     3.722               
+--------------------------------------------------------------------  ---------------
+EMB (clk2q)         x024y009            3.245    f     6.967          pin: core/weights/ramread0_syn_88.dob[7]
+net (fo=1)                              0.503          7.470          net: core/weights/memory_read[16],  ../rtl/anc_work_ram_r61.v(13)
+                                                                      pin: core/arithmetic/weights/leak_base[6]_syn_6.d[1]
+LUT2                x021y014z3          0.262    r     7.732       1  pin: core/arithmetic/weights/leak_base[6]_syn_6.f[1]
+net (fo=4)                              0.819          8.551          net: core/arithmetic/weights/weight[16],  ../rtl/anc_weight_update_r61.v(12)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.a[0]
+MULT18              x016y009            3.563    f    12.114       2  pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.p[0]
+net (fo=1)                              0.765         12.879          net: core/arithmetic/weights/decay_multiplier/ph[0],  ../rtl/anc_decay_dsp65.v(5)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.a[1]
+ADDER               x015y008z0          0.627    f    13.506       3  pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.fco
+net (fo=1)                              0.000         13.506          net: core/arithmetic/weights/decay_multiplier/add0_syn_120,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fci
+ADDER               x015y008z1          0.073    f    13.579          pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fco
+net (fo=1)                              0.000         13.579          net: core/arithmetic/weights/decay_multiplier/add0_syn_122,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.fci
+ADDER               x015y009z0          0.355    f    13.934       4  pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.f[1]
+net (fo=1)                              0.651         14.585          net: core/arithmetic/weights/drift_product[20],  ../rtl/anc_weight_update_r61.v(28)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.b[0]
+LUT4                x017y009z1          0.333    f    14.918       5  pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.f[0]
+net (fo=1)                              0.717         15.635          net: core/arithmetic/weights/leak_carry_syn_13,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.a[0]
+LUT5                x015y014z3          0.424    f    16.059       6  pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.f[0]
+net (fo=1)                              0.603         16.662          net: core/arithmetic/weights/leak_carry_syn_21,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.a[0]
+LUT5                x015y015z3          0.424    f    17.086       7  pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.f[0]
+net (fo=1)                              0.615         17.701          net: core/arithmetic/weights/leak_carry,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: core/arithmetic/weights/add3_syn_182.e[0]
+ADDER               x015y010z2          0.781    f    18.482       8  pin: core/arithmetic/weights/add3_syn_182.fco
+net (fo=1)                              0.000         18.482          net: core/arithmetic/weights/add3_syn_151,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_183.fci
+ADDER               x015y010z3          0.132    f    18.614          pin: core/arithmetic/weights/add3_syn_183.fco
+net (fo=1)                              0.000         18.614          net: core/arithmetic/weights/add3_syn_155,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_184.fci
+ADDER               x015y011z2          0.132    f    18.746          pin: core/arithmetic/weights/add3_syn_184.fco
+net (fo=1)                              0.000         18.746          net: core/arithmetic/weights/add3_syn_159,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_185.fci
+ADDER               x015y011z3          0.132    f    18.878          pin: core/arithmetic/weights/add3_syn_185.fco
+net (fo=1)                              0.000         18.878          net: core/arithmetic/weights/add3_syn_163,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_186.fci
+ADDER               x015y012z2          0.132    f    19.010          pin: core/arithmetic/weights/add3_syn_186.fco
+net (fo=1)                              0.000         19.010          net: core/arithmetic/weights/add3_syn_167,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_187.fci
+ADDER               x015y012z3          0.132    f    19.142          pin: core/arithmetic/weights/add3_syn_187.fco
+net (fo=1)                              0.000         19.142          net: core/arithmetic/weights/add3_syn_171,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_188.fci
+ADDER               x015y013z2          0.132    f    19.274          pin: core/arithmetic/weights/add3_syn_188.fco
+net (fo=1)                              0.000         19.274          net: core/arithmetic/weights/add3_syn_175,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_189.fci
+ADDER               x015y013z3          0.387    f    19.661       9  pin: core/arithmetic/weights/add3_syn_189.fx[0]
+net (fo=1)                              0.463         20.124          net: core/arithmetic/weights/leaked[27],  ../rtl/anc_weight_update_r61.v(41)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[26]_syn_4.d[0]
+LUT2 (reg)          x014y014z3          0.371    r    20.495      10  net: core/arithmetic/weights/leaked_weight[27],  ../rtl/anc_weight_update_r61.v(24)
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.495               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.493          1.493          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.493          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.493          pin: u_clock.clko
+net (fo=6271)                           1.853          3.346          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[26]_syn_4.clk
+capture edge                           20.000    r    23.346               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         23.230               
+clock uncertainty                      -4.100         19.130               
+clock pessimism                         0.312         19.442               
+--------------------------------------------------------------------  ---------------
+Required                                              19.442               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -1.053               
+
+Slack               : -1.046ns
+Begin Point         : core/weights/ramread0_syn_88.clkb (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/arithmetic/weights/leaked_weight_reg[13]_syn_4.d[1] (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk_50 rising@20.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 16.766ns (cell 11.118ns (66%), net 5.648ns (34%))
+Clock Skew          : 0.064ns
+Logic Level         : 10 ( ADDER=4  LUT5=2  LUT2=2  MULT18=1  LUT4=1 )
+Max Fanout          : 4
+Clock Uncertainty   : 4.100ns (sdc uncertainty: 4.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.660          1.660          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.660          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.660          pin: u_clock.clko
+net (fo=6271)                           2.062          3.722          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/weights/ramread0_syn_88.clkb
+launch edge                             0.000    r     3.722               
+--------------------------------------------------------------------  ---------------
+EMB (clk2q)         x024y009            3.245    f     6.967          pin: core/weights/ramread0_syn_88.dob[7]
+net (fo=1)                              0.503          7.470          net: core/weights/memory_read[16],  ../rtl/anc_work_ram_r61.v(13)
+                                                                      pin: core/arithmetic/weights/leak_base[6]_syn_6.d[1]
+LUT2                x021y014z3          0.262    r     7.732       1  pin: core/arithmetic/weights/leak_base[6]_syn_6.f[1]
+net (fo=4)                              0.819          8.551          net: core/arithmetic/weights/weight[16],  ../rtl/anc_weight_update_r61.v(12)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.a[0]
+MULT18              x016y009            3.563    f    12.114       2  pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.p[0]
+net (fo=1)                              0.765         12.879          net: core/arithmetic/weights/decay_multiplier/ph[0],  ../rtl/anc_decay_dsp65.v(5)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.a[1]
+ADDER               x015y008z0          0.627    f    13.506       3  pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.fco
+net (fo=1)                              0.000         13.506          net: core/arithmetic/weights/decay_multiplier/add0_syn_120,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fci
+ADDER               x015y008z1          0.073    f    13.579          pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fco
+net (fo=1)                              0.000         13.579          net: core/arithmetic/weights/decay_multiplier/add0_syn_122,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.fci
+ADDER               x015y009z0          0.355    f    13.934       4  pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.f[1]
+net (fo=1)                              0.651         14.585          net: core/arithmetic/weights/drift_product[20],  ../rtl/anc_weight_update_r61.v(28)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.b[0]
+LUT4                x017y009z1          0.333    f    14.918       5  pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.f[0]
+net (fo=1)                              0.717         15.635          net: core/arithmetic/weights/leak_carry_syn_13,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.a[0]
+LUT5                x015y014z3          0.424    f    16.059       6  pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.f[0]
+net (fo=1)                              0.603         16.662          net: core/arithmetic/weights/leak_carry_syn_21,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.a[0]
+LUT5                x015y015z3          0.424    f    17.086       7  pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.f[0]
+net (fo=1)                              0.615         17.701          net: core/arithmetic/weights/leak_carry,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: core/arithmetic/weights/add3_syn_182.e[0]
+ADDER               x015y010z2          0.781    f    18.482       8  pin: core/arithmetic/weights/add3_syn_182.fco
+net (fo=1)                              0.000         18.482          net: core/arithmetic/weights/add3_syn_151,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_183.fci
+ADDER               x015y010z3          0.132    f    18.614          pin: core/arithmetic/weights/add3_syn_183.fco
+net (fo=1)                              0.000         18.614          net: core/arithmetic/weights/add3_syn_155,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_184.fci
+ADDER               x015y011z2          0.132    f    18.746          pin: core/arithmetic/weights/add3_syn_184.fco
+net (fo=1)                              0.000         18.746          net: core/arithmetic/weights/add3_syn_159,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_185.fci
+ADDER               x015y011z3          0.453    f    19.199       9  pin: core/arithmetic/weights/add3_syn_185.fx[1]
+net (fo=1)                              0.975         20.174          net: core/arithmetic/weights/leaked[13],  ../rtl/anc_weight_update_r61.v(41)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[13]_syn_4.d[1]
+LUT2 (reg)          x021y011z0          0.314    r    20.488      10  net: core/arithmetic/weights/leaked_weight[13],  ../rtl/anc_weight_update_r61.v(24)
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.488               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.493          1.493          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.493          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.493          pin: u_clock.clko
+net (fo=6271)                           1.853          3.346          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[13]_syn_4.clk
+capture edge                           20.000    r    23.346               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         23.230               
+clock uncertainty                      -4.100         19.130               
+clock pessimism                         0.312         19.442               
+--------------------------------------------------------------------  ---------------
+Required                                              19.442               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -1.046               
+
+Slack               : -0.993ns
+Begin Point         : core/guard/baseline_error_reg[5]_syn_4.clk (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/guard/state_reg[2]_syn_1245.ce (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk_50 rising@20.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 16.641ns (cell 7.097ns (42%), net 9.544ns (58%))
+Clock Skew          : 0.136ns
+Logic Level         : 15 ( LUT5=5  LUT4=4  ADDER=4  LUT3=2 )
+Max Fanout          : 27
+Clock Uncertainty   : 4.100ns (sdc uncertainty: 4.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.660          1.660          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.660          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.660          pin: u_clock.clko
+net (fo=6271)                           2.062          3.722          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/baseline_error_reg[5]_syn_4.clk
+launch edge                             0.000    r     3.722               
+--------------------------------------------------------------------  ---------------
+clk2q               x028y030z2          0.146    r     3.868          pin: core/guard/baseline_error_reg[5]_syn_4.q[0]
+net (fo=7)                              1.291          5.159          net: core/guard/baseline_error[8],  ../rtl/anc_stability_guard_r61.v(42)
+                                                                      pin: core/guard/target_check/add0_syn_605.a[1]
+ADDER               x023y032z2          0.881    r     6.040       1  pin: core/guard/target_check/add0_syn_605.fco
+net (fo=1)                              0.000          6.040          net: core/guard/target_check/add0_syn_287,  ../rtl/anc_rise_compare_r62.v(6)
+                                                                      pin: core/guard/target_check/add0_syn_606.fci
+ADDER               x023y032z3          0.132    f     6.172          pin: core/guard/target_check/add0_syn_606.fco
+net (fo=1)                              0.000          6.172          net: core/guard/target_check/add0_syn_291,  ../rtl/anc_rise_compare_r62.v(6)
+                                                                      pin: core/guard/target_check/add0_syn_607.fci
+ADDER               x023y033z2          0.132    f     6.304          pin: core/guard/target_check/add0_syn_607.fco
+net (fo=1)                              0.000          6.304          net: core/guard/target_check/add0_syn_295,  ../rtl/anc_rise_compare_r62.v(6)
+                                                                      pin: core/guard/target_check/add0_syn_608.fci
+ADDER               x023y033z3          0.198    r     6.502       2  pin: core/guard/target_check/add0_syn_608.f[0]
+net (fo=1)                              0.795          7.297          net: core/guard/target_check/add0_syn_3[11],  ../rtl/anc_rise_compare_r62.v(6)
+                                                                      pin: core/guard/target_check/add0_syn_595.a[1]
+ADDER               x025y033z3          0.881    r     8.178       3  pin: core/guard/target_check/add0_syn_595.fco
+net (fo=1)                              0.000          8.178          net: core/guard/target_check/add0_syn_555,  ../rtl/anc_rise_compare_r62.v(6)
+                                                                      pin: core/guard/target_check/add0_syn_596.fci
+ADDER               x025y034z2          0.132    f     8.310          pin: core/guard/target_check/add0_syn_596.fco
+net (fo=1)                              0.000          8.310          net: core/guard/target_check/add0_syn_559,  ../rtl/anc_rise_compare_r62.v(6)
+                                                                      pin: core/guard/target_check/add0_syn_597.fci
+ADDER               x025y034z3          0.453    f     8.763       4  pin: core/guard/target_check/add0_syn_597.fx[1]
+net (fo=2)                              0.610          9.373          net: core/guard/target_check/scaled[27],  ../rtl/anc_rise_compare_r62.v(7)
+                                                                      pin: core/guard/state_reg[2]_syn_1171.b[0]
+LUT5                x028y035z3          0.431    f     9.804       5  pin: core/guard/state_reg[2]_syn_1171.f[0]
+net (fo=1)                              0.603         10.407          net: core/guard/state_reg[2]_syn_333,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/state_reg[2]_syn_1273.d[0]
+LUT3                x028y036z0          0.205    r    10.612       6  pin: core/guard/state_reg[2]_syn_1273.f[0]
+net (fo=3)                              0.459         11.071          net: core/guard/state_reg[2]_syn_335,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/state_reg[2]_syn_1239.a[1]
+LUT4                x028y036z2          0.424    f    11.495       7  pin: core/guard/state_reg[2]_syn_1239.f[1]
+net (fo=1)                              0.309         11.804          net: core/guard/state_reg[2]_syn_337,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/state_reg[2]_syn_1165.d[1]
+LUT5                x028y037z3          0.262    r    12.066       8  pin: core/guard/state_reg[2]_syn_1165.f[1]
+net (fo=1)                              0.603         12.669          net: core/guard/state_reg[2]_syn_339,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/state_reg[2]_syn_1165.a[0]
+LUT5                x028y037z3          0.424    f    13.093       9  pin: core/guard/state_reg[2]_syn_1165.f[0]
+net (fo=1)                              0.603         13.696          net: core/guard/state_reg[2]_syn_357,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/error_power_reg[0]_syn_4.a[1]
+LUT5                x028y036z3          0.424    f    14.120      10  pin: core/error_power_reg[0]_syn_4.f[1]
+net (fo=1)                              0.468         14.588          net: core/guard/state_reg[2]_syn_399,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/latest_error_reg[39]_syn_4.a[1]
+LUT4                x026y038z2          0.424    f    15.012      11  pin: core/guard/latest_error_reg[39]_syn_4.f[1]
+net (fo=1)                              0.662         15.674          net: core/guard/state_reg[2]_syn_433,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: u_demo/capture_rst_n_reg_syn_385.a[0]
+LUT5                x023y039z2          0.424    f    16.098      12  pin: u_demo/capture_rst_n_reg_syn_385.f[0]
+net (fo=3)                              0.851         16.949          net: core/guard/state_reg[2]_syn_504,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/state_reg[2]_syn_1185.d[1]
+LUT3                x025y033z1          0.205    r    17.154      13  pin: core/guard/state_reg[2]_syn_1185.f[1]
+net (fo=27)                             0.367         17.521          net: core/guard/state_reg[2]_syn_508,  ../rtl/anc_stability_guard_r61.v(81)
+                                                                      pin: core/guard/mux201_syn_291.a[1]
+LUT4                x023y033z0          0.408    f    17.929      14  pin: core/guard/mux201_syn_291.f[1]
+net (fo=1)                              0.459         18.388          net: core/guard/mux201_syn_219,  ../rtl/anc_stability_guard_r61.v(86)
+                                                                      pin: core/monitor/numerator_reg[34]_syn_4.a[1]
+LUT4                x022y034z3          0.424    f    18.812      15  pin: core/monitor/numerator_reg[34]_syn_4.f[1]
+net (fo=20)                             1.464         20.276          net: core/guard/mux201_syn_167,  ../rtl/anc_stability_guard_r61.v(86)
+                                                                      pin: core/guard/state_reg[2]_syn_1245.ce
+reg                 x021y044z2          0.087    r    20.363               
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.363               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.493          1.493          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.493          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.493          pin: u_clock.clko
+net (fo=6271)                           1.853          3.346          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/state_reg[2]_syn_1245.clk
+capture edge                           20.000    r    23.346               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         23.230               
+clock uncertainty                      -4.100         19.130               
+clock pessimism                         0.240         19.370               
+--------------------------------------------------------------------  ---------------
+Required                                              19.370               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.993               
+
+Slack               : -0.989ns
+Begin Point         : core/weights/ramread0_syn_88.clkb (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/arithmetic/weights/leaked_weight_reg[30]_syn_4.d[1] (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { clk_50 rising@20.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 16.709ns (cell 11.580ns (69%), net 5.129ns (31%))
+Clock Skew          : 0.064ns
+Logic Level         : 10 ( ADDER=4  LUT5=2  LUT2=2  MULT18=1  LUT4=1 )
+Max Fanout          : 4
+Clock Uncertainty   : 4.100ns (sdc uncertainty: 4.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.660          1.660          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.660          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.660          pin: u_clock.clko
+net (fo=6271)                           2.062          3.722          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/weights/ramread0_syn_88.clkb
+launch edge                             0.000    r     3.722               
+--------------------------------------------------------------------  ---------------
+EMB (clk2q)         x024y009            3.245    f     6.967          pin: core/weights/ramread0_syn_88.dob[7]
+net (fo=1)                              0.503          7.470          net: core/weights/memory_read[16],  ../rtl/anc_work_ram_r61.v(13)
+                                                                      pin: core/arithmetic/weights/leak_base[6]_syn_6.d[1]
+LUT2                x021y014z3          0.262    r     7.732       1  pin: core/arithmetic/weights/leak_base[6]_syn_6.f[1]
+net (fo=4)                              0.819          8.551          net: core/arithmetic/weights/weight[16],  ../rtl/anc_weight_update_r61.v(12)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.a[0]
+MULT18              x016y009            3.563    f    12.114       2  pin: core/arithmetic/weights/decay_multiplier/u_decay_hi.p[0]
+net (fo=1)                              0.765         12.879          net: core/arithmetic/weights/decay_multiplier/ph[0],  ../rtl/anc_decay_dsp65.v(5)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.a[1]
+ADDER               x015y008z0          0.627    f    13.506       3  pin: core/arithmetic/weights/decay_multiplier/add0_syn_177.fco
+net (fo=1)                              0.000         13.506          net: core/arithmetic/weights/decay_multiplier/add0_syn_120,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fci
+ADDER               x015y008z1          0.073    f    13.579          pin: core/arithmetic/weights/decay_multiplier/add0_syn_180.fco
+net (fo=1)                              0.000         13.579          net: core/arithmetic/weights/decay_multiplier/add0_syn_122,  ../rtl/anc_decay_dsp65.v(6)
+                                                                      pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.fci
+ADDER               x015y009z0          0.355    f    13.934       4  pin: core/arithmetic/weights/decay_multiplier/add0_syn_183.f[1]
+net (fo=1)                              0.651         14.585          net: core/arithmetic/weights/drift_product[20],  ../rtl/anc_weight_update_r61.v(28)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.b[0]
+LUT4                x017y009z1          0.333    f    14.918       5  pin: u_demo/u_mic_capture/shift1_reg[7]_syn_4.f[0]
+net (fo=1)                              0.717         15.635          net: core/arithmetic/weights/leak_carry_syn_13,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.a[0]
+LUT5                x015y014z3          0.424    f    16.059       6  pin: u_demo/u_mic_capture/pcm1_reg[13]_syn_4.f[0]
+net (fo=1)                              0.603         16.662          net: core/arithmetic/weights/leak_carry_syn_21,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.a[0]
+LUT5                x015y015z3          0.424    f    17.086       7  pin: u_demo/u_mic_capture/shift1_reg[9]_syn_4.f[0]
+net (fo=1)                              0.615         17.701          net: core/arithmetic/weights/leak_carry,  ../rtl/anc_weight_update_r61.v(38)
+                                                                      pin: core/arithmetic/weights/add3_syn_182.e[0]
+ADDER               x015y010z2          0.781    f    18.482       8  pin: core/arithmetic/weights/add3_syn_182.fco
+net (fo=1)                              0.000         18.482          net: core/arithmetic/weights/add3_syn_151,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_183.fci
+ADDER               x015y010z3          0.132    f    18.614          pin: core/arithmetic/weights/add3_syn_183.fco
+net (fo=1)                              0.000         18.614          net: core/arithmetic/weights/add3_syn_155,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_184.fci
+ADDER               x015y011z2          0.132    f    18.746          pin: core/arithmetic/weights/add3_syn_184.fco
+net (fo=1)                              0.000         18.746          net: core/arithmetic/weights/add3_syn_159,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_185.fci
+ADDER               x015y011z3          0.132    f    18.878          pin: core/arithmetic/weights/add3_syn_185.fco
+net (fo=1)                              0.000         18.878          net: core/arithmetic/weights/add3_syn_163,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_186.fci
+ADDER               x015y012z2          0.132    f    19.010          pin: core/arithmetic/weights/add3_syn_186.fco
+net (fo=1)                              0.000         19.010          net: core/arithmetic/weights/add3_syn_167,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_187.fci
+ADDER               x015y012z3          0.132    f    19.142          pin: core/arithmetic/weights/add3_syn_187.fco
+net (fo=1)                              0.000         19.142          net: core/arithmetic/weights/add3_syn_171,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_188.fci
+ADDER               x015y013z2          0.132    f    19.274          pin: core/arithmetic/weights/add3_syn_188.fco
+net (fo=1)                              0.000         19.274          net: core/arithmetic/weights/add3_syn_175,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_189.fci
+ADDER               x015y013z3          0.132    f    19.406          pin: core/arithmetic/weights/add3_syn_189.fco
+net (fo=1)                              0.000         19.406          net: core/arithmetic/weights/add3_syn_179,  ../rtl/anc_weight_update_r61.v(40)
+                                                                      pin: core/arithmetic/weights/add3_syn_190.fci
+ADDER               x015y014z2          0.198    r    19.604       9  pin: core/arithmetic/weights/add3_syn_190.f[0]
+net (fo=1)                              0.456         20.060          net: core/arithmetic/weights/leaked[30],  ../rtl/anc_weight_update_r61.v(41)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[30]_syn_4.d[1]
+LUT2 (reg)          x014y015z2          0.371    r    20.431      10  net: core/arithmetic/weights/leaked_weight[30],  ../rtl/anc_weight_update_r61.v(24)
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.431               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.493          1.493          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.493          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.493          pin: u_clock.clko
+net (fo=6271)                           1.853          3.346          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/arithmetic/weights/leaked_weight_reg[30]_syn_4.clk
+capture edge                           20.000    r    23.346               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         23.230               
+clock uncertainty                      -4.100         19.130               
+clock pessimism                         0.312         19.442               
+--------------------------------------------------------------------  ---------------
+Required                                              19.442               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.989               
+
+
+Period Check
+----------------------------------------------------------------------------------------------------
+    Type       Setting(ns)      Required(ns)         Slack(ns)   Point
+--------------------------------------------------------------------------------
+    ERAM            20.000             3.414            16.586   u_demo/u_mic_mean/mult0_syn_2.clk
+    ERAM            20.000             3.414            16.586   frontend/engine/m/mult0_syn_3.clk
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : -0.075ns
+Begin Point         : core/nlms_gain_b[31]_syn_72.clk (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/guard/age_reg[8]_syn_4.sr (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { clk_50 rising@0.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 0.436ns (cell 0.196ns (44%), net 0.240ns (56%))
+Clock Skew          : 0.108ns
+Logic Level         : 0
+Max Fanout          : 31
+Clock Uncertainty   : 0.150ns (sdc uncertainty: 0.050ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.184          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.184          pin: u_clock.clko
+net (fo=6271)                           1.756          2.940          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/nlms_gain_b[31]_syn_72.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x021y037z0          0.109    f     3.049          pin: core/nlms_gain_b[31]_syn_72.q[0]
+net (fo=31)                             0.240          3.289          net: reset_release_n_dup_2357,  ../rtl/slave_demo_physical_wrapper.v(33)
+                                                                      pin: core/guard/age_reg[8]_syn_4.sr
+reg                 x021y035z3          0.087    r     3.376               
+--------------------------------------------------------------------  ---------------
+Arrival                                                3.376               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.302          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.302          pin: u_clock.clko
+net (fo=6271)                           1.930          3.232          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/age_reg[8]_syn_4.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          3.485               
+clock uncertainty                       0.150          3.635               
+clock pessimism                        -0.184          3.451               
+--------------------------------------------------------------------  ---------------
+Required                                               3.451               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.075               
+
+Slack               : -0.020ns
+Begin Point         : u_frequency_measure/capture_sample_b1[10]_syn_84.clk (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/filter_value_reg[16]_syn_4.sr (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { clk_50 rising@0.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 0.428ns (cell 0.196ns (45%), net 0.232ns (55%))
+Clock Skew          : 0.045ns
+Logic Level         : 0
+Max Fanout          : 25
+Clock Uncertainty   : 0.150ns (sdc uncertainty: 0.050ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.184          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.184          pin: u_clock.clko
+net (fo=6271)                           1.756          2.940          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: u_frequency_measure/capture_sample_b1[10]_syn_84.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x028y014z0          0.109    f     3.049          pin: u_frequency_measure/capture_sample_b1[10]_syn_84.q[0]
+net (fo=25)                             0.232          3.281          net: reset_release_n_dup_2305,  ../rtl/slave_demo_physical_wrapper.v(33)
+                                                                      pin: core/filter_value_reg[16]_syn_4.sr
+reg                 x029y014z3          0.087    r     3.368               
+--------------------------------------------------------------------  ---------------
+Arrival                                                3.368               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.302          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.302          pin: u_clock.clko
+net (fo=6271)                           1.930          3.232          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/filter_value_reg[16]_syn_4.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          3.485               
+clock uncertainty                       0.150          3.635               
+clock pessimism                        -0.247          3.388               
+--------------------------------------------------------------------  ---------------
+Required                                               3.388               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.020               
+
+Slack               : -0.020ns
+Begin Point         : u_frequency_measure/capture_sample_b1[10]_syn_84.clk (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/arithmetic/ac_reg[16]_syn_4.sr (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { clk_50 rising@0.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 0.428ns (cell 0.196ns (45%), net 0.232ns (55%))
+Clock Skew          : 0.045ns
+Logic Level         : 0
+Max Fanout          : 25
+Clock Uncertainty   : 0.150ns (sdc uncertainty: 0.050ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.184          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.184          pin: u_clock.clko
+net (fo=6271)                           1.756          2.940          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: u_frequency_measure/capture_sample_b1[10]_syn_84.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x028y014z0          0.109    f     3.049          pin: u_frequency_measure/capture_sample_b1[10]_syn_84.q[0]
+net (fo=25)                             0.232          3.281          net: reset_release_n_dup_2305,  ../rtl/slave_demo_physical_wrapper.v(33)
+                                                                      pin: core/arithmetic/ac_reg[16]_syn_4.sr
+reg                 x029y014z2          0.087    r     3.368               
+--------------------------------------------------------------------  ---------------
+Arrival                                                3.368               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.302          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.302          pin: u_clock.clko
+net (fo=6271)                           1.930          3.232          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/arithmetic/ac_reg[16]_syn_4.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          3.485               
+clock uncertainty                       0.150          3.635               
+clock pessimism                        -0.247          3.388               
+--------------------------------------------------------------------  ---------------
+Required                                               3.388               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.020               
+
+Slack               : -0.019ns
+Begin Point         : core/guard/verified_ratio_check/add0_syn_400.clk (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/guard/state_reg[0]_syn_297.sr (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { clk_50 rising@0.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 0.429ns (cell 0.196ns (45%), net 0.233ns (55%))
+Clock Skew          : 0.045ns
+Logic Level         : 0
+Max Fanout          : 12
+Clock Uncertainty   : 0.150ns (sdc uncertainty: 0.050ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.184          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.184          pin: u_clock.clko
+net (fo=6271)                           1.756          2.940          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/verified_ratio_check/add0_syn_400.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+ADDER (clk2q)       x021y039z2          0.109    f     3.049          pin: core/guard/verified_ratio_check/add0_syn_400.q[0]
+net (fo=12)                             0.233          3.282          net: reset_release_n_dup_2363,  ../rtl/slave_demo_physical_wrapper.v(33)
+                                                                      pin: core/guard/state_reg[0]_syn_297.sr
+reg                 x022y039z2          0.087    r     3.369               
+--------------------------------------------------------------------  ---------------
+Arrival                                                3.369               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.302          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.302          pin: u_clock.clko
+net (fo=6271)                           1.930          3.232          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/state_reg[0]_syn_297.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          3.485               
+clock uncertainty                       0.150          3.635               
+clock pessimism                        -0.247          3.388               
+--------------------------------------------------------------------  ---------------
+Required                                               3.388               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.019               
+
+Slack               : -0.019ns
+Begin Point         : core/guard/verified_ratio_check/add0_syn_400.clk (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/guard/state_reg[2]_syn_1286.sr (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { clk_50 rising@0.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 0.429ns (cell 0.196ns (45%), net 0.233ns (55%))
+Clock Skew          : 0.045ns
+Logic Level         : 0
+Max Fanout          : 12
+Clock Uncertainty   : 0.150ns (sdc uncertainty: 0.050ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.184          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.184          pin: u_clock.clko
+net (fo=6271)                           1.756          2.940          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/verified_ratio_check/add0_syn_400.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+ADDER (clk2q)       x021y039z2          0.109    f     3.049          pin: core/guard/verified_ratio_check/add0_syn_400.q[0]
+net (fo=12)                             0.233          3.282          net: reset_release_n_dup_2363,  ../rtl/slave_demo_physical_wrapper.v(33)
+                                                                      pin: core/guard/state_reg[2]_syn_1286.sr
+reg                 x022y039z3          0.087    r     3.369               
+--------------------------------------------------------------------  ---------------
+Arrival                                                3.369               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.302          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.302          pin: u_clock.clko
+net (fo=6271)                           1.930          3.232          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/state_reg[2]_syn_1286.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          3.485               
+clock uncertainty                       0.150          3.635               
+clock pessimism                        -0.247          3.388               
+--------------------------------------------------------------------  ---------------
+Required                                               3.388               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.019               
+
+Slack               : -0.012ns
+Begin Point         : core/nlms_gain_b[31]_syn_74.clk (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/guard/age_reg[1]_syn_4.sr (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { clk_50 rising@0.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 0.436ns (cell 0.196ns (44%), net 0.240ns (56%))
+Clock Skew          : 0.045ns
+Logic Level         : 0
+Max Fanout          : 41
+Clock Uncertainty   : 0.150ns (sdc uncertainty: 0.050ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.184          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.184          pin: u_clock.clko
+net (fo=6271)                           1.756          2.940          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/nlms_gain_b[31]_syn_74.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x020y033z0          0.109    f     3.049          pin: core/nlms_gain_b[31]_syn_74.q[0]
+net (fo=41)                             0.240          3.289          net: reset_release_n_dup_2349,  ../rtl/slave_demo_physical_wrapper.v(33)
+                                                                      pin: core/guard/age_reg[1]_syn_4.sr
+reg                 x022y033z3          0.087    r     3.376               
+--------------------------------------------------------------------  ---------------
+Arrival                                                3.376               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.302          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.302          pin: u_clock.clko
+net (fo=6271)                           1.930          3.232          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/age_reg[1]_syn_4.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          3.485               
+clock uncertainty                       0.150          3.635               
+clock pessimism                        -0.247          3.388               
+--------------------------------------------------------------------  ---------------
+Required                                               3.388               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.012               
+
+Slack               : -0.012ns
+Begin Point         : core/nlms_gain_b[31]_syn_74.clk (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/guard/fault_code_reg[0]_syn_13.sr (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { clk_50 rising@0.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 0.436ns (cell 0.196ns (44%), net 0.240ns (56%))
+Clock Skew          : 0.045ns
+Logic Level         : 0
+Max Fanout          : 41
+Clock Uncertainty   : 0.150ns (sdc uncertainty: 0.050ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.184          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.184          pin: u_clock.clko
+net (fo=6271)                           1.756          2.940          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/nlms_gain_b[31]_syn_74.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x020y033z0          0.109    f     3.049          pin: core/nlms_gain_b[31]_syn_74.q[0]
+net (fo=41)                             0.240          3.289          net: reset_release_n_dup_2349,  ../rtl/slave_demo_physical_wrapper.v(33)
+                                                                      pin: core/guard/fault_code_reg[0]_syn_13.sr
+reg                 x022y033z2          0.087    r     3.376               
+--------------------------------------------------------------------  ---------------
+Arrival                                                3.376               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.302          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.302          pin: u_clock.clko
+net (fo=6271)                           1.930          3.232          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/fault_code_reg[0]_syn_13.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          3.485               
+clock uncertainty                       0.150          3.635               
+clock pessimism                        -0.247          3.388               
+--------------------------------------------------------------------  ---------------
+Required                                               3.388               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.012               
+
+Slack               : -0.012ns
+Begin Point         : core/nlms_gain_b[31]_syn_74.clk (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/guard/state_reg[2]_syn_1233.sr (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { clk_50 rising@0.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 0.436ns (cell 0.196ns (44%), net 0.240ns (56%))
+Clock Skew          : 0.045ns
+Logic Level         : 0
+Max Fanout          : 41
+Clock Uncertainty   : 0.150ns (sdc uncertainty: 0.050ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.184          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.184          pin: u_clock.clko
+net (fo=6271)                           1.756          2.940          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/nlms_gain_b[31]_syn_74.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x020y033z0          0.109    f     3.049          pin: core/nlms_gain_b[31]_syn_74.q[0]
+net (fo=41)                             0.240          3.289          net: reset_release_n_dup_2349,  ../rtl/slave_demo_physical_wrapper.v(33)
+                                                                      pin: core/guard/state_reg[2]_syn_1233.sr
+reg                 x021y033z2          0.087    r     3.376               
+--------------------------------------------------------------------  ---------------
+Arrival                                                3.376               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.302          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.302          pin: u_clock.clko
+net (fo=6271)                           1.930          3.232          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/state_reg[2]_syn_1233.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          3.485               
+clock uncertainty                       0.150          3.635               
+clock pessimism                        -0.247          3.388               
+--------------------------------------------------------------------  ---------------
+Required                                               3.388               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.012               
+
+Slack               : -0.011ns
+Begin Point         : core/guard/state_reg[2]_syn_1191.clk (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : core/guard/target_check/add0_syn_592.sr (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { clk_50 rising@0.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 0.421ns (cell 0.196ns (46%), net 0.225ns (54%))
+Clock Skew          : 0.029ns
+Logic Level         : 0
+Max Fanout          : 19
+Clock Uncertainty   : 0.150ns (sdc uncertainty: 0.050ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.184          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.184          pin: u_clock.clko
+net (fo=6271)                           1.756          2.940          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/state_reg[2]_syn_1191.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x025y034z0          0.109    f     3.049          pin: core/guard/state_reg[2]_syn_1191.q[0]
+net (fo=19)                             0.225          3.274          net: reset_release_n_dup_2296,  ../rtl/slave_demo_physical_wrapper.v(33)
+                                                                      pin: core/guard/target_check/add0_syn_592.sr
+ADDER (reg)         x025y032z2          0.087    r     3.361               
+--------------------------------------------------------------------  ---------------
+Arrival                                                3.361               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.302          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.302          pin: u_clock.clko
+net (fo=6271)                           1.930          3.232          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: core/guard/target_check/add0_syn_592.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          3.485               
+clock uncertainty                       0.150          3.635               
+clock pessimism                        -0.263          3.372               
+--------------------------------------------------------------------  ---------------
+Required                                               3.372               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.011               
+
+Slack               : -0.011ns
+Begin Point         : u_demo/capture_rst_n_reg_syn_456.clk (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_demo/u_pcm_rx/u_transport/param_reg[6]_syn_4.sr (rising edge triggered by clock clk_50  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { clk_50 rising@0.000ns - clk_50 rising@0.000ns }
+Data Path Delay     : 0.421ns (cell 0.196ns (46%), net 0.225ns (54%))
+Clock Skew          : 0.029ns
+Logic Level         : 0
+Max Fanout          : 27
+Clock Uncertainty   : 0.150ns (sdc uncertainty: 0.050ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.184          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.184          pin: u_clock.clko
+net (fo=6271)                           1.756          2.940          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: u_demo/capture_rst_n_reg_syn_456.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x037y053z0          0.109    f     3.049          pin: u_demo/capture_rst_n_reg_syn_456.q[0]
+net (fo=27)                             0.225          3.274          net: reset_release_n_dup_2426,  ../rtl/slave_demo_physical_wrapper.v(33)
+                                                                      pin: u_demo/u_pcm_rx/u_transport/param_reg[6]_syn_4.sr
+reg                 x037y051z2          0.087    r     3.361               
+--------------------------------------------------------------------  ---------------
+Arrival                                                3.361               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: clk_50_syn_2.di
+net (fo=1)                              0.000          1.302          net: clk_50_dup_1,  ../rtl/slave_demo_physical_wrapper.v(9)
+                                                                      pin: u_clock.clki
+GCLK                x020y070z2          0.000          1.302          pin: u_clock.clko
+net (fo=6271)                           1.930          3.232          net: core/clk,  ../rtl/anc_fxn_core_r61.v(5)
+                                                                      pin: u_demo/u_pcm_rx/u_transport/param_reg[6]_syn_4.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          3.485               
+clock uncertainty                       0.150          3.635               
+clock pessimism                        -0.263          3.372               
+--------------------------------------------------------------------  ---------------
+Required                                               3.372               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.011               
+
+
+Inter clock domain timing
+--------------------------------------------------
+
+IP timing
+--------------------------------------------------

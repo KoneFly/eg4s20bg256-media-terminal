@@ -1,0 +1,217 @@
+PAGE 148
+TangDynasty          软件手册   
+147                              http://www.anlogic.com  
+ 
+Launch Clock 显示了 Launch Clock 延时，即从时钟源到路径起点寄存器时钟 pin 所
+经过的时钟路径延迟时间； 
+ Delay Type：延时类型 
+ Location：cell 所在坐标 
+ Incr：延迟增量时间 
+ Path：延时累计时间 
+ Level：逻辑级数 
+ NetList Info：对应的网表信息 
+ 
+ 
+Data 显示了数据路径延时， 即数据从路径起点寄存器输出到路径终点寄存器所经过
+的所有路径延时时间； 
+ 
+ 
+Capture Clock 显示了 Capture Clock 延时，即从时钟源到路径终点寄存器时钟 pin 所
+经过的时钟路径延迟时间； 
+Launch Clock 总延时
+时间 
+时钟到达起点寄存器的时钟 pin 
+外部输入管脚延迟 
+IO PAD 延迟 
+线网延迟 
+时钟源点到时钟定义点的延迟 
+
+PAGE 254
+TangDynasty          软件手册   
+253                              http://www.anlogic.com  
+SYN-7509 HPIO delayline 需要使用 APB clk 做同
+步，但 apb clk 没有驱动 参考用户指导手册，修改设计 
+SYN-7509 HPIO delayline 需要使用 APB clk 做同
+步，但 apb clk 没有驱动 参考用户指导手册，修改设计 
+SYN-7509 RTL Flow 不支持 SLICE 参数 S5BMUX_SX
+配置为 OQB_CAS 根据 Message 修改 HDL 代码 
+ 
+PHY ERROR/CRITICAL-WARNING 
+PHY ERROR Message 
+ID 说明 建议 
+(PHY) Physical error message 
+PHY-8001 时序分析启动异常 请检查 SDC 文件内容是否正确 
+PHY-8002 布局失败 请调整布局策略进行重新编译 
+PHY-8003 增量式布线失败 请调整布局布线策略进行重新编译或者
+咨询技术支持 
+PHY-8004 没有找到有效的 license 请检查是否有访问权限 
+PHY-8005 ELF 器件特有 请调整布局策略进行重新编译 
+PHY-8006 ELF 器件特有 请调整布局策略进行重新编译 
+PHY-8007 布局过程中某个实例位置信息异常 请检查 ADC 或者位置约束是否存在异常
+或者咨询技术支持 
+PHY-8008 设计中没有找到任何请布局的实例 请检查设计是否正确 
+PHY-8009 设计中没有找到任何的线网 请检查设计是否正确 
+PHY-8011 没有找到顶层模型 请检查设计中是否指定了顶层模型 
+PHY-8012 没有找到 set_clock_net 中设置的线网 请 检 查 设 计 中 是 否 存 在 此 线 网 或 者
+set_clock_net 中的线网名是否正确 
+PHY-8013 细节布线重构失败 请调整布局布线策略重新编译或者咨询
+技术支持 
+PHY-8014 时钟引脚检查失败 请检查当前引脚所在线网是否应该走全
+局时钟网络或者咨询技术支持 
+PHY-8015 当前线网没有一个有效的输入引脚 请检查当前线网是否正确 
+PHY-8016 无效的连接信息 找不到合法的布线资源， 请咨询技术支持 
+PHY-8018 PAD 位置信息无效 请检查当前 ADC 文件 
+PHY-8019 布线不通 请咨询技术支持 
+PHY-8021 细节布线进行 feedthrough 失败 请咨询技术支持 
+PHY-8024 set_clock_net 中的 bank 应该是个数字 请检查 set_clock_net 命令的设置是否正
+确或者咨询技术支持 
+PHY-8025 set_clock_net 中的 bank 应在指定范围
+内 
+请检查 set_clock_net 命令的设置是否正
+确或者咨询技术支持 
+
+PAGE 261
+TangDynasty          软件手册   
+260                              http://www.anlogic.com  
+PHY-9128 EF2 器件初始化 temperature sensor 位
+置错误 请确认使用数量是否超过 1 个 
+PHY-9129 EF2 器件初始化 temperature sensor 位
+置错误 请确认是否有 ADC instance 
+PHY-9130 EF2 器件初始化 temperature sensor 位
+置错误 
+请确认 ADC instance 的 TEMPERATURE 属
+性设置是否为:ENABLE 
+PHY-9131 AST instance 的数量超过上限 AST instance 的数量超过上限 
+PHY-9132 AST instance 设置的 pin 无效 请咨询技术支持 
+PHY-9133 请检查 AST instance 设置的 pin 位置 请检查 AST instance 设置的 pin 位置 
+PHY-9134 无效的 AST 设置 请咨询技术支持 
+PHY-9135 无效的 MipiIO 的 pin 设置 请咨询技术支持 
+PHY-9136 MipiIO 设置的 instance 的 pin 不是正的
+LVDS pin 请咨询技术支持 
+PHY-9137 MipiIO 设置的 instance 的 pin 不是负的
+LVDS pin 请咨询技术支持 
+PHY-9138 无效的 MipiIO 的 pin 设置 请咨询技术支持 
+PHY-9139 Pad 设置的位置出错 请检查 ADC 中约束的位置是否重复 
+PHY-9140 Pad 设置的位置出错 请检查 ADC 中约束的位置是否合法 
+PHY-9141 找不到放置 LVDS pad 的 slot 请确认数量是否超过上限 
+PHY-9142 找不到放置非 clock 的 pad 的 slot 请确认数量是否超过上限 
+PHY-9143 对该位置的 IO Pad 解决冲突失败 请咨询技术支持 
+PHY-9145 数量超过上限 请确认使用资源数量 
+PHY-9146 检测到该位置的保留约束范围有重叠 请检查一下 ADC 里的约束范围是否和保
+留的范围有冲突 
+PHY-9147 检测到该 macro 有多个约束范围 请检查一下 ADC 里的约束范围是否重复 
+PHY-9148 对于该类型的 instance 数量超过上限 请检查对应类型的使用数量 
+PHY-9149 无法恢复该 macro 的连接 请咨询技术支持 
+PHY-9150 初始化 clock buffer 出错 请咨询技术支持 
+PHY-9151 该 instance 的 LOCATION 属性的值格式
+出错 请咨询技术支持 
+PHY-9152 该 instance 的 LOCATION 属性的值跟
+ADC 的约束不同 请咨询技术支持 
+PHY-9153 该 instance 的 LOCATION 属性的值格式
+出错 请咨询技术支持 
+PHY-9154 Macro instance 缺少属性值 R_POSITION 请咨询技术支持 
+PHY-9155 Macro instance 的 z-offset 值 处 于
+R_POSITION 与 LOCATION 值之间 请咨询技术支持 
+PHY-9156 IOCLK instance 的用户指定位置与驱动
+instance 的位置冲突 请咨询技术支持 
+PHY-9158 用户指定的位置有冲突. 请检查两个 instance 在 ADC 中的约束 
+PHY-9160 全局布线无法重构该 net 的拓扑结构 请咨询技术支持 
+PHY-9161 该类型的 instance 缺少 LOCATION 信息 请咨询技术支持 
+
+PAGE 263
+TangDynasty          软件手册   
+262                              http://www.anlogic.com  
+PHY-5059 用户例化的 Instance 输出驱动混合类
+型 请检查设计中该 instance 的连接关系 
+PHY-5060 时钟 Net 输出驱动为混合类型 请检查设计中该 net 的连接关系 
+PHY-5063 此类型的 Instance 不能使用 bound 约
+束 
+请使用 set_inst_assignment约束该类型的
+instance 
+PHY-5072 时钟极性传递失败 
+请检查 BUFGMUX/CBUF 的连接关系，尝
+试更换 buffer 的位置； 或者请咨询技术支
+持 
+PHY-5073 布线相关区域约束检查失败 请咨询技术支持 
+PHY-7002 没有遵循相应的单元位置约束信息 请检查 ADC 文件是否正确 
+PHY-7018 时序分析发生异常 具体请参考时序相关信息 
+PHY-8032 实例的输入或者输出没有连接 请检查设计中的实例连接关系是否正确 
+PHY-8052 未布局的 Instance 驱动了 SCLK 导致布
+局失败 请咨询技术支持 
+PHY-9159 用户指定位置无效，Instance 的 z 是无
+效值 请咨询技术支持 
+PHY-9178 Macro 初始化失败 请检查设计中 macro 的 R_POSITION 是否
+正确 
+ 
+OPT ERROR/CRITICAL-WARNING 
+OPT ERROR Message 
+ID 说明 建议 
+(OPT) Optimization error message 
+OPT-8001 启动时序引擎失败 工具内部错误，请咨询技术支持 
+OPT-8002 命令使用错误，phys_opt 参数设定值非
+法 
+参照报错信息提示， 正确使用phys_opt 命
+令 
+OPT-8003 启动时序分析引擎失败 工具内部错误，请咨询技术支持 
+OPT-8004 物理优化 phys_opt 出现非预期的错误 
+参照报错信息提示， 尝试通过“set_param 
+place xxx_opt off” 关掉出错的步骤进行规
+避  
+OPT-8005 布局后对 QoR 合理性检查发现时序不
+佳，布局布线难以跑出结果 
+可在当前 Phy Run 处右键选择 Show Flow 
+Status 查看，参照其中的 QoR Evaluation
+建议进行修改和尝试 
+OPT-8006 布局后对 QoR 合理性检查发现拥塞情
+况不佳，布局布线难以跑出结果 
+可在当前 Phy Run 处右键选择 Show Flow 
+Status 查看，参照其中的 QoR Evaluation
+建议进行修改和尝试 
+OPT-8007 命令使用错误，report_qor –step 指定
+的步骤错误 修改-step 为当前步骤 
+
+PAGE 264
+TangDynasty          软件手册   
+263                              http://www.anlogic.com  
+OPT-8101 启动 mapper 引擎失败 工具内部错误，请咨询技术支持 
+OPT-8102 DB 有错误或版本不兼容 需要重新生成 DB 
+OPT-8103 DB 有错误或版本不兼容 需要重新生成 DB 
+OPT-8104 DB 有错误或版本不兼容 需要重新生成 DB 
+OPT-8105 DB 有错误或版本不兼容 需要重新生成 DB 
+OPT-8106 物理优化引擎初始化失败 工具内部错误，请咨询技术支持 
+OPT-8107 物理单元拓扑序列生成失败 工具内部错误，请咨询技术支持 
+OPT-8108 启动时序引擎失败 工具内部错误，请咨询技术支持 
+OPT-8109 网表信息加载失败 工具内部错误，请咨询技术支持 
+OPT-8110 物理优化结束后数据库出现错误 工具内部错误，请咨询技术支持 
+OPT-8301 重布线时遇到不合法的模块， 流程无法
+继续 工具内部错误，请咨询技术支持 
+OPT-8302 重布线时布线器数据结构损坏， 流程无
+法继续 工具内部错误，请咨询技术支持 
+OPT-8303 重布线时布线器数据结构损坏， 流程无
+法继续 工具内部错误，请咨询技术支持 
+OPT-8304 重布线时布线器数据结构损坏， 应停止
+流程避免后续错误 工具内部错误，请咨询技术支持 
+OPT-8305 重新布线时 DR 数据出现不匹配， 流程
+无法继续 工具内部错误，请咨询技术支持 
+OPT-8306 本应满足条件的移动位置出现不匹配，
+应停止流程避免后续错误 工具内部错误，请咨询技术支持 
+OPT-8307 无法找到指定的优化单元 请提供正确的单元名称 
+OPT-8308 无法找到选项指定的线网 请提供正确的线网名称 
+OPT-8309 无法找到选项指定的线网漏端引脚 请提供正确的线网漏端引脚名称 
+OPT-8310 本应满足条件的移动位置出现不匹配，
+应停止流程避免后续错误 工具内部错误，请咨询技术支持 
+OPT-8311 优化失败后回退过程出错， 应停止流程
+避免后续错误 工具内部错误，请咨询技术支持 
+OPT-8312 优化失败后回退过程出错， 应停止流程
+避免后续错误 工具内部错误，请咨询技术支持 
+OPT-8313 布线后优化过程中遇到不合法的节点
+和引脚 工具内部错误，请咨询技术支持 
+OPT-8501 重复在同一线网上插入缓冲器， 应停止
+流程避免后续错误 工具内部错误，请咨询技术支持 
+OPT-8502 增量式合法化失败， 应停止流程避免后
+续错误 工具内部错误，请咨询技术支持 
+OPT-8503 回退插入缓冲器的操作失败， 应停止流
+程避免后续错误 工具内部错误，请咨询技术支持 
+OPT-8601 启动全局布局布线引擎失败 工具内部错误，请咨询技术支持 
+OPT-8602 优化失败后回退过程出错， 应停止流程
+避免后续错误 工具内部错误，请咨询技术支持 

@@ -1,0 +1,5 @@
+{
+  "status": "FAIL",
+  "error": "AssertionError(('ORIGINAL_COMPLEX_FIT_GATE_FAILED', {'qualified_bins': 512, 'taps': 128, 'h0': 0.0, 'ridge_trace_factor': 0.001, 'relative_complex_RMS_error': 0.2195641986252856, 'median_abs_gain_error_db': 0.9473825163575975, 'median_abs_phase_error_deg': 5.923661594442429}))",
+  "no_gate_relaxation": true
+}

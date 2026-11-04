@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "status": "PASS",
+  "physical_button_gold": {
+    "key2_n": "B2",
+    "key3_n": "B1",
+    "key4_n": "C1"
+  },
+  "old_constraint_negative": "FAIL_KEY3_KEY4_REVERSED",
+  "delta": {
+    "key3_n": [
+      "C1",
+      "B1"
+    ],
+    "key4_n": [
+      "B1",
+      "C1"
+    ]
+  },
+  "unique_ball_count": 33,
+  "scope": "all unchanged assignments match F34; SD and SW golden checked; C01 KEY3=B1/KEY4=C1; user current F34 physical KEY4 recovers",
+  "execution_snapshot": "topic1_media_terminal\\work\\f35_keymap_r01",
+  "reuse_scope": "ADC and restart guard code identical; R04 full system and hot reload separately rerun"
+}

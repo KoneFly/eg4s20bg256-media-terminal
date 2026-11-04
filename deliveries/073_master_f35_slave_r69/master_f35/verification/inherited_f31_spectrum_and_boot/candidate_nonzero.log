@@ -1,0 +1,6 @@
+SUMMARY frames=60 pixels_checked=5315200 errors=0 bar_only=176434 wave_only=111425 bar_over_wave=253823 spike_raw=63 spike_shown_max=33
+RESULT PASS
+- review/f31_smoothing_init/tb_spectrum_init.sv:155: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 1s; walltime 6.140 s; speed 164.108 ms/s
+- Verilator: cpu 6.140 s on 1 threads; alloced 121 MB

@@ -1,0 +1,12 @@
+STEP REMOVE fault=music ms=7 fx=0 wptr=0
+PHASE FULL_RESET_BEGIN cause=KEY3
+MODEL ERROR @347741480000 now=17387074: refresh interval exceeded
+PHASE FULL_RESET_REINITIALIZED cause=KEY3
+STEP recovered PIC1 label=1 frames=30
+STEP resumed audio golden samples=260 video=0
+STEP navigation after recovery label=2 frames=38
+RESULT PASS hot_reload fault=music frames=38 init_count=2 interrupted_state=7
+- work/f35_keymap_r04/tb/tb_hot_reload.sv:169: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 668ms; walltime 108.083 s; speed 6.184 ms/s
+- Verilator: cpu 108.081 s on 1 threads; alloced 135 MB

@@ -1,0 +1,25 @@
+{
+  "baseline_warning_classes": [
+    "HDL-5001 WARNING",
+    "HDL-5007 WARNING",
+    "HDL-5373 WARNING",
+    "HDL-7225 CRITICAL-WARNING",
+    "PHY-5079 CRITICAL-WARNING",
+    "PHY-7002 CRITICAL-WARNING",
+    "SYN-5011 WARNING",
+    "SYN-5025 WARNING",
+    "SYN-6562 WARNING"
+  ],
+  "candidate_warning_classes": [
+    "HDL-5001 WARNING",
+    "HDL-5007 WARNING",
+    "HDL-5373 WARNING",
+    "HDL-7225 CRITICAL-WARNING",
+    "PHY-5079 CRITICAL-WARNING",
+    "PHY-7002 CRITICAL-WARNING",
+    "SYN-5011 WARNING",
+    "SYN-5025 WARNING",
+    "SYN-6562 WARNING"
+  ],
+  "new_classes": []
+}

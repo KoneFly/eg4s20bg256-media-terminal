@@ -1,0 +1,13 @@
+{
+  "status": "PASS_MEASURED_MODEL_ADMISSION",
+  "rtl_sha256": {
+    "anc_core_constants_r61.vh": "601e2759ca97dce8808001ec401e869e22f9cb49b687fe2297d7a6a645b8fa0a",
+    "anc_sf_rom_r65.v": "2659bc4d1739a3328288dae5cf6aec58e0fc62d558e3caea36a289ad0b5cadc4"
+  },
+  "model_result_sha256": "4d26710cbe9cae93c0a242cb4a90022a61ccd01397b6c8b883ebbb8e56f0ba64",
+  "validation_sha256": "223cc524683417a67c062303b109e12c6d8c88426c53a7d8c6ee3ca58327ce5c",
+  "only_two_SF_files_changed": true,
+  "SOS_and_all_control_RTL_byte_identical": true,
+  "all_model_cases_end_RUN": true,
+  "board_test_required": true
+}
